@@ -51,7 +51,7 @@ jobs:
           PAGE_HANDLE: '@unspoken.desires.co'
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: 'alternate'
-          IS_SIMULATION_MODE: 'false'
+          IS_SIMULATION_MODE: 'true'
           TRIGGER_TYPE: ${{ github.event.inputs.trigger_type || 'auto' }}
         run: node run-slot-post.js
 
