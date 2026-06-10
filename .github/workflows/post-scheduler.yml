@@ -1,0 +1,68 @@
+name: Daily Content Auto-Scheduler
+
+on:
+  schedule:
+    # Schedule runs in UTC (IST is UTC +5:30)
+    # 03:30 UTC = 09:00 AM IST (Slot 1: Desire & Physical Intimacy)
+    - cron: '30 3 * * *'
+    # 08:30 UTC = 02:00 PM IST (Slot 2: Secret Thoughts & Overthinking)
+    - cron: '30 8 * * *'
+    # 11:30 UTC = 05:00 PM IST (Reel Slot)
+    - cron: '30 11 * * *'
+    # 14:30 UTC = 08:00 PM IST (Slot 3: Situationships & Forbidden Love)
+    - cron: '30 14 * * *'
+    # 16:30 UTC = 10:00 PM IST (Slot 4: Romantic Tension & Chemistry)
+    - cron: '30 16 * * *'
+    # 18:30 UTC = 12:00 AM IST (Slot 5: Intimate Heartbreak & Healing)
+    - cron: '30 18 * * *'
+  workflow_dispatch:
+    inputs:
+      trigger_type:
+        description: 'Trigger slot type (auto, post, reel)'
+        required: false
+        default: 'auto'
+
+permissions:
+  contents: write
+
+jobs:
+  run-scheduler:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run scheduled posting workflow
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          PAGE_HANDLE: '@unspoken.desires.co'
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: 'alternate'
+          IS_SIMULATION_MODE: 'false'
+          TRIGGER_TYPE: ${{ github.event.inputs.trigger_type || 'auto' }}
+        run: node run-slot-post.js
+
+      - name: Commit and Push generated assets
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/db.json
+          # Add data/posts directory if there are new files
+          if [ -d "data/posts" ]; then
+            git add data/posts/
+          fi
+          git commit -m "Auto-generated scheduled assets [skip ci]" || echo "No changes to commit"
+          git push origin HEAD:${{ github.ref_name }} || echo "No changes to push"
