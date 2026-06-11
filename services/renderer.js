@@ -370,7 +370,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
     }
     
     .brand-logo-watermark {
-      height: 60px;
+      height: 120px;
       width: auto;
       object-fit: contain;
       filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
@@ -385,10 +385,6 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
   
   <div id="slide-container">
     <header>
-      <div class="brand-box">
-        <span class="brand-title">UNSPOKEN DESIRES</span>
-        <span class="brand-sub">Intimacy. Desire. Chemistry.</span>
-      </div>
       <div class="header-right">
         Volume <span>01</span>
       </div>
