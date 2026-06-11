@@ -818,7 +818,7 @@ function App() {
                      onChange={e => setCreateType(e.target.value)}
                      style={{ width: '100%', padding: '10px', background: 'rgba(255,255,255,0.05)', border: '1px solid var(--border)', borderRadius: '8px', color: '#fff', marginBottom: '15px' }}
                    >
-                     <option value="carousel">Instagram Carousel Post (5 Slides)</option>
+                     <option value="carousel">Instagram Single-Slide Post (1 Slide)</option>
                      <option value="reel">Instagram Video Reel (9:16 Video + Voiceover)</option>
                    </select>
                  </div>
@@ -1002,30 +1002,32 @@ function App() {
                          </div>
                        )}
                      </div>
-                     <div className="carousel-nav-row">
-                       <button 
-                         className="arrow-btn"
-                         onClick={() => setActiveSlideIdx(prev => Math.max(0, prev - 1))}
-                         disabled={activeSlideIdx === 0}
-                       >
-                         ◀ Prev
-                       </button>
-                       <span className="slide-indicator">Slide {activeSlideIdx + 1} of 5</span>
-                       <button 
-                         className="arrow-btn"
-                         onClick={() => setActiveSlideIdx(prev => Math.min(4, prev + 1))}
-                         disabled={activeSlideIdx === 4}
-                       >
-                         Next ▶
-                       </button>
-                     </div>
+                     {selectedPost.slides && selectedPost.slides.length > 1 && (
+                        <div className="carousel-nav-row">
+                          <button 
+                            className="arrow-btn"
+                            onClick={() => setActiveSlideIdx(prev => Math.max(0, prev - 1))}
+                            disabled={activeSlideIdx === 0}
+                          >
+                            ◀ Prev
+                          </button>
+                          <span className="slide-indicator">Slide {activeSlideIdx + 1} of {selectedPost.slides.length}</span>
+                          <button 
+                            className="arrow-btn"
+                            onClick={() => setActiveSlideIdx(prev => Math.min(selectedPost.slides.length - 1, prev + 1))}
+                            disabled={activeSlideIdx === selectedPost.slides.length - 1}
+                          >
+                            Next ▶
+                          </button>
+                        </div>
+                      )}
                    </div>
  
                    {/* Right Column: Slide Text / Caption Fields */}
                    <div className="post-details-pane">
                      <div className="form-row-2">
                        <div className="form-group">
-                         <label>Active Slide {activeSlideIdx + 1} Text</label>
+                         <label>{selectedPost.slides && selectedPost.slides.length > 1 ? `Active Slide ${activeSlideIdx + 1} Text` : 'Slide Text'}</label>
                          <textarea 
                            rows="4"
                            value={editSlides[activeSlideIdx]}

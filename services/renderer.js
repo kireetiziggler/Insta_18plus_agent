@@ -124,13 +124,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
   const logoFullPath = path.join(__dirname, '..', 'data', 'logo.png');
   const logoFileUri = 'file:///' + logoFullPath.replace(/\\/g, '/');
   const formattedText = parseFormatting(slideText);
-  const isCtaSlide = slideIndex === 4;
 
-  // Dots indicator helper
-  let dotsHTML = '';
-  for (let i = 0; i < 5; i++) {
-    dotsHTML += `<div class="dot ${i === slideIndex ? 'active' : ''}"></div>`;
-  }
 
   // Extract clean handle representation
   const cleanHandle = handle.startsWith('@') ? handle : `@${handle}`;
@@ -361,22 +355,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       letter-spacing: 0.5px;
       font-family: 'Outfit', sans-serif;
     }
-    
-    .dots-container {
-      display: flex;
-      gap: 8px;
-      align-items: center;
-    }
-    .dot {
-      width: 8px;
-      height: 8px;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: 50%;
-    }
-    .dot.active {
-      background: ${theme.accentColor || '#fbbf24'};
-      box-shadow: 0 0 6px ${theme.accentColor || '#fbbf24'};
-    }
+
     
     .bottom-tagline-row {
       width: 100%;
@@ -448,10 +427,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
             <div class="footer-handle-badge">${cleanHandle}</div>
           </div>
         </div>
-        
-        <div class="dots-container">
-          ${dotsHTML}
-        </div>
+
       </div>
       
       <div class="bottom-tagline-row">
@@ -515,7 +491,7 @@ export async function renderPostSlides(postId, slides, themeName, categoryName) 
       const slideText = slides[idx];
       const htmlContent = generateSlideHTML(slideText, idx, themeName, handle, categoryName, theme);
       
-      await db.log('SYSTEM', `Rendering slide ${idx + 1}/5...`);
+      await db.log('SYSTEM', `Rendering slide ${idx + 1}/${slides.length}...`);
       await page.setContent(htmlContent, { waitUntil: 'load' });
       
       // Critical: Ensure google webfonts are fully parsed and ready to prevent FOIT

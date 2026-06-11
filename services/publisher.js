@@ -80,11 +80,12 @@ export async function publishPostToInstagram(postId) {
       await db.log('PUBLISHER', `Reel "${postId}" published successfully (Simulated)`);
       return post;
     } else {
-      await db.log('PUBLISHER', `[Simulation] Uploading 5 slides to simulated Instagram CDN...`);
+      const slideCount = post.slides ? post.slides.length : 1;
+      await db.log('PUBLISHER', `[Simulation] Uploading ${slideCount} slide(s) to simulated Instagram CDN...`);
       await sleep(1500);
-      await db.log('PUBLISHER', `[Simulation] Compiling carousel items and applying caption...`);
+      await db.log('PUBLISHER', `[Simulation] Compiling feed post item(s) and applying caption...`);
       await sleep(1000);
-      await db.log('PUBLISHER', `[Simulation] Publishing carousel successfully to feed!`);
+      await db.log('PUBLISHER', `[Simulation] Publishing post successfully to feed!`);
 
       post.status = 'published';
       post.publishedAt = new Date().toISOString();
@@ -205,88 +206,149 @@ export async function publishPostToInstagram(postId) {
       await db.log('PUBLISHER', `Successfully published Reel ID "${postId}" to Instagram (Media ID: ${resPublishJson.id})`);
       return post;
     } else {
-      // Step 1: Upload slides to public host to get public URLs
-      const publicUrls = [];
-      for (let idx = 1; idx <= 5; idx++) {
-        const slidePath = path.join(absolutePostDir, `slide_${idx}.png`);
-        await db.log('PUBLISHER', `Uploading slide ${idx}/5 to temporary hosting for Instagram access...`);
+      const slideCount = post.slides ? post.slides.length : 1;
+      
+      if (slideCount === 1) {
+        // Single Image Upload Flow
+        const slidePath = path.join(absolutePostDir, `slide_1.png`);
+        await db.log('PUBLISHER', `Uploading slide to temporary hosting for Instagram access...`);
         const publicUrl = await uploadToPublicHost(slidePath);
-        publicUrls.push(publicUrl);
-        await db.log('PUBLISHER', `Slide ${idx}/5 uploaded: ${publicUrl}`);
-      }
+        await db.log('PUBLISHER', `Slide uploaded: ${publicUrl}`);
 
-      // Step 2: Create media container for each slide item
-      const containerIds = [];
-      for (let idx = 0; idx < publicUrls.length; idx++) {
-        const imgUrl = publicUrls[idx];
-        await db.log('PUBLISHER', `Creating Instagram media item container ${idx + 1}/5...`);
-
+        await db.log('PUBLISHER', `Creating Instagram media container for single image...`);
         const containerUrl = `https://graph.facebook.com/v19.0/${instagramBusinessId}/media`;
         const response = await fetch(containerUrl, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            image_url: imgUrl,
-            is_carousel_item: true,
+            image_url: publicUrl,
+            caption: `${post.caption}`,
             access_token: facebookPageToken
           })
         });
 
         const resJson = await response.json();
         if (!response.ok || !resJson.id) {
-          throw new Error(`Failed to create slide container ${idx + 1}: ${JSON.stringify(resJson)}`);
+          throw new Error(`Failed to create single image container: ${JSON.stringify(resJson)}`);
         }
-        containerIds.push(resJson.id);
+        const containerId = resJson.id;
+
+        // Wait for container to process
+        await db.log('PUBLISHER', `Waiting 5 seconds for Instagram to process the image container...`);
+        await sleep(5000);
+
+        // Publish
+        await db.log('PUBLISHER', `Publishing the image container to feed...`);
+        const publishUrl = `https://graph.facebook.com/v19.0/${instagramBusinessId}/media_publish`;
+        const responsePublish = await fetch(publishUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            creation_id: containerId,
+            access_token: facebookPageToken
+          })
+        });
+
+        const resPublishJson = await responsePublish.json();
+        if (!responsePublish.ok || !resPublishJson.id) {
+          throw new Error(`Failed to publish media: ${JSON.stringify(resPublishJson)}`);
+        }
+
+        // Success! Update database
+        post.status = 'published';
+        post.publishedAt = new Date().toISOString();
+        post.instagramMediaId = resPublishJson.id;
+        post.analytics = { reach: 0, shares: 0, saves: 0, likes: 0, comments: 0 };
+        await db.savePost(post);
+
+        await db.log('PUBLISHER', `Successfully published single image post ID "${postId}" to Instagram Feed (Media ID: ${resPublishJson.id})`);
+        return post;
+      } else {
+        // Multi-Slide Carousel Upload Flow
+        const publicUrls = [];
+        for (let idx = 1; idx <= slideCount; idx++) {
+          const slidePath = path.join(absolutePostDir, `slide_${idx}.png`);
+          await db.log('PUBLISHER', `Uploading slide ${idx}/${slideCount} to temporary hosting for Instagram access...`);
+          const publicUrl = await uploadToPublicHost(slidePath);
+          publicUrls.push(publicUrl);
+          await db.log('PUBLISHER', `Slide ${idx}/${slideCount} uploaded: ${publicUrl}`);
+        }
+
+        // Step 2: Create media container for each slide item
+        const containerIds = [];
+        for (let idx = 0; idx < publicUrls.length; idx++) {
+          const imgUrl = publicUrls[idx];
+          await db.log('PUBLISHER', `Creating Instagram media item container ${idx + 1}/${slideCount}...`);
+
+          const containerUrl = `https://graph.facebook.com/v19.0/${instagramBusinessId}/media`;
+          const response = await fetch(containerUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              image_url: imgUrl,
+              is_carousel_item: true,
+              access_token: facebookPageToken
+            })
+          });
+
+          const resJson = await response.json();
+          if (!response.ok || !resJson.id) {
+            throw new Error(`Failed to create slide container ${idx + 1}: ${JSON.stringify(resJson)}`);
+          }
+          containerIds.push(resJson.id);
+        }
+
+        // Step 3: Create carousel container enclosing slide containers
+        await db.log('PUBLISHER', `Linking slide containers into a single Carousel container...`);
+        const carouselContainerUrl = `https://graph.facebook.com/v19.0/${instagramBusinessId}/media`;
+        const responseCarousel = await fetch(carouselContainerUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            media_type: 'CAROUSEL',
+            children: containerIds,
+            caption: `${post.caption}`,
+            access_token: facebookPageToken
+          })
+        });
+
+        const resCarouselJson = await responseCarousel.json();
+        if (!responseCarousel.ok || !resCarouselJson.id) {
+          throw new Error(`Failed to create carousel container: ${JSON.stringify(resCarouselJson)}`);
+        }
+        const carouselId = resCarouselJson.id;
+
+        // Step 4: Wait for containers to process on Instagram servers
+        await db.log('PUBLISHER', `Waiting 8 seconds for Instagram to process the carousel containers...`);
+        await sleep(8000);
+
+        // Step 5: Publish the carousel container
+        await db.log('PUBLISHER', `Publishing the carousel container to feed...`);
+        const publishUrl = `https://graph.facebook.com/v19.0/${instagramBusinessId}/media_publish`;
+        const responsePublish = await fetch(publishUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            creation_id: carouselId,
+            access_token: facebookPageToken
+          })
+        });
+
+        const resPublishJson = await responsePublish.json();
+        if (!responsePublish.ok || !resPublishJson.id) {
+          throw new Error(`Failed to publish media: ${JSON.stringify(resPublishJson)}`);
+        }
+
+        // Success! Update database
+        post.status = 'published';
+        post.publishedAt = new Date().toISOString();
+        post.instagramMediaId = resPublishJson.id;
+        post.analytics = { reach: 0, shares: 0, saves: 0, likes: 0, comments: 0 };
+        await db.savePost(post);
+
+        await db.log('PUBLISHER', `Successfully published Carousel post ID "${postId}" to Instagram Feed (Media ID: ${resPublishJson.id})`);
+        return post;
       }
-
-      // Step 3: Create carousel container enclosing slide containers
-      await db.log('PUBLISHER', `Linking slide containers into a single Carousel container...`);
-      const carouselContainerUrl = `https://graph.facebook.com/v19.0/${instagramBusinessId}/media`;
-      const responseCarousel = await fetch(carouselContainerUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          media_type: 'CAROUSEL',
-          children: containerIds,
-          caption: `${post.caption}`,
-          access_token: facebookPageToken
-        })
-      });
-
-      const resCarouselJson = await responseCarousel.json();
-      if (!responseCarousel.ok || !resCarouselJson.id) {
-        throw new Error(`Failed to create carousel container: ${JSON.stringify(resCarouselJson)}`);
-      }
-      const carouselId = resCarouselJson.id;
-
-      // Step 4: Wait for containers to process on Instagram servers
-      await db.log('PUBLISHER', `Waiting 8 seconds for Instagram to process the carousel containers...`);
-      await sleep(8000);
-
-      // Step 5: Publish the carousel container
-      await db.log('PUBLISHER', `Publishing the carousel container to feed...`);
-      const publishUrl = `https://graph.facebook.com/v19.0/${instagramBusinessId}/media_publish`;
-      const responsePublish = await fetch(publishUrl, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          creation_id: carouselId,
-          access_token: facebookPageToken
-        })
-      });
-
-      const resPublishJson = await responsePublish.json();
-      if (!responsePublish.ok || !resPublishJson.id) {
-        throw new Error(`Failed to publish media: ${JSON.stringify(resPublishJson)}`);
-      }
-
-      // Success! Update database
-      post.status = 'published';
-      post.publishedAt = new Date().toISOString();
-      post.instagramMediaId = resPublishJson.id;
-      // Set initial zero analytics
-      post.analytics = { reach: 0, shares: 0, saves: 0, likes: 0, comments: 0 };
-      await db.savePost(post);
 
       await db.log('PUBLISHER', `Successfully published post ID "${postId}" to Instagram Feed (Media ID: ${resPublishJson.id})`);
       return post;

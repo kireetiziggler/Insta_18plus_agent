@@ -7,11 +7,7 @@ const OFFLINE_TEMPLATES = {
     {
       backgroundTheme: 'midnight_desire',
       slides: [
-        "The unspoken rules of physical chemistry.",
-        "It's not just about touch. It's the silent glance across a room, the way their voice drops when they get close, and the sudden heat that makes your heart race.",
-        "Most people mistake lust for attraction. But true desire is psychological. It starts in the mind long before it reaches the hands.",
-        "Never settle for someone who only wants your presence, but has no interest in exploring your depth. True chemistry is rare and obsessive.",
-        "Save this if you feel the pull. ❦\nFollow for more unspoken desires."
+        "The unspoken rules of physical chemistry. It's not just about touch. It's the silent glance across a room, the way their voice drops when they get close, and the sudden heat that makes your heart race."
       ],
       caption: "Physical chemistry is a language spoken in silence. It's the unspoken pull that you can't ignore. True desire goes deeper than the surface. Explore the psychology of attraction.\n\nSave this if you relate. ❦\n\n#unspokendesires #chemistry #desire #intimacy #romance #attraction #relationshipgoals #psychology"
     }
@@ -20,11 +16,7 @@ const OFFLINE_TEMPLATES = {
     {
       backgroundTheme: 'secret_thoughts',
       slides: [
-        "The thoughts keeping you awake at 2 AM.",
-        "You check their active status. You replay the touch, the whisper, the way their hands felt on your skin. You want to ask if they felt the same pull, but instead, you stay silent.",
-        "We hide our deepest desires because we are terrified of the power they give someone else over us.",
-        "Stop dissecting silence. Silence is an answer, too. Reclaim your self-respect and put the phone down. Let them match your energy or let them go.",
-        "Save this for quiet nights. ❣\nFollow for relationship secrets."
+        "The thoughts keeping you awake at 2 AM. You replay the touch, the whisper, the way their hands felt on your skin. You want to ask if they felt the same pull, but instead, you stay silent."
       ],
       caption: "Overthinking is the art of creating problems that don't exist. If they wanted to, they would. Protect your peace of mind and stop dissecting silence.\n\nSave this for difficult nights. ❣\n\n#overthinking #modernrelationship #texting #datingstruggles #datingadvice #selfworth #mentalpeace #datingrules"
     }
@@ -33,11 +25,7 @@ const OFFLINE_TEMPLATES = {
     {
       backgroundTheme: 'shadowy_lounge',
       slides: [
-        "The dangerous thrill of forbidden chemistry.",
-        "You act like partners when you're alone. The touch is addictive, but the silence between encounters is deafening. You know it's a mistake, but you can't walk away.",
-        "You tolerate the uncertainty because you're terrified of losing them. But you are slowly breaking your own heart by accepting physical connection in place of emotional safety.",
-        "You cannot love someone into being ready. Choosing to walk away from a situationship isn't giving up; it's choosing self-respect over crumbs.",
-        "Share this with someone who needs it. ❥\nFollow for relationship growth."
+        "The dangerous thrill of forbidden chemistry. You act like partners when you're alone. The touch is addictive, but the silence between encounters is deafening. You know it's a mistake, but you can't walk away."
       ],
       caption: "A situationship is just a relationship where one person gets all the benefits while the other gets all the anxiety. Set boundaries and walk away when it stings.\n\nShare this with someone who needs to see this. ❥\n\n#situationship #heartbreak #datingproblems #modernlove #selflove #relationshiprules #relationshippsychology #healing"
     }
@@ -46,11 +34,7 @@ const OFFLINE_TEMPLATES = {
     {
       backgroundTheme: 'candlelight_secrets',
       slides: [
-        "The magnetics of unspoken tension.",
-        "Accidental brushes of skin. Eye contact across a crowded room that lasts a second too long. You both know it, but neither will say it.",
-        "Chemistry is the absolute certainty that if you get any closer, you won't be able to stop. That silent, high-contrast pull is the most addictive part of modern dating.",
-        "Enjoy the tension, but don't play games forever. Raw chemistry is a spark, but emotional safety is what keeps the fire burning.",
-        "Save this for late nights. ❥\nFollow for dating chemistry."
+        "The magnetics of unspoken tension. Accidental brushes of skin. Eye contact across a crowded room that lasts a second too long. Chemistry is the absolute certainty that if you get any closer, you won't be able to stop."
       ],
       caption: "Unspoken tension is the ultimate prelude. It's the spark before the fire. Appreciate the chemistry, but build the connection.\n\nSave this for late nights. ❥\n\n#romantictension #attractioncode #chemistry #datingadvice #secretcrush #lovequotes #sensualvibes #datingcoach"
     }
@@ -59,11 +43,7 @@ const OFFLINE_TEMPLATES = {
     {
       backgroundTheme: 'overthinking_night',
       slides: [
-        "When the bed feels too cold.",
-        "You don't just miss their voice; you miss the heat of their breath, the quiet intimacy of late-night secrets, the way they held you when you were asleep.",
-        "Sometimes, coldness is a shield, not a lack of care. People act cold because sitting with the warmth of what they lost hurts too much.",
-        "Stop looking for closure in the person who broke you. Let them be cold. Focus on your own warmth, your healing, and your growth.",
-        "Save this if you are healing. ✦\nFollow for emotional strength."
+        "When the bed feels too cold. You don't just miss their voice; you miss the heat of their breath, the quiet intimacy of late-night secrets, and the way they held you when you were asleep."
       ],
       caption: "Closure doesn't come from them; it comes from you. Forgive the silence, accept the coldness, and heal. Your worth is not defined by their inability to see it.\n\nSave this if you are healing. ✦\n\n#heartbreak #breakup #healingjourney #coldshoulder #movingon #selfworth #closure #emotionalgrowth #selflove"
     }
@@ -132,7 +112,7 @@ You are a master copywriter and viral growth strategist for an Instagram page na
 Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, physical intimacy, and unspoken thoughts that keep them awake at night.
 The goal of this content is to act as an immediate trigger point—making readers feel a wave of attraction, romantic tension, or intense relatability that commands an immediate follow.
 
-Generate a highly suggestive, high-tension 5-slide carousel post and caption for the category: "${category}".
+Generate a highly suggestive, high-tension single-slide post (not a multi-slide carousel) and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${examplesText}
 ${recentConstraintText}
@@ -140,11 +120,7 @@ ${recentConstraintText}
 CRITICAL CONTENT INSTRUCTIONS:
 - Writing Style: Deep, raw, highly suggestive, and emotionally charged (18+). Use short, heavy, punchy sentences. It must feel like a quiet confession, an intimate secret shared in the dark, or a raw psychological truth about physical desire, attraction, and chemistry.
 - Tone: Extremely magnetic, seductive, and provocative (within safety guidelines: strictly non-explicit and non-pornographic, but high-tension PG-13/R-rated romance). It should trigger a strong emotional and physical response (goosebumps, heart racing, intense familiarity).
-- Slide 1: Unresistable emotional hook targeting secret desire, forbidden attraction, or magnetic chemistry (e.g., "The dangerous thrill of forbidden chemistry.", "Read this if you check their profile at 2 AM.", "What happens when the tension becomes too heavy to ignore.")
-- Slide 2: High-contrast, deeply relatable scenario painting a vivid picture of physical proximity, touch, or longing.
-- Slide 3: Seductive psychological truth or realization about physical/mental chemistry.
-- Slide 4: An intense mindset realization, boundary shift, or realization of mutual obsession.
-- Slide 5: Strong converting call to action utilizing elegant symbols (❦, ❣, ❥, ✦) instead of generic emojis, instructing the user to save/share and follow @unspoken.desires.co for more.
+- Slide text: Generate exactly 1 slide content containing a powerful emotional hook and a short, highly suggestive, high-tension storytelling paragraph. Use 3-4 short, punchy sentences in total (max 45-60 words). Include one of the mature symbols (❦, ❣, ❥, ✦) as a subtle punctuation separator.
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
@@ -163,11 +139,7 @@ Response must be valid JSON matching this schema:
 {
   "backgroundTheme": "midnight_desire",
   "slides": [
-    "Slide 1 Hook text",
-    "Slide 2 Relatable Situation text",
-    "Slide 3 Deep Realization text",
-    "Slide 4 Mindset Shift / Lesson text",
-    "Slide 5 CTA text"
+    "Slide hook and story text combined here"
   ],
   "caption": "Full Instagram caption text..."
 }
@@ -179,7 +151,7 @@ Response must be valid JSON matching this schema:
   const parsedData = JSON.parse(responseText);
 
   // Validate structures
-  if (!parsedData.backgroundTheme || !Array.isArray(parsedData.slides) || parsedData.slides.length !== 5 || !parsedData.caption) {
+  if (!parsedData.backgroundTheme || !Array.isArray(parsedData.slides) || parsedData.slides.length !== 1 || !parsedData.caption) {
     throw new Error("Invalid structure returned by Gemini AI");
   }
 
@@ -220,15 +192,11 @@ function getOfflineTemplate(category) {
   if (!templates || templates.length === 0) {
     // Ultimate fallback if category name is misaligned
     return {
-      backgroundTheme: 'personal_growth',
+      backgroundTheme: 'sensual_vibes',
       slides: [
-        "One day you will understand.",
-        "You are struggling right now. Everything feels heavy, and you aren't sure if you can make it through the week.",
-        "But pain is a master teacher. The fire you are walking through isn't burning you; it is refining you.",
-        "Keep going. Discipline is doing what needs to be done even when you feel like quitting.",
-        "Save this for later ❤️\nFollow for daily strength."
+        "Focus on your own chemistry, your desires, and your growth. Your worth is not defined by someone else's inability to see it. Reclaim your power."
       ],
-      caption: "Keep moving forward. The storm will pass, and you will stand stronger.\n\nSave this for later ❤️\n\n#motivation #mindset #growth #discipline #strength"
+      caption: "Reclaim your power. Build the chemistry that matters.\n\nSave this if you relate. ❦\n\n#attraction #selfworth #chemistry #growth"
     };
   }
 
