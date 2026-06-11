@@ -8,38 +8,38 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'midnight_desire',
       slides: [
         "The unspoken rules of physical chemistry.",
-        "It's not just about touch. It's the silent glance across a room, the way their voice drops when you get close, and the tension that makes a second feel like an hour.",
+        "It's not just about touch. It's the silent glance across a room, the way their voice drops when they get close, and the sudden heat that makes your heart race.",
         "Most people mistake lust for attraction. But true desire is psychological. It starts in the mind long before it reaches the hands.",
-        "Never settle for someone who only wants your presence, but has no interest in exploring your depth. True chemistry is raw, mutual, and rare.",
-        "Save this if you feel the tension. ❤️\nFollow for more unspoken desires."
+        "Never settle for someone who only wants your presence, but has no interest in exploring your depth. True chemistry is rare and obsessive.",
+        "Save this if you feel the pull. ❦\nFollow for more unspoken desires."
       ],
-      caption: "Physical chemistry is a language spoken in silence. It's the unspoken pull that you can't ignore. True desire goes deeper than the surface. Explore the psychology of attraction.\n\nSave this if you relate. ❤️\n\n#unspokendesires #chemistry #desire #intimacy #romance #attraction #relationshipgoals #psychology"
+      caption: "Physical chemistry is a language spoken in silence. It's the unspoken pull that you can't ignore. True desire goes deeper than the surface. Explore the psychology of attraction.\n\nSave this if you relate. ❦\n\n#unspokendesires #chemistry #desire #intimacy #romance #attraction #relationshipgoals #psychology"
     }
   ],
   'Secret Thoughts & Overthinking': [
     {
       backgroundTheme: 'secret_thoughts',
       slides: [
-        "Read this if you're overthinking a text.",
-        "You check your phone every five minutes. The chat has been sitting on read for three hours. You start re-reading your last message, questioning your tone.",
-        "But the truth is, if someone wants to text you, they will. People make time for what they value. Your peace of mind shouldn't depend on their notification.",
+        "The thoughts keeping you awake at 2 AM.",
+        "You check their active status. You replay the touch, the whisper, the way their hands felt on your skin. You want to ask if they felt the same pull, but instead, you stay silent.",
+        "We hide our deepest desires because we are terrified of the power they give someone else over us.",
         "Stop dissecting silence. Silence is an answer, too. Reclaim your self-respect and put the phone down. Let them match your energy or let them go.",
-        "Save this to protect your peace. ❤️\nFollow for relationship sanity."
+        "Save this for quiet nights. ❣\nFollow for relationship secrets."
       ],
-      caption: "Overthinking is the art of creating problems that don't exist. If they wanted to, they would. Protect your peace of mind and stop dissecting silence.\n\nSave this for difficult nights. ❤️\n\n#overthinking #modernrelationship #texting #datingstruggles #datingadvice #selfworth #mentalpeace #datingrules"
+      caption: "Overthinking is the art of creating problems that don't exist. If they wanted to, they would. Protect your peace of mind and stop dissecting silence.\n\nSave this for difficult nights. ❣\n\n#overthinking #modernrelationship #texting #datingstruggles #datingadvice #selfworth #mentalpeace #datingrules"
     }
   ],
   'Situationships & Forbidden Love': [
     {
       backgroundTheme: 'shadowy_lounge',
       slides: [
-        "The painful truth about situationships.",
-        "You act like partners but have no labels. You share your deepest secrets, your body, and your weekends, but they 'aren't ready for a relationship'.",
-        "You tolerate the uncertainty because you're terrified of losing them. But you are slowly breaking your own heart by accepting half-hearted love.",
+        "The dangerous thrill of forbidden chemistry.",
+        "You act like partners when you're alone. The touch is addictive, but the silence between encounters is deafening. You know it's a mistake, but you can't walk away.",
+        "You tolerate the uncertainty because you're terrified of losing them. But you are slowly breaking your own heart by accepting physical connection in place of emotional safety.",
         "You cannot love someone into being ready. Choosing to walk away from a situationship isn't giving up; it's choosing self-respect over crumbs.",
-        "Share this with someone who needs it.\nFollow for relationship growth."
+        "Share this with someone who needs it. ❥\nFollow for relationship growth."
       ],
-      caption: "A situationship is just a relationship where one person gets all the benefits while the other gets all the anxiety. Set boundaries and walk away when it stings.\n\nShare this with someone who needs to see this.\n\n#situationship #heartbreak #datingproblems #modernlove #selflove #relationshiprules #relationshippsychology #healing"
+      caption: "A situationship is just a relationship where one person gets all the benefits while the other gets all the anxiety. Set boundaries and walk away when it stings.\n\nShare this with someone who needs to see this. ❥\n\n#situationship #heartbreak #datingproblems #modernlove #selflove #relationshiprules #relationshippsychology #healing"
     }
   ],
   'Romantic Tension & Chemistry': [
@@ -47,25 +47,25 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'candlelight_secrets',
       slides: [
         "The magnetics of unspoken tension.",
-        "Sitting opposite each other in a crowded room. You aren't touching, but the space between you is charged. Every laugh feels loaded.",
-        "You both know it, but neither of you will say it. That silent, high-contrast pull is the most addictive part of modern dating.",
+        "Accidental brushes of skin. Eye contact across a crowded room that lasts a second too long. You both know it, but neither will say it.",
+        "Chemistry is the absolute certainty that if you get any closer, you won't be able to stop. That silent, high-contrast pull is the most addictive part of modern dating.",
         "Enjoy the tension, but don't play games forever. Raw chemistry is a spark, but emotional safety is what keeps the fire burning.",
-        "Save this for late nights. ❤️\nFollow for dating chemistry."
+        "Save this for late nights. ❥\nFollow for dating chemistry."
       ],
-      caption: "Unspoken tension is the ultimate prelude. It's the spark before the fire. Appreciate the chemistry, but build the connection.\n\nSave this for late nights. ❤️\n\n#romantictension #attractioncode #chemistry #datingadvice #secretcrush #lovequotes #sensualvibes #datingcoach"
+      caption: "Unspoken tension is the ultimate prelude. It's the spark before the fire. Appreciate the chemistry, but build the connection.\n\nSave this for late nights. ❥\n\n#romantictension #attractioncode #chemistry #datingadvice #secretcrush #lovequotes #sensualvibes #datingcoach"
     }
   ],
   'Intimate Heartbreak & Healing': [
     {
       backgroundTheme: 'overthinking_night',
       slides: [
-        "They act cold, but they still care.",
-        "They walked away. They blocked your number, deleted the photos, and act like you never existed. It feels like the ultimate betrayal.",
-        "But sometimes, coldness is a shield, not a lack of care. People act cold because sitting with the warmth of what they lost hurts too much.",
+        "When the bed feels too cold.",
+        "You don't just miss their voice; you miss the heat of their breath, the quiet intimacy of late-night secrets, the way they held you when you were asleep.",
+        "Sometimes, coldness is a shield, not a lack of care. People act cold because sitting with the warmth of what they lost hurts too much.",
         "Stop looking for closure in the person who broke you. Let them be cold. Focus on your own warmth, your healing, and your growth.",
-        "Save this if you are healing. ❤️\nFollow for emotional strength."
+        "Save this if you are healing. ✦\nFollow for emotional strength."
       ],
-      caption: "Closure doesn't come from them; it comes from you. Forgive the silence, accept the coldness, and heal. Your worth is not defined by their inability to see it.\n\nSave this if you are healing. ❤️\n\n#heartbreak #breakup #healingjourney #coldshoulder #movingon #selfworth #closure #emotionalgrowth #selflove"
+      caption: "Closure doesn't come from them; it comes from you. Forgive the silence, accept the coldness, and heal. Your worth is not defined by their inability to see it.\n\nSave this if you are healing. ✦\n\n#heartbreak #breakup #healingjourney #coldshoulder #movingon #selfworth #closure #emotionalgrowth #selflove"
     }
   ]
 };
@@ -128,22 +128,23 @@ async function generateAIPost(category, topicQuery, apiKey) {
   const recentConstraintText = await getRecentConstraintText();
 
   const prompt = `
-You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature, 18+ relationship psychology and emotional storytelling.
-Your target audience consists of adults aged 20-35 who are dealing with modern dating, situationships, romantic chemistry, intimacy, desire, heartbreak, overthinking, and unspoken emotional struggles.
+You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature, 18+ relationship psychology, intense seduction, and physical/mental chemistry.
+Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, physical intimacy, and unspoken thoughts that keep them awake at night.
+The goal of this content is to act as an immediate trigger point—making readers feel a wave of attraction, romantic tension, or intense relatability that commands an immediate follow.
 
-Generate a highly engaging, emotionally resonant 5-slide carousel post and caption for the category: "${category}".
+Generate a highly suggestive, high-tension 5-slide carousel post and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${examplesText}
 ${recentConstraintText}
 
 CRITICAL CONTENT INSTRUCTIONS:
-- Writing Style: Deep, raw, authentic, slightly magnetic, and emotionally mature (18+). Use short punchy sentences. It must feel like an intimate secret, a private confession, or a raw psychological realization about desire and relationships.
-- Focus: Must address 18+ relationship themes (romantic/physical chemistry, adult dating dynamics, situationships, physical intimacy, secret thoughts, desire, overthinking, and heartbreak).
-- Slide 1: Powerful emotional hook (e.g. "The unspoken truth about physical chemistry...", "Read this if you're overthinking their text...", "You are breaking your own heart in that situationship.")
-- Slide 2: Painfully relatable adult scenario setting up the romantic or emotional tension.
-- Slide 3: Deep emotional realization or raw psychological truth.
-- Slide 4: Mindset shift, mature boundary setting, or intimate advice.
-- Slide 5: Strong call to action (CTAs like "Save this for late nights ❤️", "Share this with someone who needs it", "Tag a friend who is figuring it out."). Include a small line to follow the page.
+- Writing Style: Deep, raw, highly suggestive, and emotionally charged (18+). Use short, heavy, punchy sentences. It must feel like a quiet confession, an intimate secret shared in the dark, or a raw psychological truth about physical desire, attraction, and chemistry.
+- Tone: Extremely magnetic, seductive, and provocative (within safety guidelines: strictly non-explicit and non-pornographic, but high-tension PG-13/R-rated romance). It should trigger a strong emotional and physical response (goosebumps, heart racing, intense familiarity).
+- Slide 1: Unresistable emotional hook targeting secret desire, forbidden attraction, or magnetic chemistry (e.g., "The dangerous thrill of forbidden chemistry.", "Read this if you check their profile at 2 AM.", "What happens when the tension becomes too heavy to ignore.")
+- Slide 2: High-contrast, deeply relatable scenario painting a vivid picture of physical proximity, touch, or longing.
+- Slide 3: Seductive psychological truth or realization about physical/mental chemistry.
+- Slide 4: An intense mindset realization, boundary shift, or realization of mutual obsession.
+- Slide 5: Strong converting call to action utilizing elegant symbols (❦, ❣, ❥, ✦) instead of generic emojis, instructing the user to save/share and follow @unspoken.desires.co for more.
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
@@ -253,17 +254,18 @@ async function generateAIReel(category, topicQuery, apiKey) {
   const recentConstraintText = await getRecentConstraintText();
 
   const prompt = `
-You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature, 18+ relationship psychology and emotional storytelling.
-Your target audience consists of adults aged 20-35 who are dealing with modern dating, situationships, romantic chemistry, intimacy, desire, heartbreak, overthinking, and unspoken emotional struggles.
+You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature, 18+ relationship psychology, intense seduction, and physical/mental chemistry.
+Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, physical intimacy, and unspoken thoughts that keep them awake at night.
+The goal of this content is to act as an immediate trigger point—making readers feel a wave of attraction, romantic tension, or intense relatability that commands an immediate follow.
 
-Generate a highly engaging, emotionally resonant vertical Instagram Reel script and caption for the category: "${category}".
+Generate a highly suggestive, high-tension vertical Instagram Reel script and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${recentConstraintText}
 
 CRITICAL CONTENT INSTRUCTIONS:
-- Writing Style: Deep, raw, authentic, speaking DIRECTLY to the viewer watching the screen (using "You" and "Your"). Start with an immediate attention-grabbing hook in the first 2 seconds (e.g. "Stop scrolling. Listen.", "You are lying to yourself.", "Read this if you want to quit."). It must build a strong emotional, high-tension impact that registers in their minds and commands attention. Keep sentences extremely short, crisp, and heavy. Avoid formal AI transitions, greetings, or robotic filler. It must feel like an intimate secret or a private confession about desire, dating, and physical/emotional connection.
+- Writing Style: Deep, raw, highly suggestive, speaking DIRECTLY to the viewer watching the screen (using "You" and "Your"). Start with an immediate attention-grabbing hook in the first 2 seconds. It must build a strong emotional, highly seductive impact that registers in their minds and commands attention. Keep sentences extremely short, crisp, and heavy. Avoid formal AI transitions, greetings, or robotic filler. It must feel like an intimate secret or a private confession.
 - Focus: Must address 18+ relationship themes (romantic/physical chemistry, adult dating dynamics, situationships, physical intimacy, secret thoughts, desire, overthinking, and heartbreak).
-- titleText: A short, high-impact quote or statement to display on the video slide (max 15-20 words, uppercase, punchy, e.g. "THE UNSPOKEN TRUTH ABOUT PHYSICAL CHEMISTRY.").
+- titleText: A short, high-impact quote or statement to display on the video slide (max 15-20 words, uppercase, punchy, e.g. "THE DANGEROUS THRILL OF FORBIDDEN CHEMISTRY.").
 - audioScript: The text narration for the voiceover. It must be emotionally deep, spoken naturally by the narrator, and run for about 15-30 seconds (around 45-75 words). It must sound like a real person sharing a raw, direct truth to the viewer (no greetings like "Hey everyone!", no formal AI buzzwords, no robotic sign-offs). Write simple, punchy, emotional sentences with natural breathing pauses. Do not include markdown, stage directions, or audio cues.
 - backgroundTheme: Select a background visual theme from this list that best fits the mood: 'midnight_desire', 'rainy_bed', 'shadowy_lounge', 'candlelight_secrets', 'intimate_touch', 'overthinking_night', 'secret_thoughts', 'sensual_vibes'.
 - caption: Generate a caption that starts with a hook, has an emotional insight, and ends with call-to-actions and a rich set of 8-10 high-performing hashtags.

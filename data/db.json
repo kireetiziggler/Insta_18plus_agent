@@ -223,6 +223,66 @@
   ],
   "logs": [
     {
+      "timestamp": "2026-06-11T15:10:52.482Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-11T15:10:52.215Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 5 slides for post \"sample_post_1781190646357\""
+    },
+    {
+      "timestamp": "2026-06-11T15:10:51.568Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 5/5..."
+    },
+    {
+      "timestamp": "2026-06-11T15:10:50.816Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 4/5..."
+    },
+    {
+      "timestamp": "2026-06-11T15:10:50.069Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 3/5..."
+    },
+    {
+      "timestamp": "2026-06-11T15:10:49.308Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 2/5..."
+    },
+    {
+      "timestamp": "2026-06-11T15:10:47.252Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/5..."
+    },
+    {
+      "timestamp": "2026-06-11T15:10:46.374Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-11T15:10:46.373Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"obsidian_black\" (Day of week: 4)"
+    },
+    {
+      "timestamp": "2026-06-11T15:10:46.371Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_1781190646357\""
+    },
+    {
+      "timestamp": "2026-06-11T15:10:46.369Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-11T15:10:46.363Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Secret Thoughts & Overthinking\"..."
+    },
+    {
       "timestamp": "2026-06-10T17:54:23.022Z",
       "type": "PUBLISHER",
       "message": "Reel \"reel_1781114020393\" published successfully (Simulated)"

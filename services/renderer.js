@@ -121,6 +121,8 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
   const bgFileName = THEME_IMAGES[themeName] || 'sensual_vibes';
   const bgFullPath = path.join(__dirname, '..', 'data', 'backgrounds', `${bgFileName}.png`);
   const bgFileUri = 'file:///' + bgFullPath.replace(/\\/g, '/');
+  const logoFullPath = path.join(__dirname, '..', 'data', 'logo.png');
+  const logoFileUri = 'file:///' + logoFullPath.replace(/\\/g, '/');
   const formattedText = parseFormatting(slideText);
   const isCtaSlide = slideIndex === 4;
 
@@ -392,19 +394,10 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
     }
     
     .brand-logo-watermark {
-      font-family: 'Outfit', sans-serif;
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 3px;
-      color: ${theme.accentColor || '#fbbf24'};
-      border: 1.5px solid ${theme.accentColor || '#fbbf24'};
-      padding: 5px 12px;
-      border-radius: 4px;
-      text-transform: uppercase;
-      background: rgba(8, 8, 10, 0.75);
-      backdrop-filter: blur(4px);
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-      white-space: nowrap;
+      height: 60px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
     }
     
     ${theme.customCSS || ''}
@@ -471,7 +464,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
           <span>|</span>
           <span>Secrets</span>
         </div>
-        <div class="brand-logo-watermark">UNSPOKEN DESIRES</div>
+        <img class="brand-logo-watermark" src="${logoFileUri}" alt="Logo" />
       </div>
     </div>
   </div>
@@ -549,6 +542,8 @@ export async function renderPostSlides(postId, slides, themeName, categoryName) 
 }
 
 function generateReelHTML(titleText, themeName, handle, categoryName, theme) {
+  const logoFullPath = path.join(__dirname, '..', 'data', 'logo.png');
+  const logoFileUri = 'file:///' + logoFullPath.replace(/\\/g, '/');
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -620,8 +615,7 @@ function generateReelHTML(titleText, themeName, handle, categoryName, theme) {
 <body>
   <div id="slide-container">
     <div class="watermark-logo">
-      <div class="brand-title">UNSPOKEN DESIRES</div>
-      <div class="brand-sub">Intimacy. Desire. Chemistry.</div>
+      <img src="${logoFileUri}" alt="Logo" style="height: 120px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));" />
     </div>
   </div>
 </body>
@@ -705,6 +699,8 @@ export async function renderReelCTA(postId) {
     // Ignore and fallback to today
   }
   const theme = STYLE_THEMES[dayOfWeek] || STYLE_THEMES[3];
+  const logoFullPath = path.join(__dirname, '..', 'data', 'logo.png');
+  const logoFileUri = 'file:///' + logoFullPath.replace(/\\/g, '/');
 
   const htmlContent = `
 <!DOCTYPE html>
@@ -789,12 +785,11 @@ export async function renderReelCTA(postId) {
 </head>
 <body>
     <div id="cta-container">
-      <div class="logo-box">
-        <span class="brand-title">UNSPOKEN DESIRES</span>
-        <span class="brand-sub">Intimacy. Desire. Chemistry.</span>
+      <div class="logo-box" style="margin-bottom: 20px;">
+        <img src="${logoFileUri}" alt="Logo" style="height: 250px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));" />
       </div>
-      <div class="follow-text">Follow for unspoken desires</div>
-      <div class="handle-badge">${cleanHandle}</div>
+      <div class="follow-text" style="margin-top: 30px;">Follow for unspoken desires</div>
+      <div class="handle-badge" style="margin-top: 20px;">${cleanHandle}</div>
     </div>
 </body>
 </html>
