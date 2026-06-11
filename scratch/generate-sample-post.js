@@ -12,8 +12,8 @@ async function run() {
   console.log('Generating sample post for "Unspoken Desires"...');
   
   const postId = 'sample_post_' + Date.now();
-  const category = 'Secret Thoughts & Overthinking';
-  const topic = 'overthinking a text at 2am';
+  const category = 'Desire & Physical Intimacy';
+  const topic = 'physical chemistry';
   
   // 1. Generate post content
   const content = await generator.generatePostContent(category, topic);
