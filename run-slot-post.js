@@ -17,9 +17,9 @@ function getCategoryByLocalHour() {
     return 'Desire & Physical Intimacy'; // 09:00 AM Slot
   } else if (hour >= 12 && hour <= 16) {
     return 'Secret Thoughts & Overthinking'; // 02:00 PM Slot
-  } else if (hour >= 18 && hour <= 20) {
-    return 'Situationships & Forbidden Love'; // 07:00 PM Slot
-  } else if (hour >= 21 && hour <= 23) {
+  } else if (hour >= 18 && hour <= 21) {
+    return 'Situationships & Forbidden Love'; // 09:00 PM Slot
+  } else if (hour >= 22 && hour <= 23) {
     return 'Romantic Tension & Chemistry'; // 10:00 PM Slot
   } else {
     return 'Intimate Heartbreak & Healing'; // 12:00 AM Slot

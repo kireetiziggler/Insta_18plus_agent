@@ -9,8 +9,8 @@ on:
     - cron: '30 8 * * *'
     # 11:30 UTC = 05:00 PM IST (Reel Slot)
     - cron: '30 11 * * *'
-    # 14:30 UTC = 08:00 PM IST (Slot 3: Situationships & Forbidden Love)
-    - cron: '30 14 * * *'
+    # 15:30 UTC = 09:00 PM IST (Slot 3: Situationships & Forbidden Love)
+    - cron: '30 15 * * *'
     # 16:30 UTC = 10:00 PM IST (Slot 4: Romantic Tension & Chemistry)
     - cron: '30 16 * * *'
     # 18:30 UTC = 12:00 AM IST (Slot 5: Intimate Heartbreak & Healing)
@@ -51,7 +51,7 @@ jobs:
           PAGE_HANDLE: '@unspoken.desires.co'
           ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
           ELEVENLABS_VOICE_ID: 'alternate'
-          IS_SIMULATION_MODE: 'true'
+          IS_SIMULATION_MODE: 'false'
           TRIGGER_TYPE: ${{ github.event.inputs.trigger_type || 'auto' }}
         run: node run-slot-post.js
 

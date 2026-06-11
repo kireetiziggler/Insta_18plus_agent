@@ -12,14 +12,14 @@ const DEFAULT_DB = {
     geminiApiKey: '',
     instagramBusinessId: '',
     facebookPageToken: '',
-    isSimulationMode: true,
+    isSimulationMode: false,
     pageHandle: '@unspoken.desires.co',
     elevenLabsApiKey: '',
     elevenLabsVoiceId: 'alternate',
     postingSchedule: {
       post1: '09:00',
       post2: '14:00',
-      post3: '20:00',
+      post3: '21:00',
       post4: '22:00',
       post5: '00:00',
       reel1: '17:00'
