@@ -7,45 +7,45 @@ const OFFLINE_TEMPLATES = {
     {
       backgroundTheme: 'midnight_desire',
       slides: [
-        "The unspoken rules of physical chemistry. It's not just about touch. It's the silent glance across a room, the way their voice drops when they get close, and the sudden heat that makes your heart race."
+        "We both know how this ends. The slow, deliberate drag of my hand sliding down your back, pulling you in until there is no space left between us. Your breath hitches, and in that second, we both stop pretending we're just friends. ❦"
       ],
-      caption: "Physical chemistry is a language spoken in silence. It's the unspoken pull that you can't ignore. True desire goes deeper than the surface. Explore the psychology of attraction.\n\nSave this if you relate. ❦\n\n#unspokendesires #chemistry #desire #intimacy #romance #attraction #relationshipgoals #psychology"
+      caption: "The exact moment friendship burns into something undeniable. True desire is a physical pull you cannot ignore. Replay the touch, feel the heat.\n\nSave this for late night chemistry. ❦\n\n#unspokendesires #chemistry #desire #intimacy #romance #attraction #tension #forbiddenlove"
     }
   ],
   'Secret Thoughts & Overthinking': [
     {
       backgroundTheme: 'secret_thoughts',
       slides: [
-        "The thoughts keeping you awake at 2 AM. You replay the touch, the whisper, the way their hands felt on your skin. You want to ask if they felt the same pull, but instead, you stay silent."
+        "You're overthinking it, but you still want it. The memory of my fingers tracing your collarbone, the sudden heat of my breath against your neck, and the way you arched into my touch. You can try to forget it, but your body remembers. ❣"
       ],
-      caption: "Overthinking is the art of creating problems that don't exist. If they wanted to, they would. Protect your peace of mind and stop dissecting silence.\n\nSave this for difficult nights. ❣\n\n#overthinking #modernrelationship #texting #datingstruggles #datingadvice #selfworth #mentalpeace #datingrules"
+      caption: "Your mind can try to rationalize it, but your body never lies. Overthinking at 2 AM won't change the way your heart raced when we were close.\n\nSave this for difficult nights. ❣\n\n#overthinking #modernrelationship #secretthoughts #datingstruggles #desire #intimate #chemistry #romance"
     }
   ],
   'Situationships & Forbidden Love': [
     {
       backgroundTheme: 'shadowy_lounge',
       slides: [
-        "The dangerous thrill of forbidden chemistry. You act like partners when you're alone. The touch is addictive, but the silence between encounters is deafening. You know it's a mistake, but you can't walk away."
+        "The danger of 'just talking.' We lock the door, and suddenly the rules don't exist. My hands find your waist, your back meets the wall, and every promise of 'just friends' is whispered away against my lips. We're playing with fire, and we both want to burn. ❥"
       ],
-      caption: "A situationship is just a relationship where one person gets all the benefits while the other gets all the anxiety. Set boundaries and walk away when it stings.\n\nShare this with someone who needs to see this. ❥\n\n#situationship #heartbreak #datingproblems #modernlove #selflove #relationshiprules #relationshippsychology #healing"
+      caption: "Forbidden tension always tastes the sweetest. A situationship is a dangerous game, but the physical connection is addictive. Who are you playing with?\n\nShare this with someone who needs to see this. ❥\n\n#forbiddenlove #situationship #chemistry #attraction #seductive #tension #secretlovers #heartbreak"
     }
   ],
   'Romantic Tension & Chemistry': [
     {
       backgroundTheme: 'candlelight_secrets',
       slides: [
-        "The magnetics of unspoken tension. Accidental brushes of skin. Eye contact across a crowded room that lasts a second too long. Chemistry is the absolute certainty that if you get any closer, you won't be able to stop."
+        "It's the way you look at my mouth when I speak. The deliberate, slow brush of my skin against yours when we pass a glass. The absolute certainty that if we are left in this room alone for one more minute, we won't be able to keep our hands off each other. ❥"
       ],
-      caption: "Unspoken tension is the ultimate prelude. It's the spark before the fire. Appreciate the chemistry, but build the connection.\n\nSave this for late nights. ❥\n\n#romantictension #attractioncode #chemistry #datingadvice #secretcrush #lovequotes #sensualvibes #datingcoach"
+      caption: "Chemistry isn't silent—it's deafening. It's the silent prelude to something unforgettable. Have you felt that spark recently?\n\nSave this for late nights. ❥\n\n#romantictension #attractioncode #chemistry #datingadvice #secretcrush #lovequotes #sensualvibes #datingcoach"
     }
   ],
   'Intimate Heartbreak & Healing': [
     {
       backgroundTheme: 'overthinking_night',
       slides: [
-        "When the bed feels too cold. You don't just miss their voice; you miss the heat of their breath, the quiet intimacy of late-night secrets, and the way they held you when you were asleep."
+        "The phantom touch. You're trying to sleep, but you still feel my hands slowly tracing the curve of your hips, drawing you tight against my chest. You miss the warmth, the heavy breathing in the dark, and the sweet torture of our touch. ✦"
       ],
-      caption: "Closure doesn't come from them; it comes from you. Forgive the silence, accept the coldness, and heal. Your worth is not defined by their inability to see it.\n\nSave this if you are healing. ✦\n\n#heartbreak #breakup #healingjourney #coldshoulder #movingon #selfworth #closure #emotionalgrowth #selflove"
+      caption: "Some connections leave a permanent mark on your skin. Even as you heal, the memory of late-night intimacy remains hot. Forgive yourself for remembering.\n\nSave this if you are healing. ✦\n\n#heartbreak #longing #healingjourney #sensualmemories #missingyou #intimacy #desire #closure"
     }
   ]
 };

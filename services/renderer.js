@@ -117,12 +117,9 @@ function parseFormatting(text) {
 }
 
 // Generate the HTML content string for a slide matching the user's premium reference image
-function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryName, theme) {
-  const bgFileName = THEME_IMAGES[themeName] || 'sensual_vibes';
-  const bgFullPath = path.join(__dirname, '..', 'data', 'backgrounds', `${bgFileName}.png`);
-  const bgFileUri = 'file:///' + bgFullPath.replace(/\\/g, '/');
-  const logoFullPath = path.join(__dirname, '..', 'data', 'logo.png');
-  const logoFileUri = 'file:///' + logoFullPath.replace(/\\/g, '/');
+function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryName, theme, logoBase64, bgBase64) {
+  const bgDataUrl = `data:image/png;base64,${bgBase64}`;
+  const logoDataUrl = `data:image/png;base64,${logoBase64}`;
   const formattedText = parseFormatting(slideText);
 
 
@@ -170,7 +167,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       left: 0;
       width: 1080px;
       height: 1350px;
-      background-image: url('${bgFileUri}');
+      background-image: url('${bgDataUrl}');
       background-size: cover;
       background-position: center;
       filter: ${theme.bgFilter || 'brightness(0.35)'} contrast(1.05) saturate(0.9);
@@ -440,7 +437,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
           <span>|</span>
           <span>Secrets</span>
         </div>
-        <img class="brand-logo-watermark" src="${logoFileUri}" alt="Logo" />
+        <img class="brand-logo-watermark" src="${logoDataUrl}" alt="Logo" />
       </div>
     </div>
   </div>
@@ -472,6 +469,25 @@ export async function renderPostSlides(postId, slides, themeName, categoryName) 
   const theme = STYLE_THEMES[dayOfWeek] || STYLE_THEMES[3];
   await db.log('SYSTEM', `Applying daily visual theme: "${theme.name}" (Day of week: ${dayOfWeek})`);
 
+  // Load logo as base64
+  const logoPath = path.join(__dirname, '..', 'data', 'logo.png');
+  let logoBase64 = '';
+  try {
+    logoBase64 = await fs.readFile(logoPath, 'base64');
+  } catch (err) {
+    await db.log('ERROR', `Failed to load logo image: ${err.message}`);
+  }
+
+  // Load background as base64
+  const bgFileName = THEME_IMAGES[themeName] || 'sensual_vibes';
+  const bgFullPath = path.join(__dirname, '..', 'data', 'backgrounds', `${bgFileName}.png`);
+  let bgBase64 = '';
+  try {
+    bgBase64 = await fs.readFile(bgFullPath, 'base64');
+  } catch (err) {
+    await db.log('ERROR', `Failed to load background image: ${err.message}`);
+  }
+
   let browser = null;
   try {
     await db.log('SYSTEM', `Launching Puppeteer browser instance...`);
@@ -489,7 +505,7 @@ export async function renderPostSlides(postId, slides, themeName, categoryName) 
 
     for (let idx = 0; idx < slides.length; idx++) {
       const slideText = slides[idx];
-      const htmlContent = generateSlideHTML(slideText, idx, themeName, handle, categoryName, theme);
+      const htmlContent = generateSlideHTML(slideText, idx, themeName, handle, categoryName, theme, logoBase64, bgBase64);
       
       await db.log('SYSTEM', `Rendering slide ${idx + 1}/${slides.length}...`);
       await page.setContent(htmlContent, { waitUntil: 'load' });
@@ -517,9 +533,8 @@ export async function renderPostSlides(postId, slides, themeName, categoryName) 
   }
 }
 
-function generateReelHTML(titleText, themeName, handle, categoryName, theme) {
-  const logoFullPath = path.join(__dirname, '..', 'data', 'logo.png');
-  const logoFileUri = 'file:///' + logoFullPath.replace(/\\/g, '/');
+function generateReelHTML(titleText, themeName, handle, categoryName, theme, logoBase64) {
+  const logoDataUrl = `data:image/png;base64,${logoBase64}`;
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -591,7 +606,7 @@ function generateReelHTML(titleText, themeName, handle, categoryName, theme) {
 <body>
   <div id="slide-container">
     <div class="watermark-logo">
-      <img src="${logoFileUri}" alt="Logo" style="height: 120px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));" />
+      <img src="${logoDataUrl}" alt="Logo" style="height: 120px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));" />
     </div>
   </div>
 </body>
@@ -619,6 +634,15 @@ export async function renderReelSlide(postId, titleText, themeName, categoryName
   }
   const theme = STYLE_THEMES[dayOfWeek] || STYLE_THEMES[3];
 
+  // Load logo as base64
+  const logoPath = path.join(__dirname, '..', 'data', 'logo.png');
+  let logoBase64 = '';
+  try {
+    logoBase64 = await fs.readFile(logoPath, 'base64');
+  } catch (err) {
+    await db.log('ERROR', `Failed to load logo image: ${err.message}`);
+  }
+
   let browser = null;
   try {
     await db.log('SYSTEM', `Launching Puppeteer browser instance for Reel...`);
@@ -632,7 +656,7 @@ export async function renderReelSlide(postId, titleText, themeName, categoryName
     const page = await browser.newPage();
     await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 }); // Scale factor 1 to match video resolution
 
-    const htmlContent = generateReelHTML(titleText, themeName, handle, categoryName, theme);
+    const htmlContent = generateReelHTML(titleText, themeName, handle, categoryName, theme, logoBase64);
     
     await db.log('SYSTEM', `Rendering Reel slide graphic...`);
     await page.setContent(htmlContent, { waitUntil: 'load' });
@@ -675,8 +699,14 @@ export async function renderReelCTA(postId) {
     // Ignore and fallback to today
   }
   const theme = STYLE_THEMES[dayOfWeek] || STYLE_THEMES[3];
-  const logoFullPath = path.join(__dirname, '..', 'data', 'logo.png');
-  const logoFileUri = 'file:///' + logoFullPath.replace(/\\/g, '/');
+  const logoPath = path.join(__dirname, '..', 'data', 'logo.png');
+  let logoBase64 = '';
+  try {
+    logoBase64 = await fs.readFile(logoPath, 'base64');
+  } catch (err) {
+    // Ignore
+  }
+  const logoDataUrl = `data:image/png;base64,${logoBase64}`;
 
   const htmlContent = `
 <!DOCTYPE html>
@@ -762,7 +792,7 @@ export async function renderReelCTA(postId) {
 <body>
     <div id="cta-container">
       <div class="logo-box" style="margin-bottom: 20px;">
-        <img src="${logoFileUri}" alt="Logo" style="height: 250px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));" />
+        <img src="${logoDataUrl}" alt="Logo" style="height: 250px; width: auto; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.6));" />
       </div>
       <div class="follow-text" style="margin-top: 30px;">Follow for unspoken desires</div>
       <div class="handle-badge" style="margin-top: 20px;">${cleanHandle}</div>
