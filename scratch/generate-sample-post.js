@@ -12,8 +12,19 @@ async function run() {
   console.log('Generating sample post for "Unspoken Desires"...');
   
   const postId = 'sample_post_' + Date.now();
-  const category = 'Desire & Physical Intimacy';
-  const topic = 'physical chemistry';
+  const category = 'Secret Thoughts & Overthinking';
+  
+  const trends = await db.getTrends();
+  const matchingTrend = trends.find(t => t.category === category && !t.used);
+  let topic = 'overthinking a text at 2am';
+  if (matchingTrend) {
+    topic = matchingTrend.suggestedTopic;
+    matchingTrend.used = true;
+    await db.saveTrends(trends);
+    console.log(`Using crawled trend topic: "${topic}"`);
+  } else {
+    console.log(`Using fallback topic: "${topic}"`);
+  }
   
   // 1. Generate post content
   const content = await generator.generatePostContent(category, topic);
