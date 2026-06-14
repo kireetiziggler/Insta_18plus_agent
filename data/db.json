@@ -225,6 +225,106 @@
   ],
   "logs": [
     {
+      "timestamp": "2026-06-14T14:23:11.014Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T14:23:10.606Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_evening_secrets\""
+    },
+    {
+      "timestamp": "2026-06-14T14:23:05.859Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T14:23:05.401Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T14:23:05.398Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_evening_secrets\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T14:23:04.232Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/8036686/pexels-photo-8036686.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:23:03.902Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 12: https://images.pexels.com/photos/8036686/pexels-photo-8036686.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:22:59.451Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom\"..."
+    },
+    {
+      "timestamp": "2026-06-14T14:22:59.448Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T14:22:59.446Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_evening_secrets\""
+    },
+    {
+      "timestamp": "2026-06-14T14:22:59.443Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T14:22:59.138Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_morning_confession\""
+    },
+    {
+      "timestamp": "2026-06-14T14:22:55.892Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T14:22:55.407Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T14:22:55.403Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_morning_confession\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T14:22:54.103Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/14839368/pexels-photo-14839368.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:22:53.790Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 8: https://images.pexels.com/photos/14839368/pexels-photo-14839368.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:22:50.483Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"couples intimate candle light shadow silhouette\"..."
+    },
+    {
+      "timestamp": "2026-06-14T14:22:50.481Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T14:22:50.479Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_morning_confession\""
+    },
+    {
       "timestamp": "2026-06-14T14:17:32.989Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
