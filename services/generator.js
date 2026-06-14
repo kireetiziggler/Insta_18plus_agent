@@ -238,7 +238,7 @@ Select a background visual theme from this list that best fits the mood:
 - 'secret_thoughts' (for late-night overthinking, phone screen glow, silk bed)
 - 'sensual_vibes' (for abstract gold and crimson luxury textures)
 
-Generate a caption that starts with a hook, has an emotional insight, lists a key lesson, and ends with call-to-actions (Save, Share, Tag, Follow) and a rich set of 8-10 high-performing hashtags (mix of broad and niche).
+Generate a caption that is exactly 1 highly provocative, seductive line (max 10-15 words) followed directly by 5-6 high-reach hashtags (e.g. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage). Do not include lists, bullet points, or multiple lines.
 
 Response must be valid JSON matching this schema:
 \`\`\`json
@@ -247,7 +247,7 @@ Response must be valid JSON matching this schema:
   "slides": [
     "Slide hook and story text combined here"
   ],
-  "caption": "Full Instagram caption text..."
+  "caption": "One line caption text #intimacy #chemistry..."
 }
 \`\`\`
 `;
@@ -262,6 +262,26 @@ Response must be valid JSON matching this schema:
   }
 
   return parsedData;
+}
+
+function formatOneLineCaption(caption) {
+  if (!caption) return '';
+  // Split by newline to get the first line
+  const lines = caption.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  let firstLine = lines[0] || '';
+  
+  // Strip out any existing hashtags from the first line
+  if (firstLine.includes('#')) {
+    firstLine = firstLine.split('#')[0].trim();
+  }
+  
+  // Strip out any trailing mature symbols to keep it clean if they are duplicated
+  firstLine = firstLine.replace(/[❦❣❥✦]/g, '').trim();
+  
+  // High-reach hashtags for relationship intimacy, seduction, and tension
+  const bestReachHashtags = '#intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage';
+  
+  return `${firstLine} ${bestReachHashtags}`;
 }
 
 export async function generatePostContent(category, topicQuery = null) {
@@ -287,7 +307,9 @@ export async function generatePostContent(category, topicQuery = null) {
   // Double check page handle formatting in CTAs
   const handle = settings.pageHandle || '@auraflow.co';
   content.slides = content.slides.map(slide => slide.replace(/@page_handle|@auraflow.co/gi, handle));
-  content.caption = content.caption.replace(/@page_handle|@auraflow.co/gi, handle);
+  
+  // Enforce single line caption with best reach hashtags
+  content.caption = formatOneLineCaption(content.caption).replace(/@page_handle|@auraflow.co/gi, handle);
 
   return content;
 }
