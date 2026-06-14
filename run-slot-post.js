@@ -12,17 +12,11 @@ function getCategoryByLocalHour() {
 
   console.log(`Current local time in IST: ${date.toLocaleTimeString()} (Hour: ${hour})`);
 
-  // Map local hours to closest category slots (handles slight GitHub Actions run latency)
-  if (hour >= 7 && hour <= 11) {
-    return 'Desire & Physical Intimacy'; // 09:00 AM Slot
-  } else if (hour >= 12 && hour <= 16) {
-    return 'Secret Thoughts & Overthinking'; // 02:00 PM Slot
-  } else if (hour >= 18 && hour <= 21) {
-    return 'Situationships & Forbidden Love'; // 09:00 PM Slot
-  } else if (hour >= 22 && hour <= 23) {
-    return 'Romantic Tension & Chemistry'; // 10:00 PM Slot
+  // Map local hours to the two target categories (handles slight latency)
+  if (hour >= 5 && hour <= 12) {
+    return 'Anonymous Confessions'; // 07:00 AM Morning Slot
   } else {
-    return 'Intimate Heartbreak & Healing'; // 12:00 AM Slot
+    return 'Intimate Secrets'; // 09:00 PM Evening Slot
   }
 }
 
@@ -64,7 +58,7 @@ async function run() {
   const date = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
   const hour = date.getHours();
 
-  const isReelSlot = triggerType === 'reel' || (triggerType === 'auto' && hour === 17);
+  const isReelSlot = triggerType === 'reel';
 
   if (isReelSlot) {
     console.log(`Triggering scheduled Reel workflow (Trigger Type: ${triggerType})...`);

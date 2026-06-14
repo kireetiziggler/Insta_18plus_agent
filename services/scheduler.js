@@ -14,11 +14,40 @@ function timeToCron(timeStr) {
   return `${minutes} ${hours} * * *`;
 }
 
+// Helper to check if a post has already been successfully published today in IST timezone
+async function isSlotAlreadyPublished(category) {
+  try {
+    const posts = await db.getPosts();
+    // Get current date in IST formatted as YYYY-MM-DD
+    const todayIST = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
+    const todayStr = todayIST.toISOString().split('T')[0];
+
+    return posts.some(p => {
+      if (p.status !== 'published' || p.category !== category) return false;
+      if (!p.publishedAt) return false;
+      
+      const pubDateIST = new Date(new Date(p.publishedAt).toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
+      const pubDateStr = pubDateIST.toISOString().split('T')[0];
+      
+      return pubDateStr === todayStr;
+    });
+  } catch (e) {
+    console.error('Failed to check already published status:', e);
+    return false;
+  }
+}
+
 // Perform generation, rendering, and publishing for a single category slot
 export async function triggerScheduledPost(category) {
   await db.log('SYSTEM', `Triggering scheduled post workflow for category: "${category}"`);
   
   try {
+    // Safeguard: Check if this slot was already published today
+    if (await isSlotAlreadyPublished(category)) {
+      await db.log('SYSTEM', `Safeguard Lock triggered: A post for category "${category}" has already been published today. Skipping duplicate posting.`);
+      return;
+    }
+
     // 1. Fetch unused trends matching this category
     const trends = await db.getTrends();
     const matchingTrend = trends.find(t => t.category === category && !t.used);
@@ -126,19 +155,25 @@ export async function initScheduler() {
   activeCronJobs.forEach(job => job.stop());
   activeCronJobs = [];
 
+  // Lock scheduling inside Express web server process
+  if (process.env.ENABLE_BACKGROUND_CRON !== 'true') {
+    await db.log('SYSTEM', 'Background cron scheduler is disabled by environment setting (ENABLE_BACKGROUND_CRON !== true).');
+    return;
+  }
+
   const settings = await db.getSettings();
   const sched = settings.postingSchedule;
 
   await db.log('SYSTEM', 'Initializing cron jobs based on posting schedule settings...');
 
-  // Setup the 5 daily posting slots
+  // Setup the active posting slots
   const slots = [
-    { time: sched.post1, category: 'Desire & Physical Intimacy' },
-    { time: sched.post2, category: 'Secret Thoughts & Overthinking' },
-    { time: sched.post3, category: 'Situationships & Forbidden Love' },
-    { time: sched.post4, category: 'Romantic Tension & Chemistry' },
-    { time: sched.post5, category: 'Intimate Heartbreak & Healing' }
-  ];
+    { time: sched.post1, category: 'Anonymous Confessions' },
+    { time: sched.post2, category: 'Intimate Secrets' },
+    { time: sched.post3, category: 'disabled' },
+    { time: sched.post4, category: 'disabled' },
+    { time: sched.post5, category: 'disabled' }
+  ].filter(slot => slot.time && slot.time !== 'disabled' && slot.category !== 'disabled');
 
   slots.forEach(slot => {
     try {
@@ -156,17 +191,11 @@ export async function initScheduler() {
   });
 
   // Setup the daily Reels slot
-  if (sched.reel1) {
+  if (sched.reel1 && sched.reel1 !== 'disabled') {
     try {
       const cronExpr = timeToCron(sched.reel1);
       const job = cron.schedule(cronExpr, () => {
-        const categories = [
-          'Desire & Physical Intimacy',
-          'Secret Thoughts & Overthinking',
-          'Situationships & Forbidden Love',
-          'Romantic Tension & Chemistry',
-          'Intimate Heartbreak & Healing'
-        ];
+        const categories = ['Anonymous Confessions', 'Intimate Secrets'];
         const randomCategory = categories[Math.floor(Math.random() * categories.length)];
         triggerScheduledReel(randomCategory);
       }, {

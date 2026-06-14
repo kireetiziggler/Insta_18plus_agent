@@ -23,7 +23,7 @@ function App() {
   const [selectedPost, setSelectedPost] = useState(null);
   const [activeSlideIdx, setActiveSlideIdx] = useState(0);
   const [isCreateOpen, setIsCreateOpen] = useState(false);
-  const [createCategory, setCreateCategory] = useState('Desire & Physical Intimacy');
+  const [createCategory, setCreateCategory] = useState('Anonymous Confessions');
   const [createTopic, setCreateTopic] = useState('');
   const [createType, setCreateType] = useState('carousel');
 
@@ -241,12 +241,12 @@ function App() {
     const days = [];
     const schedule = settings.postingSchedule || {};
     const slots = [
-      { key: 'post1', name: 'Slot 1', time: schedule.post1 || '09:00', cat: 'Desire & Physical Intimacy', type: 'carousel' },
-      { key: 'post2', name: 'Slot 2', time: schedule.post2 || '14:00', cat: 'Secret Thoughts & Overthinking', type: 'carousel' },
-      { key: 'post3', name: 'Slot 3', time: schedule.post3 || '19:00', cat: 'Situationships & Forbidden Love', type: 'carousel' },
-      { key: 'post4', name: 'Slot 4', time: schedule.post4 || '22:00', cat: 'Romantic Tension & Chemistry', type: 'carousel' },
-      { key: 'post5', name: 'Slot 5', time: schedule.post5 || '00:00', cat: 'Intimate Heartbreak & Healing', type: 'carousel' },
-      { key: 'reel1', name: 'Reel Slot', time: schedule.reel1 || '17:00', cat: 'Daily Reel', type: 'reel' }
+      { key: 'post1', name: 'Morning Slot', time: schedule.post1 || '07:00', cat: 'Anonymous Confessions', type: 'carousel' },
+      { key: 'post2', name: 'Evening Slot', time: schedule.post2 || '21:00', cat: 'Intimate Secrets', type: 'carousel' },
+      ...(schedule.post3 && schedule.post3 !== 'disabled' ? [{ key: 'post3', name: 'Slot 3', time: schedule.post3, cat: 'Situationships & Forbidden Love', type: 'carousel' }] : []),
+      ...(schedule.post4 && schedule.post4 !== 'disabled' ? [{ key: 'post4', name: 'Slot 4', time: schedule.post4, cat: 'Romantic Tension & Chemistry', type: 'carousel' }] : []),
+      ...(schedule.post5 && schedule.post5 !== 'disabled' ? [{ key: 'post5', name: 'Slot 5', time: schedule.post5, cat: 'Intimate Heartbreak & Healing', type: 'carousel' }] : []),
+      ...(schedule.reel1 && schedule.reel1 !== 'disabled' ? [{ key: 'reel1', name: 'Reel Slot', time: schedule.reel1, cat: 'Daily Reel', type: 'reel' }] : [])
     ];
 
     for (let i = -3; i <= 3; i++) {
@@ -687,7 +687,7 @@ function App() {
                  <h3 style={{ fontFamily: 'Outfit', margin: '20px 0 15px 0', color: 'var(--success)' }}>Daily Publishing Times (HH:MM)</h3>
                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(6, 1fr)', gap: '16px', marginBottom: '25px' }}>
                    <div className="form-group">
-                     <label>Post 1 (Desire & Intimacy)</label>
+                     <label>Post 1 (Anonymous Confessions)</label>
                      <input 
                        type="text" 
                        value={settings.postingSchedule.post1} 
@@ -698,7 +698,7 @@ function App() {
                      />
                    </div>
                    <div className="form-group">
-                     <label>Post 2 (Secret Thoughts)</label>
+                     <label>Post 2 (Intimate Secrets)</label>
                      <input 
                        type="text" 
                        value={settings.postingSchedule.post2} 
@@ -709,7 +709,7 @@ function App() {
                      />
                    </div>
                    <div className="form-group">
-                     <label>Post 3 (Situationships)</label>
+                     <label>Post 3 (Optional - Slot 3)</label>
                      <input 
                        type="text" 
                        value={settings.postingSchedule.post3} 
@@ -720,7 +720,7 @@ function App() {
                      />
                    </div>
                    <div className="form-group">
-                     <label>Post 4 (Romantic Tension)</label>
+                     <label>Post 4 (Optional - Slot 4)</label>
                      <input 
                        type="text" 
                        value={settings.postingSchedule.post4} 
@@ -731,7 +731,7 @@ function App() {
                      />
                    </div>
                    <div className="form-group">
-                     <label>Post 5 (Heartbreak & Healing)</label>
+                     <label>Post 5 (Optional - Slot 5)</label>
                      <input 
                        type="text" 
                        value={settings.postingSchedule.post5} 
@@ -742,10 +742,10 @@ function App() {
                      />
                    </div>
                    <div className="form-group">
-                     <label>Reel 1 (Daily Reel)</label>
+                     <label>Reel 1 (Optional - Reel Slot)</label>
                      <input 
                        type="text" 
-                       value={settings.postingSchedule.reel1 || '17:00'} 
+                       value={settings.postingSchedule.reel1 || 'disabled'} 
                        onChange={(e) => setSettings({
                          ...settings,
                          postingSchedule: { ...settings.postingSchedule, reel1: e.target.value }
@@ -825,15 +825,17 @@ function App() {
                  <div className="form-group">
                    <label>Select Category Slot</label>
                    <select 
-                     value={createCategory} 
-                     onChange={e => setCreateCategory(e.target.value)}
-                   >
-                     <option value="Desire & Physical Intimacy">Desire & Physical Intimacy (Slot 1)</option>
-                     <option value="Secret Thoughts & Overthinking">Secret Thoughts & Overthinking (Slot 2)</option>
-                     <option value="Situationships & Forbidden Love">Situationships & Forbidden Love (Slot 3)</option>
-                     <option value="Romantic Tension & Chemistry">Romantic Tension & Chemistry (Slot 4)</option>
-                     <option value="Intimate Heartbreak & Healing">Intimate Heartbreak & Healing (Slot 5)</option>
-                   </select>
+                      value={createCategory} 
+                      onChange={e => setCreateCategory(e.target.value)}
+                    >
+                      <option value="Anonymous Confessions">Anonymous Confessions (Morning Slot)</option>
+                      <option value="Intimate Secrets">Intimate Secrets (Evening Slot)</option>
+                      <option value="Desire & Physical Intimacy">Desire & Physical Intimacy</option>
+                      <option value="Secret Thoughts & Overthinking">Secret Thoughts & Overthinking</option>
+                      <option value="Situationships & Forbidden Love">Situationships & Forbidden Love</option>
+                      <option value="Romantic Tension & Chemistry">Romantic Tension & Chemistry</option>
+                      <option value="Intimate Heartbreak & Healing">Intimate Heartbreak & Healing</option>
+                    </select>
                  </div>
                  <div className="form-group">
                    <label>Focus Topic / Prompt Angle (Optional)</label>

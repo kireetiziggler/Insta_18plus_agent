@@ -3,154 +3,64 @@ import db from './db.js';
 
 // Pre-written, high-quality emotional templates for fallback/simulation mode
 const OFFLINE_TEMPLATES = {
-  'Desire & Physical Intimacy': [
+  'Anonymous Confessions': [
     {
       backgroundTheme: 'midnight_desire',
       slides: [
-        "We both know how this ends. The slow, deliberate drag of my hand sliding down your back, pulling you in until there is no space left between us. Your breath hitches, and in that second, we both stop pretending we're just friends. ❦"
+        "I still remember the way he looked at me in the elevator. It wasn't a normal glance—it was like he was reading my deepest secrets. When our shoulders accidentally brushed, I had to hold my breath so he wouldn't hear my heart racing. Do you think he felt the spark too? ❦"
       ],
-      caption: "The exact moment friendship burns into something undeniable. True desire is a physical pull you cannot ignore. Replay the touch, feel the heat.\n\nSave this for late night chemistry. ❦\n\n#unspokendesires #chemistry #desire #intimacy #romance #attraction #tension #forbiddenlove"
+      caption: "Sometimes a single brush is enough to start a fire. Have you ever felt an instant connection that you couldn't explain? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
       slides: [
-        "The way you look at me when you think I'm not paying attention. The heat of your hand resting on my thigh, sending shivers straight to my core. We haven't even kissed yet, but our skin is already whispering promises we won't be able to keep. ❦"
+        "She wears this vanilla perfume that completely takes over my thoughts. Yesterday, she leaned in to show me something on her phone, and all I could focus on was the warmth of her shoulder against mine. I wanted to pull her close right then and there. Is it too early to confess? ❦"
       ],
-      caption: "An unspoken conversation between two bodies. The tension is too heavy to ignore. Tag the one who makes your skin burn.\n\nSave this for late night chemistry. ❦\n\n#intimacy #passion #attraction #chemistry #secretcrush #lovequotes #seduction"
-    },
-    {
-      backgroundTheme: 'sensual_vibes',
-      slides: [
-        "Locking eyes in the dark. The sound of your breathing getting heavier as I slide my fingers through your hair, tilting your face up to mine. No words, just the quiet rush of blood and the absolute surrender to what we both desperately want. ❦"
-      ],
-      caption: "True intimacy starts in the eyes and ends in complete surrender. You can try to fight it, but the pull is too strong.\n\nSave this if you crave this level of connection. ❦\n\n#sensualvibes #magneticconnection #surrender #intimacy #lovequotes #latenighthoughts"
-    },
-    {
-      backgroundTheme: 'midnight_desire',
-      slides: [
-        "The texture of your skin under my fingertips. The way you arch into my touch, seeking more warmth, as my lips trace the sensitive curve of your neck. It's a sweet, silent torture, and neither of us wants it to stop. ❦"
-      ],
-      caption: "A silent symphony of touch. Every shiver tells a story. We don't need labels when the connection is this raw.\n\nShare this with the one you want to trace. ❦\n\n#touch #passion #relationshipgoals #midnightdesires #chemistry #tension"
-    }
-  ],
-  'Secret Thoughts & Overthinking': [
-    {
-      backgroundTheme: 'secret_thoughts',
-      slides: [
-        "You're overthinking it, but you still want it. The memory of my fingers tracing your collarbone, the sudden heat of my breath against your neck, and the way you arched into my touch. You can try to forget it, but your body remembers. ❣"
-      ],
-      caption: "Your mind can try to rationalize it, but your body never lies. Overthinking at 2 AM won't change the way your heart raced when we were close.\n\nSave this for difficult nights. ❣\n\n#overthinking #modernrelationship #secretthoughts #datingstruggles #desire #intimate #chemistry #romance"
-    },
-    {
-      backgroundTheme: 'rainy_bed',
-      slides: [
-        "Staring at my ceiling at 3 AM, replaying the way your hands felt under my shirt. The sudden, raw intensity of how you pulled me against you. I should be sleeping, but my mind is trapped in the memory of your warmth, wanting it all over again. ❣"
-      ],
-      caption: "Some memories are too warm to let you sleep. Are you overthinking someone tonight?\n\nSave this for late nights. ❣\n\n#latenightthoughts #missingyou #secretthoughts #romantictension #bedtimerelationships #chemistry"
-    },
-    {
-      backgroundTheme: 'overthinking_night',
-      slides: [
-        "We play it cool during the day, but my mind is a dangerous place after midnight. I keep imagining your lips on my neck, your breath on my skin, and the sweet chaos of our bodies tangled together. It's a secret I'll never tell you, but one I live in every night. ❣"
-      ],
-      caption: "The thoughts we hide from the sun always find us in the dark. Who are you dreaming about tonight?\n\nSave this if you have a secret desire. ❣\n\n#hiddendesire #secrets #overthinking #midnighthoughts #romancequotes #chemistry"
+      caption: "Vanilla and dangerous tension. What is the one scent that always reminds you of them? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'secret_thoughts',
       slides: [
-        "I read your text and my mind goes straight to the gutter. Remembering the heat of your breath, the grip of your hands on my waist, and the way you whispered my name. You think it's a simple conversation, but I'm burning on the other side of the screen. ❣"
+        "We're supposed to be 'just colleagues,' but when he texts me late at night about work, we both know it's an excuse. Last night, he asked if I was still awake, and my stomach did a complete flip. We are playing a dangerous game. How do I stop before we cross the line? ❦"
       ],
-      caption: "A simple word can spark a fire when the chemistry is real. Sometimes texting is just a cover for what we really want to say.\n\nSave this if their texts make your heart race. ❣\n\n#texts #flirting #chemistry #attractioncode #moderndating #overthinking"
+      caption: "Late night texts and blurred boundaries. Are you playing a dangerous game with someone? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+    },
+    {
+      backgroundTheme: 'shadowy_lounge',
+      slides: [
+        "I catch her staring at my mouth when I speak, but the second I look back, she turns away. She thinks she's being subtle, but it's driving me crazy. One of these days, I'm not going to look away. What happens if I make the first move? ❦"
+      ],
+      caption: "The quiet look that says everything. How do you tell if someone is secretly into you? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
   ],
-  'Situationships & Forbidden Love': [
+  'Intimate Secrets': [
     {
-      backgroundTheme: 'shadowy_lounge',
+      backgroundTheme: 'secret_thoughts',
       slides: [
-        "The danger of 'just talking.' We lock the door, and suddenly the rules don't exist. My hands find your waist, your back meets the wall, and every promise of 'just friends' is whispered away against my lips. We're playing with fire, and we both want to burn. ❥"
+        "I have a secret folder on my phone with screenshots of our conversations. I read them when the nights get too quiet, replaying the way he said my name in my head. It's a silly crush, but it's the only thing keeping me warm. Am I the only one who does this? ❣"
       ],
-      caption: "Forbidden tension always tastes the sweetest. A situationship is a dangerous game, but the physical connection is addictive. Who are you playing with?\n\nShare this with someone who needs to see this. ❥\n\n#forbiddenlove #situationship #chemistry #attraction #seductive #tension #secretlovers #heartbreak"
-    },
-    {
-      backgroundTheme: 'shadowy_lounge',
-      slides: [
-        "We agreed to keep it simple, but simplicity went out the window the second your lips touched mine. The secret late-night drives, the hushed whispers in the dark, and the frantic touch that knows we shouldn't, but absolutely must. We are a beautiful mistake. ❥"
-      ],
-      caption: "When the chemistry overrides the rules. Some connections are too intense to fit into clean labels.\n\nTag the one you shouldn't want but do. ❥\n\n#situationship #secretlovers #forbiddenchemistry #attraction #tension #lovequotes #seduction"
-    },
-    {
-      backgroundTheme: 'sensual_vibes',
-      slides: [
-        "The sweet torture of loving someone you can't claim. Having you in the dark, feeling the desperate heat of your embrace, knowing that tomorrow we go back to pretending. Every kiss feels like borrowed time, which only makes us crave it more. ❥"
-      ],
-      caption: "Borrowed time makes the touch burn hotter. It's a heavy price to pay, but we pay it willingly every time.\n\nSave this if you understand the weight of forbidden love. ❥\n\n#forbiddenlove #longing #heartbreak #secretchemistry #seductivequotes #relationshipgoals"
+      caption: "Replaying the words in the dark. Do you keep screenshots of texts that make you smile? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
       slides: [
-        "We call it 'just fun,' but the way you pull me closer in your sleep tells a different story. The way your fingers linger on my skin, and how our bodies align like we belong together. We are running from labels, but our chemistry has already caught up. ❥"
+        "Every time we hug goodbye, I hold her a fraction of a second longer than a friend should. I check if she pulls away first, but she never does. We're both too scared to cross the line, so we just linger in the middle. Should I take the risk? ❣"
       ],
-      caption: "Bodies don't know how to pretend. The quiet hours of the night reveal what we try to hide during the day.\n\nShare this with the one you're 'just friends' with. ❥\n\n#justfriends #situationships #datingproblems #attraction #chemistry #passion"
-    }
-  ],
-  'Romantic Tension & Chemistry': [
-    {
-      backgroundTheme: 'candlelight_secrets',
-      slides: [
-        "It's the way you look at my mouth when I speak. The deliberate, slow brush of my skin against yours when we pass a glass. The absolute certainty that if we are left in this room alone for one more minute, we won't be able to keep our hands off each other. ❥"
-      ],
-      caption: "Chemistry isn't silent—it's deafening. It's the silent prelude to something unforgettable. Have you felt that spark recently?\n\nSave this for late nights. ❥\n\n#romantictension #attractioncode #chemistry #datingadvice #secretcrush #lovequotes #sensualvibes #datingcoach"
+      caption: "The extra second that tells the truth. Are you lingering in the friend zone or is the tension real? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'candlelight_secrets',
       slides: [
-        "The electricity of almost touching. The way my hand hovers inches from yours, the scent of your perfume filling the space between us, and the heavy, magnetic pull drawing us together. The anticipation is so thick, it's practically touch. ❥"
+        "He thinks I don't notice the way he positions himself close to me when we're in a crowd. He acts like he's just protecting me, but the heat of his body tells a completely different story. I secretly love it. How do I let him know he doesn't have to keep his distance? ❣"
       ],
-      caption: "The space between us is where the fire starts. The sweet agony of waiting makes the touch worth everything.\n\nSave this if you love the thrill of anticipation. ❥\n\n#anticipation #tension #magneticattraction #chemistry #romancequotes #flirting"
-    },
-    {
-      backgroundTheme: 'midnight_desire',
-      slides: [
-        "A crowded room, but you are the only thing I see. The slow, intense lock of our eyes that lasts just a second too long. A silent agreement that we both know exactly what we want to do when we finally get out of here. ❥"
-      ],
-      caption: "A silent contract signed across a crowded room. You can't fake this kind of tension.\n\nTag the one who holds your gaze. ❥\n\n#eyecontact #secretchemistry #tension #magnetictension #datingrules #seductive"
-    },
-    {
-      backgroundTheme: 'shadowy_lounge',
-      slides: [
-        "You think you're hiding it, but I see the way your breathing changes when I stand too close. The way your eyes drop to my lips, and how you lean into my space. The chemistry is a trap, and we're both about to fall. ❥"
-      ],
-      caption: "Your body language is louder than you think. You can say no, but your proximity says yes.\n\nSave this if you feel that undeniable pull. ❥\n\n#bodylanguage #attraction #chemistry #datingcoach #tension #romance"
-    }
-  ],
-  'Intimate Heartbreak & Healing': [
-    {
-      backgroundTheme: 'overthinking_night',
-      slides: [
-        "The phantom touch. You're trying to sleep, but you still feel my hands slowly tracing the curve of your hips, drawing you tight against my chest. You miss the warmth, the heavy breathing in the dark, and the sweet torture of our touch. ✦"
-      ],
-      caption: "Some connections leave a permanent mark on your skin. Even as you heal, the memory of late-night intimacy remains hot. Forgive yourself for remembering.\n\nSave this if you are healing. ✦\n\n#heartbreak #longing #healingjourney #sensualmemories #missingyou #intimacy #desire #closure"
+      caption: "Unspoken protection and silent chemistry. What is your favorite way someone shows they care? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'rainy_bed',
       slides: [
-        "Your side of the bed is empty, but the sheets still smell like our secrets. I miss the midnight whispers, the soft kisses on my forehead, and the absolute safety of being wrapped in your arms. Healing is hard when the phantom of your touch won't leave. ✦"
+        "She left her earring in my car last week. I kept it in my glove box instead of telling her. It's just a tiny piece of metal, but every time I see it, I smell her perfume and remember how close we sat. Is keeping it a sign of something more? ❣"
       ],
-      caption: "Sheets remember what the mind tries to forget. Sometimes, the physical absence is what hurts the most.\n\nSave this if you're sleeping in an empty bed tonight. ✦\n\n#emptybed #missingyou #heartbreak #healing #relationshipquotes #longing"
-    },
-    {
-      backgroundTheme: 'overthinking_night',
-      slides: [
-        "We said goodbye, but my body hasn't accepted it yet. I still reach out for your heat in the middle of the night, only to find cold space. The hardest part of letting go is teaching my skin to forget the way you held me. ✦"
-      ],
-      caption: "The physical memory of love lasts longer than the labels. It takes time for the body to catch up to the choice.\n\nSave this if you are letting go. ✦\n\n#lettinggo #heartbreakquotes #coldbed #healingjourney #sensualmemories"
-    },
-    {
-      backgroundTheme: 'secret_thoughts',
-      slides: [
-        "I don't miss the arguments, but I miss the raw, desperate way we used to make up. The touch that washed away all the anger, the heavy breathing, and the absolute certainty that in that moment, we were one. Healing is missing the peace, but craving the fire. ✦"
-      ],
-      caption: "Craving the fire even when you know it burns. Letting go of the toxicity doesn't mean your skin doesn't miss the chemistry.\n\nSave this if you relate to the healing struggle. ✦\n\n#healing #confessions #heartbreak #intimacy #desire #relationshippsychology"
+      caption: "A small reminder of their presence. Have you ever kept something small just to remember them by? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
   ]
 };
@@ -213,8 +123,8 @@ async function generateAIPost(category, topicQuery, apiKey) {
   const recentConstraintText = await getRecentConstraintText();
 
   const prompt = `
-You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature, 18+ relationship psychology, intense seduction, and physical/mental chemistry.
-Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, physical intimacy, and unspoken thoughts that keep them awake at night.
+You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature relationship confessions, secret thoughts, fantasies, and raw romantic chemistry.
+Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, and unspoken thoughts that keep them awake at night.
 The goal of this content is to act as an immediate trigger point—making readers feel a sudden wave of romantic tension, physical craving, or deep relatability that commands an immediate follow.
 
 Generate an incredibly suggestive, high-tension, and seductive single-slide post (not a multi-slide carousel) and caption for the category: "${category}".
@@ -223,10 +133,12 @@ ${examplesText}
 ${recentConstraintText}
 
 CRITICAL CONTENT INSTRUCTIONS:
-- Writing Style: Deep, raw, highly suggestive, and sensually charged (18+). Use short, heavy, punchy sentences. It must feel like an intimate confession whispered in the dark, a secret shared between sheets, or a raw psychological truth about physical desire and skin-to-skin attraction.
-- Tone: Highly magnetic, provocative, and seductive (within safety guidelines: strictly non-explicit and non-pornographic, but high-voltage PG-13/R-rated romance). It should trigger an immediate physical response (goosebumps, heart racing, a sudden sigh, intense familiarity). Focus on sensory details like the heat of skin, tracing of fingers, heavy breathing, locked eyes in the dark, and the anticipation of touch.
-- Slide text: Generate exactly 1 slide content containing a powerful emotional hook and a short, highly suggestive, high-tension storytelling paragraph. Use 3-4 short, punchy sentences in total (max 45-60 words). Include one of the mature symbols (❦, ❣, ❥, ✦) as a subtle punctuation separator.
-- Caption: Keep the caption highly suggestive and magnetic, matching the slide's intensity. Start with a hook, provide an emotional insight, and end with CTAs (Save, Share, Follow) and 8-10 high-performing hashtags.
+- Content Format: Write the post as a realistic, anonymous confession-style story (1st person perspective, starting with "I"). It must feel like an authentic secret shared by a girl or a boy about their thoughts, fantasies, desires, emotions, crushes, relationship experiences, or untold feelings.
+- Writing Style: Deep, raw, highly suggestive, and sensually charged. Use short, heavy, punchy sentences. It must feel like a quiet confession whispered in the dark, a secret shared between sheets, or a raw psychological truth about physical desire and skin-to-skin attraction.
+- Perspective: Vary between male and female perspectives.
+- Compliance: Keep it strictly non-explicit and non-pornographic, but high-voltage PG-13/R-rated romance tension. Compliant with Instagram and Facebook safety policies.
+- Slide text: Generate exactly 1 slide content containing a powerful confession hook and a short, highly suggestive storytelling paragraph. End the slide text with a thought-provoking question or hook that creates curiosity. Use 3-4 short, punchy sentences in total (max 45-60 words). Include one of the mature symbols (❦, ❣, ❥, ✦) as a subtle punctuation separator.
+- Caption: Keep the caption extremely brief—exactly one provocative, highly suggestive line (1 sentence, max 10-15 words) that asks an engaging question or hook, followed directly by 5-6 high-reach hashtags (e.g. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage). Do not include lists, bullet points, or multiple lines.
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
@@ -238,14 +150,12 @@ Select a background visual theme from this list that best fits the mood:
 - 'secret_thoughts' (for late-night overthinking, phone screen glow, silk bed)
 - 'sensual_vibes' (for abstract gold and crimson luxury textures)
 
-Generate a caption that is exactly 1 highly provocative, seductive line (max 10-15 words) followed directly by 5-6 high-reach hashtags (e.g. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage). Do not include lists, bullet points, or multiple lines.
-
 Response must be valid JSON matching this schema:
 \`\`\`json
 {
   "backgroundTheme": "midnight_desire",
   "slides": [
-    "Slide hook and story text combined here"
+    "Slide hook and confession story text combined here..."
   ],
   "caption": "One line caption text #intimacy #chemistry..."
 }

@@ -19,12 +19,12 @@ const DEFAULT_DB = {
     bufferAccessToken: '',
     bufferChannelId: '',
     postingSchedule: {
-      post1: '09:00',
-      post2: '14:00',
-      post3: '21:00',
-      post4: '22:00',
-      post5: '00:00',
-      reel1: '17:00'
+      post1: '07:00',
+      post2: '21:00',
+      post3: 'disabled',
+      post4: 'disabled',
+      post5: 'disabled',
+      reel1: 'disabled'
     }
   },
   posts: [],

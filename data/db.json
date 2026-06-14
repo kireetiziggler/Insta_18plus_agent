@@ -225,6 +225,76 @@
   ],
   "logs": [
     {
+      "timestamp": "2026-06-14T14:17:32.989Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T14:17:32.613Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_verification_confession_1781446644168\""
+    },
+    {
+      "timestamp": "2026-06-14T14:17:30.323Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T14:17:29.914Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T14:17:29.910Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_verification_confession_1781446644168\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T14:17:29.248Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/33200649/pexels-photo-33200649/free-photo-of-silhouette-of-couple-in-romantic-embrace.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:17:28.914Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 7: https://images.pexels.com/photos/33200649/pexels-photo-33200649/free-photo-of-silhouette-of-couple-in-romantic-embrace.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:17:24.177Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"couples intimate candle light shadow silhouette\"..."
+    },
+    {
+      "timestamp": "2026-06-14T14:17:24.172Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T14:17:24.170Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_verification_confession_1781446644168\""
+    },
+    {
+      "timestamp": "2026-06-14T14:17:24.166Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T14:17:24.164Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Anonymous Confessions\"..."
+    },
+    {
+      "timestamp": "2026-06-14T07:53:02.842Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T07:53:02.837Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Romantic Tension & Chemistry\"..."
+    },
+    {
       "timestamp": "2026-06-14T07:46:56.298Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"

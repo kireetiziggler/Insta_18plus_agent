@@ -13,7 +13,7 @@ const STYLE_THEMES = {
     fontImport: '@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;600;800&display=swap");',
     bodyFont: "'Lora', serif",
     accentColor: '#60a5fa', // Soft blue
-    bgFilter: 'brightness(0.35) saturate(0.8)',
+    bgFilter: 'brightness(0.5) saturate(0.85)',
     customCSS: `
       .quote-body-container { border-left: 2px solid rgba(96, 165, 250, 0.4); }
       .highlight { color: #60a5fa; font-style: italic; }
@@ -25,7 +25,7 @@ const STYLE_THEMES = {
     fontImport: '@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;600;800&display=swap");',
     bodyFont: "'Lora', serif",
     accentColor: '#f87171', // Crimson red
-    bgFilter: 'brightness(0.3) saturate(0.9)',
+    bgFilter: 'brightness(0.48) saturate(0.95)',
     customCSS: `
       .quote-body-container { border-left: 2px solid rgba(248, 113, 113, 0.4); }
       .highlight { color: #f87171; font-style: italic; }
@@ -37,7 +37,7 @@ const STYLE_THEMES = {
     fontImport: '@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");',
     bodyFont: "'Outfit', sans-serif",
     accentColor: '#fbbf24', // Luxury gold
-    bgFilter: 'brightness(0.35) sepia(0.15)',
+    bgFilter: 'brightness(0.5) sepia(0.12)',
     customCSS: `
       .quote-body-container { border-left: 2px solid rgba(251, 191, 36, 0.4); }
       .highlight { color: #fbbf24; font-weight: 700; }
@@ -49,7 +49,7 @@ const STYLE_THEMES = {
     fontImport: '@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;600;800&display=swap");',
     bodyFont: "'Lora', serif",
     accentColor: '#fb7185', // Dark rose
-    bgFilter: 'brightness(0.32) saturate(0.85)',
+    bgFilter: 'brightness(0.48) saturate(0.9)',
     customCSS: `
       .quote-body-container { border-left: 2px solid rgba(251, 113, 133, 0.4); }
       .highlight { color: #fb7185; font-style: italic; }
@@ -61,7 +61,7 @@ const STYLE_THEMES = {
     fontImport: '@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");',
     bodyFont: "'Outfit', sans-serif",
     accentColor: '#ffffff', // High contrast white
-    bgFilter: 'brightness(0.28) grayscale(0.5)',
+    bgFilter: 'brightness(0.42) grayscale(0.4)',
     customCSS: `
       .quote-body-container { border-left: 2px solid rgba(255, 255, 255, 0.5); }
       .highlight { color: #ffffff; font-weight: 800; border-bottom: 1px solid rgba(255,255,255,0.4); }
@@ -73,7 +73,7 @@ const STYLE_THEMES = {
     fontImport: '@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;600;800&display=swap");',
     bodyFont: "'Lora', serif",
     accentColor: '#f87171',
-    bgFilter: 'brightness(0.3) saturate(0.9)',
+    bgFilter: 'brightness(0.48) saturate(0.95)',
     customCSS: `
       .quote-body-container { border-left: 2px solid rgba(248, 113, 113, 0.4); }
       .highlight { color: #f87171; font-style: italic; }
@@ -85,7 +85,7 @@ const STYLE_THEMES = {
     fontImport: '@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap");',
     bodyFont: "'Outfit', sans-serif",
     accentColor: '#fbbf24',
-    bgFilter: 'brightness(0.35) sepia(0.15)',
+    bgFilter: 'brightness(0.5) sepia(0.12)',
     customCSS: `
       .quote-body-container { border-left: 2px solid rgba(251, 191, 36, 0.4); }
       .highlight { color: #fbbf24; font-weight: 700; }
@@ -180,7 +180,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       left: 0;
       width: 1080px;
       height: 1350px;
-      background: linear-gradient(90deg, rgba(6, 6, 8, 0.96) 0%, rgba(6, 6, 8, 0.75) 45%, rgba(6, 6, 8, 0.05) 100%);
+      background: linear-gradient(90deg, rgba(6, 6, 8, 0.85) 0%, rgba(6, 6, 8, 0.45) 55%, rgba(6, 6, 8, 0.0) 100%);
       z-index: 2;
     }
     
@@ -268,6 +268,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       line-height: 1.5;
       color: #fff;
       max-width: 720px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
     }
     .quote-signature {
       font-family: 'Lora', serif;

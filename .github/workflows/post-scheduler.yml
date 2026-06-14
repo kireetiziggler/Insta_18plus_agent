@@ -3,18 +3,10 @@ name: Daily Content Auto-Scheduler
 on:
   schedule:
     # Schedule runs in UTC (IST is UTC +5:30)
-    # 03:30 UTC = 09:00 AM IST (Slot 1: Desire & Physical Intimacy)
-    - cron: '30 3 * * *'
-    # 08:30 UTC = 02:00 PM IST (Slot 2: Secret Thoughts & Overthinking)
-    - cron: '30 8 * * *'
-    # 11:30 UTC = 05:00 PM IST (Reel Slot)
-    - cron: '30 11 * * *'
-    # 15:30 UTC = 09:00 PM IST (Slot 3: Situationships & Forbidden Love)
+    # 01:30 UTC = 07:00 AM IST (Morning Slot: Anonymous Confessions)
+    - cron: '30 1 * * *'
+    # 15:30 UTC = 09:00 PM IST (Evening Slot: Intimate Secrets)
     - cron: '30 15 * * *'
-    # 16:30 UTC = 10:00 PM IST (Slot 4: Romantic Tension & Chemistry)
-    - cron: '30 16 * * *'
-    # 18:30 UTC = 12:00 AM IST (Slot 5: Intimate Heartbreak & Healing)
-    - cron: '30 18 * * *'
   workflow_dispatch:
     inputs:
       trigger_type:
