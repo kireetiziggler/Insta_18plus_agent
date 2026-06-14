@@ -131,27 +131,29 @@ async function generateAIPost(category, topicQuery, apiKey) {
   const recentConstraintText = await getRecentConstraintText();
 
   const prompt = `
-You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature relationship confessions, secret thoughts, fantasies, and raw romantic chemistry.
-Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, and unspoken thoughts that keep them awake at night.
-The goal of this content is to act as an immediate trigger point—making readers feel a sudden wave of romantic tension, physical craving, or deep relatability that commands an immediate follow.
+You are a master copywriter and viral growth strategist for the Instagram page "@unspokendesireshub" focusing on anonymous, highly relatable relationship confessions, secret thoughts, and raw romantic tension.
+The goal of this content is to maximize follows, shares, saves, comments, and profile visits by presenting raw, private thoughts that make viewers pause, relate, and feel like: "Wait... this sounds exactly like me."
 
 Generate an incredibly suggestive, high-tension, and seductive single-slide post (not a multi-slide carousel) and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${examplesText}
 ${recentConstraintText}
 
-CRITICAL CONTENT INSTRUCTIONS:
-- Content Format: Write the post as a realistic, anonymous confession-style story (1st person perspective, starting with "I"). It must feel like an authentic secret shared by a girl or a boy about their thoughts, fantasies, desires, emotions, crushes, relationship experiences, or untold feelings.
-- Writing Style: Deep, raw, highly suggestive, and sensually charged. Use short, heavy, punchy sentences. It must feel like a quiet confession whispered in the dark, a secret shared between sheets, or a raw psychological truth about physical desire and skin-to-skin attraction.
-- Perspective: Vary between male and female perspectives.
-- Compliance: Keep it strictly non-explicit and non-pornographic, but high-voltage PG-13/R-rated romance tension. Compliant with Instagram and Facebook safety policies.
-- Slide text structure: Generate exactly 1 slide content string. The string MUST use double newlines ("\\n\\n") to separate three distinct paragraphs:
-  1. Paragraph 1 (HOOK): A powerful, attention-grabbing uppercase hook title (max 4-5 words, no period).
-  2. Paragraph 2 (STORY): The short, highly suggestive storytelling narrative (2-3 short, punchy, emotionally loaded sentences).
-  3. Paragraph 3 (QUESTION): A thought-provoking question that creates intense curiosity, ending with one of the mature symbols (❦, ❣, ❥, ✦).
-  Total slide word count should be max 50-60 words.
-- Caption: Keep the caption extremely brief—exactly one provocative, highly suggestive line (1 sentence, max 10-15 words) that asks an engaging question or hook, followed directly by 5-6 high-reach hashtags (e.g. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage). Do not include lists, bullet points, or multiple lines.
-- Dynamic Search Query: Generate a specific Pexels search query (in the "pexelsQuery" field) that describes a high-end, premium photographic scene matching this confession's setting, body language, and mood. The query should specify realistic humans or couples in close proximity or intimate moments, and be optimized for searching portrait photos on Pexels (e.g. "couple hands touching candlelight table", "person looking out window night rain bedroom").
+CRITICAL CONFESSION CONTENT RULES:
+- Content Format: Write the post as a realistic, anonymous confession-style story. Start immediately with the confession.
+- Perspective: First-person perspective only (using "I", "me", "my"). Vary between male and female perspectives (50% male, 50% female).
+- Hook Rule: The first sentence must instantly create curiosity (e.g., "I tell everyone she's just my friend, but I know I'd ruin my entire week if she stopped texting me.").
+- Ending Rule: End the confession with a provocative, comment-generating question (e.g., "Am I reading too much into this?", "Would you tell her?", "Should I let it go?", "Have you ever felt this?", "What would you do?").
+- No Clutter: STRICTLY PROHIBITED: NO titles, NO headings, NO labels, NO introductions, NO volume numbers, NO decorative separators.
+- Word Count: Maximum length: 30-60 words in total. Keep the wording short, sharp, and emotionally loaded.
+- Compliance: Keep it suggestive but strictly compliant with Instagram safety guidelines (non-explicit, PG-13/R romance limit).
+- Caption: Keep the caption extremely brief—exactly one provocative line (max 10-15 words) asking an engaging question or hook, followed directly by 5-6 hashtags: #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage. Do not include lists, bullet points, or multiple lines.
+- Dynamic Search Query: Generate a specific Pexels search query (in the "pexelsQuery" field) that perfectly and directly represents the confession setting, body language, facial expression, and mood. The viewer should understand the emotion BEFORE reading the text. For example:
+  - If late-night texting: "person staring at phone in bed night bedroom lonely"
+  - If workplace attraction: "office coworker couple lingering eye contact quiet environment"
+  - If best friend feelings: "close couple sitting on couch emotional tension proximity"
+  - If missing an ex: "lonely person looking out window night rain reflective mood"
+  - If almost relationship: "near touch hands goodbye moment evening street"
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
@@ -167,9 +169,9 @@ Response must be valid JSON matching this schema:
 \`\`\`json
 {
   "backgroundTheme": "midnight_desire",
-  "pexelsQuery": "highly descriptive query for pexels search...",
+  "pexelsQuery": "descriptive query for pexels search...",
   "slides": [
-    "HOOK TITLE\\n\\nStory text goes here...\\n\\nQuestion?"
+    "Full confession text starting immediately with the hook and ending with the comment-generating question."
   ],
   "caption": "One line caption text #intimacy #chemistry..."
 }

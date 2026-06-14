@@ -13,7 +13,7 @@ const DEFAULT_DB = {
     instagramBusinessId: '',
     facebookPageToken: '',
     isSimulationMode: false,
-    pageHandle: '@unspoken.desires.co',
+    pageHandle: '@unspokendesireshub',
     elevenLabsApiKey: '',
     elevenLabsVoiceId: 'alternate',
     bufferAccessToken: '',

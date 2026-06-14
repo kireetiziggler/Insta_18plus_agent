@@ -119,34 +119,8 @@ function parseFormatting(text) {
 // Generate the HTML content string for a slide matching the user's premium reference image
 function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryName, theme, logoBase64, bgBase64) {
   const bgDataUrl = `data:image/png;base64,${bgBase64}`;
-  const logoDataUrl = `data:image/png;base64,${logoBase64}`;
-
-  // Extract clean handle representation
   const cleanHandle = handle.startsWith('@') ? handle : `@${handle}`;
-
-  // Split slide text by double newlines to segment Hook, Story, and CTA
-  const paragraphs = slideText.split(/\n\n+/).map(p => p.trim()).filter(p => p.length > 0);
-  let htmlBody = '';
-
-  if (paragraphs.length >= 3) {
-    const hookText = parseFormatting(paragraphs[0]);
-    const storyText = parseFormatting(paragraphs[1]);
-    const ctaText = parseFormatting(paragraphs[2]);
-    htmlBody = `
-      <div class="hook-title">${hookText}</div>
-      <p class="story-body">${storyText}</p>
-      <div class="question-hook">${ctaText}</div>
-    `;
-  } else if (paragraphs.length === 2) {
-    const storyText = parseFormatting(paragraphs[0]);
-    const ctaText = parseFormatting(paragraphs[1]);
-    htmlBody = `
-      <p class="story-body">${storyText}</p>
-      <div class="question-hook">${ctaText}</div>
-    `;
-  } else {
-    htmlBody = `<p class="story-body">${parseFormatting(slideText)}</p>`;
-  }
+  const formattedText = parseFormatting(slideText);
 
   return `
 <!DOCTYPE html>
@@ -177,7 +151,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: center; /* Center vertically for negative space layout impact */
+      justify-content: center;
       padding: 95px 90px;
       color: #fff;
       z-index: 5;
@@ -191,87 +165,56 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       background-image: url('${bgDataUrl}');
       background-size: cover;
       background-position: center;
-      /* Brighter brightness filter to ensure scene details are clearly visible */
-      filter: ${theme.bgFilter || 'brightness(0.65)'} contrast(1.05) saturate(0.95);
+      /* Bright, clearly visible background showing facial expressions and emotions */
+      filter: brightness(0.82) contrast(1.05) saturate(0.95);
       z-index: 1;
     }
-    /* Balanced left-to-right gradient overlay: ensures high text readability on the left, leaves right side clean */
+    /* Minimalist, subtle overlay: 18% opacity overall (no heavy dark gradients) */
     .bg-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 1080px;
       height: 1350px;
-      background: linear-gradient(90deg, rgba(5, 5, 7, 0.76) 0%, rgba(5, 5, 7, 0.38) 52%, rgba(5, 5, 7, 0.0) 100%);
+      background: rgba(5, 5, 7, 0.18);
       z-index: 2;
     }
     
-    /* Elegant small watermark logo in the bottom-left corner (<3% scale) */
+    /* Subtle watermark branding placed strictly in bottom right corner (occupies <3% scale) */
     .brand-watermark {
       position: absolute;
       bottom: 60px;
-      left: 90px;
+      right: 90px;
       z-index: 10;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      opacity: 0.65;
-    }
-    .brand-logo-img {
-      height: 28px;
-      width: auto;
-      object-fit: contain;
-    }
-    .brand-handle {
       font-family: 'Outfit', sans-serif;
-      font-size: 15px;
+      font-size: 16px;
       font-weight: 700;
       letter-spacing: 2px;
-      color: rgba(255, 255, 255, 0.85);
+      color: rgba(255, 255, 255, 0.75);
       text-transform: uppercase;
     }
     
-    /* Left-aligned quote container restricted to negative space */
+    /* Left-aligned quote container positioned in negative space (width limited to 750px) */
     .quote-section {
       z-index: 10;
-      max-width: 740px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      margin-top: -40px;
+      max-width: 750px;
+      position: absolute;
+      left: 90px;
+      top: 50%;
+      transform: translateY(-50%);
     }
     
-    /* Hook styling */
-    .hook-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 44px;
-      font-weight: 800;
-      color: ${theme.accentColor || '#fbbf24'};
-      letter-spacing: 0.5px;
-      text-transform: uppercase;
-      line-height: 1.3;
-      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.85);
-    }
-    
-    /* Short punchy body text */
-    .story-body {
+    /* Single cohesive confession text with strong text shadow for legibility */
+    .confession-text {
       font-family: ${theme.bodyFont || "'Lora', serif"};
-      font-size: 32px;
-      line-height: 1.6;
-      color: rgba(255, 255, 255, 0.96);
-      font-weight: 400;
-      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.85), 0 1px 2px rgba(0, 0, 0, 0.9);
-    }
-    
-    /* Final curiosity question */
-    .question-hook {
-      font-family: ${theme.bodyFont || "'Lora', serif"};
-      font-size: 28px;
-      font-style: italic;
-      color: ${theme.accentColor || '#fbbf24'};
-      font-weight: 600;
-      margin-top: 10px;
-      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.85);
+      font-size: 38px;
+      line-height: 1.65;
+      color: #ffffff;
+      font-weight: 500;
+      text-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.98), 
+        0 2px 4px rgba(0, 0, 0, 0.98), 
+        0 0 1px rgba(0, 0, 0, 0.98);
     }
     
     /* Highlights inside formatting */
@@ -289,12 +232,11 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
   
   <div id="slide-container">
     <div class="quote-section">
-      ${htmlBody}
+      <p class="confession-text">${formattedText}</p>
     </div>
     
     <div class="brand-watermark">
-      <img class="brand-logo-img" src="${logoDataUrl}" alt="Logo" />
-      <span class="brand-handle">${cleanHandle}</span>
+      ${cleanHandle}
     </div>
   </div>
 </body>
