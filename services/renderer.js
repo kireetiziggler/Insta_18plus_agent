@@ -180,7 +180,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       left: 0;
       width: 1080px;
       height: 1350px;
-      background: linear-gradient(90deg, rgba(6, 6, 8, 0.96) 0%, rgba(6, 6, 8, 0.88) 45%, rgba(6, 6, 8, 0.25) 100%);
+      background: linear-gradient(90deg, rgba(6, 6, 8, 0.96) 0%, rgba(6, 6, 8, 0.75) 45%, rgba(6, 6, 8, 0.05) 100%);
       z-index: 2;
     }
     
