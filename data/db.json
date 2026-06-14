@@ -157,6 +157,82 @@
       "renderedImages": [
         "/posts/sample_post_after_update_evening_1781448601803/slide_1.png"
       ]
+    },
+    {
+      "id": "sample_post_after_update_morning_1781448888235",
+      "category": "Anonymous Confessions",
+      "backgroundTheme": "secret_thoughts",
+      "slides": [
+        "He texts me late at night under the guise of work. We both know it's an excuse. How do I stop before we cross the line? ❦"
+      ],
+      "caption": "Late night texts and blurred boundaries. Are you playing a dangerous game with someone? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-14T14:54:48.235Z",
+      "status": "draft",
+      "createdAt": "2026-06-14T14:54:48.235Z",
+      "renderedImages": [
+        "/posts/sample_post_after_update_morning_1781448888235/slide_1.png"
+      ]
+    },
+    {
+      "id": "sample_post_after_update_evening_1781448896642",
+      "category": "Intimate Secrets",
+      "backgroundTheme": "secret_thoughts",
+      "slides": [
+        "I still keep screenshots of our late-night conversations. I read them when the room gets too quiet. Am I the only one who does this? ❣"
+      ],
+      "caption": "Replaying the words in the dark. Do you keep screenshots of texts that make you smile? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-14T14:54:56.642Z",
+      "status": "draft",
+      "createdAt": "2026-06-14T14:54:56.642Z",
+      "renderedImages": [
+        "/posts/sample_post_after_update_evening_1781448896642/slide_1.png"
+      ]
+    },
+    {
+      "id": "sample_post_after_update_morning_1781449221806",
+      "category": "Anonymous Confessions",
+      "backgroundTheme": "shadowy_lounge",
+      "slides": [
+        "She looks at my lips when I talk. Then acts like she didn't. Am I imagining it? ❦"
+      ],
+      "caption": "The quiet look that says everything. How do you tell if someone is secretly into you? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-14T15:00:21.806Z",
+      "status": "draft",
+      "createdAt": "2026-06-14T15:00:21.806Z",
+      "renderedImages": [
+        "/posts/sample_post_after_update_morning_1781449221806/slide_1.png"
+      ]
+    },
+    {
+      "id": "sample_post_after_update_evening_1781449231900",
+      "category": "Intimate Secrets",
+      "backgroundTheme": "candlelight_secrets",
+      "slides": [
+        "He positions himself right behind me in the crowd, acting like he's just protecting me. The heat of his body says otherwise. Should I turn around? ❣"
+      ],
+      "caption": "Unspoken protection and silent chemistry. What is your favorite way someone shows they care? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-14T15:00:31.900Z",
+      "status": "draft",
+      "createdAt": "2026-06-14T15:00:31.900Z",
+      "renderedImages": [
+        "/posts/sample_post_after_update_evening_1781449231900/slide_1.png"
+      ]
+    },
+    {
+      "id": "post_1781450261227",
+      "category": "Anonymous Confessions",
+      "backgroundTheme": "secret_thoughts",
+      "pexelsQuery": "custom_ai_generated",
+      "slides": [
+        "He sent a voice note describing exactly what he’d do to me if he weren't three thousand miles away. Now I'm staring at the ceiling in the dark, my body aching for a touch that isn't here. Have you felt this? ❦"
+      ],
+      "caption": "Distance makes the craving so much worse. How do you handle long distance desire? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-14T15:17:41.231Z",
+      "status": "failed",
+      "createdAt": "2026-06-14T15:17:41.231Z",
+      "renderedImages": [
+        "/posts/post_1781450261227/slide_1.png"
+      ]
     }
   ],
   "trends": [
@@ -314,6 +390,1151 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-14T15:17:45.079Z",
+      "type": "ERROR",
+      "message": "Instagram Business ID or Facebook Page Access Token is missing in settings. Cannot publish."
+    },
+    {
+      "timestamp": "2026-06-14T15:17:45.078Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1781450261227\" (Type: carousel, Simulation: false)"
+    },
+    {
+      "timestamp": "2026-06-14T15:17:45.073Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:17:44.569Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"post_1781450261227\""
+    },
+    {
+      "timestamp": "2026-06-14T15:17:41.661Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T15:17:41.242Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:17:41.239Z",
+      "type": "SYSTEM",
+      "message": "Using existing background image for this post: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\post_1781450261227\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:17:41.236Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:17:41.234Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\post_1781450261227\""
+    },
+    {
+      "timestamp": "2026-06-14T15:17:41.180Z",
+      "type": "SYSTEM",
+      "message": "Settings updated"
+    },
+    {
+      "timestamp": "2026-06-14T15:15:06.865Z",
+      "type": "SYSTEM",
+      "message": "Reel workflow completed successfully for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:15:06.862Z",
+      "type": "SYSTEM",
+      "message": "FFmpeg stitching completed successfully. Reel output: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\reel.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:56.861Z",
+      "type": "SYSTEM",
+      "message": "Running FFmpeg to overlay watermarks, centered CTA follow screen, and burn subtitles..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:56.859Z",
+      "type": "SYSTEM",
+      "message": "Generated timed ASS subtitles at C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\subtitles.ass"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:56.856Z",
+      "type": "SYSTEM",
+      "message": "Falling back to proportional phrase timing estimation (Google TTS or missing alignment)."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:56.855Z",
+      "type": "SYSTEM",
+      "message": "Audio timeline: Main Content: 11.64s | Gap: 1.0s | CTA: 2.42s | Total: 15.06s"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:56.458Z",
+      "type": "SYSTEM",
+      "message": "Concatenating content audio, silence, and CTA voice track..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:56.264Z",
+      "type": "SYSTEM",
+      "message": "Generating 1-second audio silence gap..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:56.262Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background video to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\background.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:55.873Z",
+      "type": "SYSTEM",
+      "message": "Downloading Reel background video from URL: https://content.pexels.com/aigc-bundle/videos/042ac5b4-cf03-4d9b-adc6-8d736e56272f.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:55.322Z",
+      "type": "SYSTEM",
+      "message": "Found 28 Pexels videos. Selected random index 4: https://content.pexels.com/aigc-bundle/videos/042ac5b4-cf03-4d9b-adc6-8d736e56272f.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:49.034Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background video matching query: \"couples intimate candle light shadow silhouette dark low light\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:49.030Z",
+      "type": "SYSTEM",
+      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_cta.mp3"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:48.792Z",
+      "type": "SYSTEM",
+      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_cta.mp3..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:48.789Z",
+      "type": "SYSTEM",
+      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:48.786Z",
+      "type": "SYSTEM",
+      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_main.mp3"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:48.265Z",
+      "type": "SYSTEM",
+      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_main.mp3..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:48.263Z",
+      "type": "SYSTEM",
+      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:48.261Z",
+      "type": "SYSTEM",
+      "message": "Generating Reels voiceover narration (two-part) for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:48.260Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel CTA"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:47.979Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel CTA slide for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:14:45.785Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel CTA..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:45.782Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels centered CTA follow-us slide for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:45.780Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:45.510Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel slide for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:14:44.150Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reel slide graphic..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:43.674Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:43.671Z",
+      "type": "SYSTEM",
+      "message": "Creating Reels slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:14:43.669Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels 9:16 layout slide for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:43.665Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting an offline Reel template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:43.663Z",
+      "type": "GENERATOR",
+      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:43.655Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:43.294Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 5 slides for post \"test_post_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:14:39.692Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 5/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:36.765Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 4/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:33.876Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 3/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:31.136Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 2/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:26.459Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:25.985Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:25.980Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:25.017Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/7351137/pexels-photo-7351137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:24.698Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 5: https://images.pexels.com/photos/7351137/pexels-photo-7351137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:21.133Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom dark glow\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:21.128Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:21.127Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:14:21.124Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:21.120Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Desire & Physical Intimacy\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:11.330Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:10.918Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_sample_evening_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:14:06.577Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:06.135Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:14:06.130Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:04.953Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/8889731/pexels-photo-8889731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:14:04.629Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 9: https://images.pexels.com/photos/8889731/pexels-photo-8889731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:13:59.848Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"cozy dark bedroom night rain street lights window bedroom\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:13:59.841Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:13:59.839Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:13:59.836Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:13:59.833Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Intimate Secrets\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:13:59.826Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:13:59.431Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_sample_morning_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:13:56.357Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T15:13:55.895Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:13:55.892Z",
+      "type": "SYSTEM",
+      "message": "Using existing background image for this post: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:13:55.889Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:13:55.888Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:13:55.878Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:13:55.829Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Anonymous Confessions\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:10:19.554Z",
+      "type": "SYSTEM",
+      "message": "Reel workflow completed successfully for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:10:19.550Z",
+      "type": "SYSTEM",
+      "message": "FFmpeg stitching completed successfully. Reel output: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\reel.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:10:07.343Z",
+      "type": "SYSTEM",
+      "message": "Running FFmpeg to overlay watermarks, centered CTA follow screen, and burn subtitles..."
+    },
+    {
+      "timestamp": "2026-06-14T15:10:07.340Z",
+      "type": "SYSTEM",
+      "message": "Generated timed ASS subtitles at C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\subtitles.ass"
+    },
+    {
+      "timestamp": "2026-06-14T15:10:07.333Z",
+      "type": "SYSTEM",
+      "message": "Falling back to proportional phrase timing estimation (Google TTS or missing alignment)."
+    },
+    {
+      "timestamp": "2026-06-14T15:10:07.329Z",
+      "type": "SYSTEM",
+      "message": "Audio timeline: Main Content: 11.64s | Gap: 1.0s | CTA: 2.42s | Total: 15.06s"
+    },
+    {
+      "timestamp": "2026-06-14T15:10:06.925Z",
+      "type": "SYSTEM",
+      "message": "Concatenating content audio, silence, and CTA voice track..."
+    },
+    {
+      "timestamp": "2026-06-14T15:10:05.091Z",
+      "type": "SYSTEM",
+      "message": "Generating 1-second audio silence gap..."
+    },
+    {
+      "timestamp": "2026-06-14T15:10:05.087Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background video to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\background.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:10:04.728Z",
+      "type": "SYSTEM",
+      "message": "Downloading Reel background video from URL: https://content.pexels.com/aigc-bundle/videos/a45a9d2a-d133-4e45-a1e6-3e7a83afefab.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:10:04.245Z",
+      "type": "SYSTEM",
+      "message": "Found 28 Pexels videos. Selected random index 1: https://content.pexels.com/aigc-bundle/videos/a45a9d2a-d133-4e45-a1e6-3e7a83afefab.mp4"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:58.456Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background video matching query: \"couples intimate candle light shadow silhouette dark low light\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:58.452Z",
+      "type": "SYSTEM",
+      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_cta.mp3"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:58.222Z",
+      "type": "SYSTEM",
+      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_cta.mp3..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:58.220Z",
+      "type": "SYSTEM",
+      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:58.216Z",
+      "type": "SYSTEM",
+      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_main.mp3"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:57.744Z",
+      "type": "SYSTEM",
+      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_main.mp3..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:57.742Z",
+      "type": "SYSTEM",
+      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:57.741Z",
+      "type": "SYSTEM",
+      "message": "Generating Reels voiceover narration (two-part) for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:57.739Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel CTA"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:57.453Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel CTA slide for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:55.343Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel CTA..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:55.339Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels centered CTA follow-us slide for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:55.337Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:54.972Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel slide for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:53.608Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reel slide graphic..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:53.189Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:53.186Z",
+      "type": "SYSTEM",
+      "message": "Creating Reels slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:53.184Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels 9:16 layout slide for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:53.178Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting an offline Reel template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:53.176Z",
+      "type": "GENERATOR",
+      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:53.167Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:52.783Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 5 slides for post \"test_post_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:50.764Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 5/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:48.692Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 4/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:46.736Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 3/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:44.888Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 2/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:42.037Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:41.584Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:41.580Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:40.835Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/6943441/pexels-photo-6943441.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:40.530Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 6: https://images.pexels.com/photos/6943441/pexels-photo-6943441.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:37.189Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom dark glow\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:37.185Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:37.183Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:37.179Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:37.176Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Desire & Physical Intimacy\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:14.760Z",
+      "type": "ERROR",
+      "message": "Google TTS voiceover synthesis failed: text should be a string"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:14.757Z",
+      "type": "SYSTEM",
+      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_main.mp3..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:14.755Z",
+      "type": "SYSTEM",
+      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:14.753Z",
+      "type": "SYSTEM",
+      "message": "Generating Reels voiceover narration (two-part) for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:14.751Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel CTA"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:14.489Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel CTA slide for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:12.424Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel CTA..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:12.420Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels centered CTA follow-us slide for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:12.418Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:12.159Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel slide for post \"test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.809Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reel slide graphic..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.408Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.405Z",
+      "type": "SYSTEM",
+      "message": "Creating Reels slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.403Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels 9:16 layout slide for post \"test_reel_validation\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.398Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting an offline Reel template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.396Z",
+      "type": "GENERATOR",
+      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.387Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:09:10.018Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 5 slides for post \"test_post_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:09:06.109Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 5/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:09:02.700Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 4/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:59.211Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 3/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:55.486Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 2/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:50.816Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/5..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:50.390Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:50.386Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:49.231Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/8036745/pexels-photo-8036745.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:48.944Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 14: https://images.pexels.com/photos/8036745/pexels-photo-8036745.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:44.882Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom dark glow\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:44.876Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:44.873Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\""
+    },
+    {
+      "timestamp": "2026-06-14T15:08:44.866Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:44.860Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Desire & Physical Intimacy\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:32.937Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:32.387Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_sample_evening_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:08:28.450Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:27.984Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:27.980Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:27.011Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/8036752/pexels-photo-8036752.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:26.631Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 0: https://images.pexels.com/photos/8036752/pexels-photo-8036752.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:21.917Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom dark glow\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:21.914Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:21.911Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:08:21.908Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:21.906Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Intimate Secrets\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:21.878Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:21.514Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_sample_morning_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:08:18.701Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:18.238Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:18.232Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:17.372Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/3566226/pexels-photo-3566226.jpeg?h=2700&w=2160&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:16.988Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 9: https://images.pexels.com/photos/3566226/pexels-photo-3566226.jpeg?h=2700&w=2160&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:12.399Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"shadowy bar night couple romantic tension low light\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:12.396Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:08:12.395Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\""
+    },
+    {
+      "timestamp": "2026-06-14T15:08:12.392Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:08:12.389Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Anonymous Confessions\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:41.906Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:41.416Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_post_after_update_evening_1781449231900\""
+    },
+    {
+      "timestamp": "2026-06-14T15:00:37.997Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:37.572Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:37.566Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781449231900\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:35.782Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/6288433/pexels-photo-6288433.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:35.473Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 13: https://images.pexels.com/photos/6288433/pexels-photo-6288433.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:31.914Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"hands touch candle light table aesthetic romantic\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:31.909Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:31.905Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781449231900\""
+    },
+    {
+      "timestamp": "2026-06-14T15:00:31.895Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:31.891Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Intimate Secrets\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:31.875Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:31.343Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_post_after_update_morning_1781449221806\""
+    },
+    {
+      "timestamp": "2026-06-14T15:00:27.708Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:27.257Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:27.248Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781449221806\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:26.210Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/25547292/pexels-photo-25547292/free-photo-of-young-couple-standing-behind-the-bar.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:25.830Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 13: https://images.pexels.com/photos/25547292/pexels-photo-25547292/free-photo-of-young-couple-standing-behind-the-bar.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:21.817Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"shadowy bar couple romantic tension love aesthetic\"..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:21.813Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T15:00:21.810Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781449221806\""
+    },
+    {
+      "timestamp": "2026-06-14T15:00:21.803Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T15:00:21.800Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Anonymous Confessions\"..."
+    },
+    {
+      "timestamp": "2026-06-14T14:55:03.713Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T14:55:03.429Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_post_after_update_evening_1781448896642\""
+    },
+    {
+      "timestamp": "2026-06-14T14:55:01.587Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T14:55:01.141Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T14:55:01.137Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781448896642\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T14:55:00.638Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/6943447/pexels-photo-6943447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:55:00.338Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 1: https://images.pexels.com/photos/6943447/pexels-photo-6943447.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T14:54:56.648Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom\"..."
+    },
+    {
+      "timestamp": "2026-06-14T14:54:56.646Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T14:54:56.645Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781448896642\""
+    },
+    {
+      "timestamp": "2026-06-14T14:54:56.641Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T14:54:56.639Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Intimate Secrets\"..."
+    },
+    {
+      "timestamp": "2026-06-14T14:54:56.630Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T14:54:56.386Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_post_after_update_morning_1781448888235\""
+    },
+    {
+      "timestamp": "2026-06-14T14:54:53.962Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T14:54:53.502Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T14:54:53.497Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781448888235\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T14:54:52.666Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/15743369/pexels-photo-15743369.jpeg?h=1350&w=1080&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
+    },
+    {
+      "timestamp": "2026-06-14T14:54:52.351Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 9: https://images.pexels.com/photos/15743369/pexels-photo-15743369.jpeg?h=1350&w=1080&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
+    },
+    {
+      "timestamp": "2026-06-14T14:54:48.244Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom\"..."
+    },
+    {
+      "timestamp": "2026-06-14T14:54:48.241Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T14:54:48.239Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781448888235\""
+    },
+    {
+      "timestamp": "2026-06-14T14:54:48.233Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T14:54:48.230Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Anonymous Confessions\"..."
+    },
     {
       "timestamp": "2026-06-14T14:50:10.523Z",
       "type": "SYSTEM",
@@ -1668,161 +2889,6 @@
       "timestamp": "2026-06-10T17:38:25.435Z",
       "type": "SYSTEM",
       "message": "Searching Pexels for a unique background video matching query: \"gentle touch embrace shadow couple\"..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:25.431Z",
-      "type": "SYSTEM",
-      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_cta.mp3"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:25.151Z",
-      "type": "SYSTEM",
-      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_cta.mp3..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:25.149Z",
-      "type": "SYSTEM",
-      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:25.147Z",
-      "type": "SYSTEM",
-      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_main.mp3"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:24.498Z",
-      "type": "SYSTEM",
-      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_main.mp3..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:24.497Z",
-      "type": "SYSTEM",
-      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:24.495Z",
-      "type": "SYSTEM",
-      "message": "Generating Reels voiceover narration (two-part) for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:24.494Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel CTA"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:24.202Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel CTA slide for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-10T17:38:22.542Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel CTA..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:22.538Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels centered CTA follow-us slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:22.536Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:22.219Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-10T17:38:20.179Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:19.585Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:19.583Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-10T17:38:19.582Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels 9:16 layout slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:19.579Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting an offline Reel template..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:19.578Z",
-      "type": "GENERATOR",
-      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:19.573Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:19.109Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 5 slides for post \"test_post_validation\""
-    },
-    {
-      "timestamp": "2026-06-10T17:38:18.272Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 5/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:17.415Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 4/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:16.514Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 3/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:15.591Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 2/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:13.211Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:12.671Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:12.671Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"shadowy_passion\" (Day of week: 3)"
-    },
-    {
-      "timestamp": "2026-06-10T17:38:12.670Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\""
-    },
-    {
-      "timestamp": "2026-06-10T17:38:12.668Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-10T17:38:12.666Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Desire & Physical Intimacy\"..."
     }
   ]
 }

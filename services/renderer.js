@@ -166,8 +166,8 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       background-image: url('${bgDataUrl}');
       background-size: cover;
       background-position: center;
-      /* Bright, clearly visible background showing facial expressions and emotions */
-      filter: brightness(0.82) contrast(1.05) saturate(0.95);
+      /* Dark, moody night/low-light background to keep text as the focal point */
+      filter: brightness(0.48) contrast(1.05) saturate(0.85);
       z-index: 1;
     }
     /* Minimalist, subtle overlay: 18% opacity overall (no heavy dark gradients) */
@@ -193,13 +193,13 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       opacity: 0.85;
     }
     .brand-logo-img {
-      height: 38px; /* branding size increased */
+      height: 42px; /* branding size increased by 10% */
       width: auto;
       object-fit: contain;
     }
     .brand-handle {
       font-family: 'Outfit', sans-serif;
-      font-size: 18px;
+      font-size: 20px;
       font-weight: 700;
       letter-spacing: 2px;
       color: rgba(255, 255, 255, 0.9);
@@ -276,14 +276,14 @@ async function downloadBackgroundImage(themeName, postDir, pexelsQuery = null) {
 
   // Map each theme to a unique, stunning visual background theme query
   const PEXELS_THEME_QUERIES = {
-    midnight_desire: 'couples intimate candle light shadow silhouette',
-    rainy_bed: 'cozy dark bedroom rain street lights window bedroom',
-    shadowy_lounge: 'shadowy bar couple romantic tension love aesthetic',
-    candlelight_secrets: 'hands touch candle light table aesthetic romantic',
-    intimate_touch: 'gentle touch embrace shadow couple intimacy body',
+    midnight_desire: 'couples intimate candle light shadow silhouette dark low light',
+    rainy_bed: 'cozy dark bedroom night rain street lights window bedroom',
+    shadowy_lounge: 'shadowy bar night couple romantic tension low light',
+    candlelight_secrets: 'hands touch candle light night table aesthetic dark romantic',
+    intimate_touch: 'gentle touch embrace shadow couple intimacy body low light night',
     overthinking_night: 'person look window night city neon lights lonely shadow',
-    secret_thoughts: 'person sit silk bed phone screen night bedroom',
-    sensual_vibes: 'crimson gold luxury silk abstract light texture red'
+    secret_thoughts: 'person sit silk bed phone screen night bedroom dark glow',
+    sensual_vibes: 'crimson gold luxury silk abstract dark light texture red'
   };
 
   const query = pexelsQuery || PEXELS_THEME_QUERIES[themeName] || 'romantic couple shadow intimacy';

@@ -6,69 +6,69 @@ const OFFLINE_TEMPLATES = {
   'Anonymous Confessions': [
     {
       backgroundTheme: 'midnight_desire',
-      pexelsQuery: 'couple standing very close lift elevator narrow space shadow',
+      pexelsQuery: 'couple standing very close lift elevator narrow space shadow low light night',
       slides: [
-        "We brushed shoulders in the crowded elevator. Neither of us moved away, but neither of us closed the remaining inch. Does he feel it too? ❦"
+        "His hands found my waist in the dark elevator. We didn't say a word, but the way he pulled me against him told me everything we’d been hiding for months. Should we stop? ❦"
       ],
-      caption: "Sometimes a single brush is enough to start a fire. Have you ever felt an instant connection that you couldn't explain? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "Sometimes a single touch is enough to start a fire. Have you ever felt a connection so intense it scared you? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
-      pexelsQuery: 'cozy couple sitting on couch screen glow phone intimacy',
+      pexelsQuery: 'moody bar night couple romantic tension low light whispering',
       slides: [
-        "She wore that vanilla perfume again. When she leaned in to show me her phone, our shoulders touched. I wanted to pull her close. Should I? ❦"
+        "I watched him touch her arm at the bar, the exact same way he touches mine when no one is looking. The jealousy burned, but the thrill of being his actual secret is intoxicating. What do I do? ❦"
       ],
-      caption: "Vanilla and dangerous tension. What is the one scent that always reminds you of them? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "The beautiful torture of secret jealousy. Have you ever been someone's favorite secret? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'secret_thoughts',
-      pexelsQuery: 'person in bed phone screen face glow night room',
+      pexelsQuery: 'person looking phone bed silk sheets night bedroom glow dark',
       slides: [
-        "He texts me late at night under the guise of work. We both know it's an excuse. How do I stop before we cross the line? ❦"
+        "He sent a voice note describing exactly what he’d do to me if he weren't three thousand miles away. Now I'm staring at the ceiling in the dark, my body aching for a touch that isn't here. Have you felt this? ❦"
       ],
-      caption: "Late night texts and blurred boundaries. Are you playing a dangerous game with someone? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "Distance makes the craving so much worse. How do you handle long distance desire? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'shadowy_lounge',
-      pexelsQuery: 'moody bar couple close talking eye contact romantic tension',
+      pexelsQuery: 'cozy couple sitting on couch screen glow phone intimacy night low light',
       slides: [
-        "She looks at my lips when I talk. Then acts like she didn't. Am I imagining it? ❦"
+        "She whispered a secret in my ear, her lips brushing my neck. My breath caught, and for a second, I forgot we were in a room full of people. I want her. Should I tell her? ❦"
       ],
-      caption: "The quiet look that says everything. How do you tell if someone is secretly into you? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "A whisper that changes everything. How do you handle sudden attraction? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
   ],
   'Intimate Secrets': [
     {
       backgroundTheme: 'secret_thoughts',
-      pexelsQuery: 'person looking phone bed silk sheets night bedroom glow',
+      pexelsQuery: 'person looking phone bed silk sheets night bedroom glow dark',
       slides: [
-        "I still keep screenshots of our late-night conversations. I read them when the room gets too quiet. Am I the only one who does this? ❣"
+        "He sent me a picture of his collarbone with a text saying 'wish your teeth were here'. It's 2 AM, and I've read it ten times. How am I supposed to sleep now? ❣"
       ],
-      caption: "Replaying the words in the dark. Do you keep screenshots of texts that make you smile? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "Late night texts that keep you awake. What's the most suggestive text you've received? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
-      pexelsQuery: 'couple hug goodbye street night lights close embrace',
+      pexelsQuery: 'couple hug goodbye street night lights close embrace shadow',
       slides: [
-        "Every time we hug goodbye, I hold her a second longer. She never pulls away first. Are we lingering in the friend zone? ❣"
+        "Every time we hug goodbye, he slips his hand slightly under my shirt, just tracing my spine. It’s our silent promise. Is it wrong to want more? ❣"
       ],
-      caption: "The extra second that tells the truth. Are you lingering in the friend zone or is the tension real? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "A silent touch that promises everything. Are you waiting for them to make the first move? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'candlelight_secrets',
-      pexelsQuery: 'couples back close crowd shadow silhouette warm light',
+      pexelsQuery: 'hands touch candle light night table aesthetic dark romantic',
       slides: [
-        "He positions himself right behind me in the crowd, acting like he's just protecting me. The heat of his body says otherwise. Should I turn around? ❣"
+        "Our video call ended an hour ago, but the screen glow is still warm. I close my eyes and trace the memory of his hands on my skin. Distance makes the craving so much worse. How do you handle it? ❣"
       ],
-      caption: "Unspoken protection and silent chemistry. What is your favorite way someone shows they care? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "Tracing memories in the dark. Have you ever craved someone's presence so badly it hurt? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'rainy_bed',
-      pexelsQuery: 'earring glovebox car dashboard night street lights outside',
+      pexelsQuery: 'cozy dark bedroom night rain street lights window bedroom silhouette',
       slides: [
-        "She left her earring in my car passenger seat. I kept it in my glove box instead of telling her. Is keeping it a mistake? ❣"
+        "We parked in the furthest corner of the lot, rain hammering the roof. Seeing her wedding ring on the dashboard while her lips were on my neck felt like a beautiful, dangerous sin. Should I walk away? ❣"
       ],
-      caption: "A small reminder of their presence. Have you ever kept something small just to remember them by? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
+      caption: "A dangerous game with high stakes. Would you walk away from a forbidden attraction? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
   ]
 };
@@ -134,26 +134,29 @@ async function generateAIPost(category, topicQuery, apiKey) {
 You are a master copywriter and viral growth strategist for the Instagram page "@unspokendesireshub" focusing on anonymous, highly relatable relationship confessions, secret thoughts, and raw romantic tension.
 The goal of this content is to maximize follows, shares, saves, comments, and profile visits by presenting raw, private thoughts that make viewers pause, relate, and feel like: "Wait... this sounds exactly like me."
 
-Generate an incredibly suggestive, high-tension, and seductive single-slide post (not a multi-slide carousel) and caption for the category: "${category}".
+Generate an incredibly suggestive, passionate, and high-tension single-slide post (not a multi-slide carousel) and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${examplesText}
 ${recentConstraintText}
 
 CRITICAL CONFESSION CONTENT RULES:
+- Content Focus: The confession must strictly relate to intense physical/emotional intimacy, jealousy of affairs (thrill or pain of secret love), or long-distance intimacy (craving touch, late-night texting, physical longing).
+- Tone & Mood: The tone must be highly sensual, seductive, and provocative (creating a "horny mood" through raw physical tension, craving, and suggestive details), while staying within Instagram safety guidelines (non-explicit, PG-13/R romance limit).
 - Content Format: Write the post as a realistic, anonymous confession-style story. Start immediately with the confession.
 - Perspective: First-person perspective only (using "I", "me", "my"). Vary between male and female perspectives (50% male, 50% female).
-- Hook Rule: The first sentence must instantly create curiosity (e.g., "I tell everyone she's just my friend, but I know I'd ruin my entire week if she stopped texting me.").
+- Hook Rule: The first sentence must instantly create curiosity (e.g., "His hands found my waist in the dark elevator...").
 - Ending Rule: End the confession with a provocative, comment-generating question (e.g., "Am I reading too much into this?", "Would you tell her?", "Should I let it go?", "Have you ever felt this?", "What would you do?").
 - No Clutter: STRICTLY PROHIBITED: NO titles, NO headings, NO labels, NO introductions, NO volume numbers, NO decorative separators.
-- Word Count: Maximum length: 30-60 words in total. Keep the wording short, sharp, and emotionally loaded.
+- Word Count: Maximum length: 20-35 words (strictly short and sharp).
 - Compliance: Keep it suggestive but strictly compliant with Instagram safety guidelines (non-explicit, PG-13/R romance limit).
 - Caption: Keep the caption extremely brief—exactly one provocative line (max 10-15 words) asking an engaging question or hook, followed directly by 5-6 hashtags: #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage. Do not include lists, bullet points, or multiple lines.
-- Dynamic Search Query: Generate a specific Pexels search query (in the "pexelsQuery" field) that perfectly and directly represents the confession setting, body language, facial expression, and mood. The viewer should understand the emotion BEFORE reading the text. For example:
-  - If late-night texting: "person staring at phone in bed night bedroom lonely"
-  - If workplace attraction: "office coworker couple lingering eye contact quiet environment"
-  - If best friend feelings: "close couple sitting on couch emotional tension proximity"
-  - If missing an ex: "lonely person looking out window night rain reflective mood"
-  - If almost relationship: "near touch hands goodbye moment evening street"
+- Dynamic Search Query (CRITICAL VISUAL RULE): The "pexelsQuery" field must strictly query for a dark, night, or low-light scene (e.g., night-time bedroom, shadowy elevator, dim candle light, street lights in rain, dark silhouettes). Never request bright daylight, sunny outdoor, or studio lighting queries. The viewer should understand the mood BEFORE reading the text. For example:
+  - "couple standing very close lift elevator narrow space shadow low light night"
+  - "moody bar night couple romantic tension low light whispering"
+  - "person looking phone bed silk sheets night bedroom glow dark"
+  - "cozy couple sitting on couch screen glow phone intimacy night low light"
+  - "cozy dark bedroom night rain street lights window bedroom silhouette"
+  - "hands touch candle light night table aesthetic dark romantic"
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
@@ -278,18 +281,28 @@ async function generateAIReel(category, topicQuery, apiKey) {
   const prompt = `
 You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature, 18+ relationship psychology, intense seduction, and physical/mental chemistry.
 Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, physical intimacy, and unspoken thoughts that keep them awake at night.
-The goal of this content is to act as an immediate trigger point—making readers feel a wave of attraction, romantic tension, or intense relatability that commands an immediate follow.
+The goal of this content is to act as an immediate trigger point—making readers feel a wave of attraction, romantic tension, or intense relatability (a "horny mood" through raw physical tension, craving, and suggestive details) that commands an immediate follow.
 
-Generate a highly suggestive, high-tension vertical Instagram Reel script and caption for the category: "${category}".
+Generate a highly suggestive, passionate, and high-tension vertical Instagram Reel script and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${recentConstraintText}
 
 CRITICAL CONTENT INSTRUCTIONS:
-- Writing Style: Deep, raw, highly suggestive, speaking DIRECTLY to the viewer watching the screen (using "You" and "Your"). Start with an immediate attention-grabbing hook in the first 2 seconds. It must build a strong emotional, highly seductive impact that registers in their minds and commands attention. Keep sentences extremely short, crisp, and heavy. Avoid formal AI transitions, greetings, or robotic filler. It must feel like an intimate secret or a private confession.
+- Content Focus: The Reel must strictly relate to intense physical/emotional intimacy, jealousy of affairs (thrill or pain of secret love), or long-distance intimacy (craving touch, late-night texting, physical longing).
+- Tone & Mood: The tone must be highly sensual, seductive, and provocative, speaking DIRECTLY to the viewer watching the screen (using "You" and "Your") while staying within Instagram safety guidelines (non-explicit, PG-13/R romance limit).
+- Writing Style: Deep, raw, highly suggestive. Start with an immediate attention-grabbing hook in the first 2 seconds. It must build a strong emotional, highly seductive impact. Keep sentences extremely short, crisp, and heavy. Avoid formal AI transitions, greetings, or robotic filler. It must feel like an intimate secret or a private confession.
 - Focus: Must address 18+ relationship themes (romantic/physical chemistry, adult dating dynamics, situationships, physical intimacy, secret thoughts, desire, overthinking, and heartbreak).
 - titleText: A short, high-impact quote or statement to display on the video slide (max 15-20 words, uppercase, punchy, e.g. "THE DANGEROUS THRILL OF FORBIDDEN CHEMISTRY.").
 - audioScript: The text narration for the voiceover. It must be emotionally deep, spoken naturally by the narrator, and run for about 15-30 seconds (around 45-75 words). It must sound like a real person sharing a raw, direct truth to the viewer (no greetings like "Hey everyone!", no formal AI buzzwords, no robotic sign-offs). Write simple, punchy, emotional sentences with natural breathing pauses. Do not include markdown, stage directions, or audio cues.
-- backgroundTheme: Select a background visual theme from this list that best fits the mood: 'midnight_desire', 'rainy_bed', 'shadowy_lounge', 'candlelight_secrets', 'intimate_touch', 'overthinking_night', 'secret_thoughts', 'sensual_vibes'.
+- backgroundTheme (CRITICAL VISUAL RULE): Select a background visual theme from this list that best fits the mood. Ensure it is strictly a dark, night, or low-light theme. Never select bright themes:
+  - 'midnight_desire' (for romantic chemistry, intimacy, physical connection, dark low light)
+  - 'rainy_bed' (for midnight thoughts, quiet intimacy, rain views, dark night)
+  - 'shadowy_lounge' (for modern dating, luxury bar scenes, romantic tension, night low light)
+  - 'candlelight_secrets' (for soft candlelight, close chemistry, secret touch, dark romantic)
+  - 'intimate_touch' (for deep connection, physical touch, embrace, low light night)
+  - 'overthinking_night' (for night reflections, car window thoughts, night shadow)
+  - 'secret_thoughts' (for late-night overthinking, phone screen glow, silk bed, dark glow)
+  - 'sensual_vibes' (for abstract gold and crimson luxury textures, dark red/gold)
 - caption: Generate a caption that starts with a hook, has an emotional insight, and ends with call-to-actions and a rich set of 8-10 high-performing hashtags.
 
 Response must be valid JSON matching this schema:
@@ -348,7 +361,7 @@ function getOfflineReelFallback(category) {
   // slide 1 as titleText
   // slides 2, 3, 4 as audioScript
   const titleText = postContent.slides[0];
-  const audioScript = postContent.slides.slice(1, 4).join(' ').replace(/Swipe left|Read details|Swipe next/gi, '');
+  const audioScript = postContent.slides.slice(1, 4).join(' ').replace(/Swipe left|Read details|Swipe next/gi, '').trim() || titleText;
   return {
     backgroundTheme: postContent.backgroundTheme,
     titleText,

@@ -24,14 +24,14 @@ const THEME_VIDEOS = {
 };
 
 const PEXELS_THEME_QUERIES = {
-  midnight_desire: 'couples intimate candle light shadow',
-  rainy_bed: 'cozy dark bedroom rain street lights window',
-  shadowy_lounge: 'shadowy bar couple romantic tension',
-  candlelight_secrets: 'hands touch candle light table aesthetic',
-  intimate_touch: 'gentle touch embrace shadow couple',
-  overthinking_night: 'person look window night city neon lights',
-  secret_thoughts: 'person sit silk bed phone screen night',
-  sensual_vibes: 'crimson gold luxury silk abstract light'
+  midnight_desire: 'couples intimate candle light shadow silhouette dark low light',
+  rainy_bed: 'cozy dark bedroom night rain street lights window bedroom',
+  shadowy_lounge: 'shadowy bar night couple romantic tension low light',
+  candlelight_secrets: 'hands touch candle light night table aesthetic dark romantic',
+  intimate_touch: 'gentle touch embrace shadow couple intimacy body low light night',
+  overthinking_night: 'person look window night city neon lights lonely shadow',
+  secret_thoughts: 'person sit silk bed phone screen night bedroom dark glow',
+  sensual_vibes: 'crimson gold luxury silk abstract dark light texture red'
 };
 
 async function downloadBackgroundVideo(themeName, postDir) {
@@ -59,13 +59,13 @@ async function downloadBackgroundVideo(themeName, postDir) {
 
   // Map each day of the week to a unique, stunning visual background theme query
   const queryOverrides = {
-    0: 'couples intimate candle light shadow',
-    1: 'shadowy bar couple romantic tension',
-    2: 'cozy dark bedroom rain street lights window',
-    3: 'gentle touch embrace shadow couple',
-    4: 'person look window night city neon lights',
-    5: 'person sit silk bed phone screen night',
-    6: 'crimson gold luxury silk abstract light'
+    0: 'couples intimate candle light shadow silhouette dark low light',
+    1: 'shadowy bar night couple romantic tension low light',
+    2: 'cozy dark bedroom night rain street lights window bedroom',
+    3: 'gentle touch embrace shadow couple intimacy body low light night',
+    4: 'person look window night city neon lights lonely shadow',
+    5: 'person sit silk bed phone screen night bedroom dark glow',
+    6: 'crimson gold luxury silk abstract dark light texture red'
   };
 
   let query = queryOverrides[dayOfWeek] || PEXELS_THEME_QUERIES[themeName] || themeName || 'romantic chemistry';
