@@ -16,6 +16,8 @@ const DEFAULT_DB = {
     pageHandle: '@unspoken.desires.co',
     elevenLabsApiKey: '',
     elevenLabsVoiceId: 'alternate',
+    bufferAccessToken: '',
+    bufferChannelId: '',
     postingSchedule: {
       post1: '09:00',
       post2: '14:00',

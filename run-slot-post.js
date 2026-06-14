@@ -39,9 +39,15 @@ async function run() {
   if (process.env.PAGE_HANDLE) overrides.pageHandle = process.env.PAGE_HANDLE;
   if (process.env.ELEVENLABS_API_KEY) overrides.elevenLabsApiKey = process.env.ELEVENLABS_API_KEY;
   if (process.env.ELEVENLABS_VOICE_ID) overrides.elevenLabsVoiceId = process.env.ELEVENLABS_VOICE_ID;
+  if (process.env.BUFFER_ACCESS_TOKEN) overrides.bufferAccessToken = process.env.BUFFER_ACCESS_TOKEN;
+  if (process.env.BUFFER_CHANNEL_ID) overrides.bufferChannelId = process.env.BUFFER_CHANNEL_ID;
 
   // GitHub Actions always pushes to production (simulation = false) unless override is set
-  overrides.isSimulationMode = process.env.IS_SIMULATION_MODE === 'true';
+  if (process.env.IS_SIMULATION_MODE !== undefined && process.env.IS_SIMULATION_MODE !== '') {
+    overrides.isSimulationMode = process.env.IS_SIMULATION_MODE === 'true';
+  } else if (process.env.BUFFER_ACCESS_TOKEN || process.env.FACEBOOK_PAGE_ACCESS_TOKEN) {
+    overrides.isSimulationMode = false;
+  }
 
   await db.updateSettings(overrides);
 

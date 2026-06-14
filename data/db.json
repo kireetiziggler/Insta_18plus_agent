@@ -7,6 +7,8 @@
     "pageHandle": "@unspoken.desires.co",
     "elevenLabsApiKey": "",
     "elevenLabsVoiceId": "alternate",
+    "bufferAccessToken": "",
+    "bufferChannelId": "",
     "postingSchedule": {
       "post1": "09:00",
       "post2": "14:00",
@@ -222,6 +224,16 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-14T07:20:45.344Z",
+      "type": "SYSTEM",
+      "message": "Settings updated"
+    },
+    {
+      "timestamp": "2026-06-14T07:20:45.340Z",
+      "type": "SYSTEM",
+      "message": "Settings updated"
+    },
     {
       "timestamp": "2026-06-11T15:10:52.482Z",
       "type": "SYSTEM",
