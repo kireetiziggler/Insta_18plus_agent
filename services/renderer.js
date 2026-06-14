@@ -181,39 +181,45 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       z-index: 2;
     }
     
-    /* Subtle watermark branding placed strictly in bottom right corner (occupies <3% scale) */
+    /* Subtle watermark branding placed strictly in bottom right corner (occupies <3% scale, increased by 5% size) */
     .brand-watermark {
       position: absolute;
-      bottom: 60px;
+      bottom: 65px;
       right: 90px;
       z-index: 10;
       display: flex;
       align-items: center;
-      gap: 12px;
-      opacity: 0.65;
+      gap: 15px;
+      opacity: 0.85;
     }
     .brand-logo-img {
-      height: 30px;
+      height: 38px; /* branding size increased */
       width: auto;
       object-fit: contain;
     }
     .brand-handle {
       font-family: 'Outfit', sans-serif;
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 700;
       letter-spacing: 2px;
-      color: rgba(255, 255, 255, 0.75);
+      color: rgba(255, 255, 255, 0.9);
       text-transform: uppercase;
     }
     
-    /* Left-aligned quote container positioned in negative space (width limited to 750px) */
+    /* Left-aligned quote container positioned at the bottom left with a premium glassmorphic background */
     .quote-section {
       z-index: 10;
-      max-width: 750px;
+      max-width: 800px;
       position: absolute;
       left: 90px;
-      top: 50%;
-      transform: translateY(-50%);
+      bottom: 165px; /* Aligned lower to match background and stay clear of faces */
+      background: rgba(5, 5, 8, 0.42); /* Soft text background card */
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 30px 45px;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     }
     
     /* Single cohesive confession text with strong text shadow for legibility */
@@ -315,13 +321,13 @@ async function downloadBackgroundImage(themeName, postDir, pexelsQuery = null) {
       const randomIndex = Math.floor(Math.random() * Math.min(imgUrls.length, 15));
       let rawUrl = imgUrls[randomIndex];
       
-      // Clean query params and set to 1080x1350 crop
+      // Clean query params and set to 2160x2700 crop (Double scale for ultra-sharp HD quality)
       const urlObj = new URL(rawUrl);
       urlObj.searchParams.set('auto', 'compress');
       urlObj.searchParams.set('cs', 'tinysrgb');
       urlObj.searchParams.set('fit', 'crop');
-      urlObj.searchParams.set('w', '1080');
-      urlObj.searchParams.set('h', '1350');
+      urlObj.searchParams.set('w', '2160');
+      urlObj.searchParams.set('h', '2700');
       
       downloadUrl = urlObj.toString();
       await db.log('SYSTEM', `Found ${imgUrls.length} Pexels images. Selected random index ${randomIndex}: ${downloadUrl}`);
