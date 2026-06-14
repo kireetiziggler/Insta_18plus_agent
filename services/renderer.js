@@ -442,6 +442,104 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
 `;
 }
 
+async function downloadBackgroundImage(themeName, postDir) {
+  const targetPath = path.join(postDir, 'background.png');
+  
+  try {
+    await fs.access(targetPath);
+    await db.log('SYSTEM', `Using existing background image for this post: ${targetPath}`);
+    return targetPath;
+  } catch (e) {
+    // Proceed to search & download
+  }
+
+  // Map each theme to a unique, stunning visual background theme query
+  const PEXELS_THEME_QUERIES = {
+    midnight_desire: 'couples intimate candle light shadow silhouette',
+    rainy_bed: 'cozy dark bedroom rain street lights window bedroom',
+    shadowy_lounge: 'shadowy bar couple romantic tension love aesthetic',
+    candlelight_secrets: 'hands touch candle light table aesthetic romantic',
+    intimate_touch: 'gentle touch embrace shadow couple intimacy body',
+    overthinking_night: 'person look window night city neon lights lonely shadow',
+    secret_thoughts: 'person sit silk bed phone screen night bedroom',
+    sensual_vibes: 'crimson gold luxury silk abstract light texture red'
+  };
+
+  const query = PEXELS_THEME_QUERIES[themeName] || 'romantic couple shadow intimacy';
+  await db.log('SYSTEM', `Searching Pexels for a unique background image matching query: "${query}"...`);
+
+  let downloadUrl = null;
+  let browser = null;
+  try {
+    const executablePath = process.platform === 'linux' ? '/usr/bin/google-chrome' : undefined;
+    browser = await puppeteer.launch({
+      headless: true,
+      executablePath,
+      args: ['--no-sandbox', '--disable-setuid-sandbox']
+    });
+    const page = await browser.newPage();
+    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36');
+
+    const searchUrl = `https://www.pexels.com/search/${encodeURIComponent(query)}/?orientation=portrait`;
+    await page.goto(searchUrl, { waitUntil: 'networkidle2' });
+    await page.waitForSelector('img', { timeout: 8000 });
+
+    const imgUrls = await page.evaluate(() => {
+      const urls = [];
+      const images = Array.from(document.querySelectorAll('img'));
+      for (const img of images) {
+        if (img.src && img.src.includes('images.pexels.com/photos/')) {
+          urls.push(img.src);
+        }
+      }
+      return Array.from(new Set(urls));
+    });
+
+    if (imgUrls.length > 0) {
+      // Pick a random image from the top 15 results to ensure uniqueness
+      const randomIndex = Math.floor(Math.random() * Math.min(imgUrls.length, 15));
+      let rawUrl = imgUrls[randomIndex];
+      
+      // Clean query params and set to 1080x1350 crop
+      const urlObj = new URL(rawUrl);
+      urlObj.searchParams.set('auto', 'compress');
+      urlObj.searchParams.set('cs', 'tinysrgb');
+      urlObj.searchParams.set('fit', 'crop');
+      urlObj.searchParams.set('w', '1080');
+      urlObj.searchParams.set('h', '1350');
+      
+      downloadUrl = urlObj.toString();
+      await db.log('SYSTEM', `Found ${imgUrls.length} Pexels images. Selected random index ${randomIndex}: ${downloadUrl}`);
+    }
+  } catch (err) {
+    await db.log('ERROR', `Pexels image scraper encountered an error: ${err.message}`);
+  } finally {
+    if (browser) {
+      await browser.close();
+    }
+  }
+
+  if (downloadUrl) {
+    await db.log('SYSTEM', `Downloading background image from URL: ${downloadUrl}`);
+    try {
+      const response = await fetch(downloadUrl, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+        }
+      });
+      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
+      const buffer = Buffer.from(await response.arrayBuffer());
+      await fs.writeFile(targetPath, buffer);
+      await db.log('SYSTEM', `Successfully downloaded background image to ${targetPath}`);
+      return targetPath;
+    } catch (err) {
+      await db.log('ERROR', `Failed to download background image: ${err.message}`);
+    }
+  }
+
+  return null;
+}
+
 // Launches a headless Chrome via Puppeteer and renders the slides to disk
 export async function renderPostSlides(postId, slides, themeName, categoryName) {
   const settings = await db.getSettings();
@@ -474,10 +572,16 @@ export async function renderPostSlides(postId, slides, themeName, categoryName) 
     await db.log('ERROR', `Failed to load logo image: ${err.message}`);
   }
 
-  // Load background as base64
-  const bgFileName = THEME_IMAGES[themeName] || 'sensual_vibes';
-  const bgFullPath = path.join(__dirname, '..', 'data', 'backgrounds', `${bgFileName}.png`);
+  // Load background as base64 (either downloaded custom background or local fallback)
   let bgBase64 = '';
+  let customBgPath = null;
+  try {
+    customBgPath = await downloadBackgroundImage(themeName, postDir);
+  } catch (err) {
+    await db.log('ERROR', `Failed to download custom background: ${err.message}`);
+  }
+
+  const bgFullPath = customBgPath || path.join(__dirname, '..', 'data', 'backgrounds', `${THEME_IMAGES[themeName] || 'sensual_vibes'}.png`);
   try {
     bgBase64 = await fs.readFile(bgFullPath, 'base64');
   } catch (err) {

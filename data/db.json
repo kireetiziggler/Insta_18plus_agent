@@ -225,6 +225,66 @@
   ],
   "logs": [
     {
+      "timestamp": "2026-06-14T07:46:56.298Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-14T07:46:55.924Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_pexels_1781423205949\""
+    },
+    {
+      "timestamp": "2026-06-14T07:46:53.160Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-14T07:46:52.646Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-14T07:46:52.643Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_pexels_1781423205949\\background.png"
+    },
+    {
+      "timestamp": "2026-06-14T07:46:51.932Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/4695801/pexels-photo-4695801.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T07:46:51.517Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 0: https://images.pexels.com/photos/4695801/pexels-photo-4695801.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
+    },
+    {
+      "timestamp": "2026-06-14T07:46:45.956Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"shadowy bar couple romantic tension love aesthetic\"..."
+    },
+    {
+      "timestamp": "2026-06-14T07:46:45.952Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-06-14T07:46:45.950Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_pexels_1781423205949\""
+    },
+    {
+      "timestamp": "2026-06-14T07:46:45.947Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-14T07:46:45.944Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Romantic Tension & Chemistry\"..."
+    },
+    {
       "timestamp": "2026-06-14T07:20:45.344Z",
       "type": "SYSTEM",
       "message": "Settings updated"

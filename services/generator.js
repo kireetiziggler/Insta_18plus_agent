@@ -215,17 +215,18 @@ async function generateAIPost(category, topicQuery, apiKey) {
   const prompt = `
 You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on mature, 18+ relationship psychology, intense seduction, and physical/mental chemistry.
 Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, physical intimacy, and unspoken thoughts that keep them awake at night.
-The goal of this content is to act as an immediate trigger point—making readers feel a wave of attraction, romantic tension, or intense relatability that commands an immediate follow.
+The goal of this content is to act as an immediate trigger point—making readers feel a sudden wave of romantic tension, physical craving, or deep relatability that commands an immediate follow.
 
-Generate a highly suggestive, high-tension single-slide post (not a multi-slide carousel) and caption for the category: "${category}".
+Generate an incredibly suggestive, high-tension, and seductive single-slide post (not a multi-slide carousel) and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${examplesText}
 ${recentConstraintText}
 
 CRITICAL CONTENT INSTRUCTIONS:
-- Writing Style: Deep, raw, highly suggestive, and emotionally charged (18+). Use short, heavy, punchy sentences. It must feel like a quiet confession, an intimate secret shared in the dark, or a raw psychological truth about physical desire, attraction, and chemistry.
-- Tone: Extremely magnetic, seductive, and provocative (within safety guidelines: strictly non-explicit and non-pornographic, but high-tension PG-13/R-rated romance). It should trigger a strong emotional and physical response (goosebumps, heart racing, intense familiarity).
+- Writing Style: Deep, raw, highly suggestive, and sensually charged (18+). Use short, heavy, punchy sentences. It must feel like an intimate confession whispered in the dark, a secret shared between sheets, or a raw psychological truth about physical desire and skin-to-skin attraction.
+- Tone: Highly magnetic, provocative, and seductive (within safety guidelines: strictly non-explicit and non-pornographic, but high-voltage PG-13/R-rated romance). It should trigger an immediate physical response (goosebumps, heart racing, a sudden sigh, intense familiarity). Focus on sensory details like the heat of skin, tracing of fingers, heavy breathing, locked eyes in the dark, and the anticipation of touch.
 - Slide text: Generate exactly 1 slide content containing a powerful emotional hook and a short, highly suggestive, high-tension storytelling paragraph. Use 3-4 short, punchy sentences in total (max 45-60 words). Include one of the mature symbols (❦, ❣, ❥, ✦) as a subtle punctuation separator.
+- Caption: Keep the caption highly suggestive and magnetic, matching the slide's intensity. Start with a hook, provide an emotional insight, and end with CTAs (Save, Share, Follow) and 8-10 high-performing hashtags.
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
