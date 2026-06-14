@@ -119,6 +119,7 @@ function parseFormatting(text) {
 // Generate the HTML content string for a slide matching the user's premium reference image
 function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryName, theme, logoBase64, bgBase64) {
   const bgDataUrl = `data:image/png;base64,${bgBase64}`;
+  const logoDataUrl = `data:image/png;base64,${logoBase64}`;
   const cleanHandle = handle.startsWith('@') ? handle : `@${handle}`;
   const formattedText = parseFormatting(slideText);
 
@@ -186,6 +187,17 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       bottom: 60px;
       right: 90px;
       z-index: 10;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      opacity: 0.65;
+    }
+    .brand-logo-img {
+      height: 30px;
+      width: auto;
+      object-fit: contain;
+    }
+    .brand-handle {
       font-family: 'Outfit', sans-serif;
       font-size: 16px;
       font-weight: 700;
@@ -236,7 +248,8 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
     </div>
     
     <div class="brand-watermark">
-      ${cleanHandle}
+      <span class="brand-handle">${cleanHandle}</span>
+      <img class="brand-logo-img" src="${logoDataUrl}" alt="Logo" />
     </div>
   </div>
 </body>

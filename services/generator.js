@@ -6,33 +6,33 @@ const OFFLINE_TEMPLATES = {
   'Anonymous Confessions': [
     {
       backgroundTheme: 'midnight_desire',
-      pexelsQuery: 'couples intimate candle light shadow silhouette',
+      pexelsQuery: 'couple standing very close lift elevator narrow space shadow',
       slides: [
-        "HE LOOKED AT ME.\n\nI still remember the way he looked at me in the elevator. It wasn't a normal glance—it was like he was reading my deepest secrets. When our shoulders accidentally brushed, I had to hold my breath so he wouldn't hear my heart racing.\n\nDo you think he felt the spark too? ❦"
+        "We brushed shoulders in the crowded elevator. Neither of us moved away, but neither of us closed the remaining inch. Does he feel it too? ❦"
       ],
       caption: "Sometimes a single brush is enough to start a fire. Have you ever felt an instant connection that you couldn't explain? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
-      pexelsQuery: 'couples cuddling in bed bedroom cozy romantic',
+      pexelsQuery: 'cozy couple sitting on couch screen glow phone intimacy',
       slides: [
-        "VANILLA AND DANGER.\n\nShe wears this vanilla perfume that completely takes over my thoughts. Yesterday, she leaned in to show me something on her phone, and all I could focus on was the warmth of her shoulder against mine. I wanted to pull her close right then and there.\n\nIs it too early to confess? ❦"
+        "She wore that vanilla perfume again. When she leaned in to show me her phone, our shoulders touched. I wanted to pull her close. Should I? ❦"
       ],
       caption: "Vanilla and dangerous tension. What is the one scent that always reminds you of them? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'secret_thoughts',
-      pexelsQuery: 'person look at phone bed night dark room screen glow',
+      pexelsQuery: 'person in bed phone screen face glow night room',
       slides: [
-        "JUST COLLEAGUES?\n\nWe're supposed to be 'just colleagues,' but when he texts me late at night about work, we both know it's an excuse. Last night, he asked if I was still awake, and my stomach did a complete flip. We are playing a dangerous game.\n\nHow do I stop before we cross the line? ❦"
+        "He texts me late at night under the guise of work. We both know it's an excuse. How do I stop before we cross the line? ❦"
       ],
       caption: "Late night texts and blurred boundaries. Are you playing a dangerous game with someone? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'shadowy_lounge',
-      pexelsQuery: 'moody bar couple romantic tension luxury aesthetic',
+      pexelsQuery: 'moody bar couple close talking eye contact romantic tension',
       slides: [
-        "CATCHING HER STARING.\n\nI catch her staring at my mouth when I speak, but the second I look back, she turns away. She thinks she's being subtle, but it's driving me crazy. One of these days, I'm not going to look away.\n\nWhat happens if I make the first move? ❦"
+        "She looks at my lips when I talk. Then acts like she didn't. Am I imagining it? ❦"
       ],
       caption: "The quiet look that says everything. How do you tell if someone is secretly into you? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
@@ -40,33 +40,33 @@ const OFFLINE_TEMPLATES = {
   'Intimate Secrets': [
     {
       backgroundTheme: 'secret_thoughts',
-      pexelsQuery: 'person sitting silk bed phone screen night bedroom',
+      pexelsQuery: 'person looking phone bed silk sheets night bedroom glow',
       slides: [
-        "SECRET SCREENSHOTS.\n\nI have a secret folder on my phone with screenshots of our conversations. I read them when the nights get too quiet, replaying the way he said my name in my head. It's a silly crush, but it's the only thing keeping me warm.\n\nAm I the only one who does this? ❣"
+        "I still keep screenshots of our late-night conversations. I read them when the room gets too quiet. Am I the only one who does this? ❣"
       ],
       caption: "Replaying the words in the dark. Do you keep screenshots of texts that make you smile? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
-      pexelsQuery: 'couple hugging holding hands close up body language',
+      pexelsQuery: 'couple hug goodbye street night lights close embrace',
       slides: [
-        "THE EXTRA SECOND.\n\nEvery time we hug goodbye, I hold her a fraction of a second longer than a friend should. I check if she pulls away first, but she never does. We're both too scared to cross the line, so we just linger in the middle.\n\nShould I take the risk? ❣"
+        "Every time we hug goodbye, I hold her a second longer. She never pulls away first. Are we lingering in the friend zone? ❣"
       ],
       caption: "The extra second that tells the truth. Are you lingering in the friend zone or is the tension real? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'candlelight_secrets',
-      pexelsQuery: 'couples hands close touching candlelight table shadow romantic',
+      pexelsQuery: 'couples back close crowd shadow silhouette warm light',
       slides: [
-        "HEATING UP.\n\nHe thinks I don't notice the way he positions himself close to me when we're in a crowd. He acts like he's just protecting me, but the heat of his body tells a completely different story. I secretly love it.\n\nHow do I let him know he doesn't have to keep his distance? ❣"
+        "He positions himself right behind me in the crowd, acting like he's just protecting me. The heat of his body says otherwise. Should I turn around? ❣"
       ],
       caption: "Unspoken protection and silent chemistry. What is your favorite way someone shows they care? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'rainy_bed',
-      pexelsQuery: 'earring in car glovebox small reminder romantic couple',
+      pexelsQuery: 'earring glovebox car dashboard night street lights outside',
       slides: [
-        "LEFT IN MY CAR.\n\nShe left her earring in my car last week. I kept it in my glove box instead of telling her. It's just a tiny piece of metal, but every time I see it, I smell her perfume and remember how close we sat.\n\nIs keeping it a sign of something more? ❣"
+        "She left her earring in my car passenger seat. I kept it in my glove box instead of telling her. Is keeping it a mistake? ❣"
       ],
       caption: "A small reminder of their presence. Have you ever kept something small just to remember them by? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
