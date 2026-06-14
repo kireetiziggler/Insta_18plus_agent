@@ -71,6 +71,7 @@ export async function triggerScheduledPost(category) {
       id: postId,
       category,
       backgroundTheme: content.backgroundTheme,
+      pexelsQuery: content.pexelsQuery || null,
       slides: content.slides,
       caption: content.caption,
       scheduledFor: new Date().toISOString(),
@@ -81,7 +82,7 @@ export async function triggerScheduledPost(category) {
 
     // 4. Render graphics using Puppeteer
     await db.log('SYSTEM', `Rendering slide graphics for post "${postId}"...`);
-    const renderedPaths = await renderer.renderPostSlides(postId, content.slides, content.backgroundTheme, category);
+    const renderedPaths = await renderer.renderPostSlides(postId, content.slides, content.backgroundTheme, category, content.pexelsQuery);
     
     newPost.renderedImages = renderedPaths;
     newPost.status = 'scheduled';

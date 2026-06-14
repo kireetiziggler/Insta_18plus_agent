@@ -6,29 +6,33 @@ const OFFLINE_TEMPLATES = {
   'Anonymous Confessions': [
     {
       backgroundTheme: 'midnight_desire',
+      pexelsQuery: 'couples intimate candle light shadow silhouette',
       slides: [
-        "I still remember the way he looked at me in the elevator. It wasn't a normal glance—it was like he was reading my deepest secrets. When our shoulders accidentally brushed, I had to hold my breath so he wouldn't hear my heart racing. Do you think he felt the spark too? ❦"
+        "HE LOOKED AT ME.\n\nI still remember the way he looked at me in the elevator. It wasn't a normal glance—it was like he was reading my deepest secrets. When our shoulders accidentally brushed, I had to hold my breath so he wouldn't hear my heart racing.\n\nDo you think he felt the spark too? ❦"
       ],
       caption: "Sometimes a single brush is enough to start a fire. Have you ever felt an instant connection that you couldn't explain? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
+      pexelsQuery: 'couples cuddling in bed bedroom cozy romantic',
       slides: [
-        "She wears this vanilla perfume that completely takes over my thoughts. Yesterday, she leaned in to show me something on her phone, and all I could focus on was the warmth of her shoulder against mine. I wanted to pull her close right then and there. Is it too early to confess? ❦"
+        "VANILLA AND DANGER.\n\nShe wears this vanilla perfume that completely takes over my thoughts. Yesterday, she leaned in to show me something on her phone, and all I could focus on was the warmth of her shoulder against mine. I wanted to pull her close right then and there.\n\nIs it too early to confess? ❦"
       ],
       caption: "Vanilla and dangerous tension. What is the one scent that always reminds you of them? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'secret_thoughts',
+      pexelsQuery: 'person look at phone bed night dark room screen glow',
       slides: [
-        "We're supposed to be 'just colleagues,' but when he texts me late at night about work, we both know it's an excuse. Last night, he asked if I was still awake, and my stomach did a complete flip. We are playing a dangerous game. How do I stop before we cross the line? ❦"
+        "JUST COLLEAGUES?\n\nWe're supposed to be 'just colleagues,' but when he texts me late at night about work, we both know it's an excuse. Last night, he asked if I was still awake, and my stomach did a complete flip. We are playing a dangerous game.\n\nHow do I stop before we cross the line? ❦"
       ],
       caption: "Late night texts and blurred boundaries. Are you playing a dangerous game with someone? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'shadowy_lounge',
+      pexelsQuery: 'moody bar couple romantic tension luxury aesthetic',
       slides: [
-        "I catch her staring at my mouth when I speak, but the second I look back, she turns away. She thinks she's being subtle, but it's driving me crazy. One of these days, I'm not going to look away. What happens if I make the first move? ❦"
+        "CATCHING HER STARING.\n\nI catch her staring at my mouth when I speak, but the second I look back, she turns away. She thinks she's being subtle, but it's driving me crazy. One of these days, I'm not going to look away.\n\nWhat happens if I make the first move? ❦"
       ],
       caption: "The quiet look that says everything. How do you tell if someone is secretly into you? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
@@ -36,29 +40,33 @@ const OFFLINE_TEMPLATES = {
   'Intimate Secrets': [
     {
       backgroundTheme: 'secret_thoughts',
+      pexelsQuery: 'person sitting silk bed phone screen night bedroom',
       slides: [
-        "I have a secret folder on my phone with screenshots of our conversations. I read them when the nights get too quiet, replaying the way he said my name in my head. It's a silly crush, but it's the only thing keeping me warm. Am I the only one who does this? ❣"
+        "SECRET SCREENSHOTS.\n\nI have a secret folder on my phone with screenshots of our conversations. I read them when the nights get too quiet, replaying the way he said my name in my head. It's a silly crush, but it's the only thing keeping me warm.\n\nAm I the only one who does this? ❣"
       ],
       caption: "Replaying the words in the dark. Do you keep screenshots of texts that make you smile? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'intimate_touch',
+      pexelsQuery: 'couple hugging holding hands close up body language',
       slides: [
-        "Every time we hug goodbye, I hold her a fraction of a second longer than a friend should. I check if she pulls away first, but she never does. We're both too scared to cross the line, so we just linger in the middle. Should I take the risk? ❣"
+        "THE EXTRA SECOND.\n\nEvery time we hug goodbye, I hold her a fraction of a second longer than a friend should. I check if she pulls away first, but she never does. We're both too scared to cross the line, so we just linger in the middle.\n\nShould I take the risk? ❣"
       ],
       caption: "The extra second that tells the truth. Are you lingering in the friend zone or is the tension real? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'candlelight_secrets',
+      pexelsQuery: 'couples hands close touching candlelight table shadow romantic',
       slides: [
-        "He thinks I don't notice the way he positions himself close to me when we're in a crowd. He acts like he's just protecting me, but the heat of his body tells a completely different story. I secretly love it. How do I let him know he doesn't have to keep his distance? ❣"
+        "HEATING UP.\n\nHe thinks I don't notice the way he positions himself close to me when we're in a crowd. He acts like he's just protecting me, but the heat of his body tells a completely different story. I secretly love it.\n\nHow do I let him know he doesn't have to keep his distance? ❣"
       ],
       caption: "Unspoken protection and silent chemistry. What is your favorite way someone shows they care? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
     {
       backgroundTheme: 'rainy_bed',
+      pexelsQuery: 'earring in car glovebox small reminder romantic couple',
       slides: [
-        "She left her earring in my car last week. I kept it in my glove box instead of telling her. It's just a tiny piece of metal, but every time I see it, I smell her perfume and remember how close we sat. Is keeping it a sign of something more? ❣"
+        "LEFT IN MY CAR.\n\nShe left her earring in my car last week. I kept it in my glove box instead of telling her. It's just a tiny piece of metal, but every time I see it, I smell her perfume and remember how close we sat.\n\nIs keeping it a sign of something more? ❣"
       ],
       caption: "A small reminder of their presence. Have you ever kept something small just to remember them by? #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
@@ -137,8 +145,13 @@ CRITICAL CONTENT INSTRUCTIONS:
 - Writing Style: Deep, raw, highly suggestive, and sensually charged. Use short, heavy, punchy sentences. It must feel like a quiet confession whispered in the dark, a secret shared between sheets, or a raw psychological truth about physical desire and skin-to-skin attraction.
 - Perspective: Vary between male and female perspectives.
 - Compliance: Keep it strictly non-explicit and non-pornographic, but high-voltage PG-13/R-rated romance tension. Compliant with Instagram and Facebook safety policies.
-- Slide text: Generate exactly 1 slide content containing a powerful confession hook and a short, highly suggestive storytelling paragraph. End the slide text with a thought-provoking question or hook that creates curiosity. Use 3-4 short, punchy sentences in total (max 45-60 words). Include one of the mature symbols (❦, ❣, ❥, ✦) as a subtle punctuation separator.
+- Slide text structure: Generate exactly 1 slide content string. The string MUST use double newlines ("\\n\\n") to separate three distinct paragraphs:
+  1. Paragraph 1 (HOOK): A powerful, attention-grabbing uppercase hook title (max 4-5 words, no period).
+  2. Paragraph 2 (STORY): The short, highly suggestive storytelling narrative (2-3 short, punchy, emotionally loaded sentences).
+  3. Paragraph 3 (QUESTION): A thought-provoking question that creates intense curiosity, ending with one of the mature symbols (❦, ❣, ❥, ✦).
+  Total slide word count should be max 50-60 words.
 - Caption: Keep the caption extremely brief—exactly one provocative, highly suggestive line (1 sentence, max 10-15 words) that asks an engaging question or hook, followed directly by 5-6 high-reach hashtags (e.g. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage). Do not include lists, bullet points, or multiple lines.
+- Dynamic Search Query: Generate a specific Pexels search query (in the "pexelsQuery" field) that describes a high-end, premium photographic scene matching this confession's setting, body language, and mood. The query should specify realistic humans or couples in close proximity or intimate moments, and be optimized for searching portrait photos on Pexels (e.g. "couple hands touching candlelight table", "person looking out window night rain bedroom").
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
@@ -154,8 +167,9 @@ Response must be valid JSON matching this schema:
 \`\`\`json
 {
   "backgroundTheme": "midnight_desire",
+  "pexelsQuery": "highly descriptive query for pexels search...",
   "slides": [
-    "Slide hook and confession story text combined here..."
+    "HOOK TITLE\\n\\nStory text goes here...\\n\\nQuestion?"
   ],
   "caption": "One line caption text #intimacy #chemistry..."
 }
@@ -167,7 +181,7 @@ Response must be valid JSON matching this schema:
   const parsedData = JSON.parse(responseText);
 
   // Validate structures
-  if (!parsedData.backgroundTheme || !Array.isArray(parsedData.slides) || parsedData.slides.length !== 1 || !parsedData.caption) {
+  if (!parsedData.backgroundTheme || !parsedData.pexelsQuery || !Array.isArray(parsedData.slides) || parsedData.slides.length !== 1 || !parsedData.caption) {
     throw new Error("Invalid structure returned by Gemini AI");
   }
 

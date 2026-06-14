@@ -120,11 +120,33 @@ function parseFormatting(text) {
 function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryName, theme, logoBase64, bgBase64) {
   const bgDataUrl = `data:image/png;base64,${bgBase64}`;
   const logoDataUrl = `data:image/png;base64,${logoBase64}`;
-  const formattedText = parseFormatting(slideText);
-
 
   // Extract clean handle representation
   const cleanHandle = handle.startsWith('@') ? handle : `@${handle}`;
+
+  // Split slide text by double newlines to segment Hook, Story, and CTA
+  const paragraphs = slideText.split(/\n\n+/).map(p => p.trim()).filter(p => p.length > 0);
+  let htmlBody = '';
+
+  if (paragraphs.length >= 3) {
+    const hookText = parseFormatting(paragraphs[0]);
+    const storyText = parseFormatting(paragraphs[1]);
+    const ctaText = parseFormatting(paragraphs[2]);
+    htmlBody = `
+      <div class="hook-title">${hookText}</div>
+      <p class="story-body">${storyText}</p>
+      <div class="question-hook">${ctaText}</div>
+    `;
+  } else if (paragraphs.length === 2) {
+    const storyText = parseFormatting(paragraphs[0]);
+    const ctaText = parseFormatting(paragraphs[1]);
+    htmlBody = `
+      <p class="story-body">${storyText}</p>
+      <div class="question-hook">${ctaText}</div>
+    `;
+  } else {
+    htmlBody = `<p class="story-body">${parseFormatting(slideText)}</p>`;
+  }
 
   return `
 <!DOCTYPE html>
@@ -146,8 +168,8 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       width: 1080px;
       height: 1350px;
       overflow: hidden;
-      background-color: #08080a;
-      font-family: ${theme.bodyFont || "'Lora', serif"};
+      background-color: #050507;
+      font-family: 'Lora', serif;
     }
     #slide-container {
       width: 1080px;
@@ -155,11 +177,10 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
-      padding: 95px 85px 85px 85px;
+      justify-content: center; /* Center vertically for negative space layout impact */
+      padding: 95px 90px;
       color: #fff;
       z-index: 5;
-      overflow: hidden;
     }
     .bg-image {
       position: absolute;
@@ -170,211 +191,93 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       background-image: url('${bgDataUrl}');
       background-size: cover;
       background-position: center;
-      filter: ${theme.bgFilter || 'brightness(0.35)'} contrast(1.05) saturate(0.9);
+      /* Brighter brightness filter to ensure scene details are clearly visible */
+      filter: ${theme.bgFilter || 'brightness(0.65)'} contrast(1.05) saturate(0.95);
       z-index: 1;
     }
-    /* Linear gradient overlay that fades to black on the left */
+    /* Balanced left-to-right gradient overlay: ensures high text readability on the left, leaves right side clean */
     .bg-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 1080px;
       height: 1350px;
-      background: linear-gradient(90deg, rgba(6, 6, 8, 0.85) 0%, rgba(6, 6, 8, 0.45) 55%, rgba(6, 6, 8, 0.0) 100%);
+      background: linear-gradient(90deg, rgba(5, 5, 7, 0.76) 0%, rgba(5, 5, 7, 0.38) 52%, rgba(5, 5, 7, 0.0) 100%);
       z-index: 2;
     }
     
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
+    /* Elegant small watermark logo in the bottom-left corner (<3% scale) */
+    .brand-watermark {
+      position: absolute;
+      bottom: 60px;
+      left: 90px;
       z-index: 10;
-      width: 100%;
-    }
-    
-    /* Branding logo (Unspoken Desires style) */
-    .brand-box {
       display: flex;
-      flex-direction: column;
-      gap: 4px;
-      line-height: 1.1;
+      align-items: center;
+      gap: 12px;
+      opacity: 0.65;
     }
-    .brand-title {
+    .brand-logo-img {
+      height: 28px;
+      width: auto;
+      object-fit: contain;
+    }
+    .brand-handle {
       font-family: 'Outfit', sans-serif;
-      font-size: 26px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: #fff;
-      text-transform: uppercase;
-    }
-    .brand-sub {
-      font-family: 'Lora', serif;
-      font-size: 12px;
-      font-style: italic;
-      color: rgba(255, 255, 255, 0.65);
-      letter-spacing: 0.5px;
-    }
-    
-    .header-right {
-      text-align: right;
-      font-family: 'Outfit', sans-serif;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 700;
       letter-spacing: 2px;
-      color: rgba(255, 255, 255, 0.5);
+      color: rgba(255, 255, 255, 0.85);
       text-transform: uppercase;
-      padding-top: 5px;
-    }
-    .header-right span {
-      color: ${theme.accentColor || '#fbbf24'};
-      font-weight: 800;
     }
     
-    /* Center Quote Box */
+    /* Left-aligned quote container restricted to negative space */
     .quote-section {
       z-index: 10;
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-      margin-top: -30px;
-      flex-grow: 1;
-      justify-content: center;
-      flex-direction: column;
-    }
-    .quote-content-wrap {
-      display: flex;
-      gap: 24px;
-    }
-    .quote-mark {
-      font-family: 'Lora', serif;
-      font-size: 130px;
-      color: ${theme.accentColor || '#fbbf24'};
-      line-height: 0.3;
-      margin-top: 15px;
-      font-weight: 700;
-      user-select: none;
-    }
-    .quote-body-container {
-      border-left: 2px solid rgba(255, 255, 255, 0.25);
-      padding-left: 32px;
+      max-width: 740px;
       display: flex;
       flex-direction: column;
-      gap: 24px;
-    }
-    .quote-text {
-      font-family: ${theme.bodyFont || "'Lora', serif"};
-      font-size: 34px;
-      font-weight: 600;
-      line-height: 1.5;
-      color: #fff;
-      max-width: 720px;
-      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
-    }
-    .quote-signature {
-      font-family: 'Lora', serif;
-      font-size: 20px;
-      font-style: italic;
-      color: rgba(255, 255, 255, 0.6);
-      line-height: 1.3;
+      gap: 20px;
+      margin-top: -40px;
     }
     
-    /* Highlights */
+    /* Hook styling */
+    .hook-title {
+      font-family: 'Outfit', sans-serif;
+      font-size: 44px;
+      font-weight: 800;
+      color: ${theme.accentColor || '#fbbf24'};
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      line-height: 1.3;
+      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.85);
+    }
+    
+    /* Short punchy body text */
+    .story-body {
+      font-family: ${theme.bodyFont || "'Lora', serif"};
+      font-size: 32px;
+      line-height: 1.6;
+      color: rgba(255, 255, 255, 0.96);
+      font-weight: 400;
+      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.85), 0 1px 2px rgba(0, 0, 0, 0.9);
+    }
+    
+    /* Final curiosity question */
+    .question-hook {
+      font-family: ${theme.bodyFont || "'Lora', serif"};
+      font-size: 28px;
+      font-style: italic;
+      color: ${theme.accentColor || '#fbbf24'};
+      font-weight: 600;
+      margin-top: 10px;
+      text-shadow: 0 4px 15px rgba(0, 0, 0, 0.85);
+    }
+    
+    /* Highlights inside formatting */
     .highlight {
       color: ${theme.accentColor || '#fbbf24'};
       font-weight: 700;
-    }
-    
-    /* Footer elements */
-    .footer-wrapper {
-      z-index: 10;
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
-    }
-    .footer-top-row {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      width: 100%;
-    }
-    .footer-left-branding {
-      display: flex;
-      align-items: center;
-      gap: 28px;
-    }
-    .emoji-group {
-      display: flex;
-      gap: 20px;
-    }
-    .emoji-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 3px;
-    }
-    .emoji-item span {
-      font-size: 22px;
-      color: rgba(255, 255, 255, 0.8);
-    }
-    .emoji-item label {
-      font-size: 9px;
-      letter-spacing: 1px;
-      color: rgba(255, 255, 255, 0.5);
-      font-weight: 600;
-      text-transform: uppercase;
-      font-family: 'Outfit', sans-serif;
-    }
-    .footer-divider {
-      width: 1px;
-      height: 48px;
-      background: rgba(255, 255, 255, 0.15);
-    }
-    .footer-slogan {
-      font-size: 11px;
-      letter-spacing: 1px;
-      font-weight: 600;
-      color: rgba(255, 255, 255, 0.7);
-      line-height: 1.4;
-      text-transform: uppercase;
-      font-family: 'Outfit', sans-serif;
-    }
-    .footer-slogan span {
-      color: ${theme.accentColor || '#fbbf24'};
-    }
-    .footer-handle-badge {
-      background: ${theme.accentColor || '#fbbf24'};
-      color: #000;
-      font-size: 12px;
-      font-weight: 800;
-      padding: 3px 12px;
-      border-radius: 12px;
-      width: fit-content;
-      margin-top: 5px;
-      letter-spacing: 0.5px;
-      font-family: 'Outfit', sans-serif;
-    }
-
-    
-    .bottom-tagline-row {
-      width: 100%;
-      border-top: 1px solid rgba(255,255,255,0.06);
-      padding-top: 18px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 10px;
-      letter-spacing: 2px;
-      color: rgba(255, 255, 255, 0.4);
-      font-weight: 600;
-      text-transform: uppercase;
-      font-family: 'Outfit', sans-serif;
-    }
-    
-    .brand-logo-watermark {
-      height: 120px;
-      width: auto;
-      object-fit: contain;
-      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.6));
     }
     
     ${theme.customCSS || ''}
@@ -385,65 +288,21 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
   <div class="bg-overlay"></div>
   
   <div id="slide-container">
-    <header>
-      <div class="header-right">
-        Volume <span>01</span>
-      </div>
-    </header>
-    
     <div class="quote-section">
-      <div class="quote-content-wrap">
-        <div class="quote-mark">“</div>
-        <div class="quote-body-container">
-          <div class="quote-text">
-            ${formattedText}
-          </div>
-          <div class="quote-signature">
-            Read the unspoken. Connect with the desire. ✦
-          </div>
-        </div>
-      </div>
+      ${htmlBody}
     </div>
     
-    <div class="footer-wrapper">
-      <div class="footer-top-row">
-        <div class="footer-left-branding">
-          <div class="emoji-group">
-            <div class="emoji-item"><span>❦</span><label>Desire</label></div>
-            <div class="emoji-item"><span>❣</span><label>Chemistry</label></div>
-            <div class="emoji-item"><span>❥</span><label>Passion</label></div>
-            <div class="emoji-item"><span>✦</span><label>Secrets</label></div>
-          </div>
-          <div class="footer-divider"></div>
-          <div class="footer-slogan">
-            Seductive realities for<br/>
-            mature adults aged <span>20-35.</span>
-            <div class="footer-handle-badge">${cleanHandle}</div>
-          </div>
-        </div>
-
-      </div>
-      
-      <div class="bottom-tagline-row">
-        <div style="display: flex; gap: 15px;">
-          <span>Desire</span>
-          <span>|</span>
-          <span>Intimacy</span>
-          <span>|</span>
-          <span>Chemistry</span>
-          <span>|</span>
-          <span>Secrets</span>
-        </div>
-        <img class="brand-logo-watermark" src="${logoDataUrl}" alt="Logo" />
-      </div>
+    <div class="brand-watermark">
+      <img class="brand-logo-img" src="${logoDataUrl}" alt="Logo" />
+      <span class="brand-handle">${cleanHandle}</span>
     </div>
   </div>
 </body>
 </html>
-`;
+  `;
 }
 
-async function downloadBackgroundImage(themeName, postDir) {
+async function downloadBackgroundImage(themeName, postDir, pexelsQuery = null) {
   const targetPath = path.join(postDir, 'background.png');
   
   try {
@@ -466,7 +325,7 @@ async function downloadBackgroundImage(themeName, postDir) {
     sensual_vibes: 'crimson gold luxury silk abstract light texture red'
   };
 
-  const query = PEXELS_THEME_QUERIES[themeName] || 'romantic couple shadow intimacy';
+  const query = pexelsQuery || PEXELS_THEME_QUERIES[themeName] || 'romantic couple shadow intimacy';
   await db.log('SYSTEM', `Searching Pexels for a unique background image matching query: "${query}"...`);
 
   let downloadUrl = null;
@@ -542,7 +401,7 @@ async function downloadBackgroundImage(themeName, postDir) {
 }
 
 // Launches a headless Chrome via Puppeteer and renders the slides to disk
-export async function renderPostSlides(postId, slides, themeName, categoryName) {
+export async function renderPostSlides(postId, slides, themeName, categoryName, pexelsQuery = null) {
   const settings = await db.getSettings();
   const handle = settings.pageHandle || '@auraflow.co';
   const postDir = path.join(__dirname, '..', 'data', 'posts', postId);
@@ -577,7 +436,7 @@ export async function renderPostSlides(postId, slides, themeName, categoryName) 
   let bgBase64 = '';
   let customBgPath = null;
   try {
-    customBgPath = await downloadBackgroundImage(themeName, postDir);
+    customBgPath = await downloadBackgroundImage(themeName, postDir, pexelsQuery);
   } catch (err) {
     await db.log('ERROR', `Failed to download custom background: ${err.message}`);
   }
