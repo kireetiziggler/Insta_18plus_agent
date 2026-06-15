@@ -88,7 +88,25 @@ class Database {
 
   async getSettings() {
     const db = await this.load();
-    return db.settings;
+    const settings = { ...db.settings };
+    
+    // Override settings in-memory using environment variables (prevents secrets leakage to disk)
+    if (process.env.GEMINI_API_KEY) settings.geminiApiKey = process.env.GEMINI_API_KEY;
+    if (process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID) settings.instagramBusinessId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
+    if (process.env.FACEBOOK_PAGE_ACCESS_TOKEN) settings.facebookPageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
+    if (process.env.PAGE_HANDLE) settings.pageHandle = process.env.PAGE_HANDLE;
+    if (process.env.ELEVENLABS_API_KEY) settings.elevenLabsApiKey = process.env.ELEVENLABS_API_KEY;
+    if (process.env.ELEVENLABS_VOICE_ID) settings.elevenLabsVoiceId = process.env.ELEVENLABS_VOICE_ID;
+    if (process.env.BUFFER_ACCESS_TOKEN) settings.bufferAccessToken = process.env.BUFFER_ACCESS_TOKEN;
+    if (process.env.BUFFER_CHANNEL_ID) settings.bufferChannelId = process.env.BUFFER_CHANNEL_ID;
+    
+    if (process.env.IS_SIMULATION_MODE !== undefined && process.env.IS_SIMULATION_MODE !== '') {
+      settings.isSimulationMode = process.env.IS_SIMULATION_MODE === 'true';
+    } else if (process.env.BUFFER_ACCESS_TOKEN || process.env.FACEBOOK_PAGE_ACCESS_TOKEN) {
+      settings.isSimulationMode = false;
+    }
+    
+    return settings;
   }
 
   async updateSettings(newSettings) {

@@ -25,25 +25,8 @@ async function run() {
   console.log('UNSPOKEN DESIRES - GITHUB ACTIONS SCHEDULER ACTIVE');
   console.log('========================================================\n');
 
-  // Override db settings with secrets injected from GitHub Action Environment variables
-  const overrides = {};
-  if (process.env.GEMINI_API_KEY) overrides.geminiApiKey = process.env.GEMINI_API_KEY;
-  if (process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID) overrides.instagramBusinessId = process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
-  if (process.env.FACEBOOK_PAGE_ACCESS_TOKEN) overrides.facebookPageToken = process.env.FACEBOOK_PAGE_ACCESS_TOKEN;
-  if (process.env.PAGE_HANDLE) overrides.pageHandle = process.env.PAGE_HANDLE;
-  if (process.env.ELEVENLABS_API_KEY) overrides.elevenLabsApiKey = process.env.ELEVENLABS_API_KEY;
-  if (process.env.ELEVENLABS_VOICE_ID) overrides.elevenLabsVoiceId = process.env.ELEVENLABS_VOICE_ID;
-  if (process.env.BUFFER_ACCESS_TOKEN) overrides.bufferAccessToken = process.env.BUFFER_ACCESS_TOKEN;
-  if (process.env.BUFFER_CHANNEL_ID) overrides.bufferChannelId = process.env.BUFFER_CHANNEL_ID;
+  // Note: Environment secrets are dynamically loaded in-memory by db.getSettings() and never written to db.json
 
-  // GitHub Actions always pushes to production (simulation = false) unless override is set
-  if (process.env.IS_SIMULATION_MODE !== undefined && process.env.IS_SIMULATION_MODE !== '') {
-    overrides.isSimulationMode = process.env.IS_SIMULATION_MODE === 'true';
-  } else if (process.env.BUFFER_ACCESS_TOKEN || process.env.FACEBOOK_PAGE_ACCESS_TOKEN) {
-    overrides.isSimulationMode = false;
-  }
-
-  await db.updateSettings(overrides);
 
   // 1. Always run Trend Research first to refresh with the latest Reddit topics
   try {
