@@ -416,6 +416,151 @@
   ],
   "logs": [
     {
+      "timestamp": "2026-06-15T06:40:43.943Z",
+      "type": "SYSTEM",
+      "message": "Safeguard Lock triggered: A post for category \"Anonymous Confessions\" has already been published today. Skipping duplicate posting."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:43.941Z",
+      "type": "SYSTEM",
+      "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:43.903Z",
+      "type": "RESEARCH",
+      "message": "Closed crawling browser session."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:43.776Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:42.766Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:41.752Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/lonely..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:40.744Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/breakups..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:40.743Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:40.741Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:39.731Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/socialskills..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:39.178Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:38.241Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:38.240Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:38.238Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:37.223Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:36.214Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/relationships..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:35.195Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:35.193Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:35.191Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:34.179Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:33.650Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/texts..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:32.637Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/confession..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:32.636Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:32.634Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:31.621Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:30.596Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/sex..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:29.395Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-15T06:40:29.394Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-15T06:40:21.013Z",
+      "type": "RESEARCH",
+      "message": "Starting Trend Research Agent via Puppeteer..."
+    },
+    {
       "timestamp": "2026-06-15T04:12:54.660Z",
       "type": "PUBLISHER",
       "message": "Successfully published post ID \"post_1781496754241\" to Instagram via Buffer (Buffer Post ID: 6a2f7bbc824a5ebfe36e4ba7)"
@@ -2769,151 +2914,6 @@
       "timestamp": "2026-06-10T17:53:11.155Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-10T17:53:10.670Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-06-10T17:53:10.667Z",
-      "type": "SYSTEM",
-      "message": "Settings updated"
-    },
-    {
-      "timestamp": "2026-06-10T17:53:01.465Z",
-      "type": "ERROR",
-      "message": "Scheduled post workflow failed for \"Romantic Tension & Chemistry\": Instagram Business ID or Facebook Page Access Token is missing in settings. Cannot publish."
-    },
-    {
-      "timestamp": "2026-06-10T17:53:01.462Z",
-      "type": "ERROR",
-      "message": "Instagram Business ID or Facebook Page Access Token is missing in settings. Cannot publish."
-    },
-    {
-      "timestamp": "2026-06-10T17:53:01.461Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1781113973141\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-06-10T17:53:01.458Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-10T17:53:01.069Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 5 slides for post \"post_1781113973141\""
-    },
-    {
-      "timestamp": "2026-06-10T17:53:00.221Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 5/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:59.252Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 4/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:58.261Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 3/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:57.333Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 2/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.598Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/5..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.146Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.145Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"shadowy_passion\" (Day of week: 3)"
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.144Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\post_1781113973141\""
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.142Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1781113973141\"..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.139Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.138Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Romantic Tension & Chemistry\"..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.136Z",
-      "type": "SYSTEM",
-      "message": "Using trend topic for generation: \"r/Dating is NOT the place to soapbox Incel/Blackpill rhetoric.\""
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.134Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.112Z",
-      "type": "RESEARCH",
-      "message": "Trend Research completed. Found and stored 15 potential topics."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:53.110Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:52.729Z",
-      "type": "RESEARCH",
-      "message": "No Gemini API key. Scoring 18 posts for \"Intimate Heartbreak & Healing\" via engagement metrics"
-    },
-    {
-      "timestamp": "2026-06-10T17:52:52.015Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:50.100Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:47.847Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-06-10T17:52:47.846Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-10T17:52:47.844Z",
-      "type": "RESEARCH",
-      "message": "No Gemini API key. Scoring 12 posts for \"Romantic Tension & Chemistry\" via engagement metrics"
-    },
-    {
-      "timestamp": "2026-06-10T17:52:45.380Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
     }
   ]
 }
