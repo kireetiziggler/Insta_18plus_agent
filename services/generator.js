@@ -8,7 +8,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'midnight_desire',
       pexelsQuery: 'couple standing very close lift elevator narrow space shadow low light night',
       slides: [
-        "His hands found my waist in the dark elevator. We didn't say a word, but the way he pulled me against him confirmed the affair we'd been denying for months."
+        "His hands found my waist in the dark elevator, pulling me flush against him as the doors slid shut. We didn't say a word, but his thumb brushed beneath my shirt, confirming the affair we'd denied for months. The heat in that cramped, rising space was absolute madness."
       ],
       caption: "A single touch in the dark changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -16,7 +16,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'intimate_touch',
       pexelsQuery: 'moody bar night couple romantic tension low light whispering',
       slides: [
-        "I watched him touch her arm at the bar, the exact same way he touches mine when his wife isn't looking. The jealousy burned, but our secret remains the real drug."
+        "I stood in the shadows, watching him slide his hand along her back at the bar, tracing the lace of her dress the exact same way he does to mine when they think no one is looking. The jealousy burned, but knowing I am his actual late-night secret is the ultimate high."
       ],
       caption: "The beautiful torture of being his favorite secret. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -24,7 +24,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'secret_thoughts',
       pexelsQuery: 'person looking phone bed silk sheets night bedroom glow dark',
       slides: [
-        "He sent a voice note detailing exactly what he’d do to me if we weren't three thousand miles apart. Now I'm staring at the bedroom ceiling in the dark, completely aching for him."
+        "His voice note detailed exactly what he’d do to me if we weren't separated by three thousand miles of ocean. Now I'm lying awake in the dark, tracing the path of his words along my collarbone, my skin aching for a touch that is completely out of reach."
       ],
       caption: "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -32,7 +32,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'shadowy_lounge',
       pexelsQuery: 'cozy couple sitting on couch screen glow phone intimacy night low light',
       slides: [
-        "She whispered his name while her lips brushed my neck, but we both knew she was thinking of me. The heat between us in that crowded lounge was absolute sin."
+        "She leaned close, her lips brushing my neck as she whispered a completely innocent joke, but her fingers gripped my thigh tightly under the table. The sudden heat between us in that crowded, dim lounge was pure sin, and we both knew we had crossed the line."
       ],
       caption: "A sudden whisper that changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
@@ -42,7 +42,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'secret_thoughts',
       pexelsQuery: 'person looking phone bed silk sheets night bedroom glow dark',
       slides: [
-        "He sent me a picture of his chest with a text saying 'wish your teeth were here'. It's 2 AM, and I've read it ten times while tracing my own lips in the dark."
+        "He sent me a picture of his chest with a text saying 'wish your teeth were here'. It's 2 AM, and I've read it ten times, my heart racing as I imagine the heat of his collarbone against my lips in the dark."
       ],
       caption: "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -50,7 +50,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'intimate_touch',
       pexelsQuery: 'couple hug goodbye street night lights close embrace shadow',
       slides: [
-        "Every time we hug goodbye in the shadow of the streetlights, he slips his hand slightly under my shirt, tracing my spine in a silent promise of what's to come."
+        "Every time we hug goodbye in the shadow of the streetlights, he slides his hand slightly under my shirt, tracing the curve of my spine with a slow, heavy pressure that makes me forget about the rest of the world. It’s our silent, dangerous promise."
       ],
       caption: "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -58,7 +58,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'candlelight_secrets',
       pexelsQuery: 'hands touch candle light night table aesthetic dark romantic',
       slides: [
-        "Our call ended hours ago, but the memory of his hands remains. I closed my eyes in the dark, imagining his touch on my skin until the longing became physical pain."
+        "Our video call ended hours ago, but the screen glow is still warm. I close my eyes in the dark, tracing the memory of his hands on my skin until the distance makes the physical craving feel like a ache I can't escape."
       ],
       caption: "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -66,7 +66,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'rainy_bed',
       pexelsQuery: 'cozy dark bedroom night rain street lights window bedroom silhouette',
       slides: [
-        "We parked in the furthest corner of the lot, rain hammering the roof. Seeing her wedding ring on the dashboard while her lips were on my neck felt like a beautiful, dangerous sin."
+        "We parked in the furthest corner of the lot, rain hammering the roof. Seeing her wedding ring glinting on the dashboard in the dashboard light while her lips were on my neck and her hands were under my shirt felt like a beautiful, dangerous sin."
       ],
       caption: "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
