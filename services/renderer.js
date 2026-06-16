@@ -141,14 +141,14 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
     }
     body {
       width: 1080px;
-      height: 1350px;
+      height: 1080px;
       overflow: hidden;
       background-color: #050507;
       font-family: 'Lora', serif;
     }
     #slide-container {
       width: 1080px;
-      height: 1350px;
+      height: 1080px;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -162,7 +162,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       top: 0;
       left: 0;
       width: 1080px;
-      height: 1350px;
+      height: 1080px;
       background-image: url('${bgDataUrl}');
       background-size: cover;
       background-position: center;
@@ -176,7 +176,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       top: 0;
       left: 0;
       width: 1080px;
-      height: 1350px;
+      height: 1080px;
       background: rgba(5, 5, 7, 0.18);
       z-index: 2;
     }
@@ -321,13 +321,13 @@ async function downloadBackgroundImage(themeName, postDir, pexelsQuery = null) {
       const randomIndex = Math.floor(Math.random() * Math.min(imgUrls.length, 15));
       let rawUrl = imgUrls[randomIndex];
       
-      // Clean query params and set to 2160x2700 crop (Double scale for ultra-sharp HD quality)
+      // Clean query params and set to 2160x2160 crop (Double scale for ultra-sharp HD quality)
       const urlObj = new URL(rawUrl);
       urlObj.searchParams.set('auto', 'compress');
       urlObj.searchParams.set('cs', 'tinysrgb');
       urlObj.searchParams.set('fit', 'crop');
       urlObj.searchParams.set('w', '2160');
-      urlObj.searchParams.set('h', '2700');
+      urlObj.searchParams.set('h', '2160');
       
       downloadUrl = urlObj.toString();
       await db.log('SYSTEM', `Found ${imgUrls.length} Pexels images. Selected random index ${randomIndex}: ${downloadUrl}`);
@@ -420,7 +420,7 @@ export async function renderPostSlides(postId, slides, themeName, categoryName, 
     });
 
     const page = await browser.newPage();
-    await page.setViewport({ width: 1080, height: 1350, deviceScaleFactor: 2 }); // Scale factor 2 for crisp text
+    await page.setViewport({ width: 1080, height: 1080, deviceScaleFactor: 2 }); // Scale factor 2 for crisp text
 
     const renderedPaths = [];
 

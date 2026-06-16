@@ -79,9 +79,9 @@ async function getRecentConstraintText() {
     const posts = await db.getPosts();
     if (!posts || posts.length === 0) return "";
     
-    // Get the last 15 posts/reels to exclude their hooks/lines
+    // Get the last 30 posts/reels to exclude their hooks/lines
     const recentHooks = posts
-      .slice(-15)
+      .slice(-30)
       .map(p => {
         const title = p.type === 'reel' ? p.titleText : (p.slides ? p.slides[0] : '');
         return title ? `- "${title}"` : null;
@@ -214,6 +214,7 @@ function formatOneLineCaption(caption) {
 export async function generatePostContent(category, topicQuery = null) {
   const settings = await db.getSettings();
   const apiKey = settings.geminiApiKey;
+  const posts = await db.getPosts();
 
   await db.log('GENERATOR', `Generating content for category: "${category}"...`);
 
@@ -224,11 +225,11 @@ export async function generatePostContent(category, topicQuery = null) {
       await db.log('GENERATOR', `Successfully generated AI content using Gemini. Theme: "${content.backgroundTheme}"`);
     } catch (error) {
       await db.log('ERROR', `Gemini content generation failed: ${error.message}. Falling back to offline template.`);
-      content = getOfflineTemplate(category);
+      content = getOfflineTemplate(category, posts);
     }
   } else {
     await db.log('GENERATOR', `No Gemini API key found. Selecting a high-quality offline template...`);
-    content = getOfflineTemplate(category);
+    content = getOfflineTemplate(category, posts);
   }
 
   // Double check page handle formatting in CTAs
@@ -241,8 +242,8 @@ export async function generatePostContent(category, topicQuery = null) {
   return content;
 }
 
-// Select a template randomly from the offline database for the given category
-function getOfflineTemplate(category) {
+// Select an unused template from the offline database for the given category to prevent repetition
+function getOfflineTemplate(category, posts = []) {
   const templates = OFFLINE_TEMPLATES[category];
   if (!templates || templates.length === 0) {
     // Ultimate fallback if category name is misaligned
@@ -255,12 +256,19 @@ function getOfflineTemplate(category) {
     };
   }
 
-  const randomIndex = Math.floor(Math.random() * templates.length);
-  const selected = templates[randomIndex];
+  // Find already used templates by comparing slide content
+  const usedTexts = new Set(posts.map(p => p.slides ? p.slides[0] : ''));
+  const unusedTemplates = templates.filter(t => !usedTexts.has(t.slides[0]));
+
+  // Fallback to full templates pool if all have been used
+  const pool = unusedTemplates.length > 0 ? unusedTemplates : templates;
+  const randomIndex = Math.floor(Math.random() * pool.length);
+  const selected = pool[randomIndex];
   
   // Clone to avoid mutation of source objects
   return {
     backgroundTheme: selected.backgroundTheme,
+    pexelsQuery: selected.pexelsQuery || null,
     slides: [...selected.slides],
     caption: selected.caption
   };
@@ -329,6 +337,7 @@ Response must be valid JSON matching this schema:
 export async function generateReelContent(category, topicQuery = null) {
   const settings = await db.getSettings();
   const apiKey = settings.geminiApiKey;
+  const posts = await db.getPosts();
 
   await db.log('GENERATOR', `Generating Reel content for category: "${category}"...`);
 
@@ -339,11 +348,11 @@ export async function generateReelContent(category, topicQuery = null) {
       await db.log('GENERATOR', `Successfully generated AI Reel content using Gemini. Theme: "${content.backgroundTheme}"`);
     } catch (error) {
       await db.log('ERROR', `Gemini Reel generation failed: ${error.message}. Falling back to offline template.`);
-      content = getOfflineReelFallback(category);
+      content = getOfflineReelFallback(category, posts);
     }
   } else {
     await db.log('GENERATOR', `No Gemini API key found. Selecting an offline Reel template...`);
-    content = getOfflineReelFallback(category);
+    content = getOfflineReelFallback(category, posts);
   }
 
   // Double check page handle formatting in CTAs/caption
@@ -354,9 +363,9 @@ export async function generateReelContent(category, topicQuery = null) {
   return content;
 }
 
-// Convert post offline templates into reels format
-function getOfflineReelFallback(category) {
-  const postContent = getOfflineTemplate(category);
+// Convert post offline templates into reels format, using used history
+function getOfflineReelFallback(category, posts = []) {
+  const postContent = getOfflineTemplate(category, posts);
   // slide 1 as titleText
   // slides 2, 3, 4 as audioScript
   const titleText = postContent.slides[0];

@@ -466,6 +466,111 @@
   ],
   "logs": [
     {
+      "timestamp": "2026-06-16T17:52:42.012Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:41.649Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_sample_evening_run\""
+    },
+    {
+      "timestamp": "2026-06-16T17:52:39.419Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:38.957Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:38.953Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\\background.png"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:38.117Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/6943998/pexels-photo-6943998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2160"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:37.792Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 14: https://images.pexels.com/photos/6943998/pexels-photo-6943998.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2160"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:31.363Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"cozy dark bedroom night rain street lights window bedroom silhouette\"..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:31.359Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"silk_gold\" (Day of week: 2)"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:31.356Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\""
+    },
+    {
+      "timestamp": "2026-06-16T17:52:31.353Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:31.349Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Intimate Secrets\"..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:31.344Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:30.919Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"test_sample_morning_run\""
+    },
+    {
+      "timestamp": "2026-06-16T17:52:27.228Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:26.792Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:26.785Z",
+      "type": "SYSTEM",
+      "message": "Using existing background image for this post: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\\background.png"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:26.781Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"silk_gold\" (Day of week: 2)"
+    },
+    {
+      "timestamp": "2026-06-16T17:52:26.778Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\""
+    },
+    {
+      "timestamp": "2026-06-16T17:52:26.769Z",
+      "type": "GENERATOR",
+      "message": "No Gemini API key found. Selecting a high-quality offline template..."
+    },
+    {
+      "timestamp": "2026-06-16T17:52:26.765Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Anonymous Confessions\"..."
+    },
+    {
       "timestamp": "2026-06-16T17:48:34.340Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
@@ -2859,111 +2964,6 @@
       "timestamp": "2026-06-14T14:49:56.451Z",
       "type": "SYSTEM",
       "message": "Downloading background image from URL: https://images.pexels.com/photos/6315331/pexels-photo-6315331.jpeg?h=1350&w=1080&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
-    },
-    {
-      "timestamp": "2026-06-14T14:49:56.069Z",
-      "type": "SYSTEM",
-      "message": "Found 27 Pexels images. Selected random index 10: https://images.pexels.com/photos/6315331/pexels-photo-6315331.jpeg?h=1350&w=1080&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
-    },
-    {
-      "timestamp": "2026-06-14T14:49:52.854Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background image matching query: \"shadowy bar couple romantic tension love aesthetic\"..."
-    },
-    {
-      "timestamp": "2026-06-14T14:49:52.850Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-06-14T14:49:52.849Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781448592846\""
-    },
-    {
-      "timestamp": "2026-06-14T14:49:52.844Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-14T14:49:52.842Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Anonymous Confessions\"..."
-    },
-    {
-      "timestamp": "2026-06-14T14:40:44.468Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T14:40:44.127Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"sample_post_after_update_evening_1781448034624\""
-    },
-    {
-      "timestamp": "2026-06-14T14:40:40.577Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-14T14:40:40.110Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-14T14:40:40.105Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781448034624\\background.png"
-    },
-    {
-      "timestamp": "2026-06-14T14:40:38.481Z",
-      "type": "SYSTEM",
-      "message": "Downloading background image from URL: https://images.pexels.com/photos/37762002/pexels-photo-37762002/free-photo-of-close-up-of-intimate-embrace-outdoors.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
-    },
-    {
-      "timestamp": "2026-06-14T14:40:38.107Z",
-      "type": "SYSTEM",
-      "message": "Found 27 Pexels images. Selected random index 14: https://images.pexels.com/photos/37762002/pexels-photo-37762002/free-photo-of-close-up-of-intimate-embrace-outdoors.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1080&fit=crop&h=1350"
-    },
-    {
-      "timestamp": "2026-06-14T14:40:34.637Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background image matching query: \"gentle touch embrace shadow couple intimacy body\"..."
-    },
-    {
-      "timestamp": "2026-06-14T14:40:34.632Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-06-14T14:40:34.629Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781448034624\""
-    },
-    {
-      "timestamp": "2026-06-14T14:40:34.622Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-14T14:40:34.619Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-06-14T14:40:34.606Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T14:40:34.308Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"sample_post_after_update_morning_1781448025330\""
-    },
-    {
-      "timestamp": "2026-06-14T14:40:32.099Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
     }
   ]
 }
