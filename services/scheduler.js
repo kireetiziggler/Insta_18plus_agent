@@ -14,22 +14,25 @@ function timeToCron(timeStr) {
   return `${minutes} ${hours} * * *`;
 }
 
-// Helper to check if a post has already been successfully published today in IST timezone
+// Helper to check if a post has already been successfully published recently to prevent double-posting
 async function isSlotAlreadyPublished(category) {
   try {
+    // Bypass safeguard if explicitly requested or if triggered manually/via dispatch (non-schedule)
+    if (process.env.BYPASS_SAFEGUARD === 'true' || (process.env.GITHUB_EVENT_NAME && process.env.GITHUB_EVENT_NAME !== 'schedule')) {
+      await db.log('SYSTEM', `Safeguard lock bypassed (Event: ${process.env.GITHUB_EVENT_NAME || 'manual'}).`);
+      return false;
+    }
+
     const posts = await db.getPosts();
-    // Get current date in IST formatted as YYYY-MM-DD
-    const todayIST = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
-    const todayStr = todayIST.toISOString().split('T')[0];
+    const SIXTEEN_HOURS_MS = 16 * 60 * 60 * 1000;
+    const now = Date.now();
 
     return posts.some(p => {
       if (p.status !== 'published' || p.category !== category) return false;
       if (!p.publishedAt) return false;
       
-      const pubDateIST = new Date(new Date(p.publishedAt).toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
-      const pubDateStr = pubDateIST.toISOString().split('T')[0];
-      
-      return pubDateStr === todayStr;
+      const elapsed = now - new Date(p.publishedAt).getTime();
+      return elapsed < SIXTEEN_HOURS_MS;
     });
   } catch (e) {
     console.error('Failed to check already published status:', e);
