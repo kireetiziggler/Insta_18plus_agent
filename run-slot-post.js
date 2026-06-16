@@ -20,6 +20,30 @@ function getCategoryByLocalHour() {
   }
 }
 
+// Robustly determine target category using inputs, crons, or current time fallback
+function getTargetCategory() {
+  if (process.env.CATEGORY_OVERRIDE && process.env.CATEGORY_OVERRIDE !== 'auto') {
+    console.log(`Category override detected from environment: "${process.env.CATEGORY_OVERRIDE}"`);
+    return process.env.CATEGORY_OVERRIDE;
+  }
+
+  if (process.env.SCHEDULE_CRON) {
+    const cron = process.env.SCHEDULE_CRON.trim();
+    console.log(`Cron schedule event trigger detected: "${cron}"`);
+    if (cron === '30 1 * * *') {
+      console.log(`Decoupled Scheduling: Cron matches Morning Slot -> 'Anonymous Confessions'`);
+      return 'Anonymous Confessions';
+    } else if (cron === '30 15 * * *') {
+      console.log(`Decoupled Scheduling: Cron matches Evening Slot -> 'Intimate Secrets'`);
+      return 'Intimate Secrets';
+    } else {
+      console.log(`Unrecognized cron schedule "${cron}". Falling back to system hour.`);
+    }
+  }
+
+  return getCategoryByLocalHour();
+}
+
 async function run() {
   console.log('========================================================');
   console.log('UNSPOKEN DESIRES - GITHUB ACTIONS SCHEDULER ACTIVE');
@@ -62,7 +86,7 @@ async function run() {
       process.exit(1);
     }
   } else {
-    const category = getCategoryByLocalHour();
+    const category = getTargetCategory();
     console.log(`Target Niche Slot Category: "${category}" (Trigger Type: ${triggerType})`);
 
     try {
