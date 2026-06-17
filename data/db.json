@@ -358,6 +358,31 @@
         "likes": 0,
         "comments": 0
       }
+    },
+    {
+      "id": "post_1781677837506",
+      "category": "Anonymous Confessions",
+      "backgroundTheme": "secret_thoughts",
+      "pexelsQuery": "person looking phone bed silk sheets night bedroom glow dark",
+      "slides": [
+        "His voice note detailed exactly what he’d do to me if we weren't separated by three thousand miles of ocean. Now I'm lying awake in the dark, tracing the path of his words along my collarbone, my skin aching for a touch that is completely out of reach."
+      ],
+      "caption": "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-17T06:30:37.506Z",
+      "status": "published",
+      "createdAt": "2026-06-17T06:30:37.506Z",
+      "renderedImages": [
+        "/posts/post_1781677837506/slide_1.png"
+      ],
+      "publishedAt": "2026-06-17T06:30:57.231Z",
+      "instagramMediaId": "buffer_6a323f168419cf3e1a19277e",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -515,6 +540,241 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-17T06:30:57.232Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1781677837506\" to Instagram via Buffer (Buffer Post ID: 6a323f168419cf3e1a19277e)"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:45.908Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://tmpfiles.org/dl/wbwPLAn4ancf/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:44.986Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:44.985Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1781677837506\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:44.982Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1781677837506\" (Type: carousel, Simulation: false)"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:44.979Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:44.912Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"post_1781677837506\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:43.133Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:42.405Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:42.403Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1781677837506/background.png"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:41.979Z",
+      "type": "SYSTEM",
+      "message": "Downloading background image from URL: https://images.pexels.com/photos/4067753/pexels-photo-4067753.jpeg?h=2160&w=2160&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:41.902Z",
+      "type": "SYSTEM",
+      "message": "Found 27 Pexels images. Selected random index 9: https://images.pexels.com/photos/4067753/pexels-photo-4067753.jpeg?h=2160&w=2160&fit=crop&dpr=1&auto=compress&cs=tinysrgb"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.513Z",
+      "type": "SYSTEM",
+      "message": "Searching Pexels for a unique background image matching query: \"person looking phone bed silk sheets night bedroom glow dark\"..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.510Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"shadowy_passion\" (Day of week: 3)"
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.509Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1781677837506\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.507Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide graphics for post \"post_1781677837506\"..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.504Z",
+      "type": "ERROR",
+      "message": "Gemini content generation failed: [GoogleGenerativeAI Error]: Text not available. Response was blocked due to PROHIBITED_CONTENT. Falling back to offline template."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.227Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Anonymous Confessions\"..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.225Z",
+      "type": "SYSTEM",
+      "message": "No unused trends found for \"Anonymous Confessions\". Generating generic niche post."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.224Z",
+      "type": "SYSTEM",
+      "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:37.195Z",
+      "type": "RESEARCH",
+      "message": "Closed crawling browser session."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:36.990Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:35.983Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:34.970Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/lonely..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:34.113Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/breakups..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:34.112Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:34.110Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:32.950Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/socialskills..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:31.932Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:31.149Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:31.147Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:31.146Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:30.132Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:29.121Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/relationships..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:28.109Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:28.107Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:28.106Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:27.094Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:26.351Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/texts..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:25.339Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/confession..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:25.338Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:25.337Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:24.324Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:23.302Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/sex..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:22.150Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-17T06:30:22.148Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-17T06:30:13.860Z",
+      "type": "RESEARCH",
+      "message": "Starting Trend Research Agent via Puppeteer..."
+    },
     {
       "timestamp": "2026-06-16T23:18:28.537Z",
       "type": "PUBLISHER",
@@ -2779,241 +3039,6 @@
       "timestamp": "2026-06-14T15:14:48.263Z",
       "type": "SYSTEM",
       "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:48.261Z",
-      "type": "SYSTEM",
-      "message": "Generating Reels voiceover narration (two-part) for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:48.260Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel CTA"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:47.979Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel CTA slide for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:45.785Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel CTA..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:45.782Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels centered CTA follow-us slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:45.780Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:45.510Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:44.150Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.674Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.671Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.669Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels 9:16 layout slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.665Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting an offline Reel template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.663Z",
-      "type": "GENERATOR",
-      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.655Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.294Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 5 slides for post \"test_post_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:39.692Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 5/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:36.765Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 4/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:33.876Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 3/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:31.136Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 2/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:26.459Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:25.985Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:25.980Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\\background.png"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:25.017Z",
-      "type": "SYSTEM",
-      "message": "Downloading background image from URL: https://images.pexels.com/photos/7351137/pexels-photo-7351137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:24.698Z",
-      "type": "SYSTEM",
-      "message": "Found 27 Pexels images. Selected random index 5: https://images.pexels.com/photos/7351137/pexels-photo-7351137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.133Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom dark glow\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.128Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.127Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.124Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.120Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Desire & Physical Intimacy\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:11.330Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:10.918Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"test_sample_evening_run\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:06.577Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:06.135Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:06.130Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\\background.png"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:04.953Z",
-      "type": "SYSTEM",
-      "message": "Downloading background image from URL: https://images.pexels.com/photos/8889731/pexels-photo-8889731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:04.629Z",
-      "type": "SYSTEM",
-      "message": "Found 27 Pexels images. Selected random index 9: https://images.pexels.com/photos/8889731/pexels-photo-8889731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.848Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background image matching query: \"cozy dark bedroom night rain street lights window bedroom\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.841Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.839Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\""
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.836Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.833Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.826Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.431Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"test_sample_morning_run\""
-    },
-    {
-      "timestamp": "2026-06-14T15:13:56.357Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.895Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.892Z",
-      "type": "SYSTEM",
-      "message": "Using existing background image for this post: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\\background.png"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.889Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
     }
   ]
 }
