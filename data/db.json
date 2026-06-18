@@ -378,11 +378,20 @@
       ],
       "caption": "Midnight cravings that have nothing to do with food. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
       "scheduledFor": "2026-06-18T17:16:53.322Z",
-      "status": "draft",
+      "status": "published",
       "createdAt": "2026-06-18T17:16:53.322Z",
       "renderedImages": [
         "/posts/sample_post_after_update_morning_1781803013322/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-18T20:40:05.542Z",
+      "instagramMediaId": "buffer_6a34579b4f3899fd93c32604",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     },
     {
       "id": "sample_post_after_update_evening_1781803018818",
@@ -393,11 +402,20 @@
       ],
       "caption": "Some lines are meant to be crossed in the dark. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
       "scheduledFor": "2026-06-18T17:16:58.819Z",
-      "status": "draft",
+      "status": "published",
       "createdAt": "2026-06-18T17:16:58.819Z",
       "renderedImages": [
         "/posts/sample_post_after_update_evening_1781803018818/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-18T21:40:18.855Z",
+      "instagramMediaId": "buffer_6a3465b85da28e8bd8191f84",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -555,6 +573,56 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-18T21:40:18.856Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"sample_post_after_update_evening_1781803018818\" to Instagram via Buffer (Buffer Post ID: 6a3465b85da28e8bd8191f84)"
+    },
+    {
+      "timestamp": "2026-06-18T21:40:07.472Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://tmpfiles.org/dl/wbwFH8Bq5vJL/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-18T21:40:06.375Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-18T21:40:06.374Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"sample_post_after_update_evening_1781803018818\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-18T21:40:06.371Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"sample_post_after_update_evening_1781803018818\" (Type: carousel, Simulation: false)"
+    },
+    {
+      "timestamp": "2026-06-18T20:40:05.544Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"sample_post_after_update_morning_1781803013322\" to Instagram via Buffer (Buffer Post ID: 6a34579b4f3899fd93c32604)"
+    },
+    {
+      "timestamp": "2026-06-18T20:39:54.229Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://tmpfiles.org/dl/wcwqH3r01fNj/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-18T20:39:53.126Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-18T20:39:53.125Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"sample_post_after_update_morning_1781803013322\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-18T20:39:53.121Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"sample_post_after_update_morning_1781803013322\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-18T17:17:42.710Z",
       "type": "SYSTEM",
@@ -3004,56 +3072,6 @@
       "timestamp": "2026-06-14T15:10:07.333Z",
       "type": "SYSTEM",
       "message": "Falling back to proportional phrase timing estimation (Google TTS or missing alignment)."
-    },
-    {
-      "timestamp": "2026-06-14T15:10:07.329Z",
-      "type": "SYSTEM",
-      "message": "Audio timeline: Main Content: 11.64s | Gap: 1.0s | CTA: 2.42s | Total: 15.06s"
-    },
-    {
-      "timestamp": "2026-06-14T15:10:06.925Z",
-      "type": "SYSTEM",
-      "message": "Concatenating content audio, silence, and CTA voice track..."
-    },
-    {
-      "timestamp": "2026-06-14T15:10:05.091Z",
-      "type": "SYSTEM",
-      "message": "Generating 1-second audio silence gap..."
-    },
-    {
-      "timestamp": "2026-06-14T15:10:05.087Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded background video to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\background.mp4"
-    },
-    {
-      "timestamp": "2026-06-14T15:10:04.728Z",
-      "type": "SYSTEM",
-      "message": "Downloading Reel background video from URL: https://content.pexels.com/aigc-bundle/videos/a45a9d2a-d133-4e45-a1e6-3e7a83afefab.mp4"
-    },
-    {
-      "timestamp": "2026-06-14T15:10:04.245Z",
-      "type": "SYSTEM",
-      "message": "Found 28 Pexels videos. Selected random index 1: https://content.pexels.com/aigc-bundle/videos/a45a9d2a-d133-4e45-a1e6-3e7a83afefab.mp4"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:58.456Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background video matching query: \"couples intimate candle light shadow silhouette dark low light\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:58.452Z",
-      "type": "SYSTEM",
-      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_cta.mp3"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:58.222Z",
-      "type": "SYSTEM",
-      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_cta.mp3..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:58.220Z",
-      "type": "SYSTEM",
-      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
     }
   ]
 }
