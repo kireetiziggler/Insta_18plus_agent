@@ -368,6 +368,36 @@
       "renderedImages": [
         "/posts/sample_post_after_update_evening_1781802594873/slide_1.png"
       ]
+    },
+    {
+      "id": "sample_post_after_update_morning_1781803013322",
+      "category": "Anonymous Confessions",
+      "backgroundTheme": "midnight_desire",
+      "slides": [
+        "\"Kitchen Counter Sins\"\n\nIt was 3 AM, and the kitchen was only lit by the open refrigerator door.\nI was sitting on the counter, and he walked in, stopping right between my knees.\n\n\"You should be in bed,\" he murmured, his voice thick with sleep.\n\n\"I couldn't sleep,\" I whispered, tracing the collar of his t-shirt.\nHe didn't reply. He just leaned in, pressing his warm lips to the hollow of my throat until I forgot how to breathe."
+      ],
+      "caption": "Midnight cravings that have nothing to do with food. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-18T17:16:53.322Z",
+      "status": "draft",
+      "createdAt": "2026-06-18T17:16:53.322Z",
+      "renderedImages": [
+        "/posts/sample_post_after_update_morning_1781803013322/slide_1.png"
+      ]
+    },
+    {
+      "id": "sample_post_after_update_evening_1781803018818",
+      "category": "Intimate Secrets",
+      "backgroundTheme": "rainy_bed",
+      "slides": [
+        "\"Rain-Slicked Backseat\"\n\nThe steam from our breath had completely fogged up the windows.\nHe reached up, drawing a small heart in the condensation, his eyes never leaving mine.\n\n\"Tell me to stop,\" he whispered, his hand sliding slowly up my thigh.\n\nI held my breath, gripping his shoulders as the city lights blurred outside.\nI couldn't say it. And we both knew we weren't going back."
+      ],
+      "caption": "Some lines are meant to be crossed in the dark. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage",
+      "scheduledFor": "2026-06-18T17:16:58.819Z",
+      "status": "draft",
+      "createdAt": "2026-06-18T17:16:58.819Z",
+      "renderedImages": [
+        "/posts/sample_post_after_update_evening_1781803018818/slide_1.png"
+      ]
     }
   ],
   "trends": [
@@ -525,6 +555,96 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-18T17:17:42.710Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-18T17:17:42.134Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_post_after_update_evening_1781803018818\""
+    },
+    {
+      "timestamp": "2026-06-18T17:17:40.099Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-18T17:17:39.669Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-18T17:17:39.665Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded generated background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781803018818\\background.png"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:58.841Z",
+      "type": "SYSTEM",
+      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/car%20backseat%20couple%20intimacy%20rain%20city%20lights%20night%20reflection%20bokeh%20shadow%2C%20highly%20sensual%2C%20romantic%20couple%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=548095031"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:58.840Z",
+      "type": "SYSTEM",
+      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"car backseat couple intimacy rain city lights night reflection bokeh shadow\" (Seed: 548095031)"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:58.830Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"obsidian_black\" (Day of week: 4)"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:58.823Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781803018818\""
+    },
+    {
+      "timestamp": "2026-06-18T17:16:58.807Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:58.319Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"sample_post_after_update_morning_1781803013322\""
+    },
+    {
+      "timestamp": "2026-06-18T17:16:56.353Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-18T17:16:55.802Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-18T17:16:55.797Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded generated background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781803013322\\background.png"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:53.342Z",
+      "type": "SYSTEM",
+      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/kitchen%20counter%20couple%20romantic%20tension%20night%20low%20light%20shadow%20silhouette%2C%20highly%20sensual%2C%20romantic%20couple%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=544538856"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:53.341Z",
+      "type": "SYSTEM",
+      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"kitchen counter couple romantic tension night low light shadow silhouette\" (Seed: 544538856)"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:53.337Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"obsidian_black\" (Day of week: 4)"
+    },
+    {
+      "timestamp": "2026-06-18T17:16:53.336Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781803013322\""
+    },
     {
       "timestamp": "2026-06-18T17:10:46.844Z",
       "type": "SYSTEM",
@@ -2934,96 +3054,6 @@
       "timestamp": "2026-06-14T15:09:58.220Z",
       "type": "SYSTEM",
       "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:58.216Z",
-      "type": "SYSTEM",
-      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_main.mp3"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:57.744Z",
-      "type": "SYSTEM",
-      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_main.mp3..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:57.742Z",
-      "type": "SYSTEM",
-      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:57.741Z",
-      "type": "SYSTEM",
-      "message": "Generating Reels voiceover narration (two-part) for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:57.739Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel CTA"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:57.453Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel CTA slide for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:09:55.343Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel CTA..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:55.339Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels centered CTA follow-us slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:55.337Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:54.972Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:09:53.608Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:53.189Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:53.186Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:09:53.184Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels 9:16 layout slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:53.178Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting an offline Reel template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:53.176Z",
-      "type": "GENERATOR",
-      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:09:53.167Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T15:09:52.783Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 5 slides for post \"test_post_validation\""
     }
   ]
 }
