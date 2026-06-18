@@ -8,7 +8,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'midnight_desire',
       pexelsQuery: 'couple standing very close lift elevator narrow space shadow low light night',
       slides: [
-        "His hands found my waist in the dark elevator, pulling me flush against him as the doors slid shut. We didn't say a word, but his thumb brushed beneath my shirt, confirming the affair we'd denied for months. The heat in that cramped, rising space was absolute madness."
+        `"Late Night Confession"\n\nWe stood in the cramped elevator as the doors slid shut.\nHis hands found my waist in the dark, pulling me flush against him.\n\n"We shouldn't," I whispered, but my hands were already finding his neck.\n\nHe smirked and pulled me closer, whispering, "Let them wait..." as his fingers slid under my shirt.`
       ],
       caption: "A single touch in the dark changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -16,7 +16,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'intimate_touch',
       pexelsQuery: 'moody bar night couple romantic tension low light whispering',
       slides: [
-        "I stood in the shadows, watching him slide his hand along her back at the bar, tracing the lace of her dress the exact same way he does to mine when they think no one is looking. The jealousy burned, but knowing I am his actual late-night secret is the ultimate high."
+        `"Midnight Whispers"\n\nI stood in the shadows, watching him slide his hand along her back at the bar.\nHe was tracing the lace of her dress the exact same way he does to mine when they think no one is looking.\n\nThe jealousy burned, but knowing I am his actual late-night secret is the ultimate high.`
       ],
       caption: "The beautiful torture of being his favorite secret. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -24,7 +24,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'secret_thoughts',
       pexelsQuery: 'person looking phone bed silk sheets night bedroom glow dark',
       slides: [
-        "His voice note detailed exactly what he’d do to me if we weren't separated by three thousand miles of ocean. Now I'm lying awake in the dark, tracing the path of his words along my collarbone, my skin aching for a touch that is completely out of reach."
+        `"Late Night Texts"\n\nHis voice note detailed exactly what he’d do to me if we weren't separated by three thousand miles of ocean.\nNow I'm lying awake in the dark, tracing the path of his words along my collarbone.\n\nMy skin is aching for a touch that is completely out of reach.`
       ],
       caption: "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -32,7 +32,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'shadowy_lounge',
       pexelsQuery: 'cozy couple sitting on couch screen glow phone intimacy night low light',
       slides: [
-        "She leaned close, her lips brushing my neck as she whispered a completely innocent joke, but her fingers gripped my thigh tightly under the table. The sudden heat between us in that crowded, dim lounge was pure sin, and we both knew we had crossed the line."
+        `"Forbidden Desires"\n\nShe leaned close, her lips brushing my neck as she whispered a completely innocent joke.\nBut her fingers gripped my thigh tightly under the table.\n\nThe sudden heat between us in that crowded, dim lounge was pure sin.`
       ],
       caption: "A sudden whisper that changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
@@ -42,7 +42,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'secret_thoughts',
       pexelsQuery: 'person looking phone bed silk sheets night bedroom glow dark',
       slides: [
-        "He sent me a picture of his chest with a text saying 'wish your teeth were here'. It's 2 AM, and I've read it ten times, my heart racing as I imagine the heat of his collarbone against my lips in the dark."
+        `"Midnight Confession"\n\nHe sent me a picture of his chest with a text saying "wish your teeth were here."\nIt's 2 AM, and I've read it ten times, my heart racing as I imagine his collarbone against my lips.\n\nMy fingers trace my own lips in the dark, aching for him.`
       ],
       caption: "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -50,7 +50,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'intimate_touch',
       pexelsQuery: 'couple hug goodbye street night lights close embrace shadow',
       slides: [
-        "Every time we hug goodbye in the shadow of the streetlights, he slides his hand slightly under my shirt, tracing the curve of my spine with a slow, heavy pressure that makes me forget about the rest of the world. It’s our silent, dangerous promise."
+        `"Streetlight Whispers"\n\nEvery time we hug goodbye in the shadow of the streetlights, he slides his hand slightly under my shirt.\nHe traces the curve of my spine with a slow, heavy pressure.\n\nIt makes me forget the rest of the world. It’s our silent, dangerous promise.`
       ],
       caption: "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -58,7 +58,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'candlelight_secrets',
       pexelsQuery: 'hands touch candle light night table aesthetic dark romantic',
       slides: [
-        "Our video call ended hours ago, but the screen glow is still warm. I close my eyes in the dark, tracing the memory of his hands on my skin until the distance makes the physical craving feel like a ache I can't escape."
+        `"Silent Desires"\n\nOur video call ended hours ago, but the screen glow is still warm.\nI close my eyes in the dark, tracing the memory of his hands on my skin.\n\nThe distance makes the physical craving feel like a ache I can't escape.`
       ],
       caption: "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     },
@@ -66,7 +66,7 @@ const OFFLINE_TEMPLATES = {
       backgroundTheme: 'rainy_bed',
       pexelsQuery: 'cozy dark bedroom night rain street lights window bedroom silhouette',
       slides: [
-        "We parked in the furthest corner of the lot, rain hammering the roof. Seeing her wedding ring glinting on the dashboard in the dashboard light while her lips were on my neck and her hands were under my shirt felt like a beautiful, dangerous sin."
+        `"Late Night Confession"\n\nWe parked in the furthest corner of the lot, rain hammering the roof.\nSeeing her wedding ring glinting on the dashboard while her lips were on my neck felt like sin.\n\nHer hands slid under my shirt, and we both knew we had crossed the line.`
       ],
       caption: "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage"
     }
@@ -140,21 +140,19 @@ ${examplesText}
 ${recentConstraintText}
 
 CRITICAL CONFESSION CONTENT RULES:
-- Content Focus: The confession must be a highly specific, detailed anonymous story describing a full intimate scene or secret that happened in someone's life to build suspense and viewer curiosity. Paint a complete, vivid picture of what happened, describing specific elements of the scene, touch, whispers, environment sensations (e.g., skin contact, body heat, hidden spaces, rain on windows, desk surface, sheets), secret affairs, sex relationships, cheating, or physical longing. Avoid generic or vague descriptions.
-- Tone & Mood: The tone must be highly sensual, passionate, seductive, and provocative (creating a "horny mood" through raw physical/emotional tension, secret cravings, and suggestive details), while staying within Instagram safety guidelines (non-explicit, PG-13/R romance limit).
-- Content Format: Write the post as a realistic first-person anonymous story representing the person who lived it. Start immediately with the confession text itself (e.g., "We met at his apartment while his wife was away...", "He backed me against the kitchen counter..."). Do not add any introductory text like "Some random person said" or "Anonymous confession".
-- Perspective: First-person perspective only (using "I", "me", "my"). Vary between male and female perspectives (50% male, 50% female).
-- Hook Rule: The first sentence must instantly create curiosity and grab attention (e.g., "His hands found my waist in the dark elevator...").
-- Strict Ending Rule (NO QUESTIONS): DO NOT end the confession with any question. It must end as a normal statement of fact describing the scene or the feeling (e.g., "...and we both knew we had crossed the line.", "...leaving me breathless in the dark.").
-- No Clutter: STRICTLY PROHIBITED: NO titles, NO headings, NO labels, NO introductions, NO volume numbers, NO decorative separators.
-- Word Count: Maximum length: 40-65 words (giving enough space to fully describe the scene and build suspense).
-- Compliance: Keep it suggestive but strictly compliant with Instagram safety guidelines (non-explicit, PG-13/R romance limit).
+- Content Focus: The confession must describe a highly specific, detailed anonymous story about an intimate scene, secret affair, sex relationship, cheating, physical longing, or raw desire that happened in someone's life. It must make the reader feel the physical tension, heat, and raw chemistry ("high and horny" vibes).
+- Tone & Mood: Seductive, passionate, extremely provocative, and raw.
+- Content Format (STRICT DIALOGUE & STORYTELLING FORMAT):
+  1. The first line of the confession MUST be a title in double quotes (e.g., "Late Night Confession", "Midnight Secret", "Forbidden Whispers", "Intimate Encounter").
+  2. The story must follow below it, separated by paragraph breaks (using double newlines \n\n), written as a first-person dialogue/narrative script with short, heavy sentences.
+  3. Spoken dialogue must be wrapped in double quotes.
+  4. The final paragraph must build up to a highly suggestive, seductive punchline (dialogue or action) that leaves a lasting high/tension (e.g. "...washing the sheets everyday.", "...making sure the door was locked.").
+  5. Write in first-person perspective only ("I", "me", "my", "we").
+- Strict Ending Rule (NO QUESTIONS): DO NOT end the confession with any question. It must end as a provocative statement or dialogue quote.
+- Word Count: Maximum length: 45-75 words (formatted into 3-5 short paragraphs separated by newlines \n\n).
+- Compliance: Keep it highly suggestive but strictly compliant with Instagram safety guidelines (non-explicit, PG-13/R romance limit).
 - Caption: Keep the caption extremely brief—exactly one provocative statement (max 10-15 words) describing the mood of the confession (no question), followed directly by 5-6 hashtags: #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage. Do not include lists, bullet points, or multiple lines.
-- Dynamic Search Query (CRITICAL VISUAL RULE): The "pexelsQuery" field must describe a highly specific, synced search query representing the confession's exact scenario (e.g. kitchen counter, hotel bed, elevator corner, car backseat) in a dark, night, low-light, shadow, or silhouette environment to ensure the background fits the scene perfectly and stays unique. Never request bright daylight or sunny outdoor queries. Example queries:
-  - "couple kitchen counter shadow low light night"
-  - "hotel bedroom bed sheets silhouette night dim light"
-  - "couple backseat car window rain street lights night"
-  - "couple standing very close lift elevator narrow space shadow low light night"
+- Dynamic Search Query (CRITICAL VISUAL RULE): The "pexelsQuery" field must describe a highly specific search query representing the confession's exact scenario (e.g. kitchen counter, hotel bed, elevator corner, car backseat) in a dark, night, low-light, shadow, or silhouette environment to ensure the background fits the scene perfectly and stays unique. Never request bright daylight or sunny outdoor queries.
 
 Select a background visual theme from this list that best fits the mood:
 - 'midnight_desire' (for romantic chemistry, intimacy, physical connection)
@@ -170,9 +168,9 @@ Response must be valid JSON matching this schema:
 \`\`\`json
 {
   "backgroundTheme": "midnight_desire",
-  "pexelsQuery": "descriptive query for pexels search...",
+  "pexelsQuery": "descriptive query for AI image prompt...",
   "slides": [
-    "Full confession text starting immediately with the hook and ending with the statement."
+    "\"Title In Quotes\"\n\nFirst paragraph narrative...\n\nSecond paragraph dialogue...\n\nFinal paragraph punchline."
   ],
   "caption": "One line caption text #intimacy #chemistry..."
 }
@@ -206,7 +204,7 @@ function formatOneLineCaption(caption) {
   firstLine = firstLine.replace(/[❦❣❥✦]/g, '').trim();
   
   // High-reach hashtags for relationship intimacy, seduction, and tension
-  const bestReachHashtags = '#intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage';
+  const bestReachHashtags = '#intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions';
   
   return `${firstLine} ${bestReachHashtags}`;
 }
@@ -214,30 +212,31 @@ function formatOneLineCaption(caption) {
 export async function generatePostContent(category, topicQuery = null) {
   const settings = await db.getSettings();
   const apiKey = settings.geminiApiKey;
-  const posts = await db.getPosts();
 
   await db.log('GENERATOR', `Generating content for category: "${category}"...`);
 
+  if (!apiKey) {
+    const errorMsg = "CRITICAL ERROR: No Gemini API key found in settings. AI generation is strictly required.";
+    await db.log('ERROR', errorMsg);
+    throw new Error(errorMsg);
+  }
+
   let content;
-  if (apiKey) {
-    try {
-      content = await generateAIPost(category, topicQuery, apiKey);
-      await db.log('GENERATOR', `Successfully generated AI content using Gemini. Theme: "${content.backgroundTheme}"`);
-    } catch (error) {
-      await db.log('ERROR', `Gemini content generation failed: ${error.message}. Falling back to offline template.`);
-      content = getOfflineTemplate(category, posts);
-    }
-  } else {
-    await db.log('GENERATOR', `No Gemini API key found. Selecting a high-quality offline template...`);
-    content = getOfflineTemplate(category, posts);
+  try {
+    content = await generateAIPost(category, topicQuery, apiKey);
+    await db.log('GENERATOR', `Successfully generated AI content using Gemini. Theme: "${content.backgroundTheme}"`);
+  } catch (error) {
+    const errorMsg = `CRITICAL ERROR: Gemini content generation failed: ${error.message}. Fallback templates are disabled.`;
+    await db.log('ERROR', errorMsg);
+    throw new Error(errorMsg);
   }
 
   // Double check page handle formatting in CTAs
-  const handle = settings.pageHandle || '@auraflow.co';
-  content.slides = content.slides.map(slide => slide.replace(/@page_handle|@auraflow.co/gi, handle));
+  const handle = settings.pageHandle || '@unspokendesireshub';
+  content.slides = content.slides.map(slide => slide.replace(/@page_handle|@auraflow.co|@unspoken.desires.co/gi, handle));
   
   // Enforce single line caption with best reach hashtags
-  content.caption = formatOneLineCaption(content.caption).replace(/@page_handle|@auraflow.co/gi, handle);
+  content.caption = formatOneLineCaption(content.caption).replace(/@page_handle|@auraflow.co|@unspoken.desires.co/gi, handle);
 
   return content;
 }
@@ -287,19 +286,20 @@ async function generateAIReel(category, topicQuery, apiKey) {
   const prompt = `
 You are a master copywriter and viral growth strategist for an Instagram page named "Unspoken Desires" focusing on sharing anonymous confessions that describe secret intimacy scenes from a random person's life.
 Your target audience consists of adults aged 20-35 who are deeply drawn to raw romantic tension, secret desires, modern situationships, physical intimacy, and unspoken thoughts that keep them awake at night.
-The goal of this content is to act as an immediate trigger point—making readers feel the heat, tension, and suggestive desire of the moment.
+The goal of this content is to act as an immediate trigger point—making readers feel the heat, tension, and suggestive desire of the moment ("high and horny" vibe).
 
 Generate a highly suggestive, passionate, and high-tension vertical Instagram Reel script and caption for the category: "${category}".
 ${topicQuery ? `Base the content and theme on this trending topic/issue: "${topicQuery}".` : ''}
 ${recentConstraintText}
 
-- Content Focus: The Reel must describe a highly specific, detailed anonymous story sharing a full intimate scene or secret that happened in someone's life to build suspense and viewer curiosity. Paint a complete, vivid picture of what happened, describing specific elements of the scene, touch, whispers, environment sensations (e.g., skin contact, body heat, hidden spaces, rain on windows, desk surface, sheets), secret affairs, sex relationships, cheating, or physical longing. Avoid generic or vague descriptions.
-- Tone & Mood: The tone must be highly sensual, passionate, seductive, and provocative (creating a "horny mood" through raw physical/emotional tension, secret cravings, and suggestive details), while staying within Instagram safety guidelines (non-explicit, PG-13/R romance limit).
-- Writing Style: Deep, raw, highly suggestive. Start with an immediate attention-grabbing hook in the first 2 seconds. It must build a strong emotional, highly seductive impact. Keep sentences extremely short, crisp, and heavy. Avoid formal AI transitions, greetings, or robotic filler. It must feel like an intimate secret or a private confession.
+CRITICAL CONTENT INSTRUCTIONS:
+- Content Focus: The Reel must describe a highly specific, detailed anonymous story sharing an intimate scene or secret that happened in someone's life to build suspense and viewer curiosity. It must strictly relate to suggestive intimacy, adult relationships, horny feelings, secret affairs, sex relationships, cheating, or physical longing.
+- Tone & Mood: The tone must be highly sensual, passionate, seductive, and provocative (creating a "high and horny" mood through raw physical/emotional tension, secret cravings, and suggestive details), while staying within Instagram safety guidelines (non-explicit, PG-13/R romance limit).
+- Writing Style (STRICT DIALOGUE & STORYTELLING FORMAT): Deep, raw, highly suggestive. Start with an immediate attention-grabbing title in quotes, followed by short, heavy sentences that combine narrative actions with direct spoken dialogue in double quotes. It must feel like an intimate secret or a private confession. Avoid formal AI transitions, greetings, or robotic filler.
 - Perspective: First-person perspective only (using "I", "me", "my").
-- Strict Ending Rule (NO QUESTIONS): DO NOT end the script with any question. It must end as a normal statement of fact (e.g., "...and we both knew we had crossed the line.", "...leaving me breathless in the dark.").
+- Strict Ending Rule (NO QUESTIONS): DO NOT end the script with any question. It must end as a provocative statement or dialogue quote (e.g. "...washing the sheets everyday.", "...and we both knew we had crossed the line.").
 - titleText: A short, high-impact quote or statement to display on the video slide (max 15-20 words, uppercase, punchy, e.g. "THE DANGEROUS THRILL OF FORBIDDEN CHEMISTRY.").
-- audioScript: The text narration for the voiceover. It must describe the full scene in vivid detail, be emotionally deep, spoken naturally by the narrator, and run for about 15-30 seconds (around 45-75 words). It must sound like a real person sharing a raw, direct secret/confession (no greetings like "Hey everyone!", no formal AI buzzwords, no robotic sign-offs, no questions at the end). Write simple, punchy, emotional sentences with natural breathing pauses. Do not include markdown, stage directions, or audio cues.
+- audioScript: The text narration for the voiceover. It must describe the full story in vivid detail, using double quotes for spoken parts, and run for about 15-30 seconds (around 45-75 words). It must sound like a real person sharing a raw, direct secret/confession (no greetings like "Hey everyone!", no formal AI buzzwords, no robotic sign-offs, no questions at the end). Write simple, punchy, emotional sentences with natural breathing pauses. Do not include markdown, stage directions, or audio cues.
 - backgroundTheme (CRITICAL VISUAL RULE): Select a background visual theme from this list that best fits the mood. Ensure it is strictly a dark, night, or low-light theme. Never select bright themes:
   - 'midnight_desire' (for romantic chemistry, intimacy, physical connection, dark low light)
   - 'rainy_bed' (for midnight thoughts, quiet intimacy, rain views, dark night)
@@ -336,28 +336,29 @@ Response must be valid JSON matching this schema:
 export async function generateReelContent(category, topicQuery = null) {
   const settings = await db.getSettings();
   const apiKey = settings.geminiApiKey;
-  const posts = await db.getPosts();
 
   await db.log('GENERATOR', `Generating Reel content for category: "${category}"...`);
 
+  if (!apiKey) {
+    const errorMsg = "CRITICAL ERROR: No Gemini API key found in settings. AI Reels generation is strictly required.";
+    await db.log('ERROR', errorMsg);
+    throw new Error(errorMsg);
+  }
+
   let content;
-  if (apiKey) {
-    try {
-      content = await generateAIReel(category, topicQuery, apiKey);
-      await db.log('GENERATOR', `Successfully generated AI Reel content using Gemini. Theme: "${content.backgroundTheme}"`);
-    } catch (error) {
-      await db.log('ERROR', `Gemini Reel generation failed: ${error.message}. Falling back to offline template.`);
-      content = getOfflineReelFallback(category, posts);
-    }
-  } else {
-    await db.log('GENERATOR', `No Gemini API key found. Selecting an offline Reel template...`);
-    content = getOfflineReelFallback(category, posts);
+  try {
+    content = await generateAIReel(category, topicQuery, apiKey);
+    await db.log('GENERATOR', `Successfully generated AI Reel content using Gemini. Theme: "${content.backgroundTheme}"`);
+  } catch (error) {
+    const errorMsg = `CRITICAL ERROR: Gemini Reel generation failed: ${error.message}. Fallback templates are disabled.`;
+    await db.log('ERROR', errorMsg);
+    throw new Error(errorMsg);
   }
 
   // Double check page handle formatting in CTAs/caption
-  const handle = settings.pageHandle || '@auraflow.co';
-  content.titleText = content.titleText.replace(/@page_handle|@auraflow.co/gi, handle);
-  content.caption = content.caption.replace(/@page_handle|@auraflow.co/gi, handle);
+  const handle = settings.pageHandle || '@unspokendesireshub';
+  content.titleText = content.titleText.replace(/@page_handle|@auraflow.co|@unspoken.desires.co/gi, handle);
+  content.caption = content.caption.replace(/@page_handle|@auraflow.co|@unspoken.desires.co/gi, handle);
 
   return content;
 }

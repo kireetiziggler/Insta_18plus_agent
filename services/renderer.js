@@ -121,7 +121,25 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
   const bgDataUrl = `data:image/png;base64,${bgBase64}`;
   const logoDataUrl = `data:image/png;base64,${logoBase64}`;
   const cleanHandle = handle.startsWith('@') ? handle : `@${handle}`;
-  const formattedText = parseFormatting(slideText);
+
+  // Split into lines to extract title and paragraphs
+  const lines = slideText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  
+  let titleHTML = '';
+  let bodyHTML = '';
+
+  const firstLine = lines[0] || '';
+  const titleMatch = firstLine.match(/^[“"\"'](.*?)[”"\"']$/);
+
+  if (titleMatch && firstLine.length < 45) {
+    const titleText = titleMatch[1];
+    titleHTML = `<h2 class="confession-title">“${titleText}”</h2>`;
+    const bodyLines = lines.slice(1).map(line => parseFormatting(line));
+    bodyHTML = bodyLines.map(line => `<p class="confession-paragraph">${line}</p>`).join('');
+  } else {
+    const bodyLines = lines.map(line => parseFormatting(line));
+    bodyHTML = bodyLines.map(line => `<p class="confession-paragraph">${line}</p>`).join('');
+  }
 
   return `
 <!DOCTYPE html>
@@ -153,6 +171,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
       padding: 95px 90px;
       color: #fff;
       z-index: 5;
@@ -166,22 +185,20 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       background-image: url('${bgDataUrl}');
       background-size: cover;
       background-position: center;
-      /* Dark, moody night/low-light background to keep text as the focal point */
-      filter: brightness(0.48) contrast(1.05) saturate(0.85);
+      /* Moody night/low-light background filter to make text pop */
+      filter: brightness(0.38) contrast(1.05) saturate(0.85);
       z-index: 1;
     }
-    /* Minimalist, subtle overlay: 18% opacity overall (no heavy dark gradients) */
     .bg-overlay {
       position: absolute;
       top: 0;
       left: 0;
       width: 1080px;
       height: 1080px;
-      background: rgba(5, 5, 7, 0.18);
+      background: rgba(5, 5, 7, 0.22);
       z-index: 2;
     }
     
-    /* Subtle watermark branding placed strictly in bottom right corner (occupies <3% scale, increased by 5% size) */
     .brand-watermark {
       position: absolute;
       bottom: 65px;
@@ -193,7 +210,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       opacity: 0.85;
     }
     .brand-logo-img {
-      height: 42px; /* branding size increased by 10% */
+      height: 42px;
       width: auto;
       object-fit: contain;
     }
@@ -206,36 +223,53 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       text-transform: uppercase;
     }
     
-    /* Left-aligned quote container positioned at the bottom left with a premium glassmorphic background */
+    /* Centered text container with premium dark glassmorphism for contrast */
     .quote-section {
       z-index: 10;
-      max-width: 800px;
+      max-width: 900px;
+      width: calc(100% - 180px);
       position: absolute;
-      left: 90px;
-      bottom: 165px; /* Aligned lower to match background and stay clear of faces */
-      background: rgba(5, 5, 8, 0.42); /* Soft text background card */
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      padding: 30px 45px;
-      border-radius: 20px;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.42);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      padding: 45px 55px;
+      border-radius: 24px;
       border: 1px solid rgba(255, 255, 255, 0.08);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.65);
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
     }
     
-    /* Single cohesive confession text with strong text shadow for legibility */
-    .confession-text {
+    .confession-title {
       font-family: ${theme.bodyFont || "'Lora', serif"};
-      font-size: 38px;
-      line-height: 1.65;
-      color: #ffffff;
-      font-weight: 500;
-      text-shadow: 
-        0 4px 16px rgba(0, 0, 0, 0.98), 
-        0 2px 4px rgba(0, 0, 0, 0.98), 
-        0 0 1px rgba(0, 0, 0, 0.98);
+      font-size: 44px;
+      font-weight: 700;
+      color: ${theme.accentColor || '#fbbf24'};
+      text-align: left;
+      margin-bottom: 5px;
+      font-style: italic;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
     }
     
-    /* Highlights inside formatting */
+    .confession-paragraph {
+      font-family: ${theme.bodyFont || "'Lora', serif"};
+      font-size: 34px;
+      line-height: 1.6;
+      color: #ffffff;
+      font-weight: 400;
+      text-align: left;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9);
+    }
+    
+    .confession-paragraph:last-child {
+      font-weight: 500;
+    }
+    
     .highlight {
       color: ${theme.accentColor || '#fbbf24'};
       font-weight: 700;
@@ -250,7 +284,8 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
   
   <div id="slide-container">
     <div class="quote-section">
-      <p class="confession-text">${formattedText}</p>
+      ${titleHTML}
+      ${bodyHTML}
     </div>
     
     <div class="brand-watermark">
@@ -287,75 +322,28 @@ async function downloadBackgroundImage(themeName, postDir, pexelsQuery = null) {
   };
 
   const query = pexelsQuery || PEXELS_THEME_QUERIES[themeName] || 'romantic couple shadow intimacy';
-  await db.log('SYSTEM', `Searching Pexels for a unique background image matching query: "${query}"...`);
+  
+  // Construct a styled, high-quality cinematic prompt for Pollinations.ai
+  const styledPrompt = `${query}, highly sensual, romantic couple, cinematic lighting, dark atmosphere, moody shadows, low light, photorealistic, 8k resolution, premium aesthetics, intimate, no text, no watermark`;
+  const seed = Math.floor(Math.random() * 1000000000);
+  const downloadUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(styledPrompt)}?width=1080&height=1080&nologo=true&seed=${seed}`;
 
-  let downloadUrl = null;
-  let browser = null;
+  await db.log('SYSTEM', `Generating unique AI background image using Pollinations.ai. Prompt: "${query}" (Seed: ${seed})`);
+  await db.log('SYSTEM', `Downloading from Pollinations: ${downloadUrl}`);
+
   try {
-    const executablePath = process.platform === 'linux' ? '/usr/bin/google-chrome' : undefined;
-    browser = await puppeteer.launch({
-      headless: true,
-      executablePath,
-      args: ['--no-sandbox', '--disable-setuid-sandbox']
-    });
-    const page = await browser.newPage();
-    await page.setUserAgent('Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36');
-
-    const searchUrl = `https://www.pexels.com/search/${encodeURIComponent(query)}/?orientation=portrait`;
-    await page.goto(searchUrl, { waitUntil: 'networkidle2' });
-    await page.waitForSelector('img', { timeout: 8000 });
-
-    const imgUrls = await page.evaluate(() => {
-      const urls = [];
-      const images = Array.from(document.querySelectorAll('img'));
-      for (const img of images) {
-        if (img.src && img.src.includes('images.pexels.com/photos/')) {
-          urls.push(img.src);
-        }
+    const response = await fetch(downloadUrl, {
+      headers: {
+        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
       }
-      return Array.from(new Set(urls));
     });
-
-    if (imgUrls.length > 0) {
-      // Pick a random image from the top 15 results to ensure uniqueness
-      const randomIndex = Math.floor(Math.random() * Math.min(imgUrls.length, 15));
-      let rawUrl = imgUrls[randomIndex];
-      
-      // Clean query params and set to 2160x2160 crop (Double scale for ultra-sharp HD quality)
-      const urlObj = new URL(rawUrl);
-      urlObj.searchParams.set('auto', 'compress');
-      urlObj.searchParams.set('cs', 'tinysrgb');
-      urlObj.searchParams.set('fit', 'crop');
-      urlObj.searchParams.set('w', '2160');
-      urlObj.searchParams.set('h', '2160');
-      
-      downloadUrl = urlObj.toString();
-      await db.log('SYSTEM', `Found ${imgUrls.length} Pexels images. Selected random index ${randomIndex}: ${downloadUrl}`);
-    }
+    if (!response.ok) throw new Error(`Pollinations API returned status ${response.status}`);
+    const buffer = Buffer.from(await response.arrayBuffer());
+    await fs.writeFile(targetPath, buffer);
+    await db.log('SYSTEM', `Successfully downloaded generated background image to ${targetPath}`);
+    return targetPath;
   } catch (err) {
-    await db.log('ERROR', `Pexels image scraper encountered an error: ${err.message}`);
-  } finally {
-    if (browser) {
-      await browser.close();
-    }
-  }
-
-  if (downloadUrl) {
-    await db.log('SYSTEM', `Downloading background image from URL: ${downloadUrl}`);
-    try {
-      const response = await fetch(downloadUrl, {
-        headers: {
-          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
-        }
-      });
-      if (!response.ok) throw new Error(`HTTP error ${response.status}`);
-      const buffer = Buffer.from(await response.arrayBuffer());
-      await fs.writeFile(targetPath, buffer);
-      await db.log('SYSTEM', `Successfully downloaded background image to ${targetPath}`);
-      return targetPath;
-    } catch (err) {
-      await db.log('ERROR', `Failed to download background image: ${err.message}`);
-    }
+    await db.log('ERROR', `Failed to generate or download background image from Pollinations: ${err.message}`);
   }
 
   return null;

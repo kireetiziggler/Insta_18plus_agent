@@ -11,7 +11,7 @@ function App() {
     instagramBusinessId: '',
     facebookPageToken: '',
     isSimulationMode: true,
-    pageHandle: '@unspoken.desires.co',
+    pageHandle: '@unspokendesireshub',
     elevenLabsApiKey: '',
     elevenLabsVoiceId: 'alternate',
     postingSchedule: { post1: '09:00', post2: '14:00', post3: '19:00', post4: '22:00', post5: '00:00', reel1: '17:00' }
@@ -321,7 +321,7 @@ function App() {
           <div className={`status-pill ${settings.isSimulationMode ? 'sim' : ''}`}>
             ● {settings.isSimulationMode ? 'Simulation Sandbox' : 'Instagram Live Direct'}
           </div>
-          <div>Handle: {settings.pageHandle || '@unspoken.desires.co'}</div>
+          <div>Handle: {settings.pageHandle || '@unspokendesireshub'}</div>
           <div>v1.0.0 Stable</div>
         </div>
       </nav>
