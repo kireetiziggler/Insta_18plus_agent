@@ -168,6 +168,46 @@ function runCommand(command, options = {}) {
   });
 }
 
+// Themed royalty-free sensual/ambient music tracks from Pixabay (no attribution required)
+const MUSIC_TRACKS = [
+  // Deep sensual lo-fi / slow burn
+  'https://cdn.pixabay.com/audio/2023/09/12/audio_e21d9fcf93.mp3',
+  // Dark romantic ambient
+  'https://cdn.pixabay.com/audio/2023/11/06/audio_0b59d91c53.mp3',
+  // Moody cinematic tension
+  'https://cdn.pixabay.com/audio/2024/01/15/audio_54f4a0f6e9.mp3',
+  // Sultry lounge piano
+  'https://cdn.pixabay.com/audio/2022/10/25/audio_e40b8e44f1.mp3',
+  // Midnight desire ambient
+  'https://cdn.pixabay.com/audio/2023/06/20/audio_c3ee6e7b94.mp3',
+  // Sensual dark RnB
+  'https://cdn.pixabay.com/audio/2023/03/12/audio_6d8b7c4a9f.mp3'
+];
+
+// Download a random background music track for the Reel
+async function downloadBackgroundMusic(postDir) {
+  const musicPath = path.join(postDir, 'music.mp3');
+  // Pick a random track from our curated list
+  const track = MUSIC_TRACKS[Math.floor(Math.random() * MUSIC_TRACKS.length)];
+  await db.log('SYSTEM', `Downloading background music track: ${track}`);
+  try {
+    const response = await fetch(track, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }
+    });
+    if (!response.ok) throw new Error(`HTTP ${response.status}`);
+    const buffer = Buffer.from(await response.arrayBuffer());
+    await fs.writeFile(musicPath, buffer);
+    await db.log('SYSTEM', `Background music downloaded successfully to ${musicPath}`);
+    return musicPath;
+  } catch (err) {
+    await db.log('ERROR', `Failed to download background music: ${err.message}. Generating silent fallback.`);
+    // Generate 20 seconds of silence as fallback
+    const silentCmd = `"${ffmpegPath}" -y -f lavfi -i anullsrc=r=44100:cl=stereo -t 20 "${musicPath}"`;
+    await runCommand(silentCmd, { cwd: postDir });
+    return musicPath;
+  }
+}
+
 // Synthesizes voiceover text to MP3
 async function synthesizeVoiceover(postId, text, settings, filename = 'audio.mp3') {
   const postDir = path.join(__dirname, '..', 'data', 'posts', postId);
@@ -479,83 +519,131 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
   return assContent;
 }
 
-// Helper to compile/recompile all video assets for a Reel post (renders slide, generates TTS, and stitches with FFmpeg)
+// Helper to compile/recompile all video assets for a Reel post (renders slide, generates TTS, mixes music, and stitches with FFmpeg)
 export async function compileReel(postId, titleText, backgroundTheme, category, audioScript) {
   const settings = await db.getSettings();
   const postDir = path.join(__dirname, '..', 'data', 'posts', postId);
   await fs.mkdir(postDir, { recursive: true });
 
-  // 1. Render 9:16 layout slide graphic (corner watermark)
-  await db.log('SYSTEM', `Rendering Reels 9:16 layout slide for post "${postId}"...`);
+  // TARGET: Exactly 15 seconds total reel duration
+  const REEL_TOTAL_DURATION = 15.0;
+  const CTA_DURATION = 2.0;        // last 2s = CTA slide
+  const MAIN_DURATION_MAX = 13.0;  // first 13s = main content
+
+  // 1. Render 9:16 layout slide graphic (full background + glassmorphism text + watermark)
+  await db.log('SYSTEM', `Rendering Reels 9:16 full-frame slide for post "${postId}"...`);
   const slidePath = await renderer.renderReelSlide(postId, titleText, backgroundTheme, category);
 
   // Render centered full-screen follow card CTA slide
   await db.log('SYSTEM', `Rendering Reels centered CTA follow-us slide for post "${postId}"...`);
   const ctaSlidePath = await renderer.renderReelCTA(postId);
 
-  // 2. Synthesize voiceover audio: Content and CTA separately
-  await db.log('SYSTEM', `Generating Reels voiceover narration (two-part) for post "${postId}"...`);
-  
-  // Synthesize main content audio
+  // 2. Synthesize voiceover audio
+  await db.log('SYSTEM', `Generating Reels voiceover narration for post "${postId}"...`);
   const ttsContent = await synthesizeVoiceover(postId, audioScript.trim(), settings, 'audio_main.mp3');
-  
-  // Synthesize CTA audio
-  const ctaText = "Follow us for more like this.";
+  const ctaText = "Follow @unspokendesireshub for more.";
   const ttsCta = await synthesizeVoiceover(postId, ctaText, settings, 'audio_cta.mp3');
 
-  // Stitch into a Reel MP4 using FFmpeg
+  // 3. Download background music
+  await db.log('SYSTEM', `Downloading sensual background music for post "${postId}"...`);
+  const musicPath = await downloadBackgroundMusic(postDir);
+
   const videoFullPath = path.join(postDir, 'reel.mp4');
 
   try {
-      const bgVideoPath = await downloadBackgroundVideo(backgroundTheme, postDir);
+    // Measure raw narration duration and clamp to MAIN_DURATION_MAX
+    const rawMainDuration = await getAudioDuration(path.join(postDir, 'audio_main.mp3'));
+    const mainDuration = Math.min(rawMainDuration, MAIN_DURATION_MAX);
+    const ctaDuration = Math.min(await getAudioDuration(path.join(postDir, 'audio_cta.mp3')), CTA_DURATION);
+    const totalDuration = Math.min(mainDuration + ctaDuration, REEL_TOTAL_DURATION);
 
-      // Create a 1-second silence file using FFmpeg
-      await db.log('SYSTEM', `Generating 1-second audio silence gap...`);
-      const silenceCmd = `"${ffmpegPath}" -y -f lavfi -i anullsrc=r=44100:cl=mono -t 1.0 "silence.mp3"`;
-      await runCommand(silenceCmd, { cwd: postDir });
+    await db.log('SYSTEM', `Reel timeline: Main=${mainDuration.toFixed(2)}s | CTA=${ctaDuration.toFixed(2)}s | Total=${totalDuration.toFixed(2)}s`);
 
-      // Concatenate content audio, silence gap, and CTA audio
-      await db.log('SYSTEM', `Concatenating content audio, silence, and CTA voice track...`);
-      const concatCmd = `"${ffmpegPath}" -y -i "audio_main.mp3" -i "silence.mp3" -i "audio_cta.mp3" -filter_complex "[0:a][1:a][2:a]concat=n=3:v=0:a=1[outa]" -map "[outa]" "audio.mp3"`;
-      await runCommand(concatCmd, { cwd: postDir });
+    // Concatenate main narration + CTA audio
+    await db.log('SYSTEM', `Concatenating narration + CTA voice track...`);
+    const concatCmd = `"${ffmpegPath}" -y -i "audio_main.mp3" -i "audio_cta.mp3" -filter_complex "[0:a][1:a]concat=n=2:v=0:a=1[outa]" -map "[outa]" "audio_narration.mp3"`;
+    await runCommand(concatCmd, { cwd: postDir });
 
-      // Measure durations
-      const mainDuration = await getAudioDuration(path.join(postDir, 'audio_main.mp3'));
-      const ctaDuration = await getAudioDuration(path.join(postDir, 'audio_cta.mp3'));
-      const totalDuration = mainDuration + 1.0 + ctaDuration;
-      await db.log('SYSTEM', `Audio timeline: Main Content: ${mainDuration.toFixed(2)}s | Gap: 1.0s | CTA: ${ctaDuration.toFixed(2)}s | Total: ${totalDuration.toFixed(2)}s`);
+    // Mix narration (100%) with background music (30% volume) — music fades out last 1.5s
+    await db.log('SYSTEM', `Mixing narration with sensual background music (30% volume)...`);
+    const mixCmd = `"${ffmpegPath}" -y -i "audio_narration.mp3" -i "music.mp3" -filter_complex "[1:a]volume=0.30,afade=t=out:st=${(totalDuration - 1.5).toFixed(2)}:d=1.5[music]; [0:a][music]amix=inputs=2:duration=first:dropout_transition=0[outa]" -map "[outa]" -c:a aac -b:a 192k "audio.mp3"`;
+    await runCommand(mixCmd, { cwd: postDir });
 
-      let assContent = '';
-      if (ttsContent.engine === 'elevenlabs' && ttsContent.alignment) {
-        await db.log('SYSTEM', `Using ElevenLabs character alignment timings for perfect subtitle sync.`);
-        const words = parseWordsFromAlignment(ttsContent.alignment);
-        const phrases = groupWordsIntoPhrases(words);
-        assContent = generateASS(phrases, 0.0);
-      } else {
-        await db.log('SYSTEM', `Falling back to proportional phrase timing estimation (Google TTS or missing alignment).`);
-        const phrasesText = splitIntoPhrases(audioScript.trim());
-        const proportionalPhrases = generateProportionalPhrases(phrasesText, mainDuration, ttsContent.engine === 'elevenlabs' ? 0.3 : 0.45);
-        assContent = generateASS(proportionalPhrases, 0.0);
-      }
-
-      const assFullPath = path.join(postDir, 'subtitles.ass');
-      await fs.writeFile(assFullPath, assContent, 'utf-8');
-      await db.log('SYSTEM', `Generated timed ASS subtitles at ${assFullPath}`);
-
-      await db.log('SYSTEM', `Running FFmpeg to overlay watermarks, centered CTA follow screen, and burn subtitles...`);
-      
-      // FFmpeg overlay timeline:
-      // slide.png (corner watermark) overlays when t < mainDuration
-      // cta.png (centered CTA) overlays when t >= mainDuration + 1.0
-      // subtitles are read from subtitles.ass
-      const ffmpegCmd = `"${ffmpegPath}" -y -stream_loop -1 -i "background.mp4" -loop 1 -i "slide.png" -loop 1 -i "cta.png" -i "audio.mp3" -filter_complex "[0:v]scale=w='iw*max(1080/iw,1920/ih)':h='ih*max(1080/iw,1920/ih)',crop=1080:1920[bg]; [bg][1:v]overlay=0:0:enable='lt(t,${mainDuration})'[v1]; [v1][2:v]overlay=0:0:enable='gte(t,${mainDuration + 1.0})'[merged]; [merged]subtitles=subtitles.ass[outv]" -map "[outv]" -map 3:a -c:v libx264 -profile:v high -level:v 4.1 -pix_fmt yuv420p -movflags +faststart -c:a aac -b:a 192k -t ${totalDuration.toFixed(2)} -crf 17 "reel.mp4"`;
-      
-      await runCommand(ffmpegCmd, { cwd: postDir });
-      await db.log('SYSTEM', `FFmpeg stitching completed successfully. Reel output: ${videoFullPath}`);
-    } catch (err) {
-      await db.log('ERROR', `FFmpeg execution failed: ${err.message}`);
-      throw new Error(`FFmpeg stitching failed: ${err.message}`);
+    // Generate ASS subtitles synced to narration
+    let assContent = '';
+    if (ttsContent.engine === 'elevenlabs' && ttsContent.alignment) {
+      await db.log('SYSTEM', `Using ElevenLabs character alignment for subtitle sync.`);
+      const words = parseWordsFromAlignment(ttsContent.alignment);
+      const phrases = groupWordsIntoPhrases(words);
+      assContent = generateASS(phrases, 0.0);
+    } else {
+      await db.log('SYSTEM', `Using proportional phrase timing for subtitles.`);
+      const phrasesText = splitIntoPhrases(audioScript.trim());
+      const proportionalPhrases = generateProportionalPhrases(phrasesText, mainDuration, 0.45);
+      assContent = generateASS(proportionalPhrases, 0.0);
     }
+
+    const assFullPath = path.join(postDir, 'subtitles.ass');
+    await fs.writeFile(assFullPath, assContent, 'utf-8');
+    await db.log('SYSTEM', `Generated ASS subtitles at ${assFullPath}`);
+
+    // Determine background source:
+    // Prefer the 9:16 background_reel.jpg downloaded by renderReelSlide (Pollinations.ai)
+    // Fall back to slide.png as background (it already has the full frame rendered)
+    let bgInputFlag = '';
+    let bgFilterInput = '';
+    const bgReelJpg = path.join(postDir, 'background_reel.jpg');
+    let hasBgVideo = false;
+    try {
+      await fs.access(bgReelJpg);
+      // Use the raw background jpg and overlay slide.png (with glassmorphism) on top
+      bgInputFlag = `-loop 1 -i "background_reel.jpg"`;
+      hasBgVideo = false;
+      await db.log('SYSTEM', `Using Pollinations 9:16 background image for FFmpeg video construction.`);
+    } catch (e) {
+      // No separate background — use slide.png directly as the full-frame background
+      bgInputFlag = `-loop 1 -i "slide.png"`;
+      hasBgVideo = false;
+      await db.log('SYSTEM', `Using full-frame slide.png as video background.`);
+    }
+
+    await db.log('SYSTEM', `Running FFmpeg to compose final 15-second Reel...`);
+
+    let ffmpegCmd;
+    if (hasBgVideo === false && bgInputFlag.includes('background_reel.jpg')) {
+      // Mode A: raw background + slide.png overlay + cta.png overlay + subtitles + audio
+      // Slide.png is the full 1080x1920 glassmorphism rendered frame — overlay it at 0,0
+      ffmpegCmd = `"${ffmpegPath}" -y ${bgInputFlag} -loop 1 -i "slide.png" -loop 1 -i "cta.png" -i "audio.mp3" \
+-filter_complex \
+"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg]; \
+[bg][1:v]overlay=0:0:enable='lt(t,${mainDuration.toFixed(2)})'[v1]; \
+[v1][2:v]overlay=0:0:enable='gte(t,${mainDuration.toFixed(2)})'[merged]; \
+[merged]subtitles=subtitles.ass[outv]" \
+-map "[outv]" -map 3:a \
+-c:v libx264 -profile:v high -level:v 4.1 -pix_fmt yuv420p -movflags +faststart \
+-c:a aac -b:a 192k \
+-t ${totalDuration.toFixed(2)} -crf 17 \
+-r 30 "reel.mp4"`;
+    } else {
+      // Mode B: slide.png is used as full-frame background (already has rendered bg + text + watermark)
+      ffmpegCmd = `"${ffmpegPath}" -y ${bgInputFlag} -loop 1 -i "cta.png" -i "audio.mp3" \
+-filter_complex \
+"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg]; \
+[bg][1:v]overlay=0:0:enable='gte(t,${mainDuration.toFixed(2)})'[merged]; \
+[merged]subtitles=subtitles.ass[outv]" \
+-map "[outv]" -map 2:a \
+-c:v libx264 -profile:v high -level:v 4.1 -pix_fmt yuv420p -movflags +faststart \
+-c:a aac -b:a 192k \
+-t ${totalDuration.toFixed(2)} -crf 17 \
+-r 30 "reel.mp4"`;
+    }
+
+    await runCommand(ffmpegCmd, { cwd: postDir });
+    await db.log('SYSTEM', `FFmpeg compositing completed. Reel output: ${videoFullPath}`);
+  } catch (err) {
+    await db.log('ERROR', `FFmpeg execution failed: ${err.message}`);
+    throw new Error(`FFmpeg stitching failed: ${err.message}`);
+  }
 
   return {
     renderedImages: [slidePath],
@@ -563,6 +651,7 @@ export async function compileReel(postId, titleText, backgroundTheme, category, 
     renderedAudio: `/posts/${postId}/audio.mp3`
   };
 }
+
 
 // Full Reel generation workflow
 export async function generateReel(postId, category, topicQuery = null) {
@@ -584,7 +673,7 @@ export async function generateReel(postId, category, topicQuery = null) {
   };
   await db.savePost(newPost);
 
-  // 3. Compile all assets (slide, tts audio, ffmpeg video)
+  // 3. Compile all assets (slide with visible bg, TTS audio, background music, FFmpeg video)
   const assets = await compileReel(
     postId,
     content.titleText,

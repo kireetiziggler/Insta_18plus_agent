@@ -442,8 +442,25 @@ export async function renderPostSlides(postId, slides, themeName, categoryName, 
   }
 }
 
-function generateReelHTML(titleText, themeName, handle, categoryName, theme, logoBase64) {
+function generateReelHTML(titleText, themeName, handle, categoryName, theme, logoBase64, bgBase64) {
   const logoDataUrl = `data:image/png;base64,${logoBase64}`;
+  const bgDataUrl = bgBase64 ? `data:image/jpeg;base64,${bgBase64}` : '';
+  const cleanHandle = handle.startsWith('@') ? handle : `@${handle}`;
+
+  // Parse titleText into a title line and body paragraphs
+  const rawLines = titleText.split('\n').map(l => l.trim()).filter(l => l.length > 0);
+  let confessionTitleHTML = '';
+  let confessionBodyHTML = '';
+
+  const firstLine = rawLines[0] || '';
+  const titleMatch = firstLine.match(/^["""'](.*?)["""']$/);
+  if (titleMatch && firstLine.length < 60) {
+    confessionTitleHTML = `<h2 class="reel-confession-title">&ldquo;${titleMatch[1]}&rdquo;</h2>`;
+    confessionBodyHTML = rawLines.slice(1).map(line => `<p class="reel-confession-para">${line}</p>`).join('');
+  } else {
+    confessionBodyHTML = rawLines.map(line => `<p class="reel-confession-para">${line}</p>`).join('');
+  }
+
   return `
 <!DOCTYPE html>
 <html lang="en">
@@ -452,70 +469,127 @@ function generateReelHTML(titleText, themeName, handle, categoryName, theme, log
   <title>Reel Render</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   ${theme.fontImport || ''}
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
       width: 1080px;
       height: 1920px;
       overflow: hidden;
-      background-color: transparent;
-      font-family: ${theme.bodyFont || "'Outfit', sans-serif"};
+      background-color: #050507;
+      font-family: ${theme.bodyFont || "'Lora', serif"};
     }
-    #slide-container {
+    #reel-container {
       width: 1080px;
       height: 1920px;
       position: relative;
       color: #fff;
-      z-index: 5;
       overflow: hidden;
-      background: linear-gradient(180deg, rgba(6, 6, 8, 0.4) 0%, rgba(6, 6, 8, 0.25) 50%, rgba(6, 6, 8, 0.45) 100%);
     }
-
-    /* Small elegant watermark in bottom-right corner */
-    .watermark-logo {
+    /* Background image — clearly visible, moody darkened */
+    .reel-bg {
       position: absolute;
-      bottom: 80px;
-      right: 65px;
-      opacity: 0.8;
-      transform: scale(0.65);
-      transform-origin: bottom right;
+      top: 0; left: 0;
+      width: 1080px; height: 1920px;
+      background-image: url('${bgDataUrl}');
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.52) contrast(1.08) saturate(0.88);
+      z-index: 1;
+    }
+    /* Subtle gradient vignette so text is readable without killing the background */
+    .reel-vignette {
+      position: absolute;
+      top: 0; left: 0;
+      width: 1080px; height: 1920px;
+      background: radial-gradient(ellipse at center, rgba(0,0,0,0.0) 30%, rgba(0,0,0,0.55) 100%),
+                  linear-gradient(180deg, rgba(5,5,7,0.35) 0%, rgba(5,5,7,0.0) 30%, rgba(5,5,7,0.0) 70%, rgba(5,5,7,0.55) 100%);
+      z-index: 2;
+    }
+    /* Glassmorphism card — center of frame */
+    .reel-text-card {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 900px;
       z-index: 10;
+      background: rgba(0, 0, 0, 0.38);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border-radius: 28px;
+      border: 1px solid rgba(255,255,255,0.10);
+      box-shadow: 0 24px 64px rgba(0,0,0,0.70);
+      padding: 52px 60px;
       display: flex;
       flex-direction: column;
-      gap: 3px;
-      line-height: 1.1;
-      text-align: right;
+      gap: 22px;
     }
-    .brand-title {
-      font-family: 'Outfit', sans-serif;
-      font-size: 22px;
-      font-weight: 800;
-      letter-spacing: 2px;
-      color: ${theme.accentColor || '#fbbf24'};
-      text-transform: uppercase;
-    }
-    .brand-sub {
-      font-family: 'Lora', serif;
-      font-size: 12px;
+    .reel-confession-title {
+      font-family: ${theme.bodyFont || "'Lora', serif"};
+      font-size: 52px;
+      font-weight: 700;
       font-style: italic;
-      color: rgba(255, 255, 255, 0.65);
+      color: ${theme.accentColor || '#fbbf24'};
+      text-align: left;
       letter-spacing: 0.5px;
-      white-space: nowrap;
+      text-shadow: 0 3px 14px rgba(0,0,0,0.90);
+      line-height: 1.25;
     }
-    
+    .reel-confession-para {
+      font-family: ${theme.bodyFont || "'Lora', serif"};
+      font-size: 38px;
+      line-height: 1.65;
+      color: #ffffff;
+      font-weight: 400;
+      text-align: left;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.95);
+    }
+    .reel-confession-para:last-child {
+      font-weight: 500;
+      color: rgba(255,255,255,0.92);
+    }
+    /* Watermark — bottom right */
+    .reel-watermark {
+      position: absolute;
+      bottom: 90px;
+      right: 70px;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      opacity: 0.88;
+    }
+    .reel-watermark-handle {
+      font-family: 'Outfit', sans-serif;
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      color: rgba(255,255,255,0.95);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+      text-transform: lowercase;
+    }
+    .reel-watermark-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+      filter: drop-shadow(0 2px 8px rgba(0,0,0,0.6));
+    }
     ${theme.customCSS || ''}
   </style>
 </head>
 <body>
-  <div id="slide-container">
-    <div class="watermark-logo">
-      <img src="${logoDataUrl}" alt="Logo" style="height: 120px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 10px rgba(0,0,0,0.5));" />
+  <div id="reel-container">
+    <div class="reel-bg"></div>
+    <div class="reel-vignette"></div>
+    <div class="reel-text-card">
+      ${confessionTitleHTML}
+      ${confessionBodyHTML}
+    </div>
+    <div class="reel-watermark">
+      <span class="reel-watermark-handle">${cleanHandle}</span>
+      <img class="reel-watermark-logo" src="${logoDataUrl}" alt="Logo" />
     </div>
   </div>
 </body>
@@ -523,9 +597,9 @@ function generateReelHTML(titleText, themeName, handle, categoryName, theme, log
   `;
 }
 
-export async function renderReelSlide(postId, titleText, themeName, categoryName) {
+export async function renderReelSlide(postId, titleText, themeName, categoryName, pexelsQuery = null) {
   const settings = await db.getSettings();
-  const handle = settings.pageHandle || '@auraflow.co';
+  const handle = settings.pageHandle || '@unspokendesireshub';
   const postDir = path.join(__dirname, '..', 'data', 'posts', postId);
   
   await fs.mkdir(postDir, { recursive: true });
@@ -542,6 +616,7 @@ export async function renderReelSlide(postId, titleText, themeName, categoryName
     // Ignore and fallback to today
   }
   const theme = STYLE_THEMES[dayOfWeek] || STYLE_THEMES[3];
+  await db.log('SYSTEM', `Applying daily visual theme: "${theme.name}" (Day of week: ${dayOfWeek})`);
 
   // Load logo as base64
   const logoPath = path.join(__dirname, '..', 'data', 'logo.png');
@@ -550,6 +625,41 @@ export async function renderReelSlide(postId, titleText, themeName, categoryName
     logoBase64 = await fs.readFile(logoPath, 'base64');
   } catch (err) {
     await db.log('ERROR', `Failed to load logo image: ${err.message}`);
+  }
+
+  // Download unique background image from Pollinations.ai for the reel (9:16)
+  let bgBase64 = '';
+  try {
+    const PEXELS_REEL_QUERIES = {
+      midnight_desire: 'romantic couple intimate shadow dark bedroom candlelight silhouette',
+      rainy_bed: 'rain night bedroom window cozy dark silk sheets',
+      shadowy_lounge: 'bar night couple whispering shadow low light luxury',
+      candlelight_secrets: 'candlelight hands close dark table romantic night',
+      intimate_touch: 'couple embrace shadow intimacy body dark low light',
+      overthinking_night: 'person looking window city night neon rain lonely',
+      secret_thoughts: 'person bed phone glow dark silk sheets night bedroom',
+      sensual_vibes: 'crimson silk gold texture dark abstract luxury'
+    };
+    const query = pexelsQuery || PEXELS_REEL_QUERIES[themeName] || 'romantic couple dark intimate';
+    const styledPrompt = `${query}, cinematic lighting, dark atmosphere, moody shadows, low light, photorealistic, 8k, premium aesthetics, sensual, no text, no watermark`;
+    const seed = Math.floor(Math.random() * 1000000000);
+    // 9:16 aspect ratio for Reels background
+    const bgUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(styledPrompt)}?width=1080&height=1920&nologo=true&seed=${seed}`;
+    await db.log('SYSTEM', `Generating 9:16 Reel background from Pollinations.ai (seed: ${seed}): ${query}`);
+    const bgResp = await fetch(bgUrl, {
+      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }
+    });
+    if (bgResp.ok) {
+      const bgBuf = Buffer.from(await bgResp.arrayBuffer());
+      // Save for ffmpeg use as well
+      await fs.writeFile(path.join(postDir, 'background_reel.jpg'), bgBuf);
+      bgBase64 = bgBuf.toString('base64');
+      await db.log('SYSTEM', `Successfully loaded 9:16 Reel background image.`);
+    } else {
+      await db.log('ERROR', `Pollinations Reel background returned status ${bgResp.status}`);
+    }
+  } catch (err) {
+    await db.log('ERROR', `Failed to fetch Reel background image: ${err.message}`);
   }
 
   let browser = null;
@@ -563,18 +673,18 @@ export async function renderReelSlide(postId, titleText, themeName, categoryName
     });
 
     const page = await browser.newPage();
-    await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 }); // Scale factor 1 to match video resolution
+    await page.setViewport({ width: 1080, height: 1920, deviceScaleFactor: 1 });
 
-    const htmlContent = generateReelHTML(titleText, themeName, handle, categoryName, theme, logoBase64);
+    const htmlContent = generateReelHTML(titleText, themeName, handle, categoryName, theme, logoBase64, bgBase64);
     
-    await db.log('SYSTEM', `Rendering Reel slide graphic...`);
+    await db.log('SYSTEM', `Rendering Reel slide graphic with background...`);
     await page.setContent(htmlContent, { waitUntil: 'load' });
     
     await page.evaluateHandle(() => document.fonts.ready);
-    await new Promise(resolve => setTimeout(resolve, 400));
+    await new Promise(resolve => setTimeout(resolve, 500));
 
     const slidePath = path.join(postDir, `slide.png`);
-    await page.screenshot({ path: slidePath, type: 'png', omitBackground: true });
+    await page.screenshot({ path: slidePath, type: 'png' });
     
     await db.log('SYSTEM', `Finished rendering Reel slide for post "${postId}"`);
     return `/posts/${postId}/slide.png`;
