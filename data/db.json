@@ -416,6 +416,18 @@
         "likes": 0,
         "comments": 0
       }
+    },
+    {
+      "id": "reel_1781843266709",
+      "type": "reel",
+      "category": "Secret Thoughts & Overthinking",
+      "backgroundTheme": "midnight_desire",
+      "titleText": "HE KNOWS MY WFH SCHEDULE. AND HE USES IT.",
+      "audioScript": "\"The Home Office Interruption\"\n\nHe knows my new work-from-home schedule. He just 'stops by' when he knows I'm alone between meetings.\n\nYesterday, he leaned against the doorframe, talking about nothing while my laptop glowed, open on the kitchen counter. My focus shattered.\n\nHe just stood there, watching me, until I knew he wasn't leaving. My fingers ached to reach for him. This new routine feels like a dangerous game we both can't resist.",
+      "caption": "The quiet hours of remote work just became the most dangerous time of day. That knowing look, that unspoken invitation... some loopholes are just too tempting to close.\n\nDrop a 🌶️ if you know exactly what I mean.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #workfromhome #secretdesires #modernromance #rawemotions #temptation #situationships",
+      "scheduledFor": "2026-06-19T04:28:00.636Z",
+      "status": "draft",
+      "createdAt": "2026-06-19T04:28:00.636Z"
     }
   ],
   "trends": [
@@ -436,7 +448,7 @@
         "virality": 79
       },
       "suggestedTopic": "I started working from home recently and found a loophole...",
-      "used": false
+      "used": true
     },
     {
       "id": "reddit_t3_1u1a2fr",
@@ -573,6 +585,261 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-19T04:28:04.594Z",
+      "type": "ERROR",
+      "message": "Scheduled Reel workflow failed for \"Secret Thoughts & Overthinking\": FFmpeg stitching failed: Command failed: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/node_modules/ffmpeg-static/ffmpeg\" -y -i \"music.mp3\" -filter_complex \"[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:15[outa]\" -map \"[outa]\" -c:a aac -b:a 192k \"audio.mp3\"\nffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, mp3, from 'music.mp3':\n  Metadata:\n    encoder         : Lavf61.1.100\n  Duration: 00:00:20.04, start: 0.025057, bitrate: 128 kb/s\n  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 128 kb/s\n      Metadata:\n        encoder         : Lavc61.3.\nStream mapping:\n  Stream #0:0 (mp3float) -> afade:default\n  atrim:default -> Stream #0:0 (aac)\nPress [q] to stop, [?] for help\n[mp3 @ 0x10d85d00] Invalid audio stream. Exactly one MP3 audio stream is required.\n[out#0/mp3 @ 0x10d85bc0] Could not write header (incorrect codec parameters ?): Invalid argument\n[fc#0 @ 0x10d7eb40] Error sending frames to consumers: Invalid argument\n[fc#0 @ 0x10d7eb40] Task finished with error code: -22 (Invalid argument)\n[fc#0 @ 0x10d7eb40] Terminating thread with return code -22 (Invalid argument)\n[out#0/mp3 @ 0x10d85bc0] Nothing was written into output file, because at least one of its streams received no packets.\nsize=       0KiB time=N/A bitrate=N/A speed=N/A    \n[aac @ 0x10d87640] Qavg: nan\nConversion failed!\n"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:04.593Z",
+      "type": "ERROR",
+      "message": "FFmpeg execution failed: Command failed: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/node_modules/ffmpeg-static/ffmpeg\" -y -i \"music.mp3\" -filter_complex \"[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:15[outa]\" -map \"[outa]\" -c:a aac -b:a 192k \"audio.mp3\"\nffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, mp3, from 'music.mp3':\n  Metadata:\n    encoder         : Lavf61.1.100\n  Duration: 00:00:20.04, start: 0.025057, bitrate: 128 kb/s\n  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 128 kb/s\n      Metadata:\n        encoder         : Lavc61.3.\nStream mapping:\n  Stream #0:0 (mp3float) -> afade:default\n  atrim:default -> Stream #0:0 (aac)\nPress [q] to stop, [?] for help\n[mp3 @ 0x10d85d00] Invalid audio stream. Exactly one MP3 audio stream is required.\n[out#0/mp3 @ 0x10d85bc0] Could not write header (incorrect codec parameters ?): Invalid argument\n[fc#0 @ 0x10d7eb40] Error sending frames to consumers: Invalid argument\n[fc#0 @ 0x10d7eb40] Task finished with error code: -22 (Invalid argument)\n[fc#0 @ 0x10d7eb40] Terminating thread with return code -22 (Invalid argument)\n[out#0/mp3 @ 0x10d85bc0] Nothing was written into output file, because at least one of its streams received no packets.\nsize=       0KiB time=N/A bitrate=N/A speed=N/A    \n[aac @ 0x10d87640] Qavg: nan\nConversion failed!\n"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:04.084Z",
+      "type": "SYSTEM",
+      "message": "Preparing music audio: trimming to 15s with fade-in/fade-out..."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:04.082Z",
+      "type": "SYSTEM",
+      "message": "Reel timeline: Slide=13s | CTA=2s | Total=15s"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:03.961Z",
+      "type": "ERROR",
+      "message": "Failed to download background music: HTTP 403. Generating silent fallback."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:03.589Z",
+      "type": "SYSTEM",
+      "message": "Downloading background music track: https://cdn.pixabay.com/audio/2023/09/12/audio_e21d9fcf93.mp3"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:03.587Z",
+      "type": "SYSTEM",
+      "message": "Downloading sensual background music for post \"reel_1781843266709\"..."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:03.586Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel CTA"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:03.519Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel CTA slide for post \"reel_1781843266709\""
+    },
+    {
+      "timestamp": "2026-06-19T04:28:02.775Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel CTA..."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:02.772Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:02.704Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel slide for post \"reel_1781843266709\""
+    },
+    {
+      "timestamp": "2026-06-19T04:28:01.672Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reel slide graphic with background..."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:01.436Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel..."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:01.434Z",
+      "type": "SYSTEM",
+      "message": "Successfully loaded 9:16 Reel background image."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:00.644Z",
+      "type": "SYSTEM",
+      "message": "Generating 9:16 Reel background from Pollinations.ai (seed: 54671734): romantic couple intimate shadow dark bedroom candlelight silhouette"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:00.641Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"crimson_secrets\" (Day of week: 5)"
+    },
+    {
+      "timestamp": "2026-06-19T04:28:00.640Z",
+      "type": "SYSTEM",
+      "message": "Creating Reels slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1781843266709\""
+    },
+    {
+      "timestamp": "2026-06-19T04:28:00.638Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels for post \"reel_1781843266709\"..."
+    },
+    {
+      "timestamp": "2026-06-19T04:28:00.634Z",
+      "type": "GENERATOR",
+      "message": "Successfully generated AI Reel content using Gemini. Theme: \"midnight_desire\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:46.710Z",
+      "type": "GENERATOR",
+      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:46.709Z",
+      "type": "SYSTEM",
+      "message": "Running Reels generation workflow for \"reel_1781843266709\"..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:46.708Z",
+      "type": "SYSTEM",
+      "message": "Using trend topic for Reel generation: \"I started working from home recently and found a loophole...\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:46.705Z",
+      "type": "SYSTEM",
+      "message": "Triggering scheduled Reel workflow for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:46.690Z",
+      "type": "RESEARCH",
+      "message": "Closed crawling browser session."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:46.595Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:45.586Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:44.572Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/lonely..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:43.743Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/breakups..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:43.741Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:43.739Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:42.549Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/socialskills..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:41.535Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:40.728Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:40.727Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:40.725Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:39.712Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:38.705Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/relationships..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:37.691Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:37.690Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:37.688Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:36.674Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:35.900Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/texts..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:34.887Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/confession..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:34.886Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:34.884Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:33.870Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:32.849Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/sex..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:31.790Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-19T04:27:31.789Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-19T04:27:30.659Z",
+      "type": "RESEARCH",
+      "message": "Starting Trend Research Agent via Puppeteer..."
+    },
     {
       "timestamp": "2026-06-18T21:40:18.856Z",
       "type": "PUBLISHER",
@@ -2817,261 +3084,6 @@
       "timestamp": "2026-06-14T15:14:45.785Z",
       "type": "SYSTEM",
       "message": "Launching Puppeteer browser instance for Reel CTA..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:45.782Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels centered CTA follow-us slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:45.780Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:45.510Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:44.150Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.674Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.671Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.669Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels 9:16 layout slide for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.665Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting an offline Reel template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.663Z",
-      "type": "GENERATOR",
-      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.655Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:43.294Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 5 slides for post \"test_post_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:39.692Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 5/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:36.765Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 4/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:33.876Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 3/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:31.136Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 2/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:26.459Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/5..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:25.985Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:25.980Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\\background.png"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:25.017Z",
-      "type": "SYSTEM",
-      "message": "Downloading background image from URL: https://images.pexels.com/photos/7351137/pexels-photo-7351137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:24.698Z",
-      "type": "SYSTEM",
-      "message": "Found 27 Pexels images. Selected random index 5: https://images.pexels.com/photos/7351137/pexels-photo-7351137.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.133Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background image matching query: \"person sit silk bed phone screen night bedroom dark glow\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.128Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.127Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_post_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.124Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:21.120Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Desire & Physical Intimacy\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:11.330Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:10.918Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"test_sample_evening_run\""
-    },
-    {
-      "timestamp": "2026-06-14T15:14:06.577Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:06.135Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-14T15:14:06.130Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\\background.png"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:04.953Z",
-      "type": "SYSTEM",
-      "message": "Downloading background image from URL: https://images.pexels.com/photos/8889731/pexels-photo-8889731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:14:04.629Z",
-      "type": "SYSTEM",
-      "message": "Found 27 Pexels images. Selected random index 9: https://images.pexels.com/photos/8889731/pexels-photo-8889731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=2160&fit=crop&h=2700"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.848Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background image matching query: \"cozy dark bedroom night rain street lights window bedroom\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.841Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.839Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_evening_run\""
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.836Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.833Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.826Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:59.431Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"test_sample_morning_run\""
-    },
-    {
-      "timestamp": "2026-06-14T15:13:56.357Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.895Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.892Z",
-      "type": "SYSTEM",
-      "message": "Using existing background image for this post: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\\background.png"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.889Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.888Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_sample_morning_run\""
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.878Z",
-      "type": "GENERATOR",
-      "message": "No Gemini API key found. Selecting a high-quality offline template..."
-    },
-    {
-      "timestamp": "2026-06-14T15:13:55.829Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Anonymous Confessions\"..."
-    },
-    {
-      "timestamp": "2026-06-14T15:10:19.554Z",
-      "type": "SYSTEM",
-      "message": "Reel workflow completed successfully for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-14T15:10:19.550Z",
-      "type": "SYSTEM",
-      "message": "FFmpeg stitching completed successfully. Reel output: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\reel.mp4"
-    },
-    {
-      "timestamp": "2026-06-14T15:10:07.343Z",
-      "type": "SYSTEM",
-      "message": "Running FFmpeg to overlay watermarks, centered CTA follow screen, and burn subtitles..."
-    },
-    {
-      "timestamp": "2026-06-14T15:10:07.340Z",
-      "type": "SYSTEM",
-      "message": "Generated timed ASS subtitles at C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\subtitles.ass"
-    },
-    {
-      "timestamp": "2026-06-14T15:10:07.333Z",
-      "type": "SYSTEM",
-      "message": "Falling back to proportional phrase timing estimation (Google TTS or missing alignment)."
     }
   ]
 }
