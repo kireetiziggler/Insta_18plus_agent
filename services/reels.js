@@ -519,127 +519,56 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
   return assContent;
 }
 
-// Helper to compile/recompile all video assets for a Reel post (renders slide, generates TTS, mixes music, and stitches with FFmpeg)
+// Helper to compile/recompile all video assets for a Reel post (music-only, no voiceover)
 export async function compileReel(postId, titleText, backgroundTheme, category, audioScript) {
-  const settings = await db.getSettings();
   const postDir = path.join(__dirname, '..', 'data', 'posts', postId);
   await fs.mkdir(postDir, { recursive: true });
 
   // TARGET: Exactly 15 seconds total reel duration
   const REEL_TOTAL_DURATION = 15.0;
-  const CTA_DURATION = 2.0;        // last 2s = CTA slide
-  const MAIN_DURATION_MAX = 13.0;  // first 13s = main content
+  const MAIN_DURATION = 13.0;
+  const CTA_DURATION = 2.0;
 
-  // 1. Render 9:16 layout slide graphic (full background + glassmorphism text + watermark)
-  await db.log('SYSTEM', `Rendering Reels 9:16 full-frame slide for post "${postId}"...`);
-  const slidePath = await renderer.renderReelSlide(postId, titleText, backgroundTheme, category);
-
-  // Render centered full-screen follow card CTA slide
-  await db.log('SYSTEM', `Rendering Reels centered CTA follow-us slide for post "${postId}"...`);
+  // 1. Render slides
+  await db.log('SYSTEM', `Rendering Reels for post "${postId}"...`);
+  const slideContent = audioScript && audioScript.trim().length > 0 ? audioScript.trim() : titleText;
+  const slidePath = await renderer.renderReelSlide(postId, slideContent, backgroundTheme, category);
   const ctaSlidePath = await renderer.renderReelCTA(postId);
 
-  // 2. Synthesize voiceover audio
-  await db.log('SYSTEM', `Generating Reels voiceover narration for post "${postId}"...`);
-  const ttsContent = await synthesizeVoiceover(postId, audioScript.trim(), settings, 'audio_main.mp3');
-  const ctaText = "Follow @unspokendesireshub for more.";
-  const ttsCta = await synthesizeVoiceover(postId, ctaText, settings, 'audio_cta.mp3');
-
-  // 3. Download background music
   await db.log('SYSTEM', `Downloading sensual background music for post "${postId}"...`);
   const musicPath = await downloadBackgroundMusic(postDir);
 
   const videoFullPath = path.join(postDir, 'reel.mp4');
 
   try {
-    // Measure raw narration duration and clamp to MAIN_DURATION_MAX
-    const rawMainDuration = await getAudioDuration(path.join(postDir, 'audio_main.mp3'));
-    const mainDuration = Math.min(rawMainDuration, MAIN_DURATION_MAX);
-    const ctaDuration = Math.min(await getAudioDuration(path.join(postDir, 'audio_cta.mp3')), CTA_DURATION);
-    const totalDuration = Math.min(mainDuration + ctaDuration, REEL_TOTAL_DURATION);
+    await db.log('SYSTEM', `Reel timeline: Slide=${MAIN_DURATION}s | CTA=${CTA_DURATION}s | Total=${REEL_TOTAL_DURATION}s`);
 
-    await db.log('SYSTEM', `Reel timeline: Main=${mainDuration.toFixed(2)}s | CTA=${ctaDuration.toFixed(2)}s | Total=${totalDuration.toFixed(2)}s`);
+    // Trim music to exactly 15s with 0.5s fade-in and 1.5s fade-out — music ONLY, no voiceover
+    await db.log('SYSTEM', `Preparing music audio: trimming to 15s with fade-in/fade-out...`);
+    const audioCmd = `"${ffmpegPath}" -y -i "music.mp3" -filter_complex "[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:${REEL_TOTAL_DURATION}[outa]" -map "[outa]" -c:a aac -b:a 192k "audio.mp3"`;
+    await runCommand(audioCmd, { cwd: postDir });
 
-    // Concatenate main narration + CTA audio
-    await db.log('SYSTEM', `Concatenating narration + CTA voice track...`);
-    const concatCmd = `"${ffmpegPath}" -y -i "audio_main.mp3" -i "audio_cta.mp3" -filter_complex "[0:a][1:a]concat=n=2:v=0:a=1[outa]" -map "[outa]" "audio_narration.mp3"`;
-    await runCommand(concatCmd, { cwd: postDir });
+    // Determine whether we have a separate 9:16 background jpg from Pollinations
+    // (slide.png is the complete rendered frame with background+text+watermark baked in)
+    await db.log('SYSTEM', `Running FFmpeg to compose final 15-second Reel (music-only)...`);
 
-    // Mix narration (100%) with background music (30% volume) — music fades out last 1.5s
-    await db.log('SYSTEM', `Mixing narration with sensual background music (30% volume)...`);
-    const mixCmd = `"${ffmpegPath}" -y -i "audio_narration.mp3" -i "music.mp3" -filter_complex "[1:a]volume=0.30,afade=t=out:st=${(totalDuration - 1.5).toFixed(2)}:d=1.5[music]; [0:a][music]amix=inputs=2:duration=first:dropout_transition=0[outa]" -map "[outa]" -c:a aac -b:a 192k "audio.mp3"`;
-    await runCommand(mixCmd, { cwd: postDir });
-
-    // Generate ASS subtitles synced to narration
-    let assContent = '';
-    if (ttsContent.engine === 'elevenlabs' && ttsContent.alignment) {
-      await db.log('SYSTEM', `Using ElevenLabs character alignment for subtitle sync.`);
-      const words = parseWordsFromAlignment(ttsContent.alignment);
-      const phrases = groupWordsIntoPhrases(words);
-      assContent = generateASS(phrases, 0.0);
-    } else {
-      await db.log('SYSTEM', `Using proportional phrase timing for subtitles.`);
-      const phrasesText = splitIntoPhrases(audioScript.trim());
-      const proportionalPhrases = generateProportionalPhrases(phrasesText, mainDuration, 0.45);
-      assContent = generateASS(proportionalPhrases, 0.0);
-    }
-
-    const assFullPath = path.join(postDir, 'subtitles.ass');
-    await fs.writeFile(assFullPath, assContent, 'utf-8');
-    await db.log('SYSTEM', `Generated ASS subtitles at ${assFullPath}`);
-
-    // Determine background source:
-    // Prefer the 9:16 background_reel.jpg downloaded by renderReelSlide (Pollinations.ai)
-    // Fall back to slide.png as background (it already has the full frame rendered)
-    let bgInputFlag = '';
-    let bgFilterInput = '';
-    const bgReelJpg = path.join(postDir, 'background_reel.jpg');
-    let hasBgVideo = false;
-    try {
-      await fs.access(bgReelJpg);
-      // Use the raw background jpg and overlay slide.png (with glassmorphism) on top
-      bgInputFlag = `-loop 1 -i "background_reel.jpg"`;
-      hasBgVideo = false;
-      await db.log('SYSTEM', `Using Pollinations 9:16 background image for FFmpeg video construction.`);
-    } catch (e) {
-      // No separate background — use slide.png directly as the full-frame background
-      bgInputFlag = `-loop 1 -i "slide.png"`;
-      hasBgVideo = false;
-      await db.log('SYSTEM', `Using full-frame slide.png as video background.`);
-    }
-
-    await db.log('SYSTEM', `Running FFmpeg to compose final 15-second Reel...`);
-
-    let ffmpegCmd;
-    if (hasBgVideo === false && bgInputFlag.includes('background_reel.jpg')) {
-      // Mode A: raw background + slide.png overlay + cta.png overlay + subtitles + audio
-      // Slide.png is the full 1080x1920 glassmorphism rendered frame — overlay it at 0,0
-      ffmpegCmd = `"${ffmpegPath}" -y ${bgInputFlag} -loop 1 -i "slide.png" -loop 1 -i "cta.png" -i "audio.mp3" \
--filter_complex \
-"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg]; \
-[bg][1:v]overlay=0:0:enable='lt(t,${mainDuration.toFixed(2)})'[v1]; \
-[v1][2:v]overlay=0:0:enable='gte(t,${mainDuration.toFixed(2)})'[merged]; \
-[merged]subtitles=subtitles.ass[outv]" \
--map "[outv]" -map 3:a \
--c:v libx264 -profile:v high -level:v 4.1 -pix_fmt yuv420p -movflags +faststart \
--c:a aac -b:a 192k \
--t ${totalDuration.toFixed(2)} -crf 17 \
--r 30 "reel.mp4"`;
-    } else {
-      // Mode B: slide.png is used as full-frame background (already has rendered bg + text + watermark)
-      ffmpegCmd = `"${ffmpegPath}" -y ${bgInputFlag} -loop 1 -i "cta.png" -i "audio.mp3" \
--filter_complex \
-"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,setsar=1[bg]; \
-[bg][1:v]overlay=0:0:enable='gte(t,${mainDuration.toFixed(2)})'[merged]; \
-[merged]subtitles=subtitles.ass[outv]" \
--map "[outv]" -map 2:a \
--c:v libx264 -profile:v high -level:v 4.1 -pix_fmt yuv420p -movflags +faststart \
--c:a aac -b:a 192k \
--t ${totalDuration.toFixed(2)} -crf 17 \
--r 30 "reel.mp4"`;
-    }
+    // Video layout:
+    //   0s – 13s  → slide.png (full cinematic frame with text + watermark)
+    //   13s – 15s → cta.png  (Follow @unspokendesireshub CTA)
+    // Audio: music.mp3 at full volume for all 15s (fade in/out already applied)
+    const ffmpegCmd = `"${ffmpegPath}" -y -loop 1 -i "slide.png" -loop 1 -i "cta.png" -i "audio.mp3" `
+      + `-filter_complex `
+      + `"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[slide]; `
+      + `[1:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[cta]; `
+      + `[slide][cta]concat=n=2:v=1:a=0[outv]" `
+      + `-map "[outv]" -map 2:a `
+      + `-c:v libx264 -profile:v high -level:v 4.1 -pix_fmt yuv420p -movflags +faststart `
+      + `-c:a aac -b:a 192k `
+      + `-t ${REEL_TOTAL_DURATION} -crf 17 `
+      + `"reel.mp4"`;
 
     await runCommand(ffmpegCmd, { cwd: postDir });
-    await db.log('SYSTEM', `FFmpeg compositing completed. Reel output: ${videoFullPath}`);
+    await db.log('SYSTEM', `FFmpeg compositing completed. 15s music-only Reel: ${videoFullPath}`);
   } catch (err) {
     await db.log('ERROR', `FFmpeg execution failed: ${err.message}`);
     throw new Error(`FFmpeg stitching failed: ${err.message}`);
@@ -651,6 +580,7 @@ export async function compileReel(postId, titleText, backgroundTheme, category, 
     renderedAudio: `/posts/${postId}/audio.mp3`
   };
 }
+
 
 
 // Full Reel generation workflow
