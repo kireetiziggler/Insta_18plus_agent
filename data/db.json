@@ -440,6 +440,18 @@
       "scheduledFor": "2026-06-19T15:40:51.751Z",
       "status": "draft",
       "createdAt": "2026-06-19T15:40:51.751Z"
+    },
+    {
+      "id": "reel_1781939556787",
+      "type": "reel",
+      "category": "Situationships & Forbidden Love",
+      "backgroundTheme": "midnight_desire",
+      "titleText": "THE DANGEROUS SILENCE OF SHARED BREATH.",
+      "audioScript": "\"The Velvet Edge\"\n\nMy dress strap slipped in the dim corner. His hand covered mine, thumb grazing my bare skin for a second too long.\n\n\"Need a hand?\" he murmured, breath warm on my neck. I knew I didn't, but let him linger.\n\nHis fingers traced the velvet edge of my dress. Every nerve screamed, knowing we shouldn't be this close, but neither of us moved.",
+      "caption": "The softest touch can ignite the most forbidden fires. It's the silent language of what we crave when we know we shouldn't. Submit your deepest anonymous confessions via the link in bio. Let your unspoken desires find a voice.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #situationships #secretadmirer #rawdesire #eroticart #confessions",
+      "scheduledFor": "2026-06-20T07:12:55.846Z",
+      "status": "draft",
+      "createdAt": "2026-06-20T07:12:55.846Z"
     }
   ],
   "trends": [
@@ -597,6 +609,261 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-20T07:13:00.282Z",
+      "type": "ERROR",
+      "message": "Scheduled Reel workflow failed for \"Situationships & Forbidden Love\": FFmpeg stitching failed: Command failed: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/node_modules/ffmpeg-static/ffmpeg\" -y -i \"music.mp3\" -filter_complex \"[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:15[outa]\" -map \"[outa]\" -c:a aac -b:a 192k \"audio.mp3\"\nffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, mp3, from 'music.mp3':\n  Metadata:\n    encoder         : Lavf61.1.100\n  Duration: 00:00:20.04, start: 0.025057, bitrate: 128 kb/s\n  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 128 kb/s\n      Metadata:\n        encoder         : Lavc61.3.\nStream mapping:\n  Stream #0:0 (mp3float) -> afade:default\n  atrim:default -> Stream #0:0 (aac)\nPress [q] to stop, [?] for help\n[mp3 @ 0x17982d00] Invalid audio stream. Exactly one MP3 audio stream is required.\n[out#0/mp3 @ 0x17982bc0] Could not write header (incorrect codec parameters ?): Invalid argument\n[fc#0 @ 0x1797bb40] Error sending frames to consumers: Invalid argument\n[fc#0 @ 0x1797bb40] Task finished with error code: -22 (Invalid argument)\n[fc#0 @ 0x1797bb40] Terminating thread with return code -22 (Invalid argument)\n[out#0/mp3 @ 0x17982bc0] Nothing was written into output file, because at least one of its streams received no packets.\nsize=       0KiB time=N/A bitrate=N/A speed=N/A    \n[aac @ 0x17984640] Qavg: nan\nConversion failed!\n"
+    },
+    {
+      "timestamp": "2026-06-20T07:13:00.280Z",
+      "type": "ERROR",
+      "message": "FFmpeg execution failed: Command failed: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/node_modules/ffmpeg-static/ffmpeg\" -y -i \"music.mp3\" -filter_complex \"[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:15[outa]\" -map \"[outa]\" -c:a aac -b:a 192k \"audio.mp3\"\nffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, mp3, from 'music.mp3':\n  Metadata:\n    encoder         : Lavf61.1.100\n  Duration: 00:00:20.04, start: 0.025057, bitrate: 128 kb/s\n  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 128 kb/s\n      Metadata:\n        encoder         : Lavc61.3.\nStream mapping:\n  Stream #0:0 (mp3float) -> afade:default\n  atrim:default -> Stream #0:0 (aac)\nPress [q] to stop, [?] for help\n[mp3 @ 0x17982d00] Invalid audio stream. Exactly one MP3 audio stream is required.\n[out#0/mp3 @ 0x17982bc0] Could not write header (incorrect codec parameters ?): Invalid argument\n[fc#0 @ 0x1797bb40] Error sending frames to consumers: Invalid argument\n[fc#0 @ 0x1797bb40] Task finished with error code: -22 (Invalid argument)\n[fc#0 @ 0x1797bb40] Terminating thread with return code -22 (Invalid argument)\n[out#0/mp3 @ 0x17982bc0] Nothing was written into output file, because at least one of its streams received no packets.\nsize=       0KiB time=N/A bitrate=N/A speed=N/A    \n[aac @ 0x17984640] Qavg: nan\nConversion failed!\n"
+    },
+    {
+      "timestamp": "2026-06-20T07:12:59.772Z",
+      "type": "SYSTEM",
+      "message": "Preparing music audio: trimming to 15s with fade-in/fade-out..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:59.770Z",
+      "type": "SYSTEM",
+      "message": "Reel timeline: Slide=13s | CTA=2s | Total=15s"
+    },
+    {
+      "timestamp": "2026-06-20T07:12:59.648Z",
+      "type": "ERROR",
+      "message": "Failed to download background music: HTTP 403. Generating silent fallback."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:59.352Z",
+      "type": "SYSTEM",
+      "message": "Downloading background music track: https://cdn.pixabay.com/audio/2023/03/12/audio_6d8b7c4a9f.mp3"
+    },
+    {
+      "timestamp": "2026-06-20T07:12:59.351Z",
+      "type": "SYSTEM",
+      "message": "Downloading sensual background music for post \"reel_1781939556787\"..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:59.349Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel CTA"
+    },
+    {
+      "timestamp": "2026-06-20T07:12:59.281Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel CTA slide for post \"reel_1781939556787\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:58.531Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel CTA..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:58.528Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel"
+    },
+    {
+      "timestamp": "2026-06-20T07:12:58.456Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel slide for post \"reel_1781939556787\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:57.314Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reel slide graphic with background..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:57.043Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:57.041Z",
+      "type": "SYSTEM",
+      "message": "Successfully loaded 9:16 Reel background image."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:55.856Z",
+      "type": "SYSTEM",
+      "message": "Generating 9:16 Reel background from Pollinations.ai (seed: 61288593): romantic couple intimate shadow dark bedroom candlelight silhouette"
+    },
+    {
+      "timestamp": "2026-06-20T07:12:55.853Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"silk_gold\" (Day of week: 6)"
+    },
+    {
+      "timestamp": "2026-06-20T07:12:55.852Z",
+      "type": "SYSTEM",
+      "message": "Creating Reels slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1781939556787\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:55.849Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels for post \"reel_1781939556787\"..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:55.844Z",
+      "type": "GENERATOR",
+      "message": "Successfully generated AI Reel content using Gemini. Theme: \"midnight_desire\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:36.788Z",
+      "type": "GENERATOR",
+      "message": "Generating Reel content for category: \"Situationships & Forbidden Love\"..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:36.787Z",
+      "type": "SYSTEM",
+      "message": "Running Reels generation workflow for \"reel_1781939556787\"..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:36.786Z",
+      "type": "SYSTEM",
+      "message": "No unused trends found for Reel \"Situationships & Forbidden Love\". Generating generic niche Reel."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:36.784Z",
+      "type": "SYSTEM",
+      "message": "Triggering scheduled Reel workflow for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:36.770Z",
+      "type": "RESEARCH",
+      "message": "Closed crawling browser session."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:36.649Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:35.641Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:34.627Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/lonely..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:33.697Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/breakups..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:33.696Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:33.694Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:32.606Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/socialskills..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:32.039Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:31.420Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:31.417Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:31.416Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:30.587Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:29.574Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/relationships..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:28.586Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:28.584Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:28.583Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:27.590Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:26.576Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/texts..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:25.563Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/confession..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:25.562Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:25.560Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:24.547Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:23.520Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/sex..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:22.311Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-20T07:12:22.310Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-20T07:12:13.682Z",
+      "type": "RESEARCH",
+      "message": "Starting Trend Research Agent via Puppeteer..."
+    },
     {
       "timestamp": "2026-06-19T17:00:20.504Z",
       "type": "ERROR",
@@ -2841,261 +3108,6 @@
       "timestamp": "2026-06-15T19:11:38.648Z",
       "type": "GENERATOR",
       "message": "Successfully generated AI content using Gemini. Theme: \"midnight_desire\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:26.254Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:26.253Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:26.251Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:26.236Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:26.170Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:25.147Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:24.135Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:23.111Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:23.108Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:23.106Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:22.073Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:21.046Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:20.197Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:20.195Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:20.193Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:19.181Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:18.154Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:17.129Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:17.127Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:17.126Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:16.102Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:15.517Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:14.508Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:14.507Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:14.505Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:13.480Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:12.258Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:11.156Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-15T19:11:11.154Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-15T19:11:10.409Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:43.943Z",
-      "type": "SYSTEM",
-      "message": "Safeguard Lock triggered: A post for category \"Anonymous Confessions\" has already been published today. Skipping duplicate posting."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:43.941Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:43.903Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:43.776Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:42.766Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:41.752Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:40.744Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:40.743Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:40.741Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:39.731Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:39.178Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:38.241Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:38.240Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:38.238Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:37.223Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:36.214Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:35.195Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:35.193Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:35.191Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-15T06:40:34.179Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-15T06:40:33.650Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
     }
   ]
 }
