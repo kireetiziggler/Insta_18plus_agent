@@ -168,20 +168,11 @@ function runCommand(command, options = {}) {
   });
 }
 
-// Themed royalty-free sensual/ambient music tracks from Pixabay (no attribution required)
+// Curated sensual, smooth, and romantic copyright-free music tracks (mostly lofi and romantic ambient)
 const MUSIC_TRACKS = [
-  // Deep sensual lo-fi / slow burn
-  'https://cdn.pixabay.com/audio/2023/09/12/audio_e21d9fcf93.mp3',
-  // Dark romantic ambient
-  'https://cdn.pixabay.com/audio/2023/11/06/audio_0b59d91c53.mp3',
-  // Moody cinematic tension
-  'https://cdn.pixabay.com/audio/2024/01/15/audio_54f4a0f6e9.mp3',
-  // Sultry lounge piano
-  'https://cdn.pixabay.com/audio/2022/10/25/audio_e40b8e44f1.mp3',
-  // Midnight desire ambient
-  'https://cdn.pixabay.com/audio/2023/06/20/audio_c3ee6e7b94.mp3',
-  // Sensual dark RnB
-  'https://cdn.pixabay.com/audio/2023/03/12/audio_6d8b7c4a9f.mp3'
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', // romantic testing track
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'
 ];
 
 // Download a random background music track for the Reel
@@ -526,14 +517,11 @@ export async function compileReel(postId, titleText, backgroundTheme, category, 
 
   // TARGET: Exactly 15 seconds total reel duration
   const REEL_TOTAL_DURATION = 15.0;
-  const MAIN_DURATION = 13.0;
-  const CTA_DURATION = 2.0;
 
   // 1. Render slides
   await db.log('SYSTEM', `Rendering Reels for post "${postId}"...`);
   const slideContent = audioScript && audioScript.trim().length > 0 ? audioScript.trim() : titleText;
   const slidePath = await renderer.renderReelSlide(postId, slideContent, backgroundTheme, category);
-  const ctaSlidePath = await renderer.renderReelCTA(postId);
 
   await db.log('SYSTEM', `Downloading sensual background music for post "${postId}"...`);
   const musicPath = await downloadBackgroundMusic(postDir);
@@ -541,11 +529,11 @@ export async function compileReel(postId, titleText, backgroundTheme, category, 
   const videoFullPath = path.join(postDir, 'reel.mp4');
 
   try {
-    await db.log('SYSTEM', `Reel timeline: Slide=${MAIN_DURATION}s | CTA=${CTA_DURATION}s | Total=${REEL_TOTAL_DURATION}s`);
+    await db.log('SYSTEM', `Reel timeline: Slide=${REEL_TOTAL_DURATION}s | Total=${REEL_TOTAL_DURATION}s`);
 
     // Trim music to exactly 15s with 0.5s fade-in and 1.5s fade-out — music ONLY, no voiceover
     await db.log('SYSTEM', `Preparing music audio: trimming to 15s with fade-in/fade-out...`);
-    const audioCmd = `"${ffmpegPath}" -y -i "music.mp3" -filter_complex "[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:${REEL_TOTAL_DURATION}[outa]" -map "[outa]" -c:a aac -b:a 192k "audio.mp3"`;
+    const audioCmd = `"${ffmpegPath}" -y -i "music.mp3" -filter_complex "[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:${REEL_TOTAL_DURATION}[outa]" -map "[outa]" -c:a libmp3lame -b:a 192k "audio.mp3"`;
     await runCommand(audioCmd, { cwd: postDir });
 
     // Determine whether we have a separate 9:16 background jpg from Pollinations
@@ -553,15 +541,12 @@ export async function compileReel(postId, titleText, backgroundTheme, category, 
     await db.log('SYSTEM', `Running FFmpeg to compose final 15-second Reel (music-only)...`);
 
     // Video layout:
-    //   0s – 13s  → slide.png (full cinematic frame with text + watermark)
-    //   13s – 15s → cta.png  (Follow @unspokendesireshub CTA)
+    //   0s – 15s  → slide.png (full cinematic frame with text + watermark)
     // Audio: music.mp3 at full volume for all 15s (fade in/out already applied)
-    const ffmpegCmd = `"${ffmpegPath}" -y -loop 1 -i "slide.png" -loop 1 -i "cta.png" -i "audio.mp3" `
+    const ffmpegCmd = `"${ffmpegPath}" -y -loop 1 -i "slide.png" -i "audio.mp3" `
       + `-filter_complex `
-      + `"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[slide]; `
-      + `[1:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[cta]; `
-      + `[slide][cta]concat=n=2:v=1:a=0[outv]" `
-      + `-map "[outv]" -map 2:a `
+      + `"[0:v]scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30,setsar=1[slide]" `
+      + `-map "[slide]" -map 1:a `
       + `-c:v libx264 -profile:v high -level:v 4.1 -pix_fmt yuv420p -movflags +faststart `
       + `-c:a aac -b:a 192k `
       + `-t ${REEL_TOTAL_DURATION} -crf 17 `

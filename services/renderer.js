@@ -220,7 +220,7 @@ function generateSlideHTML(slideText, slideIndex, themeName, handle, categoryNam
       font-weight: 700;
       letter-spacing: 2px;
       color: rgba(255, 255, 255, 0.9);
-      text-transform: uppercase;
+      text-transform: lowercase;
     }
     
     /* Centered text container with premium dark glassmorphism for contrast */
@@ -311,39 +311,53 @@ async function downloadBackgroundImage(themeName, postDir, pexelsQuery = null) {
 
   // Map each theme to a unique, stunning visual background theme query
   const PEXELS_THEME_QUERIES = {
-    midnight_desire: 'couples intimate candle light shadow silhouette dark low light',
-    rainy_bed: 'cozy dark bedroom night rain street lights window bedroom',
-    shadowy_lounge: 'shadowy bar night couple romantic tension low light',
-    candlelight_secrets: 'hands touch candle light night table aesthetic dark romantic',
-    intimate_touch: 'gentle touch embrace shadow couple intimacy body low light night',
-    overthinking_night: 'person look window night city neon lights lonely shadow',
-    secret_thoughts: 'person sit silk bed phone screen night bedroom dark glow',
-    sensual_vibes: 'crimson gold luxury silk abstract dark light texture red'
+    midnight_desire: 'romantic couple close, look at each other, real humans',
+    rainy_bed: 'cozy dark bedroom, real human couple, cozy bed, window rain',
+    shadowy_lounge: 'shadowy bar night, romantic couple whispering, real humans',
+    candlelight_secrets: 'candle light table aesthetic, close couple, real human boy and girl',
+    intimate_touch: 'gentle touch embrace shadow, real human couple intimacy, low light',
+    overthinking_night: 'real human girl looking out window at night city neon lights',
+    secret_thoughts: 'real human girl sitting on silk bed night bedroom dark glow',
+    sensual_vibes: 'sensual real human couple embrace silhouette'
   };
 
-  const query = pexelsQuery || PEXELS_THEME_QUERIES[themeName] || 'romantic couple shadow intimacy';
+  const query = pexelsQuery || PEXELS_THEME_QUERIES[themeName] || 'romantic couple real humans';
   
-  // Construct a styled, high-quality cinematic prompt for Pollinations.ai
-  const styledPrompt = `${query}, highly sensual, romantic couple, cinematic lighting, dark atmosphere, moody shadows, low light, photorealistic, 8k resolution, premium aesthetics, intimate, no text, no watermark`;
+  // Construct a styled, high-quality DSLR cinematic prompt for Pollinations.ai with model=flux
+  const styledPrompt = `${query}, DSLR photography, real human girl and boy, highly visible, cinematic lighting, dark atmosphere, moody shadows, low light, photorealistic, 8k resolution, premium aesthetics, intimate, real skin textures, detailed faces, no text, no watermark`;
   const seed = Math.floor(Math.random() * 1000000000);
-  const downloadUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(styledPrompt)}?width=1080&height=1080&nologo=true&seed=${seed}`;
+  const downloadUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(styledPrompt)}?width=1080&height=1080&nologo=true&seed=${seed}&model=flux`;
 
   await db.log('SYSTEM', `Generating unique AI background image using Pollinations.ai. Prompt: "${query}" (Seed: ${seed})`);
   await db.log('SYSTEM', `Downloading from Pollinations: ${downloadUrl}`);
 
-  try {
-    const response = await fetch(downloadUrl, {
-      headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+  let bgBuffer = null;
+  const maxRetries = 5;
+  for (let attempt = 1; attempt <= maxRetries; attempt++) {
+    try {
+      const response = await fetch(downloadUrl, {
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36'
+        }
+      });
+      if (response.ok) {
+        bgBuffer = Buffer.from(await response.arrayBuffer());
+        // Verify buffer size is reasonable to avoid incomplete image transfers
+        if (bgBuffer.length > 20000) {
+          break;
+        }
       }
-    });
-    if (!response.ok) throw new Error(`Pollinations API returned status ${response.status}`);
-    const buffer = Buffer.from(await response.arrayBuffer());
-    await fs.writeFile(targetPath, buffer);
+    } catch (e) {
+      await db.log('SYSTEM', `Pollinations download attempt ${attempt} failed: ${e.message}`);
+    }
+    await db.log('SYSTEM', `Waiting 3s for image generation to complete (attempt ${attempt}/${maxRetries})...`);
+    await new Promise(resolve => setTimeout(resolve, 3000));
+  }
+
+  if (bgBuffer) {
+    await fs.writeFile(targetPath, bgBuffer);
     await db.log('SYSTEM', `Successfully downloaded generated background image to ${targetPath}`);
     return targetPath;
-  } catch (err) {
-    await db.log('ERROR', `Failed to generate or download background image from Pollinations: ${err.message}`);
   }
 
   return null;
@@ -631,32 +645,47 @@ export async function renderReelSlide(postId, titleText, themeName, categoryName
   let bgBase64 = '';
   try {
     const PEXELS_REEL_QUERIES = {
-      midnight_desire: 'romantic couple intimate shadow dark bedroom candlelight silhouette',
-      rainy_bed: 'rain night bedroom window cozy dark silk sheets',
-      shadowy_lounge: 'bar night couple whispering shadow low light luxury',
-      candlelight_secrets: 'candlelight hands close dark table romantic night',
-      intimate_touch: 'couple embrace shadow intimacy body dark low light',
-      overthinking_night: 'person looking window city night neon rain lonely',
-      secret_thoughts: 'person bed phone glow dark silk sheets night bedroom',
-      sensual_vibes: 'crimson silk gold texture dark abstract luxury'
+      midnight_desire: 'romantic couple close, look at each other, real humans',
+      rainy_bed: 'cozy dark bedroom, real human couple, cozy bed, window rain',
+      shadowy_lounge: 'shadowy bar night, romantic couple whispering, real humans',
+      candlelight_secrets: 'candle light table aesthetic, close couple, real human boy and girl',
+      intimate_touch: 'gentle touch embrace shadow, real human couple intimacy, low light',
+      overthinking_night: 'real human girl looking out window at night city neon lights',
+      secret_thoughts: 'real human girl sitting on silk bed night bedroom dark glow',
+      sensual_vibes: 'sensual real human couple embrace silhouette'
     };
-    const query = pexelsQuery || PEXELS_REEL_QUERIES[themeName] || 'romantic couple dark intimate';
-    const styledPrompt = `${query}, cinematic lighting, dark atmosphere, moody shadows, low light, photorealistic, 8k, premium aesthetics, sensual, no text, no watermark`;
+    const query = pexelsQuery || PEXELS_REEL_QUERIES[themeName] || 'romantic couple real humans';
+    const styledPrompt = `${query}, DSLR photography, real human girl and boy, highly visible, cinematic lighting, dark atmosphere, moody shadows, low light, photorealistic, 8k, premium aesthetics, sensual, real skin textures, detailed faces, no text, no watermark`;
     const seed = Math.floor(Math.random() * 1000000000);
-    // 9:16 aspect ratio for Reels background
-    const bgUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(styledPrompt)}?width=1080&height=1920&nologo=true&seed=${seed}`;
+    // 9:16 aspect ratio for Reels background with model=flux
+    const bgUrl = `https://image.pollinations.ai/prompt/${encodeURIComponent(styledPrompt)}?width=1080&height=1920&nologo=true&seed=${seed}&model=flux`;
     await db.log('SYSTEM', `Generating 9:16 Reel background from Pollinations.ai (seed: ${seed}): ${query}`);
-    const bgResp = await fetch(bgUrl, {
-      headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }
-    });
-    if (bgResp.ok) {
-      const bgBuf = Buffer.from(await bgResp.arrayBuffer());
-      // Save for ffmpeg use as well
+    let bgBuf = null;
+    const maxRetries = 5;
+    for (let attempt = 1; attempt <= maxRetries; attempt++) {
+      try {
+        const bgResp = await fetch(bgUrl, {
+          headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36' }
+        });
+        if (bgResp.ok) {
+          bgBuf = Buffer.from(await bgResp.arrayBuffer());
+          if (bgBuf.length > 20000) {
+            break;
+          }
+        }
+      } catch (e) {
+        await db.log('SYSTEM', `Pollinations Reel download attempt ${attempt} failed: ${e.message}`);
+      }
+      await db.log('SYSTEM', `Waiting 3s for Reel image generation (attempt ${attempt}/${maxRetries})...`);
+      await new Promise(resolve => setTimeout(resolve, 3000));
+    }
+
+    if (bgBuf) {
       await fs.writeFile(path.join(postDir, 'background_reel.jpg'), bgBuf);
       bgBase64 = bgBuf.toString('base64');
       await db.log('SYSTEM', `Successfully loaded 9:16 Reel background image.`);
     } else {
-      await db.log('ERROR', `Pollinations Reel background returned status ${bgResp.status}`);
+      await db.log('ERROR', `Pollinations Reel background download failed.`);
     }
   } catch (err) {
     await db.log('ERROR', `Failed to fetch Reel background image: ${err.message}`);

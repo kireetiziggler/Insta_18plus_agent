@@ -5,52 +5,31 @@ import dotenv from 'dotenv';
 
 dotenv.config();
 
-// Determine the post category based on the current hour in Indian Standard Time (IST)
-function getCategoryByLocalHour() {
+// Determine the post action based on the current hour in Indian Standard Time (IST)
+function determineActionByLocalHour() {
   const date = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
   const hour = date.getHours();
 
   console.log(`Current local time in IST: ${date.toLocaleTimeString()} (Hour: ${hour})`);
 
-  // Map local hours to the two target categories (handles slight latency)
-  if (hour >= 5 && hour <= 12) {
-    return 'Anonymous Confessions'; // 07:00 AM Morning Slot
-  } else {
-    return 'Intimate Secrets'; // 09:00 PM Evening Slot
+  // Morning Slot (roughly 5 AM to 12 PM): 9:00 AM Post -> 'Anonymous Confessions'
+  if (hour >= 5 && hour < 14) {
+    return { type: 'post', category: 'Anonymous Confessions' };
   }
-}
-
-// Robustly determine target category using inputs, crons, or current time fallback
-function getTargetCategory() {
-  if (process.env.CATEGORY_OVERRIDE && process.env.CATEGORY_OVERRIDE !== 'auto') {
-    console.log(`Category override detected from environment: "${process.env.CATEGORY_OVERRIDE}"`);
-    return process.env.CATEGORY_OVERRIDE;
+  // Afternoon Slot (roughly 14:00 to 18:30): 6:00 PM Reel -> 'Desire & Physical Intimacy' (reel)
+  else if (hour >= 14 && hour < 19) {
+    return { type: 'reel', category: 'Desire & Physical Intimacy' };
   }
-
-  if (process.env.SCHEDULE_CRON) {
-    const cron = process.env.SCHEDULE_CRON.trim();
-    console.log(`Cron schedule event trigger detected: "${cron}"`);
-    if (cron === '30 1 * * *') {
-      console.log(`Decoupled Scheduling: Cron matches Morning Slot -> 'Anonymous Confessions'`);
-      return 'Anonymous Confessions';
-    } else if (cron === '30 15 * * *') {
-      console.log(`Decoupled Scheduling: Cron matches Evening Slot -> 'Intimate Secrets'`);
-      return 'Intimate Secrets';
-    } else {
-      console.log(`Unrecognized cron schedule "${cron}". Falling back to system hour.`);
-    }
+  // Night Slot (19:00 onwards): 8:00 PM Post -> 'Intimate Secrets'
+  else {
+    return { type: 'post', category: 'Intimate Secrets' };
   }
-
-  return getCategoryByLocalHour();
 }
 
 async function run() {
   console.log('========================================================');
   console.log('UNSPOKEN DESIRES - GITHUB ACTIONS SCHEDULER ACTIVE');
   console.log('========================================================\n');
-
-  // Note: Environment secrets are dynamically loaded in-memory by db.getSettings() and never written to db.json
-
 
   // 1. Always run Trend Research first to refresh with the latest Reddit topics
   try {
@@ -60,25 +39,28 @@ async function run() {
     console.error('Trend research failed (will continue with existing/offline templates):', error.message);
   }
 
-  // 2. Determine slot type and execute workflow
+  // 2. Determine slot action and execute workflow
   const triggerType = process.env.TRIGGER_TYPE || 'auto';
-  const date = new Date(new Date().toLocaleString("en-US", { timeZone: "Asia/Kolkata" }));
-  const hour = date.getHours();
+  
+  let targetAction = { type: 'post', category: 'Anonymous Confessions' };
 
-  const isReelSlot = triggerType === 'reel';
+  if (triggerType === 'reel') {
+    targetAction = { type: 'reel', category: 'Desire & Physical Intimacy' };
+  } else if (triggerType === 'post') {
+    const cat = process.env.CATEGORY_OVERRIDE && process.env.CATEGORY_OVERRIDE !== 'auto' 
+      ? process.env.CATEGORY_OVERRIDE 
+      : 'Anonymous Confessions';
+    targetAction = { type: 'post', category: cat };
+  } else {
+    // auto mode based on current IST time slot
+    targetAction = determineActionByLocalHour();
+  }
 
-  if (isReelSlot) {
-    console.log(`Triggering scheduled Reel workflow (Trigger Type: ${triggerType})...`);
-    const categories = [
-      'Desire & Physical Intimacy',
-      'Secret Thoughts & Overthinking',
-      'Situationships & Forbidden Love',
-      'Romantic Tension & Chemistry',
-      'Intimate Heartbreak & Healing'
-    ];
-    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+  console.log(`Executing target action: Type: "${targetAction.type}" | Category: "${targetAction.category}"`);
+
+  if (targetAction.type === 'reel') {
     try {
-      await triggerScheduledReel(randomCategory);
+      await triggerScheduledReel(targetAction.category);
       console.log('\n✓ Reel sequence completed successfully.');
       process.exit(0);
     } catch (error) {
@@ -86,11 +68,8 @@ async function run() {
       process.exit(1);
     }
   } else {
-    const category = getTargetCategory();
-    console.log(`Target Niche Slot Category: "${category}" (Trigger Type: ${triggerType})`);
-
     try {
-      await triggerScheduledPost(category);
+      await triggerScheduledPost(targetAction.category);
       console.log('\n✓ Post sequence completed successfully.');
       process.exit(0);
     } catch (error) {

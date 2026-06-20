@@ -140,16 +140,16 @@ ${examplesText}
 ${recentConstraintText}
 
 CRITICAL CONFESSION CONTENT RULES:
-- Content Focus: The confession must describe a highly specific, detailed anonymous story about an intimate scene, secret affair, sex relationship, cheating, physical longing, or raw desire that happened in someone's life. It must make the reader feel the physical tension, heat, and raw chemistry ("high and horny" vibes).
+- Content Focus: The confession must describe a highly specific, detailed anonymous story about an intimate scene, secret affair, physical longing, or raw desire that happened in someone's life. It must make the reader feel the physical tension, heat, and raw chemistry ("high and horny" vibes).
 - Tone & Mood: Seductive, passionate, extremely provocative, and raw.
+- Strict length constraint: The entire confession text (including title) MUST be strictly under 120 characters max. Keep it extremely brief and high-impact.
+- Suggestive Language Censorship: To prevent Instagram restrictions while maintaining high physical tension, you MUST mask suggestive words using asterisks. Always write: "sex" as "s*x", "fuck" as "f**k", "boobs" as "b**bs", "pussy" as "p*ssy", "dick" as "d*ck", "naked" as "n*ked", etc.
 - Content Format (STRICT DIALOGUE & STORYTELLING FORMAT):
-  1. The first line of the confession MUST be a title in double quotes (e.g., "Late Night Confession", "Midnight Secret", "Forbidden Whispers", "Intimate Encounter").
-  2. The story must follow below it, separated by paragraph breaks (using double newlines \n\n), written as a first-person dialogue/narrative script with short, heavy sentences.
-  3. Spoken dialogue must be wrapped in double quotes.
-  4. The final paragraph must build up to a highly suggestive, seductive punchline (dialogue or action) that leaves a lasting high/tension (e.g. "...washing the sheets everyday.", "...making sure the door was locked.").
-  5. Write in first-person perspective only ("I", "me", "my", "we").
+  1. The first line of the confession MUST be a short title in double quotes (e.g., "Late Night Confession").
+  2. The story must follow below it, separated by paragraph breaks (using double newlines \n\n).
+  3. The final paragraph must build up to a highly suggestive, seductive punchline.
+  4. Write in first-person perspective only ("I", "me", "my", "we").
 - Strict Ending Rule (NO QUESTIONS): DO NOT end the confession with any question. It must end as a provocative statement or dialogue quote.
-- Word Count: Maximum length: 45-75 words (formatted into 3-5 short paragraphs separated by newlines \n\n).
 - Compliance: Keep it highly suggestive but strictly compliant with Instagram safety guidelines (non-explicit, PG-13/R romance limit).
 - Caption: Keep the caption extremely brief—exactly one provocative statement (max 10-15 words) describing the mood of the confession (no question), followed directly by 5-6 hashtags: #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage. Do not include lists, bullet points, or multiple lines.
 - Dynamic Search Query (CRITICAL VISUAL RULE): The "pexelsQuery" field must describe a highly specific search query representing the confession's exact scenario (e.g. kitchen counter, hotel bed, elevator corner, car backseat) in a dark, night, low-light, shadow, or silhouette environment to ensure the background fits the scene perfectly and stays unique. Never request bright daylight or sunny outdoor queries.
@@ -170,7 +170,7 @@ Response must be valid JSON matching this schema:
   "backgroundTheme": "midnight_desire",
   "pexelsQuery": "descriptive query for AI image prompt...",
   "slides": [
-    "\"Title In Quotes\"\n\nFirst paragraph narrative...\n\nSecond paragraph dialogue...\n\nFinal paragraph punchline."
+    "\"Title In Quotes\"\n\nFirst paragraph narrative...\n\nFinal paragraph punchline."
   ],
   "caption": "One line caption text #intimacy #chemistry..."
 }
@@ -295,11 +295,15 @@ ${recentConstraintText}
 CRITICAL CONTENT INSTRUCTIONS:
 - Content Focus: The Reel must describe a highly specific, detailed anonymous story sharing an intimate scene or secret that happened in someone's life to build suspense and viewer curiosity. It must strictly relate to suggestive intimacy, adult relationships, horny feelings, secret affairs, sex relationships, cheating, or physical longing.
 - Tone & Mood: The tone must be highly sensual, passionate, seductive, and provocative (creating a "high and horny" mood through raw physical/emotional tension, secret cravings, and suggestive details), while staying within Instagram safety guidelines (non-explicit, PG-13/R romance limit).
-- Writing Style (STRICT DIALOGUE & STORYTELLING FORMAT): Deep, raw, highly suggestive. Start with an immediate attention-grabbing title in quotes, followed by short, heavy sentences that combine narrative actions with direct spoken dialogue in double quotes. It must feel like an intimate secret or a private confession. Avoid formal AI transitions, greetings, or robotic filler.
+- Suggestive Language Censorship: To prevent Instagram restrictions while maintaining high physical tension, you MUST mask suggestive words using asterisks. Always write: "sex" as "s*x", "fuck" as "f**k", "boobs" as "b**bs", "pussy" as "p*ssy", "dick" as "d*ck", "naked" as "n*ked", etc.
+- Writing Style (STRICT DIALOGUE & STORYTELLING FORMAT): Deep, raw, highly suggestive. Start with an immediate attention-grabbing title in quotes, followed by short, heavy sentences. It must feel like an intimate secret or a private confession. Avoid formal AI transitions, greetings, or robotic filler.
 - Perspective: First-person perspective only (using "I", "me", "my").
-- Strict Ending Rule (NO QUESTIONS): DO NOT end the script with any question. It must end as a provocative statement or dialogue quote (e.g. "...washing the sheets everyday.", "...and we both knew we had crossed the line.").
+- Strict length constraint: The entire audioScript text (including title) MUST be strictly under 120 characters max. Keep it extremely brief and high-impact.
+- Strict Ending Rule (NO QUESTIONS): DO NOT end the script with any question. It must end as a provocative statement or dialogue quote.
 - titleText: A short, high-impact quote or statement to display on the video slide (max 15-20 words, uppercase, punchy, e.g. "THE DANGEROUS THRILL OF FORBIDDEN CHEMISTRY.").
-- audioScript: The full story text displayed on screen for the viewer to READ (no voiceover — music only). Format it exactly as:\n  Line 1: A short title in double quotes (e.g. \"Hotel Key\", \"Backseat Confession\").\n  Lines 2-4: 2-3 short punchy story paragraphs (each 1-2 sentences, separated by blank lines). The final paragraph must be the most provocative, seductive line. Max 55-65 words total across all paragraphs. NO questions at the end.
+- audioScript: The full story text displayed on screen for the viewer to READ (no voiceover — music only). Format it exactly as:
+  Line 1: A short title in double quotes (e.g. \"Hotel Key\").
+  Line 2: A short story line. NO questions at the end. Total characters of audioScript must be under 120 characters.
 - backgroundTheme (CRITICAL VISUAL RULE): Select a background visual theme from this list that best fits the mood. Ensure it is strictly a dark, night, or low-light theme. Never select bright themes:
   - 'midnight_desire' (for romantic chemistry, intimacy, physical connection, dark low light)
   - 'rainy_bed' (for midnight thoughts, quiet intimacy, rain views, dark night)
@@ -316,7 +320,7 @@ Response must be valid JSON matching this schema:
 {
   "backgroundTheme": "midnight_desire",
   "titleText": "Slide Text / Hook for the Reel Screen",
-  "audioScript": "Deep, emotional text to be read by the narrator. Do not include markdown or stage directions.",
+  "audioScript": "\"Title\"\n\nSensual line under 70 characters.",
   "caption": "Full Instagram caption text..."
 }
 \`\`\`
@@ -366,8 +370,6 @@ export async function generateReelContent(category, topicQuery = null) {
 // Convert post offline templates into reels format, using used history
 function getOfflineReelFallback(category, posts = []) {
   const postContent = getOfflineTemplate(category, posts);
-  // slide 1 as titleText
-  // slides 2, 3, 4 as audioScript
   const titleText = postContent.slides[0];
   const audioScript = postContent.slides.slice(1, 4).join(' ').replace(/Swipe left|Read details|Swipe next/gi, '').trim() || titleText;
   return {
@@ -382,3 +384,4 @@ export default {
   generatePostContent,
   generateReelContent
 };
+
