@@ -687,6 +687,166 @@
   ],
   "logs": [
     {
+      "timestamp": "2026-06-21T16:16:09.867Z",
+      "type": "ERROR",
+      "message": "Scheduled post workflow failed for \"Intimate Secrets\": CRITICAL ERROR: Gemini content generation failed: [GoogleGenerativeAI Error]: Text not available. Response was blocked due to PROHIBITED_CONTENT. Fallback templates are disabled."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:09.865Z",
+      "type": "ERROR",
+      "message": "CRITICAL ERROR: Gemini content generation failed: [GoogleGenerativeAI Error]: Text not available. Response was blocked due to PROHIBITED_CONTENT. Fallback templates are disabled."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:09.607Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Intimate Secrets\"..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:09.606Z",
+      "type": "SYSTEM",
+      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:09.604Z",
+      "type": "SYSTEM",
+      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
+    },
+    {
+      "timestamp": "2026-06-21T16:16:09.589Z",
+      "type": "RESEARCH",
+      "message": "Closed crawling browser session."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:09.525Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-21T16:16:08.513Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:07.505Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/lonely..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:06.492Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/breakups..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:06.490Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-21T16:16:06.488Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-21T16:16:05.470Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/socialskills..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:04.457Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:03.552Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:03.550Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-21T16:16:03.548Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-21T16:16:02.539Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:01.527Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/relationships..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:00.514Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-21T16:16:00.513Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-21T16:16:00.512Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-21T16:15:59.500Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-21T16:15:58.638Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/texts..."
+    },
+    {
+      "timestamp": "2026-06-21T16:15:57.632Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/confession..."
+    },
+    {
+      "timestamp": "2026-06-21T16:15:57.631Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-21T16:15:57.629Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-21T16:15:56.617Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-21T16:15:55.603Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/sex..."
+    },
+    {
+      "timestamp": "2026-06-21T16:15:54.566Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-21T16:15:54.564Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-21T16:15:53.779Z",
+      "type": "RESEARCH",
+      "message": "Starting Trend Research Agent via Puppeteer..."
+    },
+    {
       "timestamp": "2026-06-21T14:57:23.983Z",
       "type": "ERROR",
       "message": "Scheduled post workflow failed for \"Intimate Secrets\": CRITICAL ERROR: Gemini content generation failed: [GoogleGenerativeAI Error]: Text not available. Response was blocked due to PROHIBITED_CONTENT. Fallback templates are disabled."
@@ -3025,166 +3185,6 @@
       "timestamp": "2026-06-18T17:09:54.890Z",
       "type": "SYSTEM",
       "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"car backseat couple intimacy rain city lights night reflection bokeh shadow\" (Seed: 859416502)"
-    },
-    {
-      "timestamp": "2026-06-18T17:09:54.883Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"obsidian_black\" (Day of week: 4)"
-    },
-    {
-      "timestamp": "2026-06-18T17:09:54.877Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_evening_1781802594873\""
-    },
-    {
-      "timestamp": "2026-06-18T17:09:54.863Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-18T17:09:54.397Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"sample_post_after_update_morning_1781802587995\""
-    },
-    {
-      "timestamp": "2026-06-18T17:09:52.442Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-18T17:09:51.894Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-18T17:09:51.888Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781802587995\\background.png"
-    },
-    {
-      "timestamp": "2026-06-18T17:09:48.062Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/kitchen%20counter%20couple%20romantic%20tension%20night%20low%20light%20shadow%20silhouette%2C%20highly%20sensual%2C%20romantic%20couple%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=126824324"
-    },
-    {
-      "timestamp": "2026-06-18T17:09:48.060Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"kitchen counter couple romantic tension night low light shadow silhouette\" (Seed: 126824324)"
-    },
-    {
-      "timestamp": "2026-06-18T17:09:48.055Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"obsidian_black\" (Day of week: 4)"
-    },
-    {
-      "timestamp": "2026-06-18T17:09:48.052Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\sample_post_after_update_morning_1781802587995\""
-    },
-    {
-      "timestamp": "2026-06-18T17:04:35.612Z",
-      "type": "SYSTEM",
-      "message": "Reel workflow completed successfully for post \"test_reel_validation\""
-    },
-    {
-      "timestamp": "2026-06-18T17:04:35.608Z",
-      "type": "SYSTEM",
-      "message": "FFmpeg stitching completed successfully. Reel output: C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\reel.mp4"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:26.361Z",
-      "type": "SYSTEM",
-      "message": "Running FFmpeg to overlay watermarks, centered CTA follow screen, and burn subtitles..."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:26.359Z",
-      "type": "SYSTEM",
-      "message": "Generated timed ASS subtitles at C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\subtitles.ass"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:26.356Z",
-      "type": "SYSTEM",
-      "message": "Falling back to proportional phrase timing estimation (Google TTS or missing alignment)."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:26.354Z",
-      "type": "SYSTEM",
-      "message": "Audio timeline: Main Content: 11.64s | Gap: 1.0s | CTA: 2.42s | Total: 15.06s"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:26.051Z",
-      "type": "SYSTEM",
-      "message": "Concatenating content audio, silence, and CTA voice track..."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:24.453Z",
-      "type": "SYSTEM",
-      "message": "Generating 1-second audio silence gap..."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:24.450Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded background video to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\background.mp4"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:24.117Z",
-      "type": "SYSTEM",
-      "message": "Downloading Reel background video from URL: https://content.pexels.com/aigc-bundle/videos/9c52d516-c6ec-4d08-b1e5-2c62257d907c.mp4"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:23.780Z",
-      "type": "SYSTEM",
-      "message": "Found 28 Pexels videos. Selected random index 1: https://content.pexels.com/aigc-bundle/videos/9c52d516-c6ec-4d08-b1e5-2c62257d907c.mp4"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:18.439Z",
-      "type": "SYSTEM",
-      "message": "Searching Pexels for a unique background video matching query: \"person look window night city neon lights lonely shadow\"..."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:18.434Z",
-      "type": "SYSTEM",
-      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_cta.mp3"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:18.189Z",
-      "type": "SYSTEM",
-      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_cta.mp3..."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:18.186Z",
-      "type": "SYSTEM",
-      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:18.183Z",
-      "type": "SYSTEM",
-      "message": "Successfully saved Google TTS audio to C:\\Users\\kiree\\OneDrive\\Documents\\Insta_18plus_agent\\data\\posts\\test_reel_validation\\audio_main.mp3"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:17.677Z",
-      "type": "SYSTEM",
-      "message": "Synthesizing Reel voiceover using Google TTS API (free) into audio_main.mp3..."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:17.676Z",
-      "type": "SYSTEM",
-      "message": "Daily Voice Shift active. Selected voice: Sarah (Female)"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:17.674Z",
-      "type": "SYSTEM",
-      "message": "Generating Reels voiceover narration (two-part) for post \"test_reel_validation\"..."
-    },
-    {
-      "timestamp": "2026-06-18T17:04:17.671Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel CTA"
-    },
-    {
-      "timestamp": "2026-06-18T17:04:17.402Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel CTA slide for post \"test_reel_validation\""
     }
   ]
 }
