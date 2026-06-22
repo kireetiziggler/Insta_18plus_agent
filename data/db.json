@@ -555,6 +555,31 @@
         "likes": 0,
         "comments": 0
       }
+    },
+    {
+      "id": "post_1782148611142",
+      "category": "Intimate Secrets",
+      "backgroundTheme": "candlelight_secrets",
+      "pexelsQuery": "hidden hand touch under restaurant table night soft light",
+      "slides": [
+        "\"A Hidden Touch\"\n\nHis hand found mine under the table.\n\nThe silent pressure promised everything."
+      ],
+      "caption": "The world might not see it, but we felt everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
+      "scheduledFor": "2026-06-22T17:16:51.142Z",
+      "status": "published",
+      "createdAt": "2026-06-22T17:16:51.142Z",
+      "renderedImages": [
+        "/posts/post_1782148611142/slide_1.png"
+      ],
+      "publishedAt": "2026-06-22T17:17:05.864Z",
+      "instagramMediaId": "buffer_6a396e07f698b193f1759f68",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -712,6 +737,236 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-22T17:17:05.866Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782148611142\" to Instagram via Buffer (Buffer Post ID: 6a396e07f698b193f1759f68)"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:54.636Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://tmpfiles.org/dl/w4wQJ6M63BX8/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:53.696Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:53.695Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782148611142\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:53.689Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782148611142\" (Type: carousel, Simulation: false)"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:53.685Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:53.611Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering 1 slides for post \"post_1782148611142\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:52.533Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide 1/1..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:52.085Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:52.083Z",
+      "type": "SYSTEM",
+      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1782148611142/background.png"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:51.153Z",
+      "type": "SYSTEM",
+      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/hidden%20hand%20touch%20under%20restaurant%20table%20night%20soft%20light%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=868540262&model=flux"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:51.152Z",
+      "type": "SYSTEM",
+      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"hidden hand touch under restaurant table night soft light\" (Seed: 868540262)"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:51.148Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"crimson_secrets\" (Day of week: 1)"
+    },
+    {
+      "timestamp": "2026-06-22T17:16:51.146Z",
+      "type": "SYSTEM",
+      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1782148611142\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:51.144Z",
+      "type": "SYSTEM",
+      "message": "Rendering slide graphics for post \"post_1782148611142\"..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:51.139Z",
+      "type": "GENERATOR",
+      "message": "Successfully generated AI content using Gemini. Theme: \"candlelight_secrets\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:40.084Z",
+      "type": "GENERATOR",
+      "message": "Generating content for category: \"Intimate Secrets\"..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:40.083Z",
+      "type": "SYSTEM",
+      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:40.080Z",
+      "type": "SYSTEM",
+      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:40.065Z",
+      "type": "RESEARCH",
+      "message": "Closed crawling browser session."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:39.946Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:38.933Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:37.919Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/lonely..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:36.881Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/breakups..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:36.880Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:36.878Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:36.149Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/socialskills..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:35.484Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:34.826Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:34.824Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:34.823Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:33.808Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:32.799Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/relationships..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:31.782Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:31.781Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:31.779Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:30.752Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:30.123Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/texts..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:29.110Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/confession..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:29.108Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:29.106Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:28.089Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:27.061Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/sex..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:25.818Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-06-22T17:16:25.816Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-06-22T17:16:20.567Z",
+      "type": "RESEARCH",
+      "message": "Starting Trend Research Agent via Puppeteer..."
+    },
     {
       "timestamp": "2026-06-22T09:29:01.467Z",
       "type": "PUBLISHER",
@@ -2981,236 +3236,6 @@
       "timestamp": "2026-06-19T15:40:23.821Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:22.795Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:21.769Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:21.766Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-06-19T15:40:21.765Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-19T15:40:20.966Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:19.956Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:18.931Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:18.929Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-19T15:40:18.928Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-19T15:40:17.902Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:16.875Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:16.091Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-19T15:40:16.089Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-19T15:40:15.352Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:04.594Z",
-      "type": "ERROR",
-      "message": "Scheduled Reel workflow failed for \"Secret Thoughts & Overthinking\": FFmpeg stitching failed: Command failed: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/node_modules/ffmpeg-static/ffmpeg\" -y -i \"music.mp3\" -filter_complex \"[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:15[outa]\" -map \"[outa]\" -c:a aac -b:a 192k \"audio.mp3\"\nffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, mp3, from 'music.mp3':\n  Metadata:\n    encoder         : Lavf61.1.100\n  Duration: 00:00:20.04, start: 0.025057, bitrate: 128 kb/s\n  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 128 kb/s\n      Metadata:\n        encoder         : Lavc61.3.\nStream mapping:\n  Stream #0:0 (mp3float) -> afade:default\n  atrim:default -> Stream #0:0 (aac)\nPress [q] to stop, [?] for help\n[mp3 @ 0x10d85d00] Invalid audio stream. Exactly one MP3 audio stream is required.\n[out#0/mp3 @ 0x10d85bc0] Could not write header (incorrect codec parameters ?): Invalid argument\n[fc#0 @ 0x10d7eb40] Error sending frames to consumers: Invalid argument\n[fc#0 @ 0x10d7eb40] Task finished with error code: -22 (Invalid argument)\n[fc#0 @ 0x10d7eb40] Terminating thread with return code -22 (Invalid argument)\n[out#0/mp3 @ 0x10d85bc0] Nothing was written into output file, because at least one of its streams received no packets.\nsize=       0KiB time=N/A bitrate=N/A speed=N/A    \n[aac @ 0x10d87640] Qavg: nan\nConversion failed!\n"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:04.593Z",
-      "type": "ERROR",
-      "message": "FFmpeg execution failed: Command failed: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/node_modules/ffmpeg-static/ffmpeg\" -y -i \"music.mp3\" -filter_complex \"[0:a]afade=t=in:st=0:d=0.5,afade=t=out:st=13.5:d=1.5,atrim=0:15[outa]\" -map \"[outa]\" -c:a aac -b:a 192k \"audio.mp3\"\nffmpeg version 7.0.2-static https://johnvansickle.com/ffmpeg/  Copyright (c) 2000-2024 the FFmpeg developers\n  built with gcc 8 (Debian 8.3.0-6)\n  configuration: --enable-gpl --enable-version3 --enable-static --disable-debug --disable-ffplay --disable-indev=sndio --disable-outdev=sndio --cc=gcc --enable-fontconfig --enable-frei0r --enable-gnutls --enable-gmp --enable-libgme --enable-gray --enable-libaom --enable-libfribidi --enable-libass --enable-libvmaf --enable-libfreetype --enable-libmp3lame --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libopenjpeg --enable-librubberband --enable-libsoxr --enable-libspeex --enable-libsrt --enable-libvorbis --enable-libopus --enable-libtheora --enable-libvidstab --enable-libvo-amrwbenc --enable-libvpx --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxml2 --enable-libdav1d --enable-libxvid --enable-libzvbi --enable-libzimg\n  libavutil      59.  8.100 / 59.  8.100\n  libavcodec     61.  3.100 / 61.  3.100\n  libavformat    61.  1.100 / 61.  1.100\n  libavdevice    61.  1.100 / 61.  1.100\n  libavfilter    10.  1.100 / 10.  1.100\n  libswscale      8.  1.100 /  8.  1.100\n  libswresample   5.  1.100 /  5.  1.100\n  libpostproc    58.  1.100 / 58.  1.100\nInput #0, mp3, from 'music.mp3':\n  Metadata:\n    encoder         : Lavf61.1.100\n  Duration: 00:00:20.04, start: 0.025057, bitrate: 128 kb/s\n  Stream #0:0: Audio: mp3 (mp3float), 44100 Hz, stereo, fltp, 128 kb/s\n      Metadata:\n        encoder         : Lavc61.3.\nStream mapping:\n  Stream #0:0 (mp3float) -> afade:default\n  atrim:default -> Stream #0:0 (aac)\nPress [q] to stop, [?] for help\n[mp3 @ 0x10d85d00] Invalid audio stream. Exactly one MP3 audio stream is required.\n[out#0/mp3 @ 0x10d85bc0] Could not write header (incorrect codec parameters ?): Invalid argument\n[fc#0 @ 0x10d7eb40] Error sending frames to consumers: Invalid argument\n[fc#0 @ 0x10d7eb40] Task finished with error code: -22 (Invalid argument)\n[fc#0 @ 0x10d7eb40] Terminating thread with return code -22 (Invalid argument)\n[out#0/mp3 @ 0x10d85bc0] Nothing was written into output file, because at least one of its streams received no packets.\nsize=       0KiB time=N/A bitrate=N/A speed=N/A    \n[aac @ 0x10d87640] Qavg: nan\nConversion failed!\n"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:04.084Z",
-      "type": "SYSTEM",
-      "message": "Preparing music audio: trimming to 15s with fade-in/fade-out..."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:04.082Z",
-      "type": "SYSTEM",
-      "message": "Reel timeline: Slide=13s | CTA=2s | Total=15s"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:03.961Z",
-      "type": "ERROR",
-      "message": "Failed to download background music: HTTP 403. Generating silent fallback."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:03.589Z",
-      "type": "SYSTEM",
-      "message": "Downloading background music track: https://cdn.pixabay.com/audio/2023/09/12/audio_e21d9fcf93.mp3"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:03.587Z",
-      "type": "SYSTEM",
-      "message": "Downloading sensual background music for post \"reel_1781843266709\"..."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:03.586Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel CTA"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:03.519Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel CTA slide for post \"reel_1781843266709\""
-    },
-    {
-      "timestamp": "2026-06-19T04:28:02.775Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel CTA..."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:02.772Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:02.704Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"reel_1781843266709\""
-    },
-    {
-      "timestamp": "2026-06-19T04:28:01.672Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic with background..."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:01.436Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:01.434Z",
-      "type": "SYSTEM",
-      "message": "Successfully loaded 9:16 Reel background image."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:00.644Z",
-      "type": "SYSTEM",
-      "message": "Generating 9:16 Reel background from Pollinations.ai (seed: 54671734): romantic couple intimate shadow dark bedroom candlelight silhouette"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:00.641Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"crimson_secrets\" (Day of week: 5)"
-    },
-    {
-      "timestamp": "2026-06-19T04:28:00.640Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1781843266709\""
-    },
-    {
-      "timestamp": "2026-06-19T04:28:00.638Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels for post \"reel_1781843266709\"..."
-    },
-    {
-      "timestamp": "2026-06-19T04:28:00.634Z",
-      "type": "GENERATOR",
-      "message": "Successfully generated AI Reel content using Gemini. Theme: \"midnight_desire\""
-    },
-    {
-      "timestamp": "2026-06-19T04:27:46.710Z",
-      "type": "GENERATOR",
-      "message": "Generating Reel content for category: \"Secret Thoughts & Overthinking\"..."
-    },
-    {
-      "timestamp": "2026-06-19T04:27:46.709Z",
-      "type": "SYSTEM",
-      "message": "Running Reels generation workflow for \"reel_1781843266709\"..."
-    },
-    {
-      "timestamp": "2026-06-19T04:27:46.708Z",
-      "type": "SYSTEM",
-      "message": "Using trend topic for Reel generation: \"I started working from home recently and found a loophole...\""
-    },
-    {
-      "timestamp": "2026-06-19T04:27:46.705Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled Reel workflow for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-19T04:27:46.690Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-06-19T04:27:46.595Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-19T04:27:45.586Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-19T04:27:44.572Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-06-19T04:27:43.743Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-06-19T04:27:43.741Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-19T04:27:43.739Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-06-19T04:27:42.549Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
     }
   ]
 }
