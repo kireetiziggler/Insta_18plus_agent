@@ -651,11 +651,20 @@
       ],
       "caption": "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-06-25T07:02:58.729Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-25T07:02:58.729Z",
       "renderedImages": [
         "/posts/post_1782370978729/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-25T07:03:15.895Z",
+      "instagramMediaId": "buffer_6a3cd2a9ae8938cbbbac6943",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -813,6 +822,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-25T07:03:15.897Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782370978729\" to Instagram via Buffer (Buffer Post ID: 6a3cd2a9ae8938cbbbac6943)"
+    },
+    {
+      "timestamp": "2026-06-25T07:03:04.946Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782370978729/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-25T07:03:04.945Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-25T07:03:04.943Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782370978729\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-25T07:03:04.940Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782370978729\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-25T07:03:02.868Z",
       "type": "SYSTEM",
@@ -3287,31 +3321,6 @@
       "timestamp": "2026-06-22T09:28:20.242Z",
       "type": "SYSTEM",
       "message": "Triggering scheduled Reel workflow for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-22T09:28:20.227Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-06-22T09:28:20.076Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-22T09:28:19.063Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-22T09:28:18.048Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-06-22T09:28:16.992Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
     }
   ]
 }
