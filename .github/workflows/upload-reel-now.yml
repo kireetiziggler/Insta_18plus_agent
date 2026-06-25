@@ -1,0 +1,58 @@
+name: Upload Reel Now
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'scratch/upload-reel.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  upload-reel:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Compile and Upload Reel Live
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
+          FACEBOOK_PAGE_ACCESS_TOKEN: ${{ secrets.FACEBOOK_PAGE_ACCESS_TOKEN }}
+          PAGE_HANDLE: '@unspokendesireshub'
+          ELEVENLABS_API_KEY: ${{ secrets.ELEVENLABS_API_KEY }}
+          ELEVENLABS_VOICE_ID: 'alternate'
+          BUFFER_ACCESS_TOKEN: ${{ secrets.BUFFER_ACCESS_TOKEN }}
+          BUFFER_CHANNEL_ID: ${{ secrets.BUFFER_CHANNEL_ID }}
+          IS_SIMULATION_MODE: 'false'
+          TRIGGER_TYPE: 'reel'
+          BYPASS_SAFEGUARD: 'true'
+        run: node run-slot-post.js
+
+      - name: Commit and Push database updates
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/db.json
+          if [ -d "data/posts" ]; then
+            git add data/posts/
+          fi
+          git commit -m "Update DB: Manual Reel marked as published [skip ci]" || echo "No changes to commit"
+          git fetch origin
+          git rebase origin/${{ github.ref_name }} || echo "Rebase skipped or failed"
+          git push origin HEAD:${{ github.ref_name }}
