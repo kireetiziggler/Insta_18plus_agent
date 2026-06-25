@@ -624,13 +624,22 @@
       "audioScript": "\"Thin Walls\"\nI heard the shower start. Then your hum. I knew you were n*ked. And I stayed close to the wall.",
       "caption": "Some walls are meant to amplify the craving, not block it. That silent knowledge, that whispered intimacy—it's electrifying. \n\nHas a moment of unseen vulnerability ever set your senses on fire? Share your own secret anonymously through the link in bio. We're listening. \n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcrush #physicaldesire #modernromance #whisperedsecrets #adultconfessions",
       "scheduledFor": "2026-06-25T03:29:59.058Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-25T03:29:59.058Z",
       "renderedImages": [
         "/posts/reel_1782358184601/slide.png"
       ],
       "renderedVideo": "/posts/reel_1782358184601/reel.mp4",
-      "renderedAudio": "/posts/reel_1782358184601/audio.mp3"
+      "renderedAudio": "/posts/reel_1782358184601/audio.mp3",
+      "publishedAt": "2026-06-25T03:30:24.966Z",
+      "instagramMediaId": "buffer_6a3ca0c6ca7b92160df62a70",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -788,6 +797,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-25T03:30:24.968Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"reel_1782358184601\" to Instagram via Buffer (Buffer Post ID: 6a3ca0c6ca7b92160df62a70)"
+    },
+    {
+      "timestamp": "2026-06-25T03:30:13.803Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1782358184601/reel.mp4"
+    },
+    {
+      "timestamp": "2026-06-25T03:30:13.801Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-25T03:30:13.800Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1782358184601\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-25T03:30:13.796Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1782358184601\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-25T03:30:11.524Z",
       "type": "SYSTEM",
@@ -3262,31 +3296,6 @@
       "timestamp": "2026-06-21T16:16:01.527Z",
       "type": "RESEARCH",
       "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-06-21T16:16:00.514Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-21T16:16:00.513Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-06-21T16:16:00.512Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-21T16:15:59.500Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-21T16:15:58.638Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
     }
   ]
 }
