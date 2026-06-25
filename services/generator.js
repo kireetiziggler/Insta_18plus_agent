@@ -100,14 +100,39 @@ Make sure the new content has a completely fresh angle, unique lines, and a diff
   return "";
 }
 
+// Helper to run prompt with automatic retries and model fallback (flash-2.5 -> flash-2.0-exp -> flash-1.5 -> pro-1.5)
+async function generateWithFallbackAndRetry(prompt, responseMimeType, apiKey) {
+  const genAI = new GoogleGenerativeAI(apiKey);
+  const models = ['gemini-2.5-flash', 'gemini-2.0-flash-exp', 'gemini-1.5-flash', 'gemini-1.5-pro'];
+  let lastError = null;
+
+  for (const modelName of models) {
+    for (let attempt = 1; attempt <= 2; attempt++) {
+      try {
+        console.log(`Attempting content generation using ${modelName} (Attempt ${attempt}/2)...`);
+        const model = genAI.getGenerativeModel({
+          model: modelName,
+          generationConfig: { responseMimeType }
+        });
+        const result = await model.generateContent(prompt);
+        const responseText = result.response.text().trim();
+        return JSON.parse(responseText);
+      } catch (err) {
+        lastError = err;
+        console.warn(`Attempt ${attempt}/2 with ${modelName} failed: ${err.message}`);
+        if (attempt < 2) {
+          await new Promise(r => setTimeout(r, 2000)); // sleep 2 seconds
+        }
+      }
+    }
+    console.warn(`All attempts with ${modelName} failed. Falling back to next model...`);
+  }
+
+  throw new Error(`All Gemini models and retries failed. Last error: ${lastError ? lastError.message : 'Unknown'}`);
+}
+
 // Generates post using Gemini API based on category and optional topic/trend details
 async function generateAIPost(category, topicQuery, apiKey) {
-  const genAI = new GoogleGenerativeAI(apiKey);
-  const model = genAI.getGenerativeModel({
-    model: 'gemini-2.5-flash',
-    generationConfig: { responseMimeType: 'application/json' }
-  });
-
   // Query successful posts for reinforcement context
   let examplesText = "";
   try {
@@ -177,9 +202,7 @@ Response must be valid JSON matching this schema:
 \`\`\`
 `;
 
-  const result = await model.generateContent(prompt);
-  const responseText = result.response.text().trim();
-  const parsedData = JSON.parse(responseText);
+  const parsedData = await generateWithFallbackAndRetry(prompt, 'application/json', apiKey);
 
   // Validate structures
   if (!parsedData.backgroundTheme || !parsedData.pexelsQuery || !Array.isArray(parsedData.slides) || parsedData.slides.length !== 1 || !parsedData.caption) {
@@ -330,9 +353,7 @@ Response must be valid JSON matching this schema:
 \`\`\`
 `;
 
-  const result = await model.generateContent(prompt);
-  const responseText = result.response.text().trim();
-  const parsedData = JSON.parse(responseText);
+  const parsedData = await generateWithFallbackAndRetry(prompt, 'application/json', apiKey);
 
   if (!parsedData.backgroundTheme || !parsedData.titleText || !parsedData.audioScript || !parsedData.caption) {
     throw new Error("Invalid structure returned by Gemini AI for Reel");
