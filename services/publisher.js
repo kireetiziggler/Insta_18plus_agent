@@ -6,7 +6,6 @@ import { fileURLToPath } from 'url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Helper to upload a local asset to tmpfiles.org to get a temporary public URL for Instagram API
 async function uploadToPublicHost(localFilePath) {
   try {
     const fileBuffer = await fs.readFile(localFilePath);
@@ -19,7 +18,8 @@ async function uploadToPublicHost(localFilePath) {
     const formData = new FormData();
     formData.append('file', blob, path.basename(localFilePath));
 
-    const response = await fetch('https://tmpfiles.org/api/v1/upload', {
+    // Uploading to file.io with a 1-day expiry
+    const response = await fetch('https://file.io/?expires=1d', {
       method: 'POST',
       body: formData
     });
@@ -29,13 +29,11 @@ async function uploadToPublicHost(localFilePath) {
     }
 
     const json = await response.json();
-    if (json.status !== 'success' || !json.data || !json.data.url) {
+    if (!json.success || !json.link) {
       throw new Error('Upload API returned unsuccessful response');
     }
 
-    // Tmpfiles URLs are formatted like: https://tmpfiles.org/12345/filename.png
-    // The direct download link is: https://tmpfiles.org/dl/12345/filename.png
-    const publicUrl = json.data.url.replace('https://tmpfiles.org/', 'https://tmpfiles.org/dl/');
+    const publicUrl = json.link;
     return publicUrl;
   } catch (error) {
     console.error(`Failed to upload ${path.basename(localFilePath)} to public host:`, error);

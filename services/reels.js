@@ -168,11 +168,13 @@ function runCommand(command, options = {}) {
   });
 }
 
-// Curated sensual, smooth, and romantic copyright-free music tracks (mostly lofi and romantic ambient)
+// Curated smooth, sensual, and romantic copyright-free music tracks (verified URLs)
 const MUSIC_TRACKS = [
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', // romantic testing track
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3',
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3'
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', // smooth lounge jazz synth
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', // chill lofi ambient
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', // romantic smooth piano lo-fi
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', // sensual lounge vibe
+  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3'  // soft romantic synthwave
 ];
 
 // Download a random background music track for the Reel
