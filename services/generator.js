@@ -215,20 +215,24 @@ export async function generatePostContent(category, topicQuery = null) {
 
   await db.log('GENERATOR', `Generating content for category: "${category}"...`);
 
-  if (!apiKey) {
-    const errorMsg = "CRITICAL ERROR: No Gemini API key found in settings. AI generation is strictly required.";
-    await db.log('ERROR', errorMsg);
-    throw new Error(errorMsg);
-  }
-
   let content;
-  try {
-    content = await generateAIPost(category, topicQuery, apiKey);
-    await db.log('GENERATOR', `Successfully generated AI content using Gemini. Theme: "${content.backgroundTheme}"`);
-  } catch (error) {
-    const errorMsg = `CRITICAL ERROR: Gemini content generation failed: ${error.message}. Fallback templates are disabled.`;
-    await db.log('ERROR', errorMsg);
-    throw new Error(errorMsg);
+  let usedFallback = false;
+
+  if (!apiKey) {
+    await db.log('WARNING', `No Gemini API key found in settings. Falling back to offline templates.`);
+    const posts = await db.getPosts();
+    content = getOfflineTemplate(category, posts);
+    usedFallback = true;
+  } else {
+    try {
+      content = await generateAIPost(category, topicQuery, apiKey);
+      await db.log('GENERATOR', `Successfully generated AI content using Gemini. Theme: "${content.backgroundTheme}"`);
+    } catch (error) {
+      await db.log('WARNING', `Gemini content generation failed: ${error.message}. Falling back to offline templates.`);
+      const posts = await db.getPosts();
+      content = getOfflineTemplate(category, posts);
+      usedFallback = true;
+    }
   }
 
   // Double check page handle formatting in CTAs
@@ -343,20 +347,24 @@ export async function generateReelContent(category, topicQuery = null) {
 
   await db.log('GENERATOR', `Generating Reel content for category: "${category}"...`);
 
-  if (!apiKey) {
-    const errorMsg = "CRITICAL ERROR: No Gemini API key found in settings. AI Reels generation is strictly required.";
-    await db.log('ERROR', errorMsg);
-    throw new Error(errorMsg);
-  }
-
   let content;
-  try {
-    content = await generateAIReel(category, topicQuery, apiKey);
-    await db.log('GENERATOR', `Successfully generated AI Reel content using Gemini. Theme: "${content.backgroundTheme}"`);
-  } catch (error) {
-    const errorMsg = `CRITICAL ERROR: Gemini Reel generation failed: ${error.message}. Fallback templates are disabled.`;
-    await db.log('ERROR', errorMsg);
-    throw new Error(errorMsg);
+  let usedFallback = false;
+
+  if (!apiKey) {
+    await db.log('WARNING', `No Gemini API key found in settings. Falling back to offline Reel templates.`);
+    const posts = await db.getPosts();
+    content = getOfflineReelFallback(category, posts);
+    usedFallback = true;
+  } else {
+    try {
+      content = await generateAIReel(category, topicQuery, apiKey);
+      await db.log('GENERATOR', `Successfully generated AI Reel content using Gemini. Theme: "${content.backgroundTheme}"`);
+    } catch (error) {
+      await db.log('WARNING', `Gemini Reel generation failed: ${error.message}. Falling back to offline Reel templates.`);
+      const posts = await db.getPosts();
+      content = getOfflineReelFallback(category, posts);
+      usedFallback = true;
+    }
   }
 
   // Double check page handle formatting in CTAs/caption

@@ -170,11 +170,9 @@ function runCommand(command, options = {}) {
 
 // Curated smooth, sensual, and romantic copyright-free music tracks (verified URLs)
 const MUSIC_TRACKS = [
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3', // smooth lounge jazz synth
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3', // chill lofi ambient
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3', // romantic smooth piano lo-fi
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', // sensual lounge vibe
-  'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3'  // soft romantic synthwave
+  'https://upload.wikimedia.org/wikipedia/commons/6/69/Lo-fi_by_PetroVenus.mp3', // smooth lounge lofi hip-hop
+  'https://upload.wikimedia.org/wikipedia/commons/5/57/Lofi_by_Caden_Currie.mp3', // chill lofi ambient
+  'https://upload.wikimedia.org/wikipedia/commons/8/8a/Chill_%28ISRC_USUAN1100375%29.mp3' // Kevin MacLeod - Chill (smooth sensual Rhodes piano and slow groove)
 ];
 
 // Download a random background music track for the Reel
