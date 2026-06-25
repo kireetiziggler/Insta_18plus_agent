@@ -92,7 +92,9 @@ export async function triggerScheduledPost(category) {
     await db.savePost(newPost);
 
     // 5. Publish to Instagram
-    await publisher.publishPostToInstagram(postId);
+    if (process.env.PHASE !== 'generate') {
+      await publisher.publishPostToInstagram(postId);
+    }
 
   } catch (error) {
     await db.log('ERROR', `Scheduled post workflow failed for "${category}": ${error.message}`);
@@ -124,7 +126,9 @@ export async function triggerScheduledReel(category) {
     await reels.generateReel(postId, category, topicQuery);
 
     // 3. Publish to Instagram
-    await publisher.publishPostToInstagram(postId);
+    if (process.env.PHASE !== 'generate') {
+      await publisher.publishPostToInstagram(postId);
+    }
 
   } catch (error) {
     await db.log('ERROR', `Scheduled Reel workflow failed for "${category}": ${error.message}`);
