@@ -46,7 +46,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run scheduled posting workflow (Phase: Generate)
+      - name: "Run scheduled posting workflow (Phase: Generate)"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
@@ -77,7 +77,7 @@ jobs:
           git rebase origin/${{ github.ref_name }} || echo "Rebase skipped or failed"
           git push origin HEAD:${{ github.ref_name }}
 
-      - name: Publish scheduled content to Instagram (Phase: Publish)
+      - name: "Publish scheduled content to Instagram (Phase: Publish)"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}

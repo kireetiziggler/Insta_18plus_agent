@@ -29,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Compile Reel Live (Phase: Generate)
+      - name: "Compile Reel Live (Phase: Generate)"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
@@ -58,7 +58,7 @@ jobs:
           git rebase origin/${{ github.ref_name }} || echo "Rebase skipped or failed"
           git push origin HEAD:${{ github.ref_name }}
 
-      - name: Publish Reel to Instagram (Phase: Publish)
+      - name: "Publish Reel to Instagram (Phase: Publish)"
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           INSTAGRAM_BUSINESS_ACCOUNT_ID: ${{ secrets.INSTAGRAM_BUSINESS_ACCOUNT_ID }}
