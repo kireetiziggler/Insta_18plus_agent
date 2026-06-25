@@ -7,6 +7,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 async function uploadToPublicHost(localFilePath) {
+  const filename = path.basename(localFilePath);
   try {
     const fileBuffer = await fs.readFile(localFilePath);
     const ext = path.extname(localFilePath).toLowerCase();
@@ -14,9 +15,32 @@ async function uploadToPublicHost(localFilePath) {
     if (ext === '.mp4') type = 'video/mp4';
     if (ext === '.mp3') type = 'audio/mpeg';
 
+    // Try Catbox.moe first (highly reliable from cloud environments)
+    try {
+      const blob = new Blob([fileBuffer], { type });
+      const formData = new FormData();
+      formData.append('reqtype', 'fileupload');
+      formData.append('fileToUpload', blob, filename);
+
+      const response = await fetch('https://catbox.moe/user/api.php', {
+        method: 'POST',
+        body: formData
+      });
+
+      if (response.ok) {
+        const link = (await response.text()).trim();
+        if (link.startsWith('https://files.catbox.moe/')) {
+          return link;
+        }
+      }
+    } catch (catboxErr) {
+      console.warn(`Catbox upload failed: ${catboxErr.message}. Falling back to file.io...`);
+    }
+
+    // Fallback: file.io
     const blob = new Blob([fileBuffer], { type });
     const formData = new FormData();
-    formData.append('file', blob, path.basename(localFilePath));
+    formData.append('file', blob, filename);
 
     // Uploading to file.io with a 1-day expiry
     const response = await fetch('https://file.io/?expires=1d', {
@@ -36,7 +60,7 @@ async function uploadToPublicHost(localFilePath) {
     const publicUrl = json.link;
     return publicUrl;
   } catch (error) {
-    console.error(`Failed to upload ${path.basename(localFilePath)} to public host:`, error);
+    console.error(`Failed to upload ${filename} to all public hosts:`, error);
     throw error;
   }
 }
