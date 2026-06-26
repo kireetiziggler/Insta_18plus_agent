@@ -726,11 +726,20 @@
       ],
       "caption": "Some agreements are made without a single word. Your body just knows. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-06-26T15:09:58.201Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-26T15:09:58.201Z",
       "renderedImages": [
         "/posts/post_1782486598201/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-26T15:10:19.022Z",
+      "instagramMediaId": "buffer_6a3e9650fc3fa4fc26539e33",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -888,6 +897,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-26T15:10:19.024Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782486598201\" to Instagram via Buffer (Buffer Post ID: 6a3e9650fc3fa4fc26539e33)"
+    },
+    {
+      "timestamp": "2026-06-26T15:10:08.022Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782486598201/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-26T15:10:08.020Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-26T15:10:08.019Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782486598201\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-26T15:10:08.015Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782486598201\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-26T15:10:05.568Z",
       "type": "SYSTEM",
@@ -3362,31 +3396,6 @@
       "timestamp": "2026-06-23T17:01:29.785Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-23T17:01:24.726Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-06-23T15:36:49.324Z",
-      "type": "ERROR",
-      "message": "Scheduled post workflow failed for \"Intimate Secrets\": CRITICAL ERROR: Gemini content generation failed: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.. Fallback templates are disabled."
-    },
-    {
-      "timestamp": "2026-06-23T15:36:49.322Z",
-      "type": "ERROR",
-      "message": "CRITICAL ERROR: Gemini content generation failed: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent: [503 Service Unavailable] This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.. Fallback templates are disabled."
-    },
-    {
-      "timestamp": "2026-06-23T15:36:48.582Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-06-23T15:36:48.581Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
     }
   ]
 }
