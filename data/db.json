@@ -701,11 +701,20 @@
       ],
       "caption": "A sudden whisper that changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-06-26T07:09:36.229Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-26T07:09:36.229Z",
       "renderedImages": [
         "/posts/post_1782457776229/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-26T07:10:01.707Z",
+      "instagramMediaId": "buffer_6a3e25c09de5312e19ab5906",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -863,6 +872,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-26T07:10:01.708Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782457776229\" to Instagram via Buffer (Buffer Post ID: 6a3e25c09de5312e19ab5906)"
+    },
+    {
+      "timestamp": "2026-06-26T07:09:51.592Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782457776229/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-26T07:09:51.591Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-26T07:09:51.590Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782457776229\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-26T07:09:51.588Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782457776229\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-26T07:09:49.733Z",
       "type": "SYSTEM",
@@ -3337,31 +3371,6 @@
       "timestamp": "2026-06-23T07:03:29.694Z",
       "type": "RESEARCH",
       "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-06-23T07:03:28.664Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-06-23T07:03:27.943Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-06-23T07:03:27.941Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-06-23T07:03:27.940Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-06-23T07:03:27.043Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
     }
   ]
 }
