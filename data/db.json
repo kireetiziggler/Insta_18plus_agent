@@ -776,11 +776,20 @@
       ],
       "caption": "The space between us was electric tonight. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-06-27T14:13:22.276Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-27T14:13:22.276Z",
       "renderedImages": [
         "/posts/post_1782569602276/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-27T14:13:36.625Z",
+      "instagramMediaId": "buffer_6a3fda8708ab52e3fdf72abd",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -938,6 +947,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-27T14:13:36.626Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782569602276\" to Instagram via Buffer (Buffer Post ID: 6a3fda8708ab52e3fdf72abd)"
+    },
+    {
+      "timestamp": "2026-06-27T14:13:26.817Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782569602276/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-27T14:13:26.815Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-27T14:13:26.813Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782569602276\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-27T14:13:26.809Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782569602276\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-27T14:13:24.696Z",
       "type": "SYSTEM",
@@ -3412,31 +3446,6 @@
       "timestamp": "2026-06-24T16:38:46.311Z",
       "type": "RESEARCH",
       "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-06-24T16:38:46.161Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-06-24T16:38:45.154Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-24T16:38:44.142Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-06-24T16:38:43.117Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-06-24T16:38:43.116Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
     }
   ]
 }
