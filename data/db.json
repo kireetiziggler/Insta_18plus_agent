@@ -826,11 +826,20 @@
       ],
       "caption": "The quietest moments often hold the loudest truths. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-06-28T14:22:42.567Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-28T14:22:42.567Z",
       "renderedImages": [
         "/posts/post_1782656562567/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-28T14:23:04.999Z",
+      "instagramMediaId": "buffer_6a412e3e0a2e7f6ea343df51",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -988,6 +997,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-28T14:23:05.001Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782656562567\" to Instagram via Buffer (Buffer Post ID: 6a412e3e0a2e7f6ea343df51)"
+    },
+    {
+      "timestamp": "2026-06-28T14:22:53.893Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782656562567/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-28T14:22:53.890Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-28T14:22:53.889Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782656562567\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-28T14:22:53.884Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782656562567\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-28T14:22:52.021Z",
       "type": "SYSTEM",
@@ -3462,31 +3496,6 @@
       "timestamp": "2026-06-25T03:29:35.247Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-06-25T03:29:34.665Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-06-25T03:29:33.651Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-06-25T03:29:33.650Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-06-25T03:29:33.648Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-06-25T03:29:32.635Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
     }
   ]
 }
