@@ -850,13 +850,22 @@
       "audioScript": "\"STOLEN MOMENTS\"\nI sat where he just was. The seat still warm. His scent, a ghost on my skin. I still tasted him.",
       "caption": "The silence after is louder than any confession. That lingering taste, a dangerous secret that only you carry. Some moments defy time, don't they?\n\nWhat's the one sensation that stays with you long after they're gone? Double tap if you know this feeling too.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretlovers #afterglow #physicaldesire #lingeringtouch #secretconfession",
       "scheduledFor": "2026-06-29T08:34:00.341Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-29T08:34:00.341Z",
       "renderedImages": [
         "/posts/reel_1782722025917/slide.png"
       ],
       "renderedVideo": "/posts/reel_1782722025917/reel.mp4",
-      "renderedAudio": "/posts/reel_1782722025917/audio.mp3"
+      "renderedAudio": "/posts/reel_1782722025917/audio.mp3",
+      "publishedAt": "2026-06-29T08:34:25.709Z",
+      "instagramMediaId": "buffer_6a422e072a8f8ad570bb8fd9",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -1014,6 +1023,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-29T08:34:25.711Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"reel_1782722025917\" to Instagram via Buffer (Buffer Post ID: 6a422e072a8f8ad570bb8fd9)"
+    },
+    {
+      "timestamp": "2026-06-29T08:34:14.956Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1782722025917/reel.mp4"
+    },
+    {
+      "timestamp": "2026-06-29T08:34:14.953Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-29T08:34:14.952Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1782722025917\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-29T08:34:14.947Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1782722025917\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-29T08:34:12.820Z",
       "type": "SYSTEM",
@@ -3488,31 +3522,6 @@
       "timestamp": "2026-06-25T07:03:01.002Z",
       "type": "SYSTEM",
       "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-25T07:03:00.706Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-25T07:03:00.705Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1782370978729/background.png"
-    },
-    {
-      "timestamp": "2026-06-25T07:02:58.737Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/person%20looking%20phone%20bed%20silk%20sheets%20night%20bedroom%20glow%20dark%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=977629877&model=flux"
-    },
-    {
-      "timestamp": "2026-06-25T07:02:58.736Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"person looking phone bed silk sheets night bedroom glow dark\" (Seed: 977629877)"
-    },
-    {
-      "timestamp": "2026-06-25T07:02:58.733Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"obsidian_black\" (Day of week: 4)"
     }
   ]
 }
