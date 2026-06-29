@@ -877,11 +877,20 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-06-29T16:24:29.882Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-29T16:24:29.882Z",
       "renderedImages": [
         "/posts/post_1782750269882/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-29T16:26:26.826Z",
+      "instagramMediaId": "buffer_6a429ca85d90b9aad60c2de0",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -1039,6 +1048,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-29T16:26:26.828Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782750269882\" to Instagram via Buffer (Buffer Post ID: 6a429ca85d90b9aad60c2de0)"
+    },
+    {
+      "timestamp": "2026-06-29T16:26:15.818Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782750269882/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-29T16:26:15.815Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-29T16:26:15.813Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782750269882\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-29T16:26:15.809Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782750269882\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-29T16:26:13.805Z",
       "type": "SYSTEM",
@@ -3513,31 +3547,6 @@
       "timestamp": "2026-06-25T15:24:03.489Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-25T15:24:03.386Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1782401040240\""
-    },
-    {
-      "timestamp": "2026-06-25T15:24:01.786Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-25T15:24:01.549Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-25T15:24:01.546Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1782401040240/background.png"
-    },
-    {
-      "timestamp": "2026-06-25T15:24:00.249Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/Intimate%20scene%20dark%20room%20blindfolded%20woman%20silhouette%20shadows%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=809795262&model=flux"
     }
   ]
 }
