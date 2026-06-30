@@ -902,11 +902,20 @@
       ],
       "caption": "A single touch in the dark changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-06-30T07:09:10.362Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-06-30T07:09:10.362Z",
       "renderedImages": [
         "/posts/post_1782803350362/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-06-30T07:09:32.436Z",
+      "instagramMediaId": "buffer_6a436ba2987216ca6f661bbd",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -1064,6 +1073,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-06-30T07:09:32.438Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782803350362\" to Instagram via Buffer (Buffer Post ID: 6a436ba2987216ca6f661bbd)"
+    },
+    {
+      "timestamp": "2026-06-30T07:09:21.708Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782803350362/slide_1.png"
+    },
+    {
+      "timestamp": "2026-06-30T07:09:21.706Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-06-30T07:09:21.704Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782803350362\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-06-30T07:09:21.696Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782803350362\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-06-30T07:09:19.252Z",
       "type": "SYSTEM",
@@ -3538,31 +3572,6 @@
       "timestamp": "2026-06-26T07:09:49.733Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-26T07:09:49.683Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1782457776229\""
-    },
-    {
-      "timestamp": "2026-06-26T07:09:48.951Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-26T07:09:48.783Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-26T07:09:48.782Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1782457776229/background.png"
-    },
-    {
-      "timestamp": "2026-06-26T07:09:36.233Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/cozy%20couple%20sitting%20on%20couch%20screen%20glow%20phone%20intimacy%20night%20low%20light%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=939456175&model=flux"
     }
   ]
 }
