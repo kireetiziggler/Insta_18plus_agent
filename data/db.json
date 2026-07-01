@@ -952,11 +952,20 @@
       ],
       "caption": "A single touch in the dark changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-01T07:56:22.767Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-07-01T07:56:22.767Z",
       "renderedImages": [
         "/posts/post_1782892582767/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-07-01T07:56:38.160Z",
+      "instagramMediaId": "buffer_6a44c82b329854751d746375",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -1114,6 +1123,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-01T07:56:38.162Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1782892582767\" to Instagram via Buffer (Buffer Post ID: 6a44c82b329854751d746375)"
+    },
+    {
+      "timestamp": "2026-07-01T07:56:27.367Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1782892582767/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-01T07:56:27.365Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-01T07:56:27.364Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1782892582767\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-01T07:56:27.359Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1782892582767\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-01T07:56:25.572Z",
       "type": "SYSTEM",
@@ -3588,31 +3622,6 @@
       "timestamp": "2026-06-27T06:43:31.123Z",
       "type": "PUBLISHER",
       "message": "Triggering publication flow for post ID \"post_1782542606646\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-06-27T06:43:29.104Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-06-27T06:43:29.030Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1782542606646\""
-    },
-    {
-      "timestamp": "2026-06-27T06:43:28.000Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-06-27T06:43:27.768Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-06-27T06:43:27.766Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1782542606646/background.png"
     }
   ]
 }
