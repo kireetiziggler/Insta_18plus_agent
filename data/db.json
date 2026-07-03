@@ -1052,11 +1052,20 @@
       ],
       "caption": "That subtle touch left an undeniable mark on my every thought. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-03T06:49:01.848Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-07-03T06:49:01.848Z",
       "renderedImages": [
         "/posts/post_1783061341848/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-07-03T06:49:16.575Z",
+      "instagramMediaId": "buffer_6a475b62c7f3a3379f33cb55",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -1214,6 +1223,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-03T06:49:16.577Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1783061341848\" to Instagram via Buffer (Buffer Post ID: 6a475b62c7f3a3379f33cb55)"
+    },
+    {
+      "timestamp": "2026-07-03T06:49:05.899Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783061341848/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-03T06:49:05.897Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-03T06:49:05.895Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783061341848\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-03T06:49:05.891Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783061341848\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-03T06:49:04.021Z",
       "type": "SYSTEM",
@@ -3688,31 +3722,6 @@
       "timestamp": "2026-06-29T08:34:03.171Z",
       "type": "SYSTEM",
       "message": "Downloading sensual background music for post \"reel_1782722025917\"..."
-    },
-    {
-      "timestamp": "2026-06-29T08:34:03.170Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-06-29T08:34:03.094Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"reel_1782722025917\""
-    },
-    {
-      "timestamp": "2026-06-29T08:34:01.839Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic with background..."
-    },
-    {
-      "timestamp": "2026-06-29T08:34:01.574Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-06-29T08:34:01.572Z",
-      "type": "SYSTEM",
-      "message": "Successfully loaded 9:16 Reel background image."
     }
   ]
 }
