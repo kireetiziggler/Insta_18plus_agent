@@ -1152,11 +1152,20 @@
       ],
       "caption": "Some secrets are best kept under the table. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-05T06:55:47.480Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-07-05T06:55:47.480Z",
       "renderedImages": [
         "/posts/post_1783234547480/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-07-05T06:56:02.558Z",
+      "instagramMediaId": "buffer_6a49fff9b3f33d21402ae59f",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -1314,6 +1323,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-05T06:56:02.560Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1783234547480\" to Instagram via Buffer (Buffer Post ID: 6a49fff9b3f33d21402ae59f)"
+    },
+    {
+      "timestamp": "2026-07-05T06:55:52.578Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783234547480/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-05T06:55:52.575Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-05T06:55:52.574Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783234547480\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-05T06:55:52.570Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783234547480\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-05T06:55:50.446Z",
       "type": "SYSTEM",
@@ -3788,31 +3822,6 @@
       "timestamp": "2026-07-01T07:56:22.764Z",
       "type": "WARNING",
       "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-07-01T07:55:46.981Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Anonymous Confessions\"..."
-    },
-    {
-      "timestamp": "2026-07-01T07:55:46.980Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Anonymous Confessions\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-07-01T07:55:46.977Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
-    },
-    {
-      "timestamp": "2026-07-01T07:55:46.948Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-07-01T07:55:46.845Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
     }
   ]
 }
