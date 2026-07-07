@@ -1252,11 +1252,20 @@
       ],
       "caption": "A sudden whisper that changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-07T07:03:12.829Z",
-      "status": "scheduled",
+      "status": "published",
       "createdAt": "2026-07-07T07:03:12.829Z",
       "renderedImages": [
         "/posts/post_1783407792829/slide_1.png"
-      ]
+      ],
+      "publishedAt": "2026-07-07T07:03:35.033Z",
+      "instagramMediaId": "buffer_6a4ca4bd3c6adf64b8d8861b",
+      "analytics": {
+        "reach": 0,
+        "shares": 0,
+        "saves": 0,
+        "likes": 0,
+        "comments": 0
+      }
     }
   ],
   "trends": [
@@ -1414,6 +1423,31 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-07T07:03:35.035Z",
+      "type": "PUBLISHER",
+      "message": "Successfully published post ID \"post_1783407792829\" to Instagram via Buffer (Buffer Post ID: 6a4ca4bd3c6adf64b8d8861b)"
+    },
+    {
+      "timestamp": "2026-07-07T07:03:25.196Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783407792829/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-07T07:03:25.193Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-07T07:03:25.192Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783407792829\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-07T07:03:25.187Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783407792829\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-07T07:03:23.316Z",
       "type": "SYSTEM",
@@ -3888,31 +3922,6 @@
       "timestamp": "2026-07-03T06:49:01.845Z",
       "type": "GENERATOR",
       "message": "Successfully generated AI content using Gemini. Theme: \"intimate_touch\""
-    },
-    {
-      "timestamp": "2026-07-03T06:48:49.096Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Anonymous Confessions\"..."
-    },
-    {
-      "timestamp": "2026-07-03T06:48:49.095Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Anonymous Confessions\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-07-03T06:48:49.094Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
-    },
-    {
-      "timestamp": "2026-07-03T06:48:49.067Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-07-03T06:48:48.917Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
     }
   ]
 }
