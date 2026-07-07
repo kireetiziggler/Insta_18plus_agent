@@ -1277,7 +1277,7 @@
       ],
       "caption": "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-07T15:25:31.413Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-07T15:25:31.413Z",
       "renderedImages": [
         "/posts/post_1783437931413/slide_1.png"
@@ -1439,6 +1439,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-07T15:25:36.218Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783437931413/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-07T15:25:36.216Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-07T15:25:36.215Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783437931413\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-07T15:25:36.210Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783437931413\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-07T15:25:33.805Z",
       "type": "SYSTEM",
@@ -3918,26 +3938,6 @@
       "timestamp": "2026-07-03T14:40:16.741Z",
       "type": "GENERATOR",
       "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-07-03T14:40:16.740Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-07-03T14:40:16.738Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-07-03T14:40:16.723Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-07-03T14:40:16.592Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
     }
   ]
 }
