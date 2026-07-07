@@ -1293,7 +1293,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-07T16:44:32.951Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-07T16:44:32.951Z",
       "renderedImages": [
         "/posts/post_1783442672951/slide_1.png"
@@ -1455,6 +1455,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-07T16:44:38.438Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783442672951/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-07T16:44:38.436Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-07T16:44:38.434Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783442672951\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-07T16:44:38.430Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783442672951\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-07T16:44:35.995Z",
       "type": "SYSTEM",
@@ -3934,26 +3954,6 @@
       "timestamp": "2026-07-03T16:04:21.522Z",
       "type": "SYSTEM",
       "message": "Safeguard Lock triggered: A post for category \"Intimate Secrets\" has already been published today. Skipping duplicate posting."
-    },
-    {
-      "timestamp": "2026-07-03T16:04:21.520Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-07-03T16:04:21.504Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-07-03T16:04:21.400Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-07-03T16:04:20.391Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
     }
   ]
 }
