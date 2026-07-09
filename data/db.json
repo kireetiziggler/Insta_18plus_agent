@@ -1373,7 +1373,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-09T15:41:33.145Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-09T15:41:33.145Z",
       "renderedImages": [
         "/posts/post_1783611693145/slide_1.png"
@@ -1535,6 +1535,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-09T15:42:31.051Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783611693145/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-09T15:42:31.049Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-09T15:42:31.048Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783611693145\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-09T15:42:31.043Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783611693145\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-09T15:42:28.899Z",
       "type": "SYSTEM",
@@ -4014,26 +4034,6 @@
       "timestamp": "2026-07-05T15:43:26.607Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-07-05T15:43:26.606Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-07-05T15:43:26.604Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-07-05T15:43:25.591Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-07-05T15:43:24.576Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
     }
   ]
 }
