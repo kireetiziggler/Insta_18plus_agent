@@ -1437,7 +1437,7 @@
       ],
       "caption": "Some secrets linger in the heat of a familiar touch. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-10T16:36:36.059Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-10T16:36:36.059Z",
       "renderedImages": [
         "/posts/post_1783701396059/slide_1.png"
@@ -1599,6 +1599,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-10T16:36:41.426Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783701396059/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-10T16:36:41.424Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-10T16:36:41.422Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783701396059\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-10T16:36:41.414Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783701396059\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-10T16:36:39.220Z",
       "type": "SYSTEM",
@@ -4078,26 +4098,6 @@
       "timestamp": "2026-07-07T07:03:25.192Z",
       "type": "PUBLISHER",
       "message": "Publishing post ID \"post_1783407792829\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-07-07T07:03:25.187Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1783407792829\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-07T07:03:23.316Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-07-07T07:03:23.237Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1783407792829\""
-    },
-    {
-      "timestamp": "2026-07-07T07:03:22.059Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
     }
   ]
 }
