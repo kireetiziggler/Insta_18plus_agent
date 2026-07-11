@@ -1485,7 +1485,7 @@
       ],
       "caption": "A stolen moment in the shadows, leaving me breathless and wanting more. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-11T15:29:06.681Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-11T15:29:06.681Z",
       "renderedImages": [
         "/posts/post_1783783746681/slide_1.png"
@@ -1647,6 +1647,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-11T15:29:15.416Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783783746681/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-11T15:29:15.414Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-11T15:29:15.413Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783783746681\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-11T15:29:15.377Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783783746681\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-11T15:29:13.268Z",
       "type": "SYSTEM",
@@ -4126,26 +4146,6 @@
       "timestamp": "2026-07-08T06:15:06.521Z",
       "type": "PUBLISHER",
       "message": "Publishing post ID \"post_1783491301220\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-07-08T06:15:06.516Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1783491301220\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-08T06:15:04.054Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-07-08T06:15:03.983Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1783491301220\""
-    },
-    {
-      "timestamp": "2026-07-08T06:15:02.845Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
     }
   ]
 }
