@@ -1453,7 +1453,7 @@
       ],
       "caption": "When the world outside disappears, and only raw desire remains. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-11T05:58:55.977Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-11T05:58:55.977Z",
       "renderedImages": [
         "/posts/post_1783749535977/slide_1.png"
@@ -1615,6 +1615,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-11T05:59:00.338Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783749535977/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-11T05:59:00.335Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-11T05:59:00.334Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783749535977\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-11T05:59:00.329Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783749535977\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-11T05:58:58.515Z",
       "type": "SYSTEM",
@@ -4094,26 +4114,6 @@
       "timestamp": "2026-07-07T15:25:36.210Z",
       "type": "PUBLISHER",
       "message": "Triggering publication flow for post ID \"post_1783437931413\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-07T15:25:33.805Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-07-07T15:25:33.731Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1783437931413\""
-    },
-    {
-      "timestamp": "2026-07-07T15:25:32.703Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-07-07T15:25:32.403Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
     }
   ]
 }
