@@ -1549,7 +1549,7 @@
       ],
       "caption": "The thrill of a secret touch when no one's watching. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-13T06:39:18.297Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-13T06:39:18.297Z",
       "renderedImages": [
         "/posts/post_1783924758297/slide_1.png"
@@ -1711,6 +1711,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-13T06:39:23.037Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1783924758297/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-13T06:39:23.035Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-13T06:39:23.033Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1783924758297\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-13T06:39:23.025Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1783924758297\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-13T06:39:20.724Z",
       "type": "SYSTEM",
@@ -4190,26 +4210,6 @@
       "timestamp": "2026-07-09T15:42:31.043Z",
       "type": "PUBLISHER",
       "message": "Triggering publication flow for post ID \"post_1783611693145\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-09T15:42:28.899Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-07-09T15:42:28.826Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1783611693145\""
-    },
-    {
-      "timestamp": "2026-07-09T15:42:27.655Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-07-09T15:42:27.346Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
     }
   ]
 }
