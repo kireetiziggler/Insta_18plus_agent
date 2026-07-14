@@ -1597,7 +1597,7 @@
       ],
       "caption": "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-14T05:54:24.513Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-14T05:54:24.513Z",
       "renderedImages": [
         "/posts/post_1784008464513/slide_1.png"
@@ -1759,6 +1759,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-14T05:54:31.201Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784008464513/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-14T05:54:31.199Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-14T05:54:31.197Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1784008464513\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-14T05:54:31.192Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1784008464513\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-14T05:54:29.208Z",
       "type": "SYSTEM",
@@ -4238,26 +4258,6 @@
       "timestamp": "2026-07-10T15:11:36.510Z",
       "type": "PUBLISHER",
       "message": "Triggering publication flow for post ID \"post_1783696290887\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-10T15:11:33.624Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-07-10T15:11:33.552Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1783696290887\""
-    },
-    {
-      "timestamp": "2026-07-10T15:11:32.495Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-07-10T15:11:32.210Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
     }
   ]
 }
