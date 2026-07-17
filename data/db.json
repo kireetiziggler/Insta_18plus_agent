@@ -1757,7 +1757,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-17T14:12:47.907Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-17T14:12:47.907Z",
       "renderedImages": [
         "/posts/post_1784297567907/slide_1.png"
@@ -1919,6 +1919,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-17T14:13:00.038Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784297567907/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-17T14:13:00.036Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-17T14:13:00.034Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1784297567907\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-17T14:13:00.029Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1784297567907\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-17T14:12:58.001Z",
       "type": "SYSTEM",
@@ -4398,26 +4418,6 @@
       "timestamp": "2026-07-13T16:46:18.107Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-07-13T16:46:18.045Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1783961167842\""
-    },
-    {
-      "timestamp": "2026-07-13T16:46:17.047Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-07-13T16:46:16.788Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-07-13T16:46:16.786Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1783961167842/background.png"
     }
   ]
 }
