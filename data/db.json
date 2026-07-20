@@ -1901,7 +1901,7 @@
       ],
       "caption": "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-20T14:38:24.297Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-20T14:38:24.297Z",
       "renderedImages": [
         "/posts/post_1784558304297/slide_1.png"
@@ -2063,6 +2063,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-20T14:38:30.613Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784558304297/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-20T14:38:30.611Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-20T14:38:30.608Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1784558304297\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-20T14:38:30.603Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1784558304297\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-20T14:38:28.122Z",
       "type": "SYSTEM",
@@ -4542,26 +4562,6 @@
       "timestamp": "2026-07-16T15:53:36.614Z",
       "type": "PUBLISHER",
       "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784217204083/slide_1.png"
-    },
-    {
-      "timestamp": "2026-07-16T15:53:36.611Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-07-16T15:53:36.608Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1784217204083\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-07-16T15:53:36.602Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1784217204083\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-16T15:53:34.140Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
     }
   ]
 }
