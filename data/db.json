@@ -1949,7 +1949,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-21T14:33:52.649Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-21T14:33:52.649Z",
       "renderedImages": [
         "/posts/post_1784644432649/slide_1.png"
@@ -2111,6 +2111,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-21T14:33:57.241Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784644432649/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-21T14:33:57.239Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-21T14:33:57.237Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1784644432649\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-21T14:33:57.232Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1784644432649\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-21T14:33:55.085Z",
       "type": "SYSTEM",
@@ -4590,26 +4610,6 @@
       "timestamp": "2026-07-17T15:53:54.057Z",
       "type": "PUBLISHER",
       "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784303626422/slide_1.png"
-    },
-    {
-      "timestamp": "2026-07-17T15:53:54.056Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-07-17T15:53:54.053Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1784303626422\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-07-17T15:53:54.048Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1784303626422\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-17T15:53:51.594Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
     }
   ]
 }
