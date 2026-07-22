@@ -1981,7 +1981,7 @@
       ],
       "caption": "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-22T06:12:14.557Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-22T06:12:14.557Z",
       "renderedImages": [
         "/posts/post_1784700734557/slide_1.png"
@@ -2143,6 +2143,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-22T06:12:19.361Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784700734557/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-22T06:12:19.359Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-22T06:12:19.357Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1784700734557\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-22T06:12:19.348Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1784700734557\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-22T06:12:17.238Z",
       "type": "SYSTEM",
@@ -4622,26 +4642,6 @@
       "timestamp": "2026-07-18T13:57:16.137Z",
       "type": "PUBLISHER",
       "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784383028606/slide_1.png"
-    },
-    {
-      "timestamp": "2026-07-18T13:57:16.135Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-07-18T13:57:16.132Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1784383028606\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-07-18T13:57:16.127Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1784383028606\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-07-18T13:57:14.119Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
     }
   ]
 }
