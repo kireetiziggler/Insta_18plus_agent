@@ -2157,7 +2157,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-07-25T15:36:18.542Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-07-25T15:36:18.542Z",
       "renderedImages": [
         "/posts/post_1784993778542/slide_1.png"
@@ -2319,6 +2319,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-07-25T15:36:24.513Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1784993778542/slide_1.png"
+    },
+    {
+      "timestamp": "2026-07-25T15:36:24.511Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-07-25T15:36:24.509Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1784993778542\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-07-25T15:36:24.505Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1784993778542\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-07-25T15:36:22.513Z",
       "type": "SYSTEM",
@@ -4798,26 +4818,6 @@
       "timestamp": "2026-07-22T06:12:17.238Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-07-22T06:12:17.159Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1784700734557\""
-    },
-    {
-      "timestamp": "2026-07-22T06:12:16.063Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-07-22T06:12:15.789Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-07-22T06:12:15.786Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1784700734557/background.png"
     }
   ]
 }
