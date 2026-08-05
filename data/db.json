@@ -2653,7 +2653,7 @@
       ],
       "caption": "A sudden whisper that changes everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-08-05T06:08:16.297Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-05T06:08:16.297Z",
       "renderedImages": [
         "/posts/post_1785910096297/slide_1.png"
@@ -2815,6 +2815,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-05T06:11:24.609Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1785910096297/slide_1.png"
+    },
+    {
+      "timestamp": "2026-08-05T06:11:24.607Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-05T06:11:24.604Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1785910096297\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-05T06:11:24.599Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1785910096297\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-05T06:11:22.015Z",
       "type": "SYSTEM",
@@ -5294,26 +5314,6 @@
       "timestamp": "2026-08-01T15:34:00.880Z",
       "type": "RESEARCH",
       "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-08-01T15:34:00.879Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-08-01T15:34:00.877Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-08-01T15:33:59.850Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-08-01T15:33:58.811Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
     }
   ]
 }
