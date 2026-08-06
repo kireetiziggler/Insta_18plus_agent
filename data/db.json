@@ -2717,7 +2717,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-08-06T14:52:54.849Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-06T14:52:54.849Z",
       "renderedImages": [
         "/posts/post_1786027974849/slide_1.png"
@@ -2879,6 +2879,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-06T14:52:59.235Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1786027974849/slide_1.png"
+    },
+    {
+      "timestamp": "2026-08-06T14:52:59.233Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-06T14:52:59.230Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1786027974849\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-06T14:52:59.224Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1786027974849\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-06T14:52:57.198Z",
       "type": "SYSTEM",
@@ -5358,26 +5378,6 @@
       "timestamp": "2026-08-03T06:45:32.118Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-08-03T06:45:31.243Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-03T06:45:30.224Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-08-03T06:45:29.210Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-03T06:45:29.208Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
     }
   ]
 }
