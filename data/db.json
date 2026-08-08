@@ -2796,7 +2796,7 @@
       "audioScript": "\"The Undress\"\nMy shirt unbuttoned slowly. His eyes never left me.",
       "caption": "Some moments don't need words. They simply unfold, layer by layer, under the weight of an unspoken promise. That silent anticipation, the electric current passing between two bodies on the precipice of pure desire. It’s the ultimate thrill.\n\nShare your secrets. We're listening.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcravings #sexualtension #rawdesire #bodylanguage #confessions",
       "scheduledFor": "2026-08-08T13:26:22.907Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-08T13:26:22.907Z",
       "renderedImages": [
         "/posts/reel_1786195571724/slide.png"
@@ -2960,6 +2960,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-08T13:26:38.498Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1786195571724/reel.mp4"
+    },
+    {
+      "timestamp": "2026-08-08T13:26:38.497Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-08T13:26:38.494Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1786195571724\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-08T13:26:38.489Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1786195571724\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-08T13:26:35.762Z",
       "type": "SYSTEM",
@@ -5439,26 +5459,6 @@
       "timestamp": "2026-08-04T16:26:15.273Z",
       "type": "RESEARCH",
       "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-08-04T16:26:14.491Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-04T16:26:13.827Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-08-04T16:26:13.824Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-08-04T16:26:13.822Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
     }
   ]
 }
