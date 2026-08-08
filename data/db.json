@@ -2781,7 +2781,7 @@
       ],
       "caption": "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-08-08T04:37:12.719Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-08T04:37:12.719Z",
       "renderedImages": [
         "/posts/post_1786163832719/slide_1.png"
@@ -2943,6 +2943,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-08T04:37:17.901Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1786163832719/slide_1.png"
+    },
+    {
+      "timestamp": "2026-08-08T04:37:17.899Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-08T04:37:17.896Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1786163832719\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-08T04:37:17.891Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1786163832719\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-08T04:37:15.322Z",
       "type": "SYSTEM",
@@ -5422,26 +5442,6 @@
       "timestamp": "2026-08-04T14:59:20.632Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-08-04T14:59:19.603Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-04T14:59:18.589Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-08-04T14:59:17.670Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-04T14:59:17.668Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
     }
   ]
 }
