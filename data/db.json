@@ -2862,7 +2862,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-08-09T14:59:47.419Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-09T14:59:47.419Z",
       "renderedImages": [
         "/posts/post_1786287587419/slide_1.png"
@@ -3024,6 +3024,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-09T14:59:53.477Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1786287587419/slide_1.png"
+    },
+    {
+      "timestamp": "2026-08-09T14:59:53.475Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-09T14:59:53.472Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1786287587419\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-09T14:59:53.466Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1786287587419\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-09T14:59:51.021Z",
       "type": "SYSTEM",
@@ -5503,26 +5523,6 @@
       "timestamp": "2026-08-06T06:11:39.081Z",
       "type": "RESEARCH",
       "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-08-06T06:11:37.210Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-06T06:11:37.198Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-08-06T06:11:34.111Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-08-05T16:17:55.239Z",
-      "type": "PUBLISHER",
-      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1785946486873/slide_1.png"
     }
   ]
 }
