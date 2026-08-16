@@ -3167,7 +3167,7 @@
       ],
       "caption": "Long distance makes the physical craving so much worse. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-08-16T04:10:18.618Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-16T04:10:18.618Z",
       "renderedImages": [
         "/posts/post_1786853418618/slide_1.png"
@@ -3329,6 +3329,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-16T04:10:24.103Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1786853418618/slide_1.png"
+    },
+    {
+      "timestamp": "2026-08-16T04:10:24.101Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-16T04:10:24.098Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1786853418618\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-16T04:10:24.089Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1786853418618\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-16T04:10:21.864Z",
       "type": "SYSTEM",
@@ -5808,26 +5828,6 @@
       "timestamp": "2026-08-12T15:26:45.486Z",
       "type": "RESEARCH",
       "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-08-12T15:26:42.507Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-12T15:26:42.402Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-08-12T15:26:36.653Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-08-12T13:56:15.190Z",
-      "type": "PUBLISHER",
-      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1786542969395/slide_1.png"
     }
   ]
 }
