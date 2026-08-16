@@ -3182,7 +3182,7 @@
       "audioScript": "\"Fitting Room Secret\"\n\nHer zipper snagged. My fingers found her bare back. We both knew.",
       "caption": "The rush of an unexpected touch. It’s the jolt that changes everything, burning brighter than any spotlight. Every secret moment holds a universe of desire. What's your hidden spark? Share your whispers anonymously in our DMs.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcrush #situationships #rawdesire #physicalintimacy #unspoken",
       "scheduledFor": "2026-08-16T13:09:17.516Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-16T13:09:17.516Z",
       "renderedImages": [
         "/posts/reel_1786885744052/slide.png"
@@ -3346,6 +3346,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-16T13:09:33.343Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1786885744052/reel.mp4"
+    },
+    {
+      "timestamp": "2026-08-16T13:09:33.341Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-16T13:09:33.338Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1786885744052\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-16T13:09:33.330Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1786885744052\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-16T13:09:30.114Z",
       "type": "SYSTEM",
@@ -5825,26 +5845,6 @@
       "timestamp": "2026-08-13T05:18:40.449Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-08-13T05:18:40.446Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-08-13T05:18:39.427Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-13T05:18:38.851Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-08-13T05:18:37.826Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
     }
   ]
 }
