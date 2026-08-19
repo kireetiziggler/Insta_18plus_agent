@@ -3329,7 +3329,7 @@
       "audioScript": "\"Morning After\"\nI woke up to sunlight tracing the bite mark on my hip. His secret signature.\nThe memory made me ache.",
       "caption": "Some secrets aren't whispered; they're seared into your skin, burning long after the night fades. This kind of raw longing is impossible to ignore. What's the one touch you can't erase? Share your deepest, untold desires with us anonymously. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretstory #morningafter #desire #physicalintimacy #confessions",
       "scheduledFor": "2026-08-19T13:24:47.288Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-19T13:24:47.288Z",
       "renderedImages": [
         "/posts/reel_1787145869979/slide.png"
@@ -3493,6 +3493,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-19T13:25:04.957Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1787145869979/reel.mp4"
+    },
+    {
+      "timestamp": "2026-08-19T13:25:04.954Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-19T13:25:04.951Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1787145869979\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-19T13:25:04.942Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1787145869979\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-19T13:25:01.553Z",
       "type": "SYSTEM",
@@ -5972,26 +5992,6 @@
       "timestamp": "2026-08-16T04:09:40.801Z",
       "type": "SYSTEM",
       "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
-    },
-    {
-      "timestamp": "2026-08-16T04:09:40.487Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-08-16T04:09:40.323Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-08-16T04:09:39.315Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-16T04:09:38.295Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
     }
   ]
 }
