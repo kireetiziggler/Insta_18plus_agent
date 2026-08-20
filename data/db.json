@@ -3378,7 +3378,7 @@
       "audioScript": "\"The Doorway Crush\"\nHe blocked the exit. His eyes, a silent dare. I leaned into the heat.",
       "caption": "That kind of heat? It burns from the inside out. Every silent dare, every stolen moment, every unspoken thought—we live for these confessions. Share your secret desire with us. Tap the link in bio to anonymously reveal what keeps you up at night. You're not alone in your longing.\n\n#unspokendesires #intimacy #chemistry #tension #desire #physicalintimacy #secretcravings #situationships #rawdesire #adultromance #confessions",
       "scheduledFor": "2026-08-20T13:27:04.904Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-20T13:27:04.904Z",
       "renderedImages": [
         "/posts/reel_1787232405525/slide.png"
@@ -3542,6 +3542,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-20T13:27:18.947Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1787232405525/reel.mp4"
+    },
+    {
+      "timestamp": "2026-08-20T13:27:18.945Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-20T13:27:18.942Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1787232405525\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-20T13:27:18.935Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1787232405525\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-20T13:27:16.154Z",
       "type": "SYSTEM",
@@ -6021,26 +6041,6 @@
       "timestamp": "2026-08-17T04:20:30.879Z",
       "type": "SYSTEM",
       "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
-    },
-    {
-      "timestamp": "2026-08-17T04:20:30.862Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-08-17T04:20:30.662Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-08-17T04:20:29.654Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-17T04:20:28.638Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
     }
   ]
 }
