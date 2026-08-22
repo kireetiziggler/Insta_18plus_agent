@@ -3494,7 +3494,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-08-22T14:45:29.260Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-22T14:45:29.260Z",
       "renderedImages": [
         "/posts/post_1787409929260/slide_1.png"
@@ -3656,6 +3656,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-22T14:45:35.736Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1787409929260/slide_1.png"
+    },
+    {
+      "timestamp": "2026-08-22T14:45:35.734Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-22T14:45:35.721Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1787409929260\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-22T14:45:35.715Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1787409929260\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-22T14:45:33.150Z",
       "type": "SYSTEM",
@@ -6135,26 +6155,6 @@
       "timestamp": "2026-08-19T13:24:29.973Z",
       "type": "SYSTEM",
       "message": "Triggering scheduled Reel workflow for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-08-19T13:24:29.956Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-08-19T13:24:29.866Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-08-19T13:24:28.851Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-19T13:24:27.841Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
     }
   ]
 }
