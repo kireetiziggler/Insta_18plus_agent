@@ -3574,7 +3574,7 @@
       "audioScript": "\"Rain-Kissed Skin\"\nHe took my wet jacket. His bare arm grazed my lower back. The chill disappeared.",
       "caption": "The softest touch can ignite the deepest inferno. What's the moment that made your world stop? Share your most exhilarating secret with us anonymously via the link in bio. \n#UnspokenDesires #Intimacy #Chemistry #Tension #ForbiddenLove #SecretDesires #PhysicalIntimacy #SensualVibes #LateNightThoughts #Desire",
       "scheduledFor": "2026-08-24T13:30:10.153Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-24T13:30:10.153Z",
       "renderedImages": [
         "/posts/reel_1787578193895/slide.png"
@@ -3738,6 +3738,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-24T13:30:25.285Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1787578193895/reel.mp4"
+    },
+    {
+      "timestamp": "2026-08-24T13:30:25.281Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-24T13:30:25.277Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1787578193895\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-24T13:30:25.270Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1787578193895\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-24T13:30:22.655Z",
       "type": "SYSTEM",
@@ -6217,26 +6237,6 @@
       "timestamp": "2026-08-21T04:11:01.122Z",
       "type": "SYSTEM",
       "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
-    },
-    {
-      "timestamp": "2026-08-21T04:11:01.105Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-08-21T04:11:01.030Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-08-21T04:11:00.022Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-21T04:10:59.008Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
     }
   ]
 }
