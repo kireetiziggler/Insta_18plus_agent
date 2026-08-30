@@ -3867,7 +3867,7 @@
       ],
       "caption": "Some promises are made without a single word. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-08-30T16:55:07.542Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-30T16:55:07.542Z",
       "renderedImages": [
         "/posts/post_1788108907542/slide_1.png"
@@ -4029,6 +4029,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-30T16:55:14.741Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788108907542/slide_1.png"
+    },
+    {
+      "timestamp": "2026-08-30T16:55:14.739Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-30T16:55:14.737Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1788108907542\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-30T16:55:14.733Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1788108907542\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-30T16:55:12.119Z",
       "type": "SYSTEM",
@@ -6508,26 +6528,6 @@
       "timestamp": "2026-08-27T14:31:52.565Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-08-27T14:31:52.562Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-08-27T14:31:51.532Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-27T14:31:50.640Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-08-27T14:31:49.619Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
     }
   ]
 }
