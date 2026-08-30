@@ -3849,7 +3849,7 @@
       "audioScript": "\"The Unspoken Order\"\nIn the crowded room, his eyes met mine. \"Come here,\" he mouthed. The world blurred. My pulse surged.",
       "caption": "Some desires don't need words. They live in stolen glances and unspoken commands that ignite your entire world. What's the most intense, silent command you've ever received? Drop your confessions below – completely anonymous. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #desire #secretcrush #situationships #rawemotions #attraction",
       "scheduledFor": "2026-08-30T09:26:38.226Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-30T09:26:38.226Z",
       "renderedImages": [
         "/posts/reel_1788081963991/slide.png"
@@ -4013,6 +4013,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-30T09:26:51.753Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1788081963991/reel.mp4"
+    },
+    {
+      "timestamp": "2026-08-30T09:26:51.749Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-30T09:26:51.747Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1788081963991\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-30T09:26:51.741Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1788081963991\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-30T09:26:49.197Z",
       "type": "SYSTEM",
@@ -6492,26 +6512,6 @@
       "timestamp": "2026-08-26T15:57:34.986Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-08-26T15:57:34.983Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-08-26T15:57:33.993Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-08-26T15:57:32.976Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-08-26T15:57:31.960Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
     }
   ]
 }
