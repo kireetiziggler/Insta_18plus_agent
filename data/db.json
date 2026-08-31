@@ -3898,7 +3898,7 @@
       "audioScript": "Focus on your own chemistry, your desires, and your growth. Your worth is not defined by someone else's inability to see it. Reclaim your power.",
       "caption": "Reclaim your power. Build the chemistry that matters.\n\nSave this if you relate. ❦\n\n#attraction #selfworth #chemistry #growth",
       "scheduledFor": "2026-08-31T10:02:10.868Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-08-31T10:02:10.868Z",
       "renderedImages": [
         "/posts/reel_1788170516291/slide.png"
@@ -4062,6 +4062,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-08-31T10:02:24.044Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1788170516291/reel.mp4"
+    },
+    {
+      "timestamp": "2026-08-31T10:02:24.041Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-08-31T10:02:24.038Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1788170516291\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-08-31T10:02:24.032Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1788170516291\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-08-31T10:02:21.266Z",
       "type": "SYSTEM",
@@ -6541,26 +6561,6 @@
       "timestamp": "2026-08-27T23:50:59.827Z",
       "type": "RESEARCH",
       "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-08-27T23:50:59.292Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-27T23:50:58.738Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-08-27T23:50:58.736Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-08-27T23:50:58.733Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
     }
   ]
 }
