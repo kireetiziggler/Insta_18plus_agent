@@ -3997,7 +3997,7 @@
       ],
       "caption": "The air was thin, but the desire was thick. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-02T08:05:57.027Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-02T08:05:57.027Z",
       "renderedImages": [
         "/posts/post_1788336357027/slide_1.png"
@@ -4159,6 +4159,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-02T08:06:03.770Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788336357027/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-02T08:06:03.766Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-02T08:06:03.762Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1788336357027\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-02T08:06:03.755Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1788336357027\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-02T08:06:00.690Z",
       "type": "SYSTEM",
@@ -6638,26 +6658,6 @@
       "timestamp": "2026-08-29T17:46:14.000Z",
       "type": "RESEARCH",
       "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-08-29T17:46:12.978Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-29T17:46:12.085Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-08-29T17:46:12.083Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-08-29T17:46:12.080Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
     }
   ]
 }
