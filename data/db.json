@@ -4077,7 +4077,7 @@
       ],
       "caption": "Some secrets are best kept in the dark. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-03T17:56:26.156Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-03T17:56:26.156Z",
       "renderedImages": [
         "/posts/post_1788458186156/slide_1.png"
@@ -4239,6 +4239,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-03T17:57:17.762Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788458186156/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-03T17:57:17.758Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-03T17:57:17.754Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1788458186156\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-03T17:57:17.747Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1788458186156\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-03T17:57:14.986Z",
       "type": "SYSTEM",
@@ -6718,26 +6738,6 @@
       "timestamp": "2026-08-31T19:11:39.653Z",
       "type": "RESEARCH",
       "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-08-31T19:11:38.633Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-08-31T19:11:37.544Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-08-31T19:11:37.537Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-08-31T19:11:36.585Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
     }
   ]
 }
