@@ -4109,7 +4109,7 @@
       ],
       "caption": "Some secrets live under your skin forever. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-04T16:32:05.582Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-04T16:32:05.582Z",
       "renderedImages": [
         "/posts/post_1788539525582/slide_1.png"
@@ -4271,6 +4271,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-04T16:32:11.470Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788539525582/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-04T16:32:11.467Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-04T16:32:11.464Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1788539525582\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-04T16:32:11.458Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1788539525582\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-04T16:32:09.116Z",
       "type": "SYSTEM",
@@ -6750,26 +6770,6 @@
       "timestamp": "2026-09-01T08:52:21.830Z",
       "type": "RESEARCH",
       "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-09-01T08:52:20.817Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-09-01T08:52:19.339Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-01T08:52:19.336Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-09-01T08:52:05.087Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
     }
   ]
 }
