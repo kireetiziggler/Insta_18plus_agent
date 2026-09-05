@@ -4157,7 +4157,7 @@
       ],
       "caption": "Some nights, a single touch tells the whole story. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-05T15:25:27.509Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-05T15:25:27.509Z",
       "renderedImages": [
         "/posts/post_1788621927509/slide_1.png"
@@ -4319,6 +4319,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-05T15:26:19.100Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788621927509/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-05T15:26:19.097Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-05T15:26:19.095Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1788621927509\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-05T15:26:19.090Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1788621927509\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-05T15:26:16.556Z",
       "type": "SYSTEM",
@@ -6798,26 +6818,6 @@
       "timestamp": "2026-09-01T17:54:31.050Z",
       "type": "PUBLISHER",
       "message": "Publishing post ID \"post_1788285264719\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-09-01T17:54:31.042Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1788285264719\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-09-01T17:54:28.586Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-09-01T17:54:28.491Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1788285264719\""
-    },
-    {
-      "timestamp": "2026-09-01T17:54:27.365Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
     }
   ]
 }
