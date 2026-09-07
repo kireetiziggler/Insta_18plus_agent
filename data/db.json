@@ -4236,7 +4236,7 @@
       "audioScript": "\"The Unseen Gaze\"\nI unhooked my bra, letting it fall. His breath hitched. My skin tingled.",
       "caption": "That shared moment of vulnerability, the silent understanding. Some secrets are meant to be felt, not spoken. Confess your truth below. Share this if you've felt that potent, silent pull. #UnspokenDesires #Intimacy #SecretDesires #PhysicalChemistry #RawTension #BedroomSecrets #SensualVibes #ForbiddenLove #LateNightThoughts #Desire",
       "scheduledFor": "2026-09-07T08:35:51.955Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-07T08:35:51.955Z",
       "renderedImages": [
         "/posts/reel_1788770138210/slide.png"
@@ -4400,6 +4400,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-07T08:36:07.900Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1788770138210/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-07T08:36:07.896Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-07T08:36:07.893Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1788770138210\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-07T08:36:07.887Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1788770138210\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-07T08:36:04.882Z",
       "type": "SYSTEM",
@@ -6879,26 +6899,6 @@
       "timestamp": "2026-09-03T17:55:47.566Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-09-03T17:55:46.535Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-09-03T17:55:45.504Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-09-03T17:55:44.366Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-03T17:55:44.361Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
     }
   ]
 }
