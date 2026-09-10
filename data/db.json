@@ -4414,7 +4414,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-10T17:46:36.351Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-10T17:46:36.351Z",
       "renderedImages": [
         "/posts/post_1789062396351/slide_1.png"
@@ -4576,6 +4576,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-10T17:46:43.634Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1789062396351/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-10T17:46:43.630Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-10T17:46:43.628Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1789062396351\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-10T17:46:43.621Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1789062396351\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-10T17:46:40.180Z",
       "type": "SYSTEM",
@@ -7055,26 +7075,6 @@
       "timestamp": "2026-09-07T08:36:04.882Z",
       "type": "SYSTEM",
       "message": "Reel workflow completed successfully for post \"reel_1788770138210\""
-    },
-    {
-      "timestamp": "2026-09-07T08:36:04.876Z",
-      "type": "SYSTEM",
-      "message": "FFmpeg compositing completed. 15s music-only Reel: /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1788770138210/reel.mp4"
-    },
-    {
-      "timestamp": "2026-09-07T08:35:56.793Z",
-      "type": "SYSTEM",
-      "message": "Running FFmpeg to compose final 15-second Reel (music-only)..."
-    },
-    {
-      "timestamp": "2026-09-07T08:35:56.575Z",
-      "type": "SYSTEM",
-      "message": "Preparing music audio: trimming to 15s with fade-in/fade-out..."
-    },
-    {
-      "timestamp": "2026-09-07T08:35:56.572Z",
-      "type": "SYSTEM",
-      "message": "Reel timeline: Slide=15s | Total=15s"
     }
   ]
 }
