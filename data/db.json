@@ -4382,7 +4382,7 @@
       ],
       "caption": "Every shared breath was a dangerous promise. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-10T08:21:30.923Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-10T08:21:30.923Z",
       "renderedImages": [
         "/posts/post_1789028490923/slide_1.png"
@@ -4544,6 +4544,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-10T08:21:37.141Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1789028490923/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-10T08:21:37.138Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-10T08:21:37.136Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1789028490923\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-10T08:21:37.129Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1789028490923\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-10T08:21:34.808Z",
       "type": "SYSTEM",
@@ -7023,26 +7043,6 @@
       "timestamp": "2026-09-06T17:11:10.369Z",
       "type": "RESEARCH",
       "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-09-06T17:11:09.279Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-06T17:11:09.273Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-09-06T17:11:08.452Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-09-06T15:38:06.832Z",
-      "type": "PUBLISHER",
-      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788709079565/slide_1.png"
     }
   ]
 }
