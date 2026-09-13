@@ -4515,6 +4515,23 @@
       "renderedImages": [
         "/posts/post_1789233534363/slide_1.png"
       ]
+    },
+    {
+      "id": "reel_1789288245381",
+      "type": "reel",
+      "category": "Desire & Physical Intimacy",
+      "backgroundTheme": "intimate_touch",
+      "titleText": "WHEN SILENCE SCREAMS LOUDER THAN ANY WHISPER.",
+      "audioScript": "\"Shared Silence\"\nMy head on his chest.\nHis hand, warm on my thigh,\njust rested.\nI felt everything.",
+      "caption": "The most dangerous desires often live in the quietest moments. A single touch can ignite an entire universe of unspoken longing. What's a silent moment that set your soul on fire? Tell us your deepest, unspoken desire below. \n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretintimacy #physicalintimacy #rawdesire #situationships #nightthoughts",
+      "scheduledFor": "2026-09-13T08:30:59.651Z",
+      "status": "scheduled",
+      "createdAt": "2026-09-13T08:30:59.651Z",
+      "renderedImages": [
+        "/posts/reel_1789288245381/slide.png"
+      ],
+      "renderedVideo": "/posts/reel_1789288245381/reel.mp4",
+      "renderedAudio": "/posts/reel_1789288245381/audio.mp3"
     }
   ],
   "trends": [
@@ -4672,6 +4689,251 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-13T08:31:13.047Z",
+      "type": "SYSTEM",
+      "message": "Reel workflow completed successfully for post \"reel_1789288245381\""
+    },
+    {
+      "timestamp": "2026-09-13T08:31:13.040Z",
+      "type": "SYSTEM",
+      "message": "FFmpeg compositing completed. 15s music-only Reel: /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1789288245381/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-13T08:31:04.071Z",
+      "type": "SYSTEM",
+      "message": "Running FFmpeg to compose final 15-second Reel (music-only)..."
+    },
+    {
+      "timestamp": "2026-09-13T08:31:03.854Z",
+      "type": "SYSTEM",
+      "message": "Preparing music audio: trimming to 15s with fade-in/fade-out..."
+    },
+    {
+      "timestamp": "2026-09-13T08:31:03.852Z",
+      "type": "SYSTEM",
+      "message": "Reel timeline: Slide=15s | Total=15s"
+    },
+    {
+      "timestamp": "2026-09-13T08:31:03.849Z",
+      "type": "SYSTEM",
+      "message": "Background music downloaded successfully to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1789288245381/music.mp3"
+    },
+    {
+      "timestamp": "2026-09-13T08:31:03.568Z",
+      "type": "SYSTEM",
+      "message": "Downloading background music track: https://upload.wikimedia.org/wikipedia/commons/5/57/Lofi_by_Caden_Currie.mp3"
+    },
+    {
+      "timestamp": "2026-09-13T08:31:03.565Z",
+      "type": "SYSTEM",
+      "message": "Downloading sensual background music for post \"reel_1789288245381\"..."
+    },
+    {
+      "timestamp": "2026-09-13T08:31:03.562Z",
+      "type": "SYSTEM",
+      "message": "Closed Puppeteer browser instance for Reel"
+    },
+    {
+      "timestamp": "2026-09-13T08:31:03.485Z",
+      "type": "SYSTEM",
+      "message": "Finished rendering Reel slide for post \"reel_1789288245381\""
+    },
+    {
+      "timestamp": "2026-09-13T08:31:02.313Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reel slide graphic with background..."
+    },
+    {
+      "timestamp": "2026-09-13T08:31:01.944Z",
+      "type": "SYSTEM",
+      "message": "Launching Puppeteer browser instance for Reel..."
+    },
+    {
+      "timestamp": "2026-09-13T08:31:01.941Z",
+      "type": "SYSTEM",
+      "message": "Successfully loaded 9:16 Reel background image."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:59.665Z",
+      "type": "SYSTEM",
+      "message": "Generating 9:16 Reel background from Pollinations.ai (seed: 110038195): gentle touch embrace shadow, real human couple intimacy, low light"
+    },
+    {
+      "timestamp": "2026-09-13T08:30:59.661Z",
+      "type": "SYSTEM",
+      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
+    },
+    {
+      "timestamp": "2026-09-13T08:30:59.658Z",
+      "type": "SYSTEM",
+      "message": "Creating Reels slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1789288245381\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:59.655Z",
+      "type": "SYSTEM",
+      "message": "Rendering Reels for post \"reel_1789288245381\"..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:59.645Z",
+      "type": "GENERATOR",
+      "message": "Successfully generated AI Reel content using Gemini. Theme: \"intimate_touch\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:45.384Z",
+      "type": "GENERATOR",
+      "message": "Generating Reel content for category: \"Desire & Physical Intimacy\"..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:45.381Z",
+      "type": "SYSTEM",
+      "message": "Running Reels generation workflow for \"reel_1789288245381\"..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:45.378Z",
+      "type": "SYSTEM",
+      "message": "No unused trends found for Reel \"Desire & Physical Intimacy\". Generating generic niche Reel."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:45.375Z",
+      "type": "SYSTEM",
+      "message": "Triggering scheduled Reel workflow for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:45.353Z",
+      "type": "RESEARCH",
+      "message": "Closed crawling browser session."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:45.148Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:44.132Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:43.116Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/lonely..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:42.058Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/breakups..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:42.055Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:42.051Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:41.345Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/socialskills..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:40.773Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:40.035Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:40.032Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:40.029Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:39.005Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:37.997Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/relationships..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:36.981Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:36.978Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:36.973Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:35.958Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating_advice..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:35.255Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/texts..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:34.237Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/confession..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:34.234Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:34.231Z",
+      "type": "RESEARCH",
+      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:33.217Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/seduction..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:32.202Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/sex..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:31.009Z",
+      "type": "RESEARCH",
+      "message": "Scraping r/dating..."
+    },
+    {
+      "timestamp": "2026-09-13T08:30:31.006Z",
+      "type": "RESEARCH",
+      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
+    },
+    {
+      "timestamp": "2026-09-13T08:30:20.859Z",
+      "type": "RESEARCH",
+      "message": "Starting Trend Research Agent via Puppeteer..."
+    },
     {
       "timestamp": "2026-09-12T17:19:05.081Z",
       "type": "PUBLISHER",
@@ -6926,251 +7188,6 @@
       "timestamp": "2026-09-09T16:50:10.539Z",
       "type": "PUBLISHER",
       "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788972601612/slide_1.png"
-    },
-    {
-      "timestamp": "2026-09-09T16:50:10.535Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-09-09T16:50:10.533Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1788972601612\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-09-09T16:50:10.527Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1788972601612\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-09-09T16:50:06.610Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-09-09T16:50:06.523Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1788972601612\""
-    },
-    {
-      "timestamp": "2026-09-09T16:50:05.416Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-09-09T16:50:05.027Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-09-09T16:50:05.024Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1788972601612/background.png"
-    },
-    {
-      "timestamp": "2026-09-09T16:50:01.626Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/couple%20hug%20goodbye%20street%20night%20lights%20close%20embrace%20shadow%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=794317904&model=flux"
-    },
-    {
-      "timestamp": "2026-09-09T16:50:01.624Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"couple hug goodbye street night lights close embrace shadow\" (Seed: 794317904)"
-    },
-    {
-      "timestamp": "2026-09-09T16:50:01.620Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"shadowy_passion\" (Day of week: 3)"
-    },
-    {
-      "timestamp": "2026-09-09T16:50:01.618Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1788972601612\""
-    },
-    {
-      "timestamp": "2026-09-09T16:50:01.615Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1788972601612\"..."
-    },
-    {
-      "timestamp": "2026-09-09T16:50:01.609Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:27.639Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:27.636Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:27.633Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:27.617Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:27.421Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:26.411Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:25.397Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:24.504Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:24.501Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:24.496Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:23.375Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:22.362Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:21.616Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:21.613Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:21.610Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:20.615Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:19.601Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:18.606Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:18.602Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:18.599Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:17.627Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:16.608Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:15.592Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:15.589Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:15.587Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:14.571Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:13.555Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:12.354Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-09T16:49:12.351Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-09-09T16:49:02.623Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-09-09T08:21:33.913Z",
-      "type": "PUBLISHER",
-      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788942085063/slide_1.png"
-    },
-    {
-      "timestamp": "2026-09-09T08:21:33.910Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-09-09T08:21:33.908Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1788942085063\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-09-09T08:21:33.903Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1788942085063\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-09-09T08:21:31.092Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
     }
   ]
 }
