@@ -4525,7 +4525,7 @@
       "audioScript": "\"Shared Silence\"\nMy head on his chest.\nHis hand, warm on my thigh,\njust rested.\nI felt everything.",
       "caption": "The most dangerous desires often live in the quietest moments. A single touch can ignite an entire universe of unspoken longing. What's a silent moment that set your soul on fire? Tell us your deepest, unspoken desire below. \n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretintimacy #physicalintimacy #rawdesire #situationships #nightthoughts",
       "scheduledFor": "2026-09-13T08:30:59.651Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-13T08:30:59.651Z",
       "renderedImages": [
         "/posts/reel_1789288245381/slide.png"
@@ -4689,6 +4689,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-13T08:31:15.932Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1789288245381/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-13T08:31:15.929Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-13T08:31:15.925Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1789288245381\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-13T08:31:15.919Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1789288245381\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-13T08:31:13.047Z",
       "type": "SYSTEM",
@@ -7168,26 +7188,6 @@
       "timestamp": "2026-09-09T17:53:22.675Z",
       "type": "RESEARCH",
       "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-09-09T17:53:21.538Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-09T17:53:21.534Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-09-09T17:53:14.929Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-09-09T16:50:10.539Z",
-      "type": "PUBLISHER",
-      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1788972601612/slide_1.png"
     }
   ]
 }
