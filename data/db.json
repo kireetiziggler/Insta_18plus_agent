@@ -4787,7 +4787,7 @@
       ],
       "caption": "Some secrets are only for the dark of an empty office. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-18T16:37:49.120Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-18T16:37:49.120Z",
       "renderedImages": [
         "/posts/post_1789749469120/slide_1.png"
@@ -4949,6 +4949,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-18T16:39:24.411Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1789749469120/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-18T16:39:24.409Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-18T16:39:24.406Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1789749469120\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-18T16:39:24.400Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1789749469120\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-18T16:39:22.150Z",
       "type": "SYSTEM",
@@ -7428,26 +7448,6 @@
       "timestamp": "2026-09-15T08:55:17.500Z",
       "type": "RESEARCH",
       "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-09-15T08:55:17.497Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-15T08:55:17.492Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-09-15T08:55:16.444Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-09-15T08:55:15.429Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
     }
   ]
 }
