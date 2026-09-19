@@ -4851,7 +4851,7 @@
       ],
       "caption": "Some invitations are only felt, not spoken. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-19T17:21:13.564Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-19T17:21:13.564Z",
       "renderedImages": [
         "/posts/post_1789838473564/slide_1.png"
@@ -5013,6 +5013,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-19T17:24:21.729Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1789838473564/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-19T17:24:21.726Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-19T17:24:21.722Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1789838473564\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-19T17:24:21.716Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1789838473564\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-19T17:24:19.335Z",
       "type": "SYSTEM",
@@ -7492,26 +7512,6 @@
       "timestamp": "2026-09-16T17:12:16.401Z",
       "type": "RESEARCH",
       "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-09-16T17:12:15.407Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-09-16T17:12:15.404Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-09-16T17:12:15.399Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-09-16T17:12:14.448Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
     }
   ]
 }
