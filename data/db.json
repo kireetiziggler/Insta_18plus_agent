@@ -4884,7 +4884,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-20T16:22:55.807Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-20T16:22:55.807Z",
       "renderedImages": [
         "/posts/post_1789921375807/slide_1.png"
@@ -5046,6 +5046,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-20T16:23:02.582Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1789921375807/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-20T16:23:02.579Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-20T16:23:02.576Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1789921375807\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-20T16:23:02.569Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1789921375807\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-20T16:23:00.278Z",
       "type": "SYSTEM",
@@ -7525,26 +7545,6 @@
       "timestamp": "2026-09-17T08:52:04.283Z",
       "type": "RESEARCH",
       "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-17T08:52:04.199Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-17T08:52:03.186Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-09-17T08:52:02.156Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-09-17T08:52:01.166Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
     }
   ]
 }
