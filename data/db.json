@@ -4866,7 +4866,7 @@
       "audioScript": "\"Silent Mornings\"\nMy hand found his empty side.\nThe indentation in his pillow.\nHis warmth was still there.",
       "caption": "Some secrets aren't whispered; they're felt in the space he leaves behind. Double tap if the silence tells the loudest stories. Follow @UnspokenDesires for more confessions that hit different.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretlovers #morningafter #lingeringthoughts #desire #passion #situationship",
       "scheduledFor": "2026-09-20T08:47:25.090Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-20T08:47:25.090Z",
       "renderedImages": [
         "/posts/reel_1789894028023/slide.png"
@@ -5030,6 +5030,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-20T08:50:40.010Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1789894028023/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-20T08:50:40.006Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-20T08:50:40.003Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1789894028023\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-20T08:50:39.996Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1789894028023\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-20T08:50:37.243Z",
       "type": "SYSTEM",
@@ -7509,26 +7529,6 @@
       "timestamp": "2026-09-16T18:16:34.607Z",
       "type": "RESEARCH",
       "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-16T18:16:34.429Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-16T18:16:33.402Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-09-16T18:16:32.393Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-09-16T18:16:31.328Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
     }
   ]
 }
