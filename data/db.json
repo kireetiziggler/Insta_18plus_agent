@@ -4915,7 +4915,7 @@
       "audioScript": "\"Red Light Confession\"\nThe red light hit. His hand covered mine on the gear shift. His thumb traced my bare arm. My breath hitched.",
       "caption": "The world stopped, just for us, in that fleeting moment. Every red light since feels like a silent invitation.\n\nWhat secret tension keeps you awake? Share your untold stories with us anonymously.\n\n#unspokendesires #intimacy #tension #redlightmoments #secretlove #desire #physicalintimacy #modernromance #situationship #confessions",
       "scheduledFor": "2026-09-21T09:15:22.399Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-21T09:15:22.399Z",
       "renderedImages": [
         "/posts/reel_1789982109498/slide.png"
@@ -5079,6 +5079,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-21T09:15:38.845Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1789982109498/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-21T09:15:38.842Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-21T09:15:38.838Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1789982109498\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-21T09:15:38.831Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1789982109498\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-21T09:15:35.564Z",
       "type": "SYSTEM",
@@ -7558,26 +7578,6 @@
       "timestamp": "2026-09-17T18:23:16.324Z",
       "type": "RESEARCH",
       "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-17T18:23:16.244Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-17T18:23:15.237Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-09-17T18:23:14.221Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-09-17T18:23:13.226Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
     }
   ]
 }
