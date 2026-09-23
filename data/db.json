@@ -5013,7 +5013,7 @@
       "audioScript": "\"His Lean-In\"\nHe leaned in. The click echoed our shared silence. His eyes burned into mine.",
       "caption": "That magnetic pull when two worlds collide, even for a split second. The kind of raw tension that makes your skin hum and your mind race, long after the moment is over. Double tap if you felt that rush. Share your deepest, unspoken confession in the comments below. Anonymously, always.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #stolenmoments #rawdesire #secretencounter #situationship #desire",
       "scheduledFor": "2026-09-23T08:48:20.562Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-23T08:48:20.562Z",
       "renderedImages": [
         "/posts/reel_1790153284137/slide.png"
@@ -5177,6 +5177,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-23T08:48:38.061Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1790153284137/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-23T08:48:38.057Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-23T08:48:38.053Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1790153284137\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-23T08:48:38.046Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1790153284137\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-23T08:48:34.636Z",
       "type": "SYSTEM",
@@ -7656,26 +7676,6 @@
       "timestamp": "2026-09-19T17:23:29.162Z",
       "type": "SYSTEM",
       "message": "Waiting 3s for image generation to complete (attempt 4/5)..."
-    },
-    {
-      "timestamp": "2026-09-19T17:22:44.177Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 3/5)..."
-    },
-    {
-      "timestamp": "2026-09-19T17:21:59.180Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 2/5)..."
-    },
-    {
-      "timestamp": "2026-09-19T17:21:14.325Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 1/5)..."
-    },
-    {
-      "timestamp": "2026-09-19T17:21:13.582Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/dark%20office%20desk%2C%20single%20warm%20coffee%20mug%2C%20subtle%20glow%2C%20intimate%20mystery%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=6913942&model=flux"
     }
   ]
 }
