@@ -5031,7 +5031,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-23T17:22:06.491Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-23T17:22:06.491Z",
       "renderedImages": [
         "/posts/post_1790184126491/slide_1.png"
@@ -5193,6 +5193,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-23T17:22:13.933Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790184126491/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-23T17:22:13.930Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-23T17:22:13.927Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1790184126491\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-23T17:22:13.920Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1790184126491\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-23T17:22:11.267Z",
       "type": "SYSTEM",
@@ -7672,26 +7692,6 @@
       "timestamp": "2026-09-20T08:47:25.106Z",
       "type": "SYSTEM",
       "message": "Generating 9:16 Reel background from Pollinations.ai (seed: 665690658): cozy dark bedroom, real human couple, cozy bed, window rain"
-    },
-    {
-      "timestamp": "2026-09-20T08:47:25.102Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-09-20T08:47:25.099Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1789894028023\""
-    },
-    {
-      "timestamp": "2026-09-20T08:47:25.095Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels for post \"reel_1789894028023\"..."
-    },
-    {
-      "timestamp": "2026-09-20T08:47:25.085Z",
-      "type": "GENERATOR",
-      "message": "Successfully generated AI Reel content using Gemini. Theme: \"rainy_bed\""
     }
   ]
 }
