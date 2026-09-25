@@ -5111,7 +5111,7 @@
       "audioScript": "\"His Whispered Name\"\nHe bit my lip. Softly. Just enough to leave a mark only I would know. My knees weakened.",
       "caption": "Some secrets aren't whispered. They're left on your skin, a phantom ache that keeps you craving more. That subtle sting, a promise of what's to come. It's in those unspoken moments that desire truly takes hold, burning slow and deep. You feel it, don't you?\n\nShare your secrets anonymously via DM. We want to hear what keeps you up at night.\n\n#UnspokenDesires #Intimacy #Chemistry #Tension #SecretAffair #ForbiddenLove #Desire #PhysicalIntimacy #Craving #Situationship",
       "scheduledFor": "2026-09-25T09:03:22.742Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-25T09:03:22.742Z",
       "renderedImages": [
         "/posts/reel_1790326990969/slide.png"
@@ -5275,6 +5275,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-25T09:03:40.133Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1790326990969/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-25T09:03:40.130Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-25T09:03:40.127Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1790326990969\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-25T09:03:40.084Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1790326990969\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-25T09:03:36.689Z",
       "type": "SYSTEM",
@@ -7754,26 +7774,6 @@
       "timestamp": "2026-09-21T19:37:50.466Z",
       "type": "GENERATOR",
       "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-09-21T19:37:50.463Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-09-21T19:37:50.459Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-09-21T19:37:50.443Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-21T19:37:50.313Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
     }
   ]
 }
