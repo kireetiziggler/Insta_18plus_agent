@@ -5243,7 +5243,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-27T18:33:36.903Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-27T18:33:36.903Z",
       "renderedImages": [
         "/posts/post_1790534016903/slide_1.png"
@@ -5405,6 +5405,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-27T18:33:45.585Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790534016903/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-27T18:33:45.582Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-27T18:33:45.578Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1790534016903\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-27T18:33:45.570Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1790534016903\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-27T18:33:42.288Z",
       "type": "SYSTEM",
@@ -7884,26 +7904,6 @@
       "timestamp": "2026-09-24T17:26:18.558Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-24T17:26:18.553Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-09-24T17:26:17.594Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-09-24T17:26:16.760Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-09-24T17:26:15.735Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
     }
   ]
 }
