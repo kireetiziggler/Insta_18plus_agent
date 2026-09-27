@@ -5209,7 +5209,7 @@
       "audioScript": "\"Brief Encounter\"\nMy shirt brushed his arm. A silent, charged spark.",
       "caption": "The quietest moments hold the loudest secrets. That flash of heat when two worlds briefly collide, leaving you breathless and craving more.\n\nEver felt a spark so strong it shifted your entire reality? Tell us your secret in the DMs. ✨\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcrush #situationships #rawdesire #physicalintimacy #unspoken",
       "scheduledFor": "2026-09-27T09:29:10.035Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-27T09:29:10.035Z",
       "renderedImages": [
         "/posts/reel_1790501333655/slide.png"
@@ -5373,6 +5373,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-27T09:29:23.618Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1790501333655/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-27T09:29:23.615Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-27T09:29:23.613Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1790501333655\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-27T09:29:23.608Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1790501333655\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-27T09:29:20.571Z",
       "type": "SYSTEM",
@@ -7852,26 +7872,6 @@
       "timestamp": "2026-09-23T18:28:55.951Z",
       "type": "SYSTEM",
       "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-09-23T18:28:55.947Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-09-23T18:28:55.931Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-23T18:28:55.780Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-09-23T18:28:54.761Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
     }
   ]
 }
