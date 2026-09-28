@@ -5276,7 +5276,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-28T19:47:21.431Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-28T19:47:21.431Z",
       "renderedImages": [
         "/posts/post_1790624841431/slide_1.png"
@@ -5438,6 +5438,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-28T19:47:28.944Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790624841431/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-28T19:47:28.941Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-28T19:47:28.937Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1790624841431\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-28T19:47:28.930Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1790624841431\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-28T19:47:25.947Z",
       "type": "SYSTEM",
@@ -7917,26 +7937,6 @@
       "timestamp": "2026-09-25T09:03:10.970Z",
       "type": "SYSTEM",
       "message": "Running Reels generation workflow for \"reel_1790326990969\"..."
-    },
-    {
-      "timestamp": "2026-09-25T09:03:10.967Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for Reel \"Desire & Physical Intimacy\". Generating generic niche Reel."
-    },
-    {
-      "timestamp": "2026-09-25T09:03:10.960Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled Reel workflow for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-09-25T09:03:10.927Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-25T09:03:10.183Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
     }
   ]
 }
