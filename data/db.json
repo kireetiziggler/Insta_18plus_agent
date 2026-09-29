@@ -5307,7 +5307,7 @@
       "audioScript": "\"Last Button\"\nHe paused on my last button. His thumb brushed just below. A silent dare.",
       "caption": "That moment when the smallest gesture holds the loudest promise of unspoken desire. The air thickens, and every touch is a conversation only your bodies understand. Share your secrets with us. We keep them safe. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretdesires #physicalintimacy #modernromance #situationships #rawemotions",
       "scheduledFor": "2026-09-29T10:05:20.483Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-29T10:05:20.483Z",
       "renderedImages": [
         "/posts/reel_1790676307634/slide.png"
@@ -5471,6 +5471,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-29T10:05:37.620Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1790676307634/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-29T10:05:37.616Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-29T10:05:37.613Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1790676307634\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-29T10:05:37.606Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1790676307634\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-29T10:05:34.306Z",
       "type": "SYSTEM",
@@ -7950,26 +7970,6 @@
       "timestamp": "2026-09-25T18:46:32.690Z",
       "type": "GENERATOR",
       "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-09-25T18:46:32.686Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-09-25T18:46:32.683Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-09-25T18:46:32.665Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-09-25T18:46:32.241Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
     }
   ]
 }
