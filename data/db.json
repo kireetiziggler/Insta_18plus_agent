@@ -5374,7 +5374,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-09-30T18:04:25.685Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-30T18:04:25.685Z",
       "renderedImages": [
         "/posts/post_1790791465685/slide_1.png"
@@ -5536,6 +5536,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-30T18:04:33.067Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790791465685/slide_1.png"
+    },
+    {
+      "timestamp": "2026-09-30T18:04:33.063Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-30T18:04:33.058Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1790791465685\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-30T18:04:33.051Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1790791465685\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-30T18:04:30.387Z",
       "type": "SYSTEM",
@@ -8015,26 +8035,6 @@
       "timestamp": "2026-09-27T09:29:10.037Z",
       "type": "SYSTEM",
       "message": "Rendering Reels for post \"reel_1790501333655\"..."
-    },
-    {
-      "timestamp": "2026-09-27T09:29:10.032Z",
-      "type": "GENERATOR",
-      "message": "Successfully generated AI Reel content using Gemini. Theme: \"midnight_desire\""
-    },
-    {
-      "timestamp": "2026-09-27T09:28:53.657Z",
-      "type": "GENERATOR",
-      "message": "Generating Reel content for category: \"Desire & Physical Intimacy\"..."
-    },
-    {
-      "timestamp": "2026-09-27T09:28:53.655Z",
-      "type": "SYSTEM",
-      "message": "Running Reels generation workflow for \"reel_1790501333655\"..."
-    },
-    {
-      "timestamp": "2026-09-27T09:28:53.653Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for Reel \"Desire & Physical Intimacy\". Generating generic niche Reel."
     }
   ]
 }
