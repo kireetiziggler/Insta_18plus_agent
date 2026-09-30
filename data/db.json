@@ -5356,7 +5356,7 @@
       "audioScript": "\"Lingering Heat\"\nHis shirt on the floor. His scent everywhere. My body still thrummed from last night.",
       "caption": "Some feelings refuse to fade, even when the morning light breaks. The scent, the memory—it all stays. What keeps you awake, replaying those moments?\n\nShare your own secret desires. Submit anonymously via the link in bio.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretconfession #desire #physicalintimacy #afterglow #longing #modernromance",
       "scheduledFor": "2026-09-30T09:57:53.532Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-09-30T09:57:53.532Z",
       "renderedImages": [
         "/posts/reel_1790762260981/slide.png"
@@ -5520,6 +5520,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-09-30T09:58:11.429Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1790762260981/reel.mp4"
+    },
+    {
+      "timestamp": "2026-09-30T09:58:11.425Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-09-30T09:58:11.421Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1790762260981\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-09-30T09:58:11.414Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1790762260981\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-09-30T09:58:08.237Z",
       "type": "SYSTEM",
@@ -7999,26 +8019,6 @@
       "timestamp": "2026-09-26T17:51:08.566Z",
       "type": "SYSTEM",
       "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1790445068559\""
-    },
-    {
-      "timestamp": "2026-09-26T17:51:08.562Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1790445068559\"..."
-    },
-    {
-      "timestamp": "2026-09-26T17:51:08.555Z",
-      "type": "GENERATOR",
-      "message": "Successfully generated AI content using Gemini. Theme: \"midnight_desire\""
-    },
-    {
-      "timestamp": "2026-09-26T17:50:40.997Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-09-26T17:50:40.993Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
     }
   ]
 }
