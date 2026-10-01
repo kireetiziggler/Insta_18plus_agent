@@ -5439,7 +5439,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-01T19:40:12.005Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-01T19:40:12.005Z",
       "renderedImages": [
         "/posts/post_1790883612005/slide_1.png"
@@ -5601,6 +5601,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-01T19:40:22.255Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790883612005/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-01T19:40:22.252Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-01T19:40:22.249Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1790883612005\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-01T19:40:22.242Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1790883612005\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-01T19:40:18.668Z",
       "type": "SYSTEM",
@@ -8080,26 +8100,6 @@
       "timestamp": "2026-09-28T19:47:24.459Z",
       "type": "SYSTEM",
       "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1790624841431/background.png"
-    },
-    {
-      "timestamp": "2026-09-28T19:47:21.447Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/cozy%20dark%20bedroom%20night%20rain%20street%20lights%20window%20bedroom%20silhouette%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=861066770&model=flux"
-    },
-    {
-      "timestamp": "2026-09-28T19:47:21.444Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"cozy dark bedroom night rain street lights window bedroom silhouette\" (Seed: 861066770)"
-    },
-    {
-      "timestamp": "2026-09-28T19:47:21.440Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"crimson_secrets\" (Day of week: 1)"
-    },
-    {
-      "timestamp": "2026-09-28T19:47:21.437Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1790624841431\""
     }
   ]
 }
