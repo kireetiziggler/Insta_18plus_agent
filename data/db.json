@@ -5423,7 +5423,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-01T18:31:01.249Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-01T18:31:01.249Z",
       "renderedImages": [
         "/posts/post_1790879461249/slide_1.png"
@@ -5585,6 +5585,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-01T18:31:23.167Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790879461249/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-01T18:31:23.163Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-01T18:31:23.159Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1790879461249\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-01T18:31:23.151Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1790879461249\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-01T18:31:20.225Z",
       "type": "SYSTEM",
@@ -8064,26 +8084,6 @@
       "timestamp": "2026-09-28T10:06:53.517Z",
       "type": "SYSTEM",
       "message": "Reel timeline: Slide=15s | Total=15s"
-    },
-    {
-      "timestamp": "2026-09-28T10:06:53.513Z",
-      "type": "SYSTEM",
-      "message": "Background music downloaded successfully to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1790589995815/music.mp3"
-    },
-    {
-      "timestamp": "2026-09-28T10:06:53.125Z",
-      "type": "SYSTEM",
-      "message": "Downloading background music track: https://upload.wikimedia.org/wikipedia/commons/5/57/Lofi_by_Caden_Currie.mp3"
-    },
-    {
-      "timestamp": "2026-09-28T10:06:53.122Z",
-      "type": "SYSTEM",
-      "message": "Downloading sensual background music for post \"reel_1790589995815\"..."
-    },
-    {
-      "timestamp": "2026-09-28T10:06:53.118Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance for Reel"
     }
   ]
 }
