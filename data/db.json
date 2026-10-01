@@ -5405,7 +5405,7 @@
       "audioScript": "\"The Jacket Adjust\"\nHis fingers paused on my bare skin, adjusting my collar. My breath caught, knowing.",
       "caption": "Some moments are carved not in stone, but on skin, remembered in a shiver. The quiet sparks often burn the brightest.\n\nWhat's an unspoken gesture that set your world on fire? Tell us in the comments – anonymously, of course. 🔥\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretlovers #physicaldesire #unsaidwords #electrictouch #ignited",
       "scheduledFor": "2026-10-01T10:24:46.985Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-01T10:24:46.985Z",
       "renderedImages": [
         "/posts/reel_1790850275142/slide.png"
@@ -5569,6 +5569,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-01T10:25:17.282Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1790850275142/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-01T10:25:17.279Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-01T10:25:17.275Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1790850275142\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-01T10:25:17.267Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1790850275142\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-01T10:25:13.935Z",
       "type": "SYSTEM",
@@ -8048,26 +8068,6 @@
       "timestamp": "2026-09-27T18:33:42.288Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-09-27T18:33:42.207Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1790534016903\""
-    },
-    {
-      "timestamp": "2026-09-27T18:33:41.261Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-09-27T18:33:40.884Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-09-27T18:33:40.880Z",
-      "type": "SYSTEM",
-      "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1790534016903/background.png"
     }
   ]
 }
