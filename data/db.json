@@ -5488,7 +5488,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-02T19:26:21.591Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-02T19:26:21.591Z",
       "renderedImages": [
         "/posts/post_1790969181591/slide_1.png"
@@ -5650,6 +5650,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-02T19:26:29.177Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790969181591/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-02T19:26:29.173Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-02T19:26:29.170Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1790969181591\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-02T19:26:29.162Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1790969181591\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-02T19:26:27.005Z",
       "type": "SYSTEM",
@@ -8129,26 +8149,6 @@
       "timestamp": "2026-09-29T18:12:43.574Z",
       "type": "SYSTEM",
       "message": "Waiting 3s for image generation to complete (attempt 1/5)..."
-    },
-    {
-      "timestamp": "2026-09-29T18:12:41.546Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/person%20looking%20phone%20bed%20silk%20sheets%20night%20bedroom%20glow%20dark%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=148287757&model=flux"
-    },
-    {
-      "timestamp": "2026-09-29T18:12:41.508Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"person looking phone bed silk sheets night bedroom glow dark\" (Seed: 148287757)"
-    },
-    {
-      "timestamp": "2026-09-29T18:12:41.505Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"silk_gold\" (Day of week: 2)"
-    },
-    {
-      "timestamp": "2026-09-29T18:12:41.503Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1790705561497\""
     }
   ]
 }
