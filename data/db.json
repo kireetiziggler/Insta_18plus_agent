@@ -5454,7 +5454,7 @@
       "audioScript": "Focus on your own chemistry, your desires, and your growth. Your worth is not defined by someone else's inability to see it. Reclaim your power.",
       "caption": "Reclaim your power. Build the chemistry that matters.\n\nSave this if you relate. ❦\n\n#attraction #selfworth #chemistry #growth",
       "scheduledFor": "2026-10-02T10:01:26.568Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-02T10:01:26.568Z",
       "renderedImages": [
         "/posts/reel_1790935232126/slide.png"
@@ -5618,6 +5618,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-02T10:01:45.872Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1790935232126/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-02T10:01:45.868Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-02T10:01:45.863Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1790935232126\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-02T10:01:45.855Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1790935232126\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-02T10:01:42.475Z",
       "type": "SYSTEM",
@@ -8097,26 +8117,6 @@
       "timestamp": "2026-09-28T20:40:37.509Z",
       "type": "PUBLISHER",
       "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1790628028217/slide_1.png"
-    },
-    {
-      "timestamp": "2026-09-28T20:40:37.506Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-09-28T20:40:37.503Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1790628028217\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-09-28T20:40:37.496Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1790628028217\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-09-28T20:40:34.321Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
     }
   ]
 }
