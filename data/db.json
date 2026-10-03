@@ -5521,7 +5521,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-03T16:35:29.836Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-03T16:35:29.836Z",
       "renderedImages": [
         "/posts/post_1791045329836/slide_1.png"
@@ -5683,6 +5683,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-03T16:35:37.127Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791045329836/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-03T16:35:37.124Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-03T16:35:37.120Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791045329836\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-03T16:35:37.112Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791045329836\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-03T16:35:34.570Z",
       "type": "SYSTEM",
@@ -8162,26 +8182,6 @@
       "timestamp": "2026-09-30T09:57:59.134Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-09-30T09:57:59.046Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"reel_1790762260981\""
-    },
-    {
-      "timestamp": "2026-09-30T09:57:58.045Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic with background..."
-    },
-    {
-      "timestamp": "2026-09-30T09:57:57.709Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-09-30T09:57:57.706Z",
-      "type": "SYSTEM",
-      "message": "Successfully loaded 9:16 Reel background image."
     }
   ]
 }
