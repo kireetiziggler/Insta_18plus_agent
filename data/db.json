@@ -5570,7 +5570,7 @@
       ],
       "caption": "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-04T16:56:20.026Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-04T16:56:20.026Z",
       "renderedImages": [
         "/posts/post_1791132980026/slide_1.png"
@@ -5732,6 +5732,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-04T16:56:41.393Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791132980026/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-04T16:56:41.389Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-04T16:56:41.385Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791132980026\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-04T16:56:41.378Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791132980026\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-04T16:56:38.693Z",
       "type": "SYSTEM",
@@ -8211,26 +8231,6 @@
       "timestamp": "2026-10-01T10:25:02.451Z",
       "type": "SYSTEM",
       "message": "Waiting 3s for Reel image generation (attempt 5/5)..."
-    },
-    {
-      "timestamp": "2026-10-01T10:24:59.206Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for Reel image generation (attempt 4/5)..."
-    },
-    {
-      "timestamp": "2026-10-01T10:24:55.949Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for Reel image generation (attempt 3/5)..."
-    },
-    {
-      "timestamp": "2026-10-01T10:24:52.698Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for Reel image generation (attempt 2/5)..."
-    },
-    {
-      "timestamp": "2026-10-01T10:24:49.351Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for Reel image generation (attempt 1/5)..."
     }
   ]
 }
