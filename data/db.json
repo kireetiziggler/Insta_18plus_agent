@@ -5586,7 +5586,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-04T18:15:20.460Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-04T18:15:20.460Z",
       "renderedImages": [
         "/posts/post_1791137720460/slide_1.png"
@@ -5748,6 +5748,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-04T18:15:42.379Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791137720460/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-04T18:15:42.375Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-04T18:15:42.371Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791137720460\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-04T18:15:42.364Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791137720460\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-04T18:15:39.781Z",
       "type": "SYSTEM",
@@ -8227,26 +8247,6 @@
       "timestamp": "2026-10-01T18:31:01.253Z",
       "type": "SYSTEM",
       "message": "Rendering slide graphics for post \"post_1790879461249\"..."
-    },
-    {
-      "timestamp": "2026-10-01T18:31:01.245Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-10-01T18:30:28.648Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-10-01T18:30:28.645Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-10-01T18:30:28.640Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
     }
   ]
 }
