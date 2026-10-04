@@ -5552,7 +5552,7 @@
       "audioScript": "Focus on your own chemistry, your desires, and your growth. Your worth is not defined by someone else's inability to see it. Reclaim your power.",
       "caption": "Reclaim your power. Build the chemistry that matters.\n\nSave this if you relate. ❦\n\n#attraction #selfworth #chemistry #growth",
       "scheduledFor": "2026-10-04T10:02:15.251Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-04T10:02:15.251Z",
       "renderedImages": [
         "/posts/reel_1791108124678/slide.png"
@@ -5716,6 +5716,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-04T10:02:30.344Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1791108124678/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-04T10:02:30.341Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-04T10:02:30.338Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1791108124678\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-04T10:02:30.332Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1791108124678\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-04T10:02:27.482Z",
       "type": "SYSTEM",
@@ -8195,26 +8215,6 @@
       "timestamp": "2026-09-30T19:33:31.920Z",
       "type": "SYSTEM",
       "message": "Waiting 3s for image generation to complete (attempt 5/5)..."
-    },
-    {
-      "timestamp": "2026-09-30T19:33:28.599Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 4/5)..."
-    },
-    {
-      "timestamp": "2026-09-30T19:33:25.283Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 3/5)..."
-    },
-    {
-      "timestamp": "2026-09-30T19:33:21.948Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 2/5)..."
-    },
-    {
-      "timestamp": "2026-09-30T19:33:18.579Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 1/5)..."
     }
   ]
 }
