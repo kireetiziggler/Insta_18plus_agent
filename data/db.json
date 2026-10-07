@@ -5717,7 +5717,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-07T19:02:13.131Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-07T19:02:13.131Z",
       "renderedImages": [
         "/posts/post_1791399733131/slide_1.png"
@@ -5879,6 +5879,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-07T19:02:23.322Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791399733131/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-07T19:02:23.320Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-07T19:02:23.317Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791399733131\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-07T19:02:23.312Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791399733131\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-07T19:02:20.416Z",
       "type": "SYSTEM",
@@ -8358,26 +8378,6 @@
       "timestamp": "2026-10-04T10:01:58.409Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-10-04T10:01:57.383Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-10-04T10:01:56.361Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-10-04T10:01:56.358Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-10-04T10:01:56.355Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
     }
   ]
 }
