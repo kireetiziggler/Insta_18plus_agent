@@ -5699,7 +5699,7 @@
       "audioScript": "\"The Zipper's Hum\"\nHis fingertips grazed my spine. My dress unzipped. He held my breath captive.",
       "caption": "Some moments aren't about what's said, but what's felt when fingers trace the unspoken lines of desire. That shiver? That's the confession your body made before your mind caught up. Share your deepest secrets anonymously. DM us.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcravings #physicaltouch #desire #sensualnights #whisperedtruths",
       "scheduledFor": "2026-10-07T10:31:45.942Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-07T10:31:45.942Z",
       "renderedImages": [
         "/posts/reel_1791369091295/slide.png"
@@ -5863,6 +5863,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-07T10:32:04.735Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1791369091295/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-07T10:32:04.731Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-07T10:32:04.727Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1791369091295\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-07T10:32:04.719Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1791369091295\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-07T10:32:01.512Z",
       "type": "SYSTEM",
@@ -8342,26 +8362,6 @@
       "timestamp": "2026-10-03T18:04:37.222Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-10-03T18:04:36.199Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-10-03T18:04:35.195Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-10-03T18:04:35.190Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-10-03T18:04:35.187Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
     }
   ]
 }
