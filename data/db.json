@@ -5733,7 +5733,7 @@
       ],
       "caption": "Some secrets are too delicious to keep buried. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-07T20:03:08.149Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-07T20:03:08.149Z",
       "renderedImages": [
         "/posts/post_1791403388149/slide_1.png"
@@ -5895,6 +5895,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-07T20:03:14.996Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791403388149/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-07T20:03:14.992Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-07T20:03:14.988Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791403388149\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-07T20:03:14.980Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791403388149\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-07T20:03:12.619Z",
       "type": "SYSTEM",
@@ -8374,26 +8394,6 @@
       "timestamp": "2026-10-04T16:55:47.944Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-10-04T16:55:47.941Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-10-04T16:55:46.921Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-10-04T16:55:45.905Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-10-04T16:55:44.779Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
     }
   ]
 }
