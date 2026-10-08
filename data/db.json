@@ -5748,7 +5748,7 @@
       "audioScript": "\"KITCHEN CONFESSION\"\nHis eyes burned. The fridge light glowed. My bare leg brushed his. He whispered, \"Want a taste?\"",
       "caption": "Some desires are cooked up in the most unexpected places, under the faintest glow. That undeniable pull? It’s a language all its own. Reveal your silent confessions below.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretscravings #desire #passion #situationships #midnightthoughts #adultromance",
       "scheduledFor": "2026-10-08T10:52:51.899Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-08T10:52:51.899Z",
       "renderedImages": [
         "/posts/reel_1791456757105/slide.png"
@@ -5912,6 +5912,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-08T10:53:07.488Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1791456757105/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-08T10:53:07.485Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-08T10:53:07.483Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1791456757105\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-08T10:53:07.474Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1791456757105\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-08T10:53:04.336Z",
       "type": "SYSTEM",
@@ -8391,26 +8411,6 @@
       "timestamp": "2026-10-04T18:14:37.707Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-10-04T18:14:36.690Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-10-04T18:14:36.099Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-10-04T18:14:35.083Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-10-04T18:14:35.080Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
     }
   ]
 }
