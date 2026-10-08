@@ -5766,7 +5766,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-08T18:57:57.740Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-08T18:57:57.740Z",
       "renderedImages": [
         "/posts/post_1791485877740/slide_1.png"
@@ -5928,6 +5928,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-08T18:58:08.186Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791485877740/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-08T18:58:08.183Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-08T18:58:08.179Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791485877740\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-08T18:58:08.171Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791485877740\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-08T18:58:04.926Z",
       "type": "SYSTEM",
@@ -8407,26 +8427,6 @@
       "timestamp": "2026-10-05T10:47:22.526Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-10-05T10:47:22.520Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-10-05T10:47:21.505Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-10-05T10:47:20.490Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-10-05T10:47:19.377Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
     }
   ]
 }
