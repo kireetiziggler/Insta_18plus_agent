@@ -5782,7 +5782,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-08T20:02:07.172Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-08T20:02:07.172Z",
       "renderedImages": [
         "/posts/post_1791489727172/slide_1.png"
@@ -5944,6 +5944,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-08T20:02:15.034Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791489727172/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-08T20:02:15.031Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-08T20:02:15.028Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791489727172\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-08T20:02:15.021Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791489727172\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-08T20:02:12.202Z",
       "type": "SYSTEM",
@@ -8423,26 +8443,6 @@
       "timestamp": "2026-10-05T10:48:16.480Z",
       "type": "PUBLISHER",
       "message": "Uploading Reel video to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-10-05T10:48:16.476Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"reel_1791197254648\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-10-05T10:48:16.468Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"reel_1791197254648\" (Type: reel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-10-05T10:48:13.643Z",
-      "type": "SYSTEM",
-      "message": "Reel workflow completed successfully for post \"reel_1791197254648\""
-    },
-    {
-      "timestamp": "2026-10-05T10:48:13.634Z",
-      "type": "SYSTEM",
-      "message": "FFmpeg compositing completed. 15s music-only Reel: /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1791197254648/reel.mp4"
     }
   ]
 }
