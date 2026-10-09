@@ -5831,7 +5831,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-09T19:37:45.725Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-09T19:37:45.725Z",
       "renderedImages": [
         "/posts/post_1791574665725/slide_1.png"
@@ -5993,6 +5993,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-09T19:37:53.455Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791574665725/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-09T19:37:53.451Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-09T19:37:53.447Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1791574665725\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-09T19:37:53.438Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1791574665725\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-09T19:37:50.800Z",
       "type": "SYSTEM",
@@ -8472,26 +8492,6 @@
       "timestamp": "2026-10-06T18:31:57.142Z",
       "type": "SYSTEM",
       "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-10-06T18:31:57.137Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-10-06T18:31:57.120Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-10-06T18:31:57.043Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-10-06T18:31:56.036Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
     }
   ]
 }
