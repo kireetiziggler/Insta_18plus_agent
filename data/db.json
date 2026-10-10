@@ -5846,7 +5846,7 @@
       "audioScript": "\"The Shared Glance\"\nHis eyes met mine across the crowded room. He saw me shiver. Then, that slow, knowing wink. My skin burned.",
       "caption": "That one look, the one that makes your world tilt and your breath catch. The kind of unspoken understanding that sets your soul on fire. That electric current passing between two people who know exactly what they want. It's a dangerous game, but oh, the thrill.\n\nShare your own raw truth anonymously at the link in bio.\n\n#UnspokenDesires #SecretIntimacy #RawTension #PhysicalLonging #Desire #Situationships #AdultRomance #ForbiddenFeelings #MidnightThoughts #Chemistry",
       "scheduledFor": "2026-10-10T10:05:50.252Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-10T10:05:50.252Z",
       "renderedImages": [
         "/posts/reel_1791626736676/slide.png"
@@ -6010,6 +6010,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-10T10:06:07.223Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1791626736676/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-10T10:06:07.219Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-10T10:06:07.215Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1791626736676\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-10T10:06:07.207Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1791626736676\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-10T10:06:04.228Z",
       "type": "SYSTEM",
@@ -8489,26 +8509,6 @@
       "timestamp": "2026-10-06T19:38:03.272Z",
       "type": "SYSTEM",
       "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1791315483265\""
-    },
-    {
-      "timestamp": "2026-10-06T19:38:03.268Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1791315483265\"..."
-    },
-    {
-      "timestamp": "2026-10-06T19:38:03.260Z",
-      "type": "GENERATOR",
-      "message": "Successfully generated AI content using Gemini. Theme: \"intimate_touch\""
-    },
-    {
-      "timestamp": "2026-10-06T19:37:35.727Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-10-06T19:37:35.723Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
     }
   ]
 }
