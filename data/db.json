@@ -5895,7 +5895,7 @@
       "audioScript": "\"The Silent Friction\"\nHis leg found mine under the table. A slow, subtle pressure. I couldn't breathe.",
       "caption": "The most potent desires often live in the unsaid, in the subtle friction of bodies too close, too aware. That shared glance, that electric brush – some moments are felt deep in your bones. What secret moment made your world stop?\n\nShare your own unspoken desires anonymously with us. Let the tension build.\n\n#UnspokenDesires #Intimacy #Chemistry #Tension #ForbiddenLove #SecretConfession #Desire #PhysicalIntimacy #ModernRomance #SituationshipVibes #LateNightThoughts",
       "scheduledFor": "2026-10-11T10:16:25.875Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-11T10:16:25.875Z",
       "renderedImages": [
         "/posts/reel_1791713772311/slide.png"
@@ -6059,6 +6059,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-11T10:16:56.083Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1791713772311/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-11T10:16:56.079Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-11T10:16:56.075Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1791713772311\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-11T10:16:56.067Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1791713772311\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-11T10:16:53.359Z",
       "type": "SYSTEM",
@@ -8538,26 +8558,6 @@
       "timestamp": "2026-10-08T10:52:08.534Z",
       "type": "RESEARCH",
       "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-10-07T20:03:14.996Z",
-      "type": "PUBLISHER",
-      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1791403388149/slide_1.png"
-    },
-    {
-      "timestamp": "2026-10-07T20:03:14.992Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-10-07T20:03:14.988Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1791403388149\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-10-07T20:03:14.980Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1791403388149\" (Type: carousel, Simulation: false)"
     }
   ]
 }
