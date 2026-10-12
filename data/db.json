@@ -5944,7 +5944,7 @@
       "audioScript": "\"The Necklace Clasp\"\nHe leaned in to fix my necklace. His fingers brushed my nape. Every nerve ending screamed.",
       "caption": "Sometimes, the most innocent moments hide the most dangerous desires. That fleeting brush, that unexpected closeness – it ignites something primal within. We all have these secret sparks that catch us off guard. Share your anonymous confession in our DMs; we keep it strictly between us.\n\n#UnspokenDesires #SecretIntimacy #PhysicalLonging #RawChemistry #SensualMoments #ForbiddenTouch #DeepDesires #HiddenFeelings #RomanticTension #WhatKeepsYouUpAtNight",
       "scheduledFor": "2026-10-12T11:15:42.280Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-12T11:15:42.280Z",
       "renderedImages": [
         "/posts/reel_1791803729901/slide.png"
@@ -6108,6 +6108,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-12T11:16:01.197Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1791803729901/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-12T11:16:01.193Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-12T11:16:01.188Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1791803729901\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-12T11:16:01.179Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1791803729901\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-12T11:15:57.849Z",
       "type": "SYSTEM",
@@ -8587,26 +8607,6 @@
       "timestamp": "2026-10-09T10:51:00.198Z",
       "type": "RESEARCH",
       "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-10-09T10:50:59.176Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-10-09T10:50:58.833Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-10-09T10:50:58.620Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-10-09T10:50:57.602Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
     }
   ]
 }
