@@ -6042,7 +6042,7 @@
       "audioScript": "\"Under The Table\"\nHis knee brushed mine. My breath hitched. He knew what he was doing.",
       "caption": "Some secrets are told without a single word. It's the brush of skin, the knowing glance, the silent conversation that ignites everything. What's your most unspoken desire? Let us know anonymously in the DMs. 🔥\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretlovers #desire #situationship #sensualmoments #rawemotion",
       "scheduledFor": "2026-10-14T08:58:58.791Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-14T08:58:58.791Z",
       "renderedImages": [
         "/posts/reel_1791968327780/slide.png"
@@ -6206,6 +6206,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-14T08:59:13.765Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1791968327780/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-14T08:59:13.762Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-14T08:59:13.759Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1791968327780\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-14T08:59:13.754Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1791968327780\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-14T08:59:10.728Z",
       "type": "SYSTEM",
@@ -8685,26 +8705,6 @@
       "timestamp": "2026-10-10T18:45:18.979Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-10-10T18:45:18.905Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1791657899519\""
-    },
-    {
-      "timestamp": "2026-10-10T18:45:17.393Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-10-10T18:45:17.009Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
-    },
-    {
-      "timestamp": "2026-10-10T18:45:14.002Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for image generation to complete (attempt 5/5)..."
     }
   ]
 }
