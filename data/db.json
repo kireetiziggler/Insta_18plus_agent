@@ -6091,7 +6091,7 @@
       "audioScript": "\"Glass Exchange\"\nHe handed me the drink. Our fingers locked. A low burn ignited, promising trouble.",
       "caption": "That split second when a simple touch changes everything. The world melts away, leaving only the charged connection. What's your moment of undeniable, unspoken chemistry? Share your confession below. 🔥 #intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretdesires #physicalconnection #rawdesire #situationships #unspoken",
       "scheduledFor": "2026-10-15T08:33:03.866Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-15T08:33:03.866Z",
       "renderedImages": [
         "/posts/reel_1792053169490/slide.png"
@@ -6255,6 +6255,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-15T08:33:23.727Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792053169490/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-15T08:33:23.723Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-15T08:33:23.719Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1792053169490\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-15T08:33:23.711Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1792053169490\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-15T08:33:20.227Z",
       "type": "SYSTEM",
@@ -8734,26 +8754,6 @@
       "timestamp": "2026-10-11T19:04:41.784Z",
       "type": "SYSTEM",
       "message": "Rendering slide graphics for post \"post_1791745481780\"..."
-    },
-    {
-      "timestamp": "2026-10-11T19:04:41.776Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-10-11T19:04:07.198Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-10-11T19:04:07.193Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-10-11T19:04:07.188Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
     }
   ]
 }
