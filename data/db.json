@@ -6269,7 +6269,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-18T17:28:12.272Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-18T17:28:12.272Z",
       "renderedImages": [
         "/posts/post_1792344492272/slide_1.png"
@@ -6431,6 +6431,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-18T17:28:21.772Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1792344492272/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-18T17:28:21.769Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-18T17:28:21.765Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1792344492272\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-18T17:28:21.758Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1792344492272\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-18T17:28:19.175Z",
       "type": "SYSTEM",
@@ -8910,26 +8930,6 @@
       "timestamp": "2026-10-15T17:14:53.448Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-10-15T17:14:46.070Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-10-15T08:33:23.727Z",
-      "type": "PUBLISHER",
-      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792053169490/reel.mp4"
-    },
-    {
-      "timestamp": "2026-10-15T08:33:23.723Z",
-      "type": "PUBLISHER",
-      "message": "Uploading Reel video to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-10-15T08:33:23.719Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"reel_1792053169490\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
     }
   ]
 }
