@@ -6284,7 +6284,7 @@
       "audioScript": "\"Kitchen Heat\"\nWe were making dinner. His hands found my waist, pulling me back. My spine arched against him.",
       "caption": "That simple, unexpected touch. The kind that makes your world spin and your body hum with a primal ache. Some lines are meant to be crossed. ✨ Share your most intense secret desire below. Double tap if you felt this. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcrush #situationship #desire #physicalintimacy #rawemotion",
       "scheduledFor": "2026-10-19T09:15:02.203Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-19T09:15:02.203Z",
       "renderedImages": [
         "/posts/reel_1792401287981/slide.png"
@@ -6448,6 +6448,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-19T09:15:21.050Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792401287981/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-19T09:15:21.046Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-19T09:15:21.040Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1792401287981\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-19T09:15:21.032Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1792401287981\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-19T09:15:17.841Z",
       "type": "SYSTEM",
@@ -8927,26 +8947,6 @@
       "timestamp": "2026-10-15T18:26:10.890Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-10-15T18:26:10.324Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-10-15T18:26:09.301Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
-    },
-    {
-      "timestamp": "2026-10-15T18:26:09.297Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-10-15T18:26:09.293Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Desire & Physical Intimacy\""
     }
   ]
 }
