@@ -6333,7 +6333,7 @@
       "audioScript": "\"Collarbone Heat\"\nHe straightened my collar. His thumb grazed my neck. My pulse jumped. We both felt it.",
       "caption": "Some moments linger, burning hotter than any spoken word. That brief, forbidden brush of skin can unravel everything. It lives in your mind, on your body, a silent fire that demands more. Tell us the one touch that still makes your skin tingle. DM your confession. Anonymity guaranteed.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretdesires #physicalintimacy #situationships #rawemotions #desire",
       "scheduledFor": "2026-10-20T08:49:59.282Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-20T08:49:59.282Z",
       "renderedImages": [
         "/posts/reel_1792486183205/slide.png"
@@ -6497,6 +6497,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-20T08:50:20.673Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792486183205/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-20T08:50:20.669Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-20T08:50:20.665Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1792486183205\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-20T08:50:20.656Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1792486183205\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-20T08:50:17.291Z",
       "type": "SYSTEM",
@@ -8976,26 +8996,6 @@
       "timestamp": "2026-10-16T18:13:40.804Z",
       "type": "RESEARCH",
       "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-10-16T18:13:40.799Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-10-16T18:13:40.795Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-10-16T18:13:39.777Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-10-16T18:13:38.768Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
     }
   ]
 }
