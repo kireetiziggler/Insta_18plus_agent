@@ -6382,7 +6382,7 @@
       "audioScript": "\"The Silent Strip\"\nHis eyes lingered. Every button felt like a separate thought.",
       "caption": "That heavy gaze can be the most potent touch of all. It strips you bare without a single physical move, leaving you breathless and craving more. This kind of electric, raw desire lives in the spaces between words. Do you know this feeling? Share if this resonates. \n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #desire #physicalintimacy #secretconfessions #adultromance #silentlanguage",
       "scheduledFor": "2026-10-21T08:49:59.489Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-21T08:49:59.489Z",
       "renderedImages": [
         "/posts/reel_1792572586415/slide.png"
@@ -6546,6 +6546,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-21T08:50:21.669Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792572586415/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-21T08:50:21.665Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-21T08:50:21.661Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1792572586415\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-21T08:50:21.652Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1792572586415\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-21T08:50:17.784Z",
       "type": "SYSTEM",
@@ -9025,26 +9045,6 @@
       "timestamp": "2026-10-17T17:23:16.888Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-10-17T17:23:15.874Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-10-17T17:23:14.824Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-10-17T17:23:13.891Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-10-17T17:23:13.886Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
     }
   ]
 }
