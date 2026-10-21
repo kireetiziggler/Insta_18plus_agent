@@ -6400,7 +6400,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-21T17:31:50.048Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-21T17:31:50.048Z",
       "renderedImages": [
         "/posts/post_1792603910048/slide_1.png"
@@ -6562,6 +6562,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-21T17:32:01.583Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1792603910048/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-21T17:32:01.580Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-21T17:32:01.575Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1792603910048\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-21T17:32:01.566Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1792603910048\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-21T17:31:58.487Z",
       "type": "SYSTEM",
@@ -9041,26 +9061,6 @@
       "timestamp": "2026-10-18T08:17:30.629Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-10-18T08:17:29.622Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-10-18T08:17:28.605Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-10-18T08:17:27.625Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-10-18T08:17:27.622Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
     }
   ]
 }
