@@ -6449,7 +6449,7 @@
       ],
       "caption": "A dangerous game of forbidden attraction. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-22T17:28:23.504Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-22T17:28:23.504Z",
       "renderedImages": [
         "/posts/post_1792690103504/slide_1.png"
@@ -6611,6 +6611,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-22T17:28:34.751Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1792690103504/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-22T17:28:34.747Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-22T17:28:34.742Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1792690103504\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-22T17:28:34.733Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1792690103504\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-22T17:28:31.553Z",
       "type": "SYSTEM",
@@ -9090,26 +9110,6 @@
       "timestamp": "2026-10-19T09:15:02.215Z",
       "type": "SYSTEM",
       "message": "Applying daily visual theme: \"crimson_secrets\" (Day of week: 1)"
-    },
-    {
-      "timestamp": "2026-10-19T09:15:02.211Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1792401287981\""
-    },
-    {
-      "timestamp": "2026-10-19T09:15:02.207Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels for post \"reel_1792401287981\"..."
-    },
-    {
-      "timestamp": "2026-10-19T09:15:02.198Z",
-      "type": "GENERATOR",
-      "message": "Successfully generated AI Reel content using Gemini. Theme: \"intimate_touch\""
-    },
-    {
-      "timestamp": "2026-10-19T09:14:47.984Z",
-      "type": "GENERATOR",
-      "message": "Generating Reel content for category: \"Desire & Physical Intimacy\"..."
     }
   ]
 }
