@@ -6431,7 +6431,7 @@
       "audioScript": "Focus on your own chemistry, your desires, and your growth. Your worth is not defined by someone else's inability to see it. Reclaim your power.",
       "caption": "Reclaim your power. Build the chemistry that matters.\n\nSave this if you relate. ❦\n\n#attraction #selfworth #chemistry #growth",
       "scheduledFor": "2026-10-22T08:52:52.460Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-22T08:52:52.460Z",
       "renderedImages": [
         "/posts/reel_1792659160561/slide.png"
@@ -6595,6 +6595,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-22T08:53:14.782Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792659160561/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-22T08:53:14.778Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-22T08:53:14.773Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1792659160561\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-22T08:53:14.763Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1792659160561\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-22T08:53:11.043Z",
       "type": "SYSTEM",
@@ -9074,26 +9094,6 @@
       "timestamp": "2026-10-18T17:28:12.285Z",
       "type": "SYSTEM",
       "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"hands touch candle light night table aesthetic dark romantic\" (Seed: 904645951)"
-    },
-    {
-      "timestamp": "2026-10-18T17:28:12.281Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-10-18T17:28:12.278Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1792344492272\""
-    },
-    {
-      "timestamp": "2026-10-18T17:28:12.275Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1792344492272\"..."
-    },
-    {
-      "timestamp": "2026-10-18T17:28:12.268Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
     }
   ]
 }
