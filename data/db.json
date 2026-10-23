@@ -6480,7 +6480,7 @@
       "audioScript": "\"The Slow Unzip\"\nShe turned her back to me. The zipper whispered down her dress. My heart pounded.",
       "caption": "Some moments don't need words. The softest sound can be the loudest trigger, setting fire to everything you thought you could control. That undeniable pull? We know it. Feel the heat.\n\nShare your raw, anonymous confessions. Link in bio to whisper your truth.\n\n#UnspokenDesires #Intimacy #Chemistry #Tension #Desire #PhysicalIntimacy #SecretConfessions #AdultRomance #Situationship #SensualVibes #RawDesire",
       "scheduledFor": "2026-10-23T08:48:04.225Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-23T08:48:04.225Z",
       "renderedImages": [
         "/posts/reel_1792745269609/slide.png"
@@ -6644,6 +6644,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-23T08:48:24.474Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792745269609/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-23T08:48:24.469Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-23T08:48:24.465Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1792745269609\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-23T08:48:24.457Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1792745269609\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-23T08:48:21.183Z",
       "type": "SYSTEM",
@@ -9123,26 +9143,6 @@
       "timestamp": "2026-10-19T20:02:54.365Z",
       "type": "SYSTEM",
       "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"person looking phone bed silk sheets night bedroom glow dark\" (Seed: 61672316)"
-    },
-    {
-      "timestamp": "2026-10-19T20:02:54.362Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"crimson_secrets\" (Day of week: 1)"
-    },
-    {
-      "timestamp": "2026-10-19T20:02:54.360Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1792440174355\""
-    },
-    {
-      "timestamp": "2026-10-19T20:02:54.358Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1792440174355\"..."
-    },
-    {
-      "timestamp": "2026-10-19T20:02:54.352Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
     }
   ]
 }
