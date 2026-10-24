@@ -6546,7 +6546,7 @@
       ],
       "caption": "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-24T16:10:29.599Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-24T16:10:29.599Z",
       "renderedImages": [
         "/posts/post_1792858229599/slide_1.png"
@@ -6708,6 +6708,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-24T16:10:37.612Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1792858229599/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-24T16:10:37.608Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-24T16:10:37.603Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1792858229599\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-24T16:10:37.595Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1792858229599\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-24T16:10:35.361Z",
       "type": "SYSTEM",
@@ -9187,26 +9207,6 @@
       "timestamp": "2026-10-21T08:49:43.263Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-10-21T08:49:42.196Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-10-21T08:49:41.179Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-10-21T08:49:40.255Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-10-21T08:49:40.252Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
     }
   ]
 }
