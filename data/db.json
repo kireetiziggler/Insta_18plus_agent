@@ -6577,7 +6577,7 @@
       "audioScript": "\"The Back Zipper\"\nHis fingers traced my spine, then the zip. My skin hummed.",
       "caption": "The quiet anticipation before a touch sets everything ablaze. Some moments are meant to be felt, not spoken. What's the one moment that still makes your skin tingle? Share your deepest, most intimate anonymous confessions with us. Link in bio.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretconfession #desire #sensualmoments #rawfeelings #situationships",
       "scheduledFor": "2026-10-25T08:40:45.045Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-25T08:40:45.045Z",
       "renderedImages": [
         "/posts/reel_1792917631520/slide.png"
@@ -6741,6 +6741,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-25T08:41:00.409Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1792917631520/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-25T08:41:00.406Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-25T08:41:00.402Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1792917631520\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-25T08:41:00.396Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1792917631520\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-25T08:40:57.177Z",
       "type": "SYSTEM",
@@ -9220,26 +9240,6 @@
       "timestamp": "2026-10-21T18:48:23.783Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-10-21T18:48:22.441Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-10-21T18:48:21.465Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-10-21T18:48:20.435Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-10-21T18:48:20.432Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
     }
   ]
 }
