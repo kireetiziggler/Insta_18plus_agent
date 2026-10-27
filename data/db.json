@@ -6675,7 +6675,7 @@
       "audioScript": "\"The Hairbrush\"\nHe stood behind me, brushing out my wet hair. His thumb grazed my nape, leaving a trail of fire. I shivered.",
       "caption": "There's a raw, undeniable power in the most innocent touch. It speaks a language only your skin understands, igniting a spark that burns long after the moment passes. Every fiber of your being vibrates with that secret heat. Ready to share your intimate confessions? Drop your secrets anonymously in the comments. Your story, unburdened. 👇\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretdesires #rawpassion #sensualtouch #deepconnection #anonymousconfession",
       "scheduledFor": "2026-10-27T09:17:50.744Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-27T09:17:50.744Z",
       "renderedImages": [
         "/posts/reel_1793092657754/slide.png"
@@ -6839,6 +6839,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-27T09:18:12.314Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1793092657754/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-27T09:18:12.309Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-27T09:18:12.303Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1793092657754\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-27T09:18:12.293Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1793092657754\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-27T09:18:08.559Z",
       "type": "SYSTEM",
@@ -9318,26 +9338,6 @@
       "timestamp": "2026-10-23T18:32:43.889Z",
       "type": "SYSTEM",
       "message": "Rendering slide graphics for post \"post_1792780363885\"..."
-    },
-    {
-      "timestamp": "2026-10-23T18:32:43.881Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-10-23T18:32:13.824Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-10-23T18:32:13.821Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-10-23T18:32:13.816Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
     }
   ]
 }
