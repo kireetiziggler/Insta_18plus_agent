@@ -6724,7 +6724,7 @@
       "audioScript": "\"Shared Glance\"\nAcross the room, our eyes met. He knew. I knew. My mind was already halfway to his bed.",
       "caption": "The air thickens with unspoken desires when two pairs of eyes finally meet across a crowded room. That electric pull is undeniable. \n\nWe want your anonymous confessions. Share the moments that leave you breathless and craving more. DM us your secrets. 👇\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcravings #silentlanguage #romantictension #eyestoeye #undeniablepull",
       "scheduledFor": "2026-10-28T09:58:00.576Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-28T09:58:00.576Z",
       "renderedImages": [
         "/posts/reel_1793181468853/slide.png"
@@ -6888,6 +6888,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-28T09:58:29.753Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1793181468853/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-28T09:58:29.750Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-28T09:58:29.747Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1793181468853\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-28T09:58:29.739Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1793181468853\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-28T09:58:26.059Z",
       "type": "SYSTEM",
@@ -9367,26 +9387,6 @@
       "timestamp": "2026-10-24T17:31:05.470Z",
       "type": "RESEARCH",
       "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-10-24T17:31:04.421Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-10-24T17:31:04.417Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-10-24T17:31:04.411Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-10-24T17:31:03.602Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
     }
   ]
 }
