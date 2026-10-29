@@ -6807,7 +6807,7 @@
       ],
       "caption": "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-29T19:45:12.866Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-29T19:45:12.866Z",
       "renderedImages": [
         "/posts/post_1793303112865/slide_1.png"
@@ -6969,6 +6969,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-29T19:45:23.079Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1793303112865/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-29T19:45:23.076Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-29T19:45:23.072Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1793303112865\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-29T19:45:23.066Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1793303112865\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-29T19:45:20.396Z",
       "type": "SYSTEM",
@@ -9448,26 +9468,6 @@
       "timestamp": "2026-10-26T18:47:03.451Z",
       "type": "RESEARCH",
       "message": "Scraping r/sex..."
-    },
-    {
-      "timestamp": "2026-10-26T18:47:02.269Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-10-26T18:47:02.265Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Desire & Physical Intimacy\""
-    },
-    {
-      "timestamp": "2026-10-26T18:46:52.248Z",
-      "type": "RESEARCH",
-      "message": "Starting Trend Research Agent via Puppeteer..."
-    },
-    {
-      "timestamp": "2026-10-26T09:18:25.743Z",
-      "type": "PUBLISHER",
-      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1793006263074/reel.mp4"
     }
   ]
 }
