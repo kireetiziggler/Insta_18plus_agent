@@ -6822,7 +6822,7 @@
       "audioScript": "\"His Scent\"\nHe left. But his scent lingered on my pillow. A potent, silent craving.",
       "caption": "Some connections aren't just seen or heard; they're felt in the air, long after they're gone. That lingering feeling? It’s a confession. Share yours anonymously.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #desire #physicalintimacy #secretconfession #lingeringlove #nightthoughts #sensualvibes",
       "scheduledFor": "2026-10-30T10:23:20.907Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-30T10:23:20.907Z",
       "renderedImages": [
         "/posts/reel_1793355783082/slide.png"
@@ -6986,6 +6986,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-30T10:23:37.228Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1793355783082/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-30T10:23:37.225Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-30T10:23:37.222Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1793355783082\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-30T10:23:37.216Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1793355783082\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-30T10:23:33.873Z",
       "type": "SYSTEM",
@@ -9465,26 +9485,6 @@
       "timestamp": "2026-10-26T20:02:20.849Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-10-26T20:02:20.846Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Secret Thoughts & Overthinking\""
-    },
-    {
-      "timestamp": "2026-10-26T20:02:19.824Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-10-26T20:02:19.079Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/texts..."
-    },
-    {
-      "timestamp": "2026-10-26T20:02:18.055Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/confession..."
     }
   ]
 }
