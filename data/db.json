@@ -6905,7 +6905,7 @@
       ],
       "caption": "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-31T18:41:15.827Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-31T18:41:15.827Z",
       "renderedImages": [
         "/posts/post_1793472075827/slide_1.png"
@@ -7067,6 +7067,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-31T18:41:39.418Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1793472075827/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-31T18:41:39.415Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-31T18:41:39.410Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1793472075827\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-31T18:41:39.356Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1793472075827\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-31T18:41:36.424Z",
       "type": "SYSTEM",
@@ -9546,26 +9566,6 @@
       "timestamp": "2026-10-28T18:27:47.032Z",
       "type": "SYSTEM",
       "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1793212062276/background.png"
-    },
-    {
-      "timestamp": "2026-10-28T18:27:42.295Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/person%20looking%20phone%20bed%20silk%20sheets%20night%20bedroom%20glow%20dark%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=789520580&model=flux"
-    },
-    {
-      "timestamp": "2026-10-28T18:27:42.291Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"person looking phone bed silk sheets night bedroom glow dark\" (Seed: 789520580)"
-    },
-    {
-      "timestamp": "2026-10-28T18:27:42.287Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"shadowy_passion\" (Day of week: 3)"
-    },
-    {
-      "timestamp": "2026-10-28T18:27:42.284Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1793212062276\""
     }
   ]
 }
