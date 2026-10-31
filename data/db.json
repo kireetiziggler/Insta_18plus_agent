@@ -6871,7 +6871,7 @@
       "audioScript": "\"The Residual Heat\"\nShower steam fogged the mirror. My pulse still raced. His taste was on my tongue. Every nerve ending alive.",
       "caption": "That raw, electric hum after a shared moment changes everything. Your body remembers before your mind does. It’s a silent, undeniable craving that keeps the heat alive long after the encounter fades. What memory has your body still craving more? Drop an anonymous confession below or DM us.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #desire #physicalintimacy #secretconfessions #adultromance #lingeringtouch",
       "scheduledFor": "2026-10-31T09:55:08.891Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-31T09:55:08.891Z",
       "renderedImages": [
         "/posts/reel_1793440491852/slide.png"
@@ -7035,6 +7035,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-31T09:55:42.408Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1793440491852/reel.mp4"
+    },
+    {
+      "timestamp": "2026-10-31T09:55:42.402Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-31T09:55:42.395Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1793440491852\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-31T09:55:42.381Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1793440491852\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-31T09:55:39.392Z",
       "type": "SYSTEM",
@@ -9514,26 +9534,6 @@
       "timestamp": "2026-10-27T19:33:02.087Z",
       "type": "PUBLISHER",
       "message": "Triggering publication flow for post ID \"post_1793129545110\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-10-27T19:32:58.977Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-10-27T19:32:57.698Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1793129545110\""
-    },
-    {
-      "timestamp": "2026-10-27T19:32:55.329Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-10-27T19:32:44.908Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
     }
   ]
 }
