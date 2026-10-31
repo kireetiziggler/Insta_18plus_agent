@@ -6889,7 +6889,7 @@
       ],
       "caption": "A silent touch that promises everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-10-31T17:19:49.174Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-10-31T17:19:49.174Z",
       "renderedImages": [
         "/posts/post_1793467189174/slide_1.png"
@@ -7051,6 +7051,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-10-31T17:20:12.713Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1793467189174/slide_1.png"
+    },
+    {
+      "timestamp": "2026-10-31T17:20:12.710Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-10-31T17:20:12.707Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1793467189174\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-10-31T17:20:12.700Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1793467189174\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-10-31T17:20:10.286Z",
       "type": "SYSTEM",
@@ -9530,26 +9550,6 @@
       "timestamp": "2026-10-28T09:58:20.162Z",
       "type": "SYSTEM",
       "message": "Closed Puppeteer browser instance for Reel"
-    },
-    {
-      "timestamp": "2026-10-28T09:58:20.100Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering Reel slide for post \"reel_1793181468853\""
-    },
-    {
-      "timestamp": "2026-10-28T09:58:19.211Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic with background..."
-    },
-    {
-      "timestamp": "2026-10-28T09:58:18.960Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-10-28T09:58:18.956Z",
-      "type": "ERROR",
-      "message": "Pollinations Reel background download failed."
     }
   ]
 }
