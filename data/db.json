@@ -6920,7 +6920,7 @@
       "audioScript": "\"Elevator Pause\"\nThe doors closed. His chest pressed my back. A slow inhale. \"Yours,\" he breathed.",
       "caption": "Some confessions aren't spoken, they're felt in the sudden press of a moment. That electrifying proximity, when a glance becomes a promise and silence speaks volumes. What hidden desires surface when the world outside fades away?\n\nShare your secrets anonymously. We keep them safe.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretscaptured #desireunleashed #physicalcraving #situationships #rawemotions",
       "scheduledFor": "2026-11-01T10:45:33.506Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-01T10:45:33.506Z",
       "renderedImages": [
         "/posts/reel_1793529920616/slide.png"
@@ -7084,6 +7084,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-01T10:45:50.345Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1793529920616/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-01T10:45:50.342Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-01T10:45:50.338Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1793529920616\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-01T10:45:50.330Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1793529920616\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-01T10:45:47.688Z",
       "type": "SYSTEM",
@@ -9563,26 +9583,6 @@
       "timestamp": "2026-10-28T19:43:16.682Z",
       "type": "PUBLISHER",
       "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1793216586147/slide_1.png"
-    },
-    {
-      "timestamp": "2026-10-28T19:43:16.678Z",
-      "type": "PUBLISHER",
-      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
-    },
-    {
-      "timestamp": "2026-10-28T19:43:16.673Z",
-      "type": "PUBLISHER",
-      "message": "Publishing post ID \"post_1793216586147\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
-    },
-    {
-      "timestamp": "2026-10-28T19:43:16.664Z",
-      "type": "PUBLISHER",
-      "message": "Triggering publication flow for post ID \"post_1793216586147\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-10-28T19:43:13.182Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
     }
   ]
 }
