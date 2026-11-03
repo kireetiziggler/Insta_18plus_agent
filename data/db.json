@@ -7036,7 +7036,7 @@
       ],
       "caption": "That subtle shift ignited everything. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-03T19:42:34.795Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-03T19:42:34.795Z",
       "renderedImages": [
         "/posts/post_1793734954795/slide_1.png"
@@ -7198,6 +7198,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-03T19:42:44.489Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1793734954795/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-03T19:42:44.485Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-03T19:42:44.480Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1793734954795\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-03T19:42:44.471Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1793734954795\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-03T19:42:41.672Z",
       "type": "SYSTEM",
@@ -9677,26 +9697,6 @@
       "timestamp": "2026-10-31T09:55:32.452Z",
       "type": "SYSTEM",
       "message": "Finished rendering Reel slide for post \"reel_1793440491852\""
-    },
-    {
-      "timestamp": "2026-10-31T09:55:31.473Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reel slide graphic with background..."
-    },
-    {
-      "timestamp": "2026-10-31T09:55:31.105Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance for Reel..."
-    },
-    {
-      "timestamp": "2026-10-31T09:55:31.100Z",
-      "type": "ERROR",
-      "message": "Pollinations Reel background download failed."
-    },
-    {
-      "timestamp": "2026-10-31T09:55:28.097Z",
-      "type": "SYSTEM",
-      "message": "Waiting 3s for Reel image generation (attempt 5/5)..."
     }
   ]
 }
