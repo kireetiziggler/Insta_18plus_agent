@@ -7101,7 +7101,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-04T20:54:25.329Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-04T20:54:25.329Z",
       "renderedImages": [
         "/posts/post_1793825665329/slide_1.png"
@@ -7263,6 +7263,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-04T20:54:35.209Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1793825665329/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-04T20:54:35.205Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-04T20:54:35.200Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1793825665329\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-04T20:54:35.191Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1793825665329\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-04T20:54:32.553Z",
       "type": "SYSTEM",
@@ -9742,26 +9762,6 @@
       "timestamp": "2026-11-01T18:01:36.181Z",
       "type": "RESEARCH",
       "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-11-01T18:01:35.159Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-11-01T18:01:35.155Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-11-01T18:01:35.151Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-11-01T18:01:34.127Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
     }
   ]
 }
