@@ -7248,7 +7248,7 @@
       ],
       "caption": "Tracing memories in the dark when the distance hurts. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-07T19:01:09.107Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-07T19:01:09.107Z",
       "renderedImages": [
         "/posts/post_1794078069107/slide_1.png"
@@ -7410,6 +7410,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-07T19:01:17.798Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1794078069107/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-07T19:01:17.794Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-07T19:01:17.789Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1794078069107\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-07T19:01:17.780Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1794078069107\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-07T19:01:14.954Z",
       "type": "SYSTEM",
@@ -9889,26 +9909,6 @@
       "timestamp": "2026-11-04T19:58:06.154Z",
       "type": "RESEARCH",
       "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-11-04T19:58:05.146Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-11-04T19:58:04.124Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-11-04T19:58:04.119Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-11-04T19:58:04.114Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
     }
   ]
 }
