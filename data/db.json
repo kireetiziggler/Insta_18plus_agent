@@ -7428,7 +7428,7 @@
       ],
       "caption": "Some secrets are written without a single word. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-11T19:47:45.582Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-11T19:47:45.582Z",
       "renderedImages": [
         "/posts/post_1794426465582/slide_1.png"
@@ -7590,6 +7590,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-11T19:47:56.696Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1794426465582/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-11T19:47:56.691Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-11T19:47:56.686Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1794426465582\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-11T19:47:56.675Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1794426465582\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-11T19:47:53.199Z",
       "type": "SYSTEM",
@@ -10069,26 +10089,6 @@
       "timestamp": "2026-11-08T10:45:15.112Z",
       "type": "SYSTEM",
       "message": "Successfully loaded 9:16 Reel background image."
-    },
-    {
-      "timestamp": "2026-11-08T10:45:09.300Z",
-      "type": "SYSTEM",
-      "message": "Generating 9:16 Reel background from Pollinations.ai (seed: 212475156): shadowy bar night, romantic couple whispering, real humans"
-    },
-    {
-      "timestamp": "2026-11-08T10:45:09.297Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-11-08T10:45:09.294Z",
-      "type": "SYSTEM",
-      "message": "Creating Reels slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/reel_1794134697630\""
-    },
-    {
-      "timestamp": "2026-11-08T10:45:09.292Z",
-      "type": "SYSTEM",
-      "message": "Rendering Reels for post \"reel_1794134697630\"..."
     }
   ]
 }
