@@ -7410,7 +7410,7 @@
       "audioScript": "\"Late Night Drive\"\nStreetlights blurred. His thumb traced my wrist. My entire body hummed. I leaned in, just a whisper.",
       "caption": "Some moments speak louder than any words, especially when you're caught in the electric hum of a shared secret. That subtle spark, those unspoken promises. We know that feeling. Share your own truth. Submit your anonymous confessions about the connections that keep you up at night. Link in bio.\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretdesires #bodylanguage #silentlanguage #desire #rawemotions",
       "scheduledFor": "2026-11-11T11:23:41.311Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-11T11:23:41.311Z",
       "renderedImages": [
         "/posts/reel_1794396204359/slide.png"
@@ -7574,6 +7574,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-11T11:23:58.552Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1794396204359/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-11T11:23:58.549Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-11T11:23:58.545Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1794396204359\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-11T11:23:58.538Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1794396204359\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-11T11:23:55.631Z",
       "type": "SYSTEM",
@@ -10053,26 +10073,6 @@
       "timestamp": "2026-11-07T19:01:13.511Z",
       "type": "SYSTEM",
       "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1794078069107/background.png"
-    },
-    {
-      "timestamp": "2026-11-07T19:01:09.126Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/hands%20touch%20candle%20light%20night%20table%20aesthetic%20dark%20romantic%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=877080302&model=flux"
-    },
-    {
-      "timestamp": "2026-11-07T19:01:09.123Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"hands touch candle light night table aesthetic dark romantic\" (Seed: 877080302)"
-    },
-    {
-      "timestamp": "2026-11-07T19:01:09.118Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"silk_gold\" (Day of week: 6)"
-    },
-    {
-      "timestamp": "2026-11-07T19:01:09.115Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1794078069107\""
     }
   ]
 }
