@@ -7459,7 +7459,7 @@
       "audioScript": "\"Shared Air\"\nHis breath feathered my neck. The memory of his mouth burned.",
       "caption": "Some connections are etched deep, a quiet fire burning beneath the skin. That breath, those memories—they haunt you until you surrender. Drop a ❤️ if this resonates. Send your secret story anonymously to us, we'll keep it safe.\n\n#UnspokenDesires #Intimacy #Chemistry #Tension #SecretDesires #PhysicalIntimacy #RawEmotion #ForbiddenRomance #Situationships #AdultContent #Confession #LateNight",
       "scheduledFor": "2026-11-12T11:43:49.837Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-12T11:43:49.837Z",
       "renderedImages": [
         "/posts/reel_1794483813171/slide.png"
@@ -7623,6 +7623,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-12T11:44:06.978Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1794483813171/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-12T11:44:06.974Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-12T11:44:06.970Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1794483813171\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-12T11:44:06.962Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1794483813171\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-12T11:44:03.826Z",
       "type": "SYSTEM",
@@ -10102,26 +10122,6 @@
       "timestamp": "2026-11-08T18:56:15.352Z",
       "type": "SYSTEM",
       "message": "Successfully downloaded generated background image to /home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1794164170218/background.png"
-    },
-    {
-      "timestamp": "2026-11-08T18:56:10.240Z",
-      "type": "SYSTEM",
-      "message": "Downloading from Pollinations: https://image.pollinations.ai/prompt/person%20looking%20phone%20bed%20silk%20sheets%20night%20bedroom%20glow%20dark%2C%20DSLR%20photography%2C%20real%20human%20girl%20and%20boy%2C%20highly%20visible%2C%20cinematic%20lighting%2C%20dark%20atmosphere%2C%20moody%20shadows%2C%20low%20light%2C%20photorealistic%2C%208k%20resolution%2C%20premium%20aesthetics%2C%20intimate%2C%20real%20skin%20textures%2C%20detailed%20faces%2C%20no%20text%2C%20no%20watermark?width=1080&height=1080&nologo=true&seed=133538161&model=flux"
-    },
-    {
-      "timestamp": "2026-11-08T18:56:10.235Z",
-      "type": "SYSTEM",
-      "message": "Generating unique AI background image using Pollinations.ai. Prompt: \"person looking phone bed silk sheets night bedroom glow dark\" (Seed: 133538161)"
-    },
-    {
-      "timestamp": "2026-11-08T18:56:10.230Z",
-      "type": "SYSTEM",
-      "message": "Applying daily visual theme: \"deep_midnight\" (Day of week: 0)"
-    },
-    {
-      "timestamp": "2026-11-08T18:56:10.227Z",
-      "type": "SYSTEM",
-      "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1794164170218\""
     }
   ]
 }
