@@ -7508,7 +7508,7 @@
       "audioScript": "\"THE JACKET DRAPE\"\nHe slid my jacket over my shoulders. His fingers brushed my bare back. My skin hummed.",
       "caption": "Some connections are too potent to ignore. That split second where a casual touch transcends everything, embedding itself deep within your memory. \n\nWe want to hear your most electric moments. Share your confessions below. 👇\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretdesires #physicalintimacy #situationships #rawemotions #heatofmoment",
       "scheduledFor": "2026-11-13T11:27:20.072Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-13T11:27:20.072Z",
       "renderedImages": [
         "/posts/reel_1794569223267/slide.png"
@@ -7672,6 +7672,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-13T11:27:40.178Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1794569223267/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-13T11:27:40.173Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-13T11:27:40.168Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1794569223267\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-13T11:27:40.156Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1794569223267\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-13T11:27:36.739Z",
       "type": "SYSTEM",
@@ -10151,26 +10171,6 @@
       "timestamp": "2026-11-09T23:30:39.023Z",
       "type": "SYSTEM",
       "message": "Rendering slide graphics for post \"post_1794267039020\"..."
-    },
-    {
-      "timestamp": "2026-11-09T23:30:39.016Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-11-09T23:30:04.199Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Anonymous Confessions\"..."
-    },
-    {
-      "timestamp": "2026-11-09T23:30:04.196Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Anonymous Confessions\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-11-09T23:30:04.191Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
     }
   ]
 }
