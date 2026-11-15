@@ -7640,7 +7640,7 @@
       ],
       "caption": "That quiet heat igniting in an unexpected moment. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-15T19:54:01.885Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-15T19:54:01.885Z",
       "renderedImages": [
         "/posts/post_1794772441885/slide_1.png"
@@ -7802,6 +7802,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-15T19:54:13.044Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1794772441885/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-15T19:54:13.039Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-15T19:54:13.035Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1794772441885\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-15T19:54:13.024Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1794772441885\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-15T19:54:10.310Z",
       "type": "SYSTEM",
@@ -10281,26 +10301,6 @@
       "timestamp": "2026-11-12T20:15:10.774Z",
       "type": "RESEARCH",
       "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-11-12T20:15:09.702Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-11-12T20:15:09.698Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-11-12T20:15:09.693Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-11-12T20:15:08.662Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
     }
   ]
 }
