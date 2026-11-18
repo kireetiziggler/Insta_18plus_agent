@@ -7753,7 +7753,7 @@
       "audioScript": "\"Elevator Glow\"\nHis gaze caught mine. One floor. We both knew.",
       "caption": "The air thickens when two people understand each other without a single word. That unspoken pull is a silent promise, an electric current you can't ignore. The moment the elevator doors part, it's not just a floor you've reached, it's a decision.\n\nDrop a 🔥 if you know that feeling. Confess your own secret desires anonymously to us.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretdesires #rawdesire #situationships #midnightthoughts #adultromance #desireandintimacy",
       "scheduledFor": "2026-11-18T12:08:05.194Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-18T12:08:05.194Z",
       "renderedImages": [
         "/posts/reel_1795003667417/slide.png"
@@ -7917,6 +7917,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-18T12:08:22.622Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795003667417/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-18T12:08:22.618Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-18T12:08:22.613Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795003667417\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-18T12:08:22.603Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795003667417\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-18T12:08:19.333Z",
       "type": "SYSTEM",
@@ -10396,26 +10416,6 @@
       "timestamp": "2026-11-14T19:20:22.903Z",
       "type": "SYSTEM",
       "message": "Rendering slide graphics for post \"post_1794684022899\"..."
-    },
-    {
-      "timestamp": "2026-11-14T19:20:22.895Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-11-14T19:19:50.947Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-11-14T19:19:50.944Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-11-14T19:19:50.938Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
     }
   ]
 }
