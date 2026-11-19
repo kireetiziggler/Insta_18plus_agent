@@ -7836,7 +7836,7 @@
       ],
       "caption": "When midnight hunger turns to raw desire. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-19T22:20:38.313Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-19T22:20:38.313Z",
       "renderedImages": [
         "/posts/post_1795126838313/slide_1.png"
@@ -7998,6 +7998,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-19T22:20:48.277Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1795126838313/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-19T22:20:48.249Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-19T22:20:48.235Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1795126838313\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-19T22:20:48.032Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1795126838313\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-19T22:20:44.360Z",
       "type": "SYSTEM",
@@ -10477,26 +10497,6 @@
       "timestamp": "2026-11-16T22:25:17.306Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-11-16T22:25:16.299Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-11-16T22:25:15.272Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-11-16T22:25:15.267Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-11-16T22:25:15.261Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
     }
   ]
 }
