@@ -7802,7 +7802,7 @@
       "audioScript": "Focus on your own chemistry, your desires, and your growth. Your worth is not defined by someone else's inability to see it. Reclaim your power.",
       "caption": "Reclaim your power. Build the chemistry that matters.\n\nSave this if you relate. ❦\n\n#attraction #selfworth #chemistry #growth",
       "scheduledFor": "2026-11-19T12:02:25.916Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-19T12:02:25.916Z",
       "renderedImages": [
         "/posts/reel_1795089733833/slide.png"
@@ -7966,6 +7966,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-19T12:02:57.239Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795089733833/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-19T12:02:57.233Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-19T12:02:57.228Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795089733833\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-19T12:02:57.215Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795089733833\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-19T12:02:53.834Z",
       "type": "SYSTEM",
@@ -10445,26 +10465,6 @@
       "timestamp": "2026-11-15T19:54:01.898Z",
       "type": "SYSTEM",
       "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1794772441885\""
-    },
-    {
-      "timestamp": "2026-11-15T19:54:01.891Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1794772441885\"..."
-    },
-    {
-      "timestamp": "2026-11-15T19:54:01.880Z",
-      "type": "GENERATOR",
-      "message": "Successfully generated AI content using Gemini. Theme: \"midnight_desire\""
-    },
-    {
-      "timestamp": "2026-11-15T19:53:35.877Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-11-15T19:53:35.856Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
     }
   ]
 }
