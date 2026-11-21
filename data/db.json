@@ -7934,7 +7934,7 @@
       ],
       "caption": "A glimpse, a desire, a silent, knowing fire. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-21T20:37:36.595Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-21T20:37:36.595Z",
       "renderedImages": [
         "/posts/post_1795293456595/slide_1.png"
@@ -8096,6 +8096,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-21T20:37:46.285Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1795293456595/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-21T20:37:46.280Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-21T20:37:46.275Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1795293456595\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-21T20:37:46.263Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1795293456595\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-21T20:37:43.876Z",
       "type": "SYSTEM",
@@ -10575,26 +10595,6 @@
       "timestamp": "2026-11-18T20:48:17.668Z",
       "type": "SYSTEM",
       "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
-    },
-    {
-      "timestamp": "2026-11-18T20:48:17.662Z",
-      "type": "SYSTEM",
-      "message": "Triggering scheduled post workflow for category: \"Intimate Secrets\""
-    },
-    {
-      "timestamp": "2026-11-18T20:48:17.216Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-11-18T20:48:17.155Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-11-18T20:48:16.134Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
     }
   ]
 }
