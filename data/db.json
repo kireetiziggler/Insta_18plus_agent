@@ -7900,7 +7900,7 @@
       "audioScript": "\"Whiskey Kiss\"\nHe slid the glass across the bar. His eyes dared mine. One taste, then me.",
       "caption": "Some desires don't need words. They live in the shared glance, the silent dare, the electrifying promise. That raw, undeniable pull of what's about to unfold, a secret just between two.\n\nGot a secret that electrifies your nights? DM us your anonymous confession. We're listening.\n\n#UnspokenDesires #Intimacy #Chemistry #Tension #ForbiddenLove #SecretConfession #Desire #Passion #Situationship #SensualMoments",
       "scheduledFor": "2026-11-21T11:38:58.136Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-21T11:38:58.136Z",
       "renderedImages": [
         "/posts/reel_1795261122632/slide.png"
@@ -8064,6 +8064,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-21T11:39:13.390Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795261122632/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-21T11:39:13.384Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-21T11:39:13.379Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795261122632\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-21T11:39:13.368Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795261122632\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-21T11:39:10.385Z",
       "type": "SYSTEM",
@@ -10543,26 +10563,6 @@
       "timestamp": "2026-11-17T22:31:53.782Z",
       "type": "SYSTEM",
       "message": "Creating slide directory: \"/home/runner/work/Insta_18plus_agent/Insta_18plus_agent/data/posts/post_1794954713771\""
-    },
-    {
-      "timestamp": "2026-11-17T22:31:53.778Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide graphics for post \"post_1794954713771\"..."
-    },
-    {
-      "timestamp": "2026-11-17T22:31:53.767Z",
-      "type": "WARNING",
-      "message": "Gemini content generation failed: All Gemini models and retries failed. Last error: [GoogleGenerativeAI Error]: Error fetching from https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-pro:generateContent: [404 Not Found] models/gemini-1.5-pro is not found for API version v1beta, or is not supported for generateContent. Call ModelService.ListModels to see the list of available models and their supported methods.. Falling back to offline templates."
-    },
-    {
-      "timestamp": "2026-11-17T22:31:16.512Z",
-      "type": "GENERATOR",
-      "message": "Generating content for category: \"Intimate Secrets\"..."
-    },
-    {
-      "timestamp": "2026-11-17T22:31:16.508Z",
-      "type": "SYSTEM",
-      "message": "No unused trends found for \"Intimate Secrets\". Generating generic niche post."
     }
   ]
 }
