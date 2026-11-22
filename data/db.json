@@ -7949,7 +7949,7 @@
       "audioScript": "\"The Unbuttoning\"\nMy eyes on his throat. Every button, a silent plea. My hands ached.",
       "caption": "Some moments burn so slow, they brand your very soul. The anticipation is a s*xier kind of fire. What secret desire keeps your pulse racing? \n\nSubmit your anonymous confession via the link in bio.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #desire #physicalintimacy #secretconfessions #adulting #sensualvibes",
       "scheduledFor": "2026-11-22T11:52:21.177Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-22T11:52:21.177Z",
       "renderedImages": [
         "/posts/reel_1795348328777/slide.png"
@@ -8113,6 +8113,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-22T11:52:50.330Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795348328777/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-22T11:52:50.326Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-22T11:52:50.321Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795348328777\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-22T11:52:50.310Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795348328777\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-22T11:52:47.167Z",
       "type": "SYSTEM",
@@ -10592,26 +10612,6 @@
       "timestamp": "2026-11-18T22:12:15.292Z",
       "type": "PUBLISHER",
       "message": "Triggering publication flow for post ID \"post_1795039926108\" (Type: carousel, Simulation: false)"
-    },
-    {
-      "timestamp": "2026-11-18T22:12:11.724Z",
-      "type": "SYSTEM",
-      "message": "Closed Puppeteer browser instance"
-    },
-    {
-      "timestamp": "2026-11-18T22:12:11.656Z",
-      "type": "SYSTEM",
-      "message": "Finished rendering 1 slides for post \"post_1795039926108\""
-    },
-    {
-      "timestamp": "2026-11-18T22:12:10.762Z",
-      "type": "SYSTEM",
-      "message": "Rendering slide 1/1..."
-    },
-    {
-      "timestamp": "2026-11-18T22:12:10.477Z",
-      "type": "SYSTEM",
-      "message": "Launching Puppeteer browser instance..."
     }
   ]
 }
