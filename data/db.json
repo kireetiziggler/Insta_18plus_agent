@@ -8079,7 +8079,7 @@
       ],
       "caption": "The beautiful torture of being his favorite secret. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-24T23:34:43.292Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-24T23:34:43.292Z",
       "renderedImages": [
         "/posts/post_1795563283292/slide_1.png"
@@ -8241,6 +8241,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-24T23:34:52.845Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1795563283292/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-24T23:34:52.839Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-24T23:34:52.834Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1795563283292\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-24T23:34:52.816Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1795563283292\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-24T23:34:49.071Z",
       "type": "SYSTEM",
@@ -10720,26 +10740,6 @@
       "timestamp": "2026-11-21T19:37:01.426Z",
       "type": "RESEARCH",
       "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-11-21T19:37:01.420Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-11-21T19:37:00.388Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-11-21T19:36:59.357Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-11-21T19:36:58.352Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
     }
   ]
 }
