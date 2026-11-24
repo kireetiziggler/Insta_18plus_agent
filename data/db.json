@@ -8063,7 +8063,7 @@
       ],
       "caption": "Late night texts that make it impossible to sleep. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #explorepage #viral #desire #relationshiptension #fyp #relationshipgoals #midnightthoughts #confessions",
       "scheduledFor": "2026-11-24T22:40:34.033Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-24T22:40:34.033Z",
       "renderedImages": [
         "/posts/post_1795560034033/slide_1.png"
@@ -8225,6 +8225,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-24T22:40:43.499Z",
+      "type": "PUBLISHER",
+      "message": "Slide 1/1 uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/post_1795560034033/slide_1.png"
+    },
+    {
+      "timestamp": "2026-11-24T22:40:43.495Z",
+      "type": "PUBLISHER",
+      "message": "Uploading slide 1/1 to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-24T22:40:43.490Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"post_1795560034033\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-24T22:40:43.480Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"post_1795560034033\" (Type: carousel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-24T22:40:40.699Z",
       "type": "SYSTEM",
@@ -10704,26 +10724,6 @@
       "timestamp": "2026-11-21T11:38:40.895Z",
       "type": "RESEARCH",
       "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-11-21T11:38:39.876Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-11-21T11:38:39.273Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-11-21T11:38:39.268Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-11-21T11:38:39.262Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
     }
   ]
 }
