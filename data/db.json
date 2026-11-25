@@ -8094,7 +8094,7 @@
       "audioScript": "\"The Tie Fix\"\nHe leaned in. Adjusted my tie.\nHis fingers grazed my neck.\nMy breath caught. We both knew.",
       "caption": "That innocent touch, a carefully concealed explosion of desire. Some secrets are meant to be felt, not just told.\n\nShare your anonymous confession and let us unveil the whispers of your soul.\n\n#UnspokenDesires #Intimacy #Chemistry #Tension #ForbiddenLove #SecretCrush #RawDesire #PhysicalIntimacy #TouchMe #SilentLanguage",
       "scheduledFor": "2026-11-25T13:22:49.819Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-25T13:22:49.819Z",
       "renderedImages": [
         "/posts/reel_1795612951200/slide.png"
@@ -8258,6 +8258,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-25T13:23:06.812Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795612951200/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-25T13:23:06.808Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-25T13:23:06.803Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795612951200\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-25T13:23:06.792Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795612951200\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-25T13:23:03.392Z",
       "type": "SYSTEM",
@@ -10737,26 +10757,6 @@
       "timestamp": "2026-11-21T20:37:19.916Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-11-21T20:37:18.943Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
-    },
-    {
-      "timestamp": "2026-11-21T20:37:18.373Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-11-21T20:37:17.353Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/seduction..."
-    },
-    {
-      "timestamp": "2026-11-21T20:37:17.347Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Romantic Tension & Chemistry\""
     }
   ]
 }
