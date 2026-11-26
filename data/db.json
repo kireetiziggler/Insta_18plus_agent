@@ -8143,7 +8143,7 @@
       "audioScript": "\"Borrowed Jacket\"\nHe pulled my jacket on, then paused. His fingers lingered at my collarbone. Our eyes locked.",
       "caption": "Some moments burn so bright, they brand themselves onto your soul. That electric pause, the weight of a gaze, a touch that redefines everything. It's in these stolen seconds that true desire ignites. What's your unspoken desire? Share your anonymous confession with us. #intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcraving #desire #touch #sensualmoments #ignite",
       "scheduledFor": "2026-11-26T13:01:59.663Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-26T13:01:59.663Z",
       "renderedImages": [
         "/posts/reel_1795698105114/slide.png"
@@ -8307,6 +8307,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-26T13:02:17.696Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795698105114/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-26T13:02:17.690Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-26T13:02:17.684Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795698105114\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-26T13:02:17.671Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795698105114\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-26T13:02:14.753Z",
       "type": "SYSTEM",
@@ -10786,26 +10806,6 @@
       "timestamp": "2026-11-22T20:46:44.186Z",
       "type": "RESEARCH",
       "message": "Warning: No posts crawled for category \"Situationships & Forbidden Love\""
-    },
-    {
-      "timestamp": "2026-11-22T20:46:43.162Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating..."
-    },
-    {
-      "timestamp": "2026-11-22T20:46:42.135Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/relationships..."
-    },
-    {
-      "timestamp": "2026-11-22T20:46:41.137Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-11-22T20:46:41.132Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Situationships & Forbidden Love\""
     }
   ]
 }
