@@ -8192,7 +8192,7 @@
       "audioScript": "Focus on your own chemistry, your desires, and your growth. Your worth is not defined by someone else's inability to see it. Reclaim your power.",
       "caption": "Reclaim your power. Build the chemistry that matters.\n\nSave this if you relate. ❦\n\n#attraction #selfworth #chemistry #growth",
       "scheduledFor": "2026-11-27T13:00:15.558Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-27T13:00:15.558Z",
       "renderedImages": [
         "/posts/reel_1795784389132/slide.png"
@@ -8356,6 +8356,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-27T13:00:32.737Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795784389132/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-27T13:00:32.732Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-27T13:00:32.727Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795784389132\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-27T13:00:32.716Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795784389132\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-27T13:00:28.982Z",
       "type": "SYSTEM",
@@ -10835,26 +10855,6 @@
       "timestamp": "2026-11-24T01:46:23.498Z",
       "type": "RESEARCH",
       "message": "Scraping r/lonely..."
-    },
-    {
-      "timestamp": "2026-11-24T01:46:22.447Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/breakups..."
-    },
-    {
-      "timestamp": "2026-11-24T01:46:22.442Z",
-      "type": "RESEARCH",
-      "message": "Crawling subreddits for category: \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-11-24T01:46:22.435Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Romantic Tension & Chemistry\""
-    },
-    {
-      "timestamp": "2026-11-24T01:46:21.356Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/socialskills..."
     }
   ]
 }
