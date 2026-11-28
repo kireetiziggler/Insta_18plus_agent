@@ -8241,7 +8241,7 @@
       "audioScript": "\"The Zip\"\nMy dress zipper snagged. His fingers brushed my spine, slowly easing it down. My breath hitched.",
       "caption": "Some moments speak louder than any whispered confession, leaving an imprint on your skin and soul. The unexpected touch, the silent agreement, the slow burn of forbidden desire.\n\nShare your own unspoken secrets anonymously. Tap the link in bio.\n\n#intimacy #chemistry #tension #forbiddenlove #unspokendesires #secretcravings #desire #physicalintimacy #modernromance #situationships",
       "scheduledFor": "2026-11-28T12:12:46.523Z",
-      "status": "scheduled",
+      "status": "failed",
       "createdAt": "2026-11-28T12:12:46.523Z",
       "renderedImages": [
         "/posts/reel_1795867951546/slide.png"
@@ -8405,6 +8405,26 @@
     }
   ],
   "logs": [
+    {
+      "timestamp": "2026-11-28T12:13:03.841Z",
+      "type": "PUBLISHER",
+      "message": "Reel video uploaded: https://raw.githubusercontent.com/kireetiziggler/Insta_18plus_agent/main/data/posts/reel_1795867951546/reel.mp4"
+    },
+    {
+      "timestamp": "2026-11-28T12:13:03.838Z",
+      "type": "PUBLISHER",
+      "message": "Uploading Reel video to temporary public hosting for Buffer..."
+    },
+    {
+      "timestamp": "2026-11-28T12:13:03.834Z",
+      "type": "PUBLISHER",
+      "message": "Publishing post ID \"reel_1795867951546\" via Buffer API (Channel: 6a2e594b38b5579345939725)..."
+    },
+    {
+      "timestamp": "2026-11-28T12:13:03.824Z",
+      "type": "PUBLISHER",
+      "message": "Triggering publication flow for post ID \"reel_1795867951546\" (Type: reel, Simulation: false)"
+    },
     {
       "timestamp": "2026-11-28T12:13:00.211Z",
       "type": "SYSTEM",
@@ -10884,26 +10904,6 @@
       "timestamp": "2026-11-24T23:34:03.223Z",
       "type": "SYSTEM",
       "message": "Triggering scheduled post workflow for category: \"Anonymous Confessions\""
-    },
-    {
-      "timestamp": "2026-11-24T23:34:03.205Z",
-      "type": "RESEARCH",
-      "message": "Closed crawling browser session."
-    },
-    {
-      "timestamp": "2026-11-24T23:34:03.050Z",
-      "type": "RESEARCH",
-      "message": "Warning: No posts crawled for category \"Intimate Heartbreak & Healing\""
-    },
-    {
-      "timestamp": "2026-11-24T23:34:02.040Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/dating_advice..."
-    },
-    {
-      "timestamp": "2026-11-24T23:34:01.022Z",
-      "type": "RESEARCH",
-      "message": "Scraping r/lonely..."
     }
   ]
 }
